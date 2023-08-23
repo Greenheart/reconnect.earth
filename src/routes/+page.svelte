@@ -16,7 +16,7 @@
     </h2>
 
     <p class="mb-4">
-        How can one live a meaningful and healthy life? How can one do this <em
+        How can we all live meaningful and healthy lives? How can we do this <em
             >while</em
         > contributing a future with wellbeing for all, within the planetary boundaries?
     </p>
@@ -49,30 +49,49 @@
     </p>
 
     <div class="grid grid-cols-3 gap-4 mt-8">
-        <div class="card p-4">
-            <h3 class="mb-2">The Reconnect.earth process</h3>
-            <p class="mb-4">
-                How you can thrive in life while contributing to a thriving
-                future.
+        <div
+            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+        >
+            <h3 class="h4 text-center font-bold">
+                The Reconnect.earth process
+            </h3>
+            <p class="mb-2">
+                An invitation to reflect on how we all can live well while doing
+                good in the world.
             </p>
-            <!-- TODO: center buttons -->
-            <a href="#" class="btn variant-filled btn-sm">Learn more</a>
+            <a
+                href="#"
+                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                >Explore</a
+            >
         </div>
-        <div class="card p-4">
-            <h3 class="mb-2">Resource library</h3>
-            <p class="mb-4">
-                Explore books, podcasts and videos to learn about the
-                metacrisis, and how we can create a better future.
+        <div
+            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+        >
+            <h3 class="h4 text-center font-bold">Resource library</h3>
+            <p class="mb-2">
+                Books, podcasts, videos (and more) about the metacrisis and how
+                we can create a better future.
             </p>
-            <a href="#" class="btn variant-filled btn-sm">Explore</a>
+            <a
+                href="#"
+                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                >Follow your curiosity</a
+            >
         </div>
-        <div class="card p-4">
-            <h3 class="mb-2">Activities</h3>
-            <p class="mb-4">
+        <div
+            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+        >
+            <h3 class="h4 text-center font-bold">Activities</h3>
+            <p class="mb-2">
                 Ways to engage with the Reconnect.earth process on your own or
                 together with others.
             </p>
-            <a href="#" class="btn variant-filled btn-sm">Get started</a>
+            <a
+                href="#"
+                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                >Get started</a
+            >
         </div>
     </div>
 

@@ -7,19 +7,78 @@
 </script>
 
 <div class="mx-auto max-w-screen-lg mt-8 px-4">
-    <h1 class="h1 font-bold mb-4">Reconnect.earth</h1>
+    <h1 class="h1 font-bold mb-8">Reconnect to what matters</h1>
 
-    <h2 class="h2 mb-4">Let's create a thriving future!</h2>
+    <h2 class="h2 mb-16">
+        <!-- Thrive in life while contributing to a thriving future -->
+        <!-- Live well while doing good in the world -->
+        Thrive in life while doing good in the world
+    </h2>
 
     <p class="mb-4">
-        Towards a meaningful, fulfilling life where our way of living
-        contributes to increased resilience and wellbeing for all, within the
-        means of the planet.
+        How can one live a meaningful and healthy life? How can one do this <em
+            >while</em
+        > contributing a future with wellbeing for all, within the planetary boundaries?
     </p>
+    <p>
+        This might feel like a daunting task, given how the metacrisis is
+        affecting the world (link to what we mean with the metacrisis).
+    </p>
+
+    <p>
+        Many of the problems today stem from disconnection - from ourselves,
+        each other, and from the living planet.
+    </p>
+
+    <p>
+        Today, a lot of efforts are unfortunately primarily focusing on the
+        symptoms of the metacrisis, rather than the underlying causes.
+    </p>
+
+    <p>
+        We need a more systematic approach and we need to reconnect. We can
+        redefine what it means to be an active citizen, prioritising wellbeing
+        on all levels while using more potent leverage points to more
+        effectively respond to the metacrisis.
+    </p>
+
+    <p>
+        Reconnect.earth is a process and growing library of resources and
+        activities to help you and your community to learn and increase your
+        impact.
+    </p>
+
+    <div class="grid grid-cols-3 gap-4 mt-8">
+        <div class="card p-4">
+            <h3 class="mb-2">The Reconnect.earth process</h3>
+            <p class="mb-4">
+                How you can thrive in life while contributing to a thriving
+                future.
+            </p>
+            <!-- TODO: center buttons -->
+            <a href="#" class="btn variant-filled btn-sm">Learn more</a>
+        </div>
+        <div class="card p-4">
+            <h3 class="mb-2">Resource library</h3>
+            <p class="mb-4">
+                Explore books, podcasts and videos to learn about the
+                metacrisis, and how we can create a better future.
+            </p>
+            <a href="#" class="btn variant-filled btn-sm">Explore</a>
+        </div>
+        <div class="card p-4">
+            <h3 class="mb-2">Activities</h3>
+            <p class="mb-4">
+                Ways to engage with the Reconnect.earth process on your own or
+                together with others.
+            </p>
+            <a href="#" class="btn variant-filled btn-sm">Get started</a>
+        </div>
+    </div>
 
     <hr class="my-16" />
 
-    <Resources {resources} />
+    <!-- <Resources {resources} /> -->
 
     <hr class="my-16" />
 

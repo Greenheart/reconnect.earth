@@ -8,7 +8,9 @@
 </script>
 
 <div class="mx-auto max-w-screen-lg mt-8 px-4">
-    <h1 class="h1 font-bold mb-8">Reconnect to what matters</h1>
+    <h1 class="h1 font-bold mb-8 gradient-heading">
+        Reconnect to what matters
+    </h1>
 
     <h2 class="h2 mb-16">
         <!-- Thrive in life while contributing to a thriving future -->

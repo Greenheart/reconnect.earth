@@ -4,7 +4,7 @@
     export let resources: Resource[]
 </script>
 
-<h2 class="h2 font-bold mb-2">Resources</h2>
+<h2 class="h2 font-bold mb-2 gradient-heading">Resources</h2>
 
 <p class="mb-8">
     Explore topics related to reconnect.earth. Learn how we can create a future
@@ -21,24 +21,23 @@
             <h3 class="h3 font-bold">{resource.title}</h3>
             <p>{resource.description}</p>
             <div class="flex gap-2 items-start text-sm">
-                <!-- TODO: implement getSortedTags() to ensure consistent order -->
                 <!-- IDEA: Maybe use colors for different types of tags -->
                 {#each resource.tags as tag}
-                    <span>#{tag}</span>
+                    <span class="text-primary-500">#{tag}</span>
                 {/each}
             </div>
             <div class="flex justify-end">
                 <a
-                    class="btn variant-outline btn-sm rounded-sm gap-1"
+                    class="btn variant-soft rounded-sm gap-1"
                     href={resource.link}
                     target="_blank"
-                    ><span>Explore</span><svg
+                    ><span class="flex items-stretch">Explore</span><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6"
+                        class="w-5 h-5"
                     >
                         <path
                             stroke-linecap="round"

@@ -14,7 +14,7 @@
     </p>
     <a
         {href}
-        class="btn variant-filled btn-md justify-self-center self-end w-44"
+        class="btn variant-filled-primary justify-self-center self-end w-44"
         >{cta}</a
     >
 </div>

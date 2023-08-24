@@ -6,26 +6,30 @@
 
 <h2 class="h2 font-bold mb-2">Resources</h2>
 
-<p class="mb-4">
+<p class="mb-8">
     Explore topics related to reconnect.earth. Learn how we can create a future
     where both humanity and the living planet thrive together.
 </p>
 
+<!-- IDEA: Add search field to filter resources -->
+<!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
 <div class="grid grid-cols-2 gap-4">
     {#each resources as resource}
-        <div class="card p-4">
-            <h3 class="h3 mb-4">{resource.title}</h3>
-            <p class="mb-4">{resource.description}</p>
-            <div class="flex gap-1">
+        <div
+            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+        >
+            <h3 class="h3 font-bold">{resource.title}</h3>
+            <p>{resource.description}</p>
+            <div class="flex gap-2 items-start text-sm">
                 <!-- TODO: implement getSortedTags() to ensure consistent order -->
                 <!-- IDEA: Maybe use colors for different types of tags -->
                 {#each resource.tags as tag}
-                    <span class="text-sm">#{tag}</span>
+                    <span>#{tag}</span>
                 {/each}
             </div>
-            <div class="flex justify-end mt-4">
+            <div class="flex justify-end">
                 <a
-                    class="btn variant-filled btn-sm rounded-sm gap-1"
+                    class="btn variant-outline btn-sm rounded-sm gap-1"
                     href={resource.link}
                     target="_blank"
                     ><span>Explore</span><svg

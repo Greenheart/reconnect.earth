@@ -1,5 +1,6 @@
 <script lang="ts">
     import Resources from '$components/Resources.svelte'
+    import SectionCard from '$components/SectionCard.svelte'
     import type { PageData } from './$types'
 
     export let data: PageData
@@ -48,51 +49,25 @@
         impact.
     </p>
 
-    <div class="grid grid-cols-3 gap-4 mt-8">
-        <div
-            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
-        >
-            <h3 class="h4 text-center font-bold">
-                The Reconnect.earth process
-            </h3>
-            <p class="mb-2">
-                An invitation to reflect on how we all can live well while doing
-                good in the world.
-            </p>
-            <a
-                href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-44"
-                >Explore</a
-            >
-        </div>
-        <div
-            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
-        >
-            <h3 class="h4 text-center font-bold">Resource library</h3>
-            <p class="mb-2">
-                Books, podcasts, videos (and more) about the metacrisis and how
-                we can create a better future.
-            </p>
-            <a
-                href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-44"
-                >Follow your curiosity</a
-            >
-        </div>
-        <div
-            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
-        >
-            <h3 class="h4 text-center font-bold">Activities</h3>
-            <p class="mb-2">
-                Ways to engage with the Reconnect.earth process on your own or
-                together with others.
-            </p>
-            <a
-                href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-44"
-                >Get started</a
-            >
-        </div>
+    <div class="grid sm:grid-cols-3 gap-4 mt-8">
+        <SectionCard
+            title="The Reconnect.earth process"
+            text="An invitation to reflect on how we all can live well while doing good in the world."
+            cta="Explore"
+            href="#"
+        />
+        <SectionCard
+            title="Resource library"
+            text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
+            cta="Be curious"
+            href="#"
+        />
+        <SectionCard
+            title="Activities"
+            text="Ways to engage with the Reconnect.earth process on your own or together with others."
+            cta="Get started"
+            href="#"
+        />
     </div>
 
     <hr class="my-16" />

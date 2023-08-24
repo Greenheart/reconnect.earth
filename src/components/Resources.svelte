@@ -21,7 +21,6 @@
             <h3 class="h3 font-bold">{resource.title}</h3>
             <p>{resource.description}</p>
             <div class="flex gap-2 items-start text-sm">
-                <!-- IDEA: Maybe use colors for different types of tags -->
                 {#each resource.tags as tag}
                     <span class="text-primary-500">#{tag}</span>
                 {/each}

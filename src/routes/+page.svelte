@@ -80,11 +80,11 @@
 
     <!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
 
-    <h2 class="h2 font-bold mb-4">Reclaim</h2>
-    <h2 class="h2 font-bold mb-4">Reflect</h2>
-    <h2 class="h2 font-bold mb-4">Reconnect</h2>
-    <h2 class="h2 font-bold mb-4">Re-imagine</h2>
-    <h2 class="h2 font-bold mb-4">Regenerate</h2>
+    <h2 class="h2 font-bold mb-4 gradient-heading">Reclaim</h2>
+    <h2 class="h2 font-bold mb-4 gradient-heading">Reflect</h2>
+    <h2 class="h2 font-bold mb-4 gradient-heading">Reconnect</h2>
+    <h2 class="h2 font-bold mb-4 gradient-heading">Reimagine</h2>
+    <h2 class="h2 font-bold mb-4 gradient-heading">Regenerate</h2>
 
     <!-- IDEA: After learning about the framework, the first tree is joined by more trees, forming a forest. -->
     <!-- IDEA: Even further down, the view zooms out and you see forests and trees all over the Earth. Then finally, reconnect.earth and some CTA -->

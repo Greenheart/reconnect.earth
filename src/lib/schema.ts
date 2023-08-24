@@ -5,7 +5,8 @@ export const ResourceSchema = z.object({
     description: z.string().max(300).optional(),
     link: z.string().url(),
     tags: z.array(z.string()),
-    featured: z.boolean(),
+    featured: z.boolean().optional().default(false),
+    quality: z.number().min(1).max(5),
 })
 
 export type Resource = z.infer<typeof ResourceSchema>

@@ -61,7 +61,7 @@
             </p>
             <a
                 href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                class="btn variant-filled btn-sm justify-self-center self-end w-44"
                 >Explore</a
             >
         </div>
@@ -75,7 +75,7 @@
             </p>
             <a
                 href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                class="btn variant-filled btn-sm justify-self-center self-end w-44"
                 >Follow your curiosity</a
             >
         </div>
@@ -89,7 +89,7 @@
             </p>
             <a
                 href="#"
-                class="btn variant-filled btn-sm justify-self-center self-end w-40"
+                class="btn variant-filled btn-sm justify-self-center self-end w-44"
                 >Get started</a
             >
         </div>
@@ -97,7 +97,7 @@
 
     <hr class="my-16" />
 
-    <!-- <Resources {resources} /> -->
+    <Resources {resources} />
 
     <hr class="my-16" />
 

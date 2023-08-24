@@ -4,48 +4,64 @@
         "description": "A must-read to learn how to use wellbeing economics to co-create a future where the needs of all are met within the means of the living planet.",
         "link": "https://libro.fm/audiobooks/9781473556256",
         "tags": ["Book", "WellbeingEconomics"],
-        "featured": true
+        "featured": true,
+        "quality": 5
     },
     {
         "title": "Planet: Critical - Making Sense of the Crisis",
         "description": "Rachel has an unrivalled capacity for delivering facts and connecting the dots whilst being eloquent, engaging, compassionate, and witty. Only by understanding the true cause of the planetary crisis will we be able to resolve it.",
         "link": "https://www.youtube.com/watch?v=PQvZ6NCrC20",
         "tags": ["Talk", "SystemsThinking", "Metacrisis"],
-        "featured": true
+        "featured": true,
+        "quality": 5
     },
     {
         "title": "The Patterning Instinct: A Cultural History of Humanity's Search for Meaning",
         "description": "Culture shapes values. Values shape history. How will our values shape the future?",
         "link": "https://libro.fm/audiobooks/9781538450598",
         "tags": ["Book", "Culture", "Meaning"],
-        "featured": false
+        "quality": 5
     },
     {
         "title": "The Web of Meaning: Integrating Science and Traditional Wisdom to Find our Place in the Universe",
         "description": "A coherent and intellectually solid foundation for an alternative worldview based on deep interconnectedness, showing how modern scientific knowledge echoes the ancient wisdom of earlier cultures.",
         "link": "https://libro.fm/audiobooks/9781897408544",
         "tags": ["Book", "Philosophy", "SystemsThinking"],
-        "featured": false
+        "quality": 5
     },
     {
         "title": "The Ecology of Law: Toward a Legal System in Tune with Nature and Community",
         "description": "Learn how the legal system could be reformed to enable a future where both humanity and the living planet thrive, together.",
         "link": "https://libro.fm/audiobooks/9781626567979",
         "tags": ["Book", "Law", "SystemsThinking"],
-        "featured": false
+        "quality": 3
     },
     {
         "title": "The Social Dilemma: Discover What’s Hiding on the Other Side of Your Screen",
         "description": "Never before have a handful of tech designers had such control over the way billions of us think, act, and live our lives.",
         "link": "https://www.thesocialdilemma.com",
         "tags": ["Movie", "SurveillanceCapitalism", "Attention"],
-        "featured": false
+        "quality": 5
     },
     {
         "title": "Four Ways of Knowing the Meta Crisis",
         "description": "A short overview of the meta crisis by Jonathan Rowson",
         "link": "https://www.youtube.com/watch?v=NbBH1Hs_jLo",
         "tags": ["Video", "Metacrisis", "Perspectives"],
-        "featured": false
+        "quality": 2
+    },
+    {
+        "title": "Why Meaning in Life Matters for Societal Flourishing",
+        "description": "Research article giving an overview of ",
+        "link": "https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing",
+        "tags": ["Research", "Meaning", "Wellbeing"],
+        "quality": 4
+    },
+    {
+        "title": "Five Insights for Avoiding Global Collapse: What a 50-Year-Old Model of the World Taught Me About a Way Forward for Us Today",
+        "description": "Researcher Gaya Herrington outlines what it would take to create a future where society has transformed beyond the mere avoidance of collapse and is truly thriving.",
+        "link": "https://www.mdpi.com/books/mono/6206-five-insights-for-avoiding-global-collapse",
+        "tags": ["Book", "SystemsThinking", "Metacrisis"],
+        "quality": 4
     }
 ]

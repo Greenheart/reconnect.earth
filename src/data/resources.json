@@ -63,5 +63,12 @@
         "link": "https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing",
         "tags": ["Research", "Meaning", "Wellbeing"],
         "quality": 4
+    },
+    {
+        "title": "Foundations of Humane Technology",
+        "description": "A free, self-paced online course for professionals shaping tomorrow's technology.",
+        "link": "https://www.humanetech.com/course",
+        "tags": ["Course", "Wellbeing", "Technology"],
+        "quality": 4
     }
 ]

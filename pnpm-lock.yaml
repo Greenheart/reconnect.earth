@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource-variable/playfair-display':
-    specifier: ^5.0.9
-    version: 5.0.9
-  '@fontsource-variable/rosario':
-    specifier: ^5.0.9
-    version: 5.0.9
+  '@fontsource-variable/quicksand':
+    specifier: ^5.0.8
+    version: 5.0.8
   zod:
     specifier: ^3.22.2
     version: 3.22.2
@@ -272,12 +269,8 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource-variable/playfair-display@5.0.9:
-    resolution: {integrity: sha512-Ljj75d1lIR2YdePy5vb2CIJgqeu3w7I1DTNTkTClASrfNNgXL2+xzADu9z1W4dnmEJDE3k9OcoWi9sU40bs+aQ==}
-    dev: false
-
-  /@fontsource-variable/rosario@5.0.9:
-    resolution: {integrity: sha512-aZY8t/D7G5gq0GB9IQHPAf/F2P1t8oMtbz+eq7pENLWr+YBWG+KQqFT2eQpl8hv+7cOh6VD3E8fLXwfLmvP/QQ==}
+  /@fontsource-variable/quicksand@5.0.8:
+    resolution: {integrity: sha512-q+/Rb74Jru/oxhg3cdhTTWZ6sl3utTWSHQZZz5oeWmqvNVMyEaqzEuVwKhkZgZ8p5XotzHyr8M9YEB1NsmYWjw==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:

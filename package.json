@@ -33,8 +33,7 @@
         "semi": false
     },
     "dependencies": {
-        "@fontsource-variable/playfair-display": "^5.0.9",
-        "@fontsource-variable/rosario": "^5.0.9",
+        "@fontsource-variable/quicksand": "^5.0.8",
         "zod": "^3.22.2"
     }
 }

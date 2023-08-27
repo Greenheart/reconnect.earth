@@ -1,21 +1,5 @@
+import { RESOURCE_TYPES, type ResourceType } from './constants'
 import type { Resource } from './schema'
-
-const RESOURCE_TYPES = <const>[
-    'Video',
-    'Book',
-    'Podcast',
-    'Website',
-    'Report',
-    'Article',
-    'Guide',
-    'Toolkit',
-    'Webinar',
-    'Movie',
-    'Documentary',
-    'Research',
-]
-
-type ResourceType = (typeof RESOURCE_TYPES)[number]
 
 export const getSortedTags = (tags: string[]) => {
     return tags.sort((a, b) => {

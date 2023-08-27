@@ -1,27 +1,32 @@
 import type { Resource } from './schema'
 
-const resourceTypes = {
-    Video: true,
-    Book: true,
-    Podcast: true,
-    Website: true,
-    Report: true,
-    Article: true,
-    Guide: true,
-    Toolkit: true,
-    Webinar: true,
-}
+const RESOURCE_TYPES = <const>[
+    'Video',
+    'Book',
+    'Podcast',
+    'Website',
+    'Report',
+    'Article',
+    'Guide',
+    'Toolkit',
+    'Webinar',
+    'Movie',
+    'Documentary',
+    'Research',
+]
+
+type ResourceType = (typeof RESOURCE_TYPES)[number]
 
 export const getSortedTags = (tags: string[]) => {
     return tags.sort((a, b) => {
         let scoreA = 0
         let scoreB = 0
 
-        // Show special tags for resource types first
-        if (resourceTypes[a as keyof typeof resourceTypes]) {
+        // Ensure ResourceType tags appear first
+        if (RESOURCE_TYPES.includes(a as ResourceType)) {
             scoreA += 100
         }
-        if (resourceTypes[b as keyof typeof resourceTypes]) {
+        if (RESOURCE_TYPES.includes(b as ResourceType)) {
             scoreB += 100
         }
 

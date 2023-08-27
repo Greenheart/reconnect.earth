@@ -1,5 +1,13 @@
 [
     {
+        "title": "A healthy Economy should be designed to thrive, not to grow",
+        "description": "A must-watch TED-talk by Kate Raworth. A short and engaging introduction to how Doughnut Economics can help both humanity and the living planet to thrive together.",
+        "link": "https://www.youtube.com/watch?v=Rhcrbcg8HBw",
+        "tags": ["Video", "WellbeingEconomics"],
+        "featured": true,
+        "quality": 5
+    },
+    {
         "title": "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist",
         "description": "A must-read to learn how to use wellbeing economics to co-create a future where the needs of all are met within the means of the living planet.",
         "link": "https://libro.fm/audiobooks/9781473556256",
@@ -11,7 +19,7 @@
         "title": "Planet: Critical - Making Sense of the Crisis",
         "description": "Rachel has an unrivalled capacity for delivering facts and connecting the dots whilst being eloquent, engaging, compassionate, and witty. Only by understanding the true cause of the planetary crisis will we be able to resolve it.",
         "link": "https://www.youtube.com/watch?v=PQvZ6NCrC20",
-        "tags": ["Talk", "SystemsThinking", "Metacrisis"],
+        "tags": ["Video", "SystemsThinking", "Metacrisis"],
         "featured": true,
         "quality": 5
     },
@@ -40,14 +48,35 @@
         "title": "The Social Dilemma: Discover What’s Hiding on the Other Side of Your Screen",
         "description": "Never before have a handful of tech designers had such control over the way billions of us think, act, and live our lives.",
         "link": "https://www.thesocialdilemma.com",
-        "tags": ["Movie", "SurveillanceCapitalism", "Attention"],
+        "tags": ["Documentary", "SurveillanceCapitalism", "Attention"],
         "quality": 5
+    },
+    {
+        "title": "Why it's time for Doughnut Economics",
+        "description": "A short TED-talk exploring how the needs of all could be met within the means of the planet.",
+        "link": "https://www.youtube.com/watch?v=1BHOflzxPjI",
+        "tags": ["Video", "WellbeingEconomics"],
+        "quality": 4
+    },
+    {
+        "title": "The Myth of Freedom Under Capitalism",
+        "description": "Upstream Documentary. Although its intellectual handmaidens love to insist otherwise — capitalism is not a system that truly embodies freedom.",
+        "link": "https://www.upstreampodcast.org/the-myth-of-freedom-under-capitalism",
+        "tags": ["Podcast", "Documentary", "Freedom"],
+        "quality": 5
+    },
+    {
+        "title": "About Doughnut Economics",
+        "description": "The Doughnut offers a vision of what it means for humanity to thrive in the 21st century - and Doughnut Economics explores the mindset and ways of thinking needed to get us there.",
+        "link": "https://doughnuteconomics.org/about-doughnut-economics",
+        "tags": ["Website", "WellbeingEconomics"],
+        "quality": 4
     },
     {
         "title": "Four Ways of Knowing the Meta Crisis",
         "description": "A short overview of the meta crisis by Jonathan Rowson",
         "link": "https://www.youtube.com/watch?v=NbBH1Hs_jLo",
-        "tags": ["Video", "Metacrisis", "Perspectives"],
+        "tags": ["Video", "Metacrisis"],
         "quality": 2
     },
     {

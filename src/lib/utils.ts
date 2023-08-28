@@ -15,7 +15,7 @@ export const getSortedTags = (tags: string[]) => {
         }
 
         return scoreB - scoreA
-    })
+    }) as Resource['tags']
 }
 
 export const getFeaturedFirst = (a: Resource, b: Resource) => {

@@ -1,20 +1,42 @@
 <script lang="ts">
     import type { Resource } from '$lib/schema'
+    import { createSearchStore, searchHandler } from '$lib/stores/search'
+    import { onDestroy } from 'svelte'
 
     export let resources: Resource[]
+
+    const searchStore = createSearchStore({
+        data: resources,
+        getSearchTerms: ({ title, description, tags }) =>
+            `${title} ${description} ${tags.join(' ')}`,
+    })
+    const unsubscribe = searchStore.subscribe((store) => searchHandler(store))
+
+    onDestroy(() => {
+        unsubscribe()
+    })
 </script>
 
 <h2 class="h2 font-bold mb-2 gradient-heading">Resources</h2>
 
-<p class="mb-8">
+<p class="mb-4">
     Explore topics related to reconnect.earth. Learn how we can create a future
     where both humanity and the living planet thrive together.
 </p>
 
+<div class="mb-4">
+    <input
+        type="search"
+        placeholder="Search"
+        class="input w-64"
+        bind:value={$searchStore.search}
+    />
+</div>
+
 <!-- IDEA: Add search field to filter resources -->
 <!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
 <div class="grid grid-cols-2 gap-4">
-    {#each resources as resource}
+    {#each $searchStore.filtered as resource}
         <div
             class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
         >

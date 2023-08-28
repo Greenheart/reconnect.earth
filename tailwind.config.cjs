@@ -16,7 +16,7 @@ const config = {
     },
 
     plugins: [
-        ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')(),
+        require('@tailwindcss/forms'),
         plugin(({ addUtilities }) => {
             addUtilities({
                 '.gradient-heading': {
@@ -25,6 +25,7 @@ const config = {
                 },
             })
         }),
+        ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')(),
     ],
 }
 

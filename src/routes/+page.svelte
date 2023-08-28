@@ -1,4 +1,9 @@
 <script lang="ts">
+    import IconTree from '~icons/ri/tree-fill'
+    // import IconEarth from '~icons/ri/earth-line'
+    import IconBook from '~icons/ri/book-open-fill'
+    import IconGroup from '~icons/ri/group-fill'
+
     import Resources from '$components/Resources.svelte'
     import SectionCard from '$components/SectionCard.svelte'
     import type { PageData } from './$types'
@@ -57,19 +62,22 @@
             text="An invitation to reflect on how we all can live well while doing good in the world."
             cta="Explore"
             href="#"
-        />
+            ><IconTree slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        >
         <SectionCard
             title="Resource library"
             text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
             cta="Be curious"
             href="#"
-        />
+            ><IconBook slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        >
         <SectionCard
             title="Activities"
             text="Ways to engage with the Reconnect.earth process on your own or together with others."
             cta="Get started"
             href="#"
-        />
+            ><IconGroup slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        >
     </div>
 
     <hr class="my-16" />

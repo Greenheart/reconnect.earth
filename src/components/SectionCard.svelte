@@ -6,9 +6,10 @@
 </script>
 
 <div
-    class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr] max-w-md mx-auto sm:mx-0"
+    class="card p-4 grid gap-2 grid-rows-[min-content_min-content_min-content_1fr] max-w-md mx-auto sm:mx-0"
 >
-    <h3 class="h4 text-center font-bold">{title}</h3>
+    <slot name="icon" />
+    <h3 class="h4 text-center font-bold text-primary-500">{title}</h3>
     <p class="mb-2 text-lg">
         {text}
     </p>

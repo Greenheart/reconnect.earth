@@ -28,11 +28,11 @@ export const createSearchStore = <T extends Record<PropertyKey, any>>({
     return { subscribe, set, update }
 }
 
-export const searchHandler = <T extends Record<PropertyKey, any>>(
+export const updateSearchResults = <T extends Record<PropertyKey, any>>(
     model: SearchStoreModel<T>,
 ) => {
-    const searchTerm = model.search.trim().toLowerCase() || ''
+    const search = model.search.trim().toLowerCase() || ''
     model.filtered = model.data.filter((item) =>
-        item._searchTerms.includes(searchTerm),
+        item._searchTerms.includes(search),
     )
 }

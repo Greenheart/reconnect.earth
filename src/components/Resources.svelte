@@ -1,7 +1,10 @@
 <script lang="ts">
     import type { Resource } from '$lib/schema'
-    import { createSearchStore, searchHandler } from '$lib/stores/search'
+    import { createSearchStore, updateSearchResults } from '$lib/stores/search'
     import { onDestroy } from 'svelte'
+    import { flip } from 'svelte/animate'
+    import { quintOut } from 'svelte/easing'
+    import { crossfade, fade } from 'svelte/transition'
 
     export let resources: Resource[]
 
@@ -10,10 +13,18 @@
         getSearchTerms: ({ title, description, tags }) =>
             `${title} ${description} ${tags.join(' ')}`,
     })
-    const unsubscribe = searchStore.subscribe((store) => searchHandler(store))
+    const unsubscribe = searchStore.subscribe((model) =>
+        updateSearchResults(model),
+    )
 
-    onDestroy(() => {
-        unsubscribe()
+    onDestroy(() => unsubscribe)
+
+    const [send, receive] = crossfade({
+        duration: 500,
+        easing: quintOut,
+        fallback: (node) => {
+            return fade(node, { duration: 300 })
+        },
     })
 </script>
 
@@ -24,21 +35,33 @@
     where both humanity and the living planet thrive together.
 </p>
 
-<div class="mb-4">
-    <input
-        type="search"
-        placeholder="Search"
-        class="input w-64"
-        bind:value={$searchStore.search}
-    />
+<div class="mb-4 flex gap-2 items-center">
+    <div class="input-group input-group-divider grid-cols-[1fr_auto] w-80">
+        <input
+            type="search"
+            placeholder="Search"
+            bind:value={$searchStore.search}
+        />
+        <button
+            on:click={() => ($searchStore.search = '')}
+            style:display={$searchStore.search === '' ? 'none' : ''}>✕</button
+        >
+    </div>
+
+    <span class="ml-4 text-sm"
+        >Showing {$searchStore.filtered.length} / {resources.length}</span
+    >
 </div>
 
-<!-- IDEA: Add search field to filter resources -->
 <!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
 <div class="grid grid-cols-2 gap-4">
-    {#each $searchStore.filtered as resource}
+    {#each $searchStore.filtered as resource (resource.link)}
+        {@const key = resource.link}
         <div
             class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+            animate:flip={{ duration: 400 }}
+            in:send={{ key }}
+            out:receive={{ key }}
         >
             <h3 class="h3 font-bold">{resource.title}</h3>
             <p>{resource.description}</p>

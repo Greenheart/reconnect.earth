@@ -10,6 +10,7 @@
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
     },
     "devDependencies": {
+        "@iconify-json/ri": "^1.1.12",
         "@skeletonlabs/skeleton": "^1.12.0",
         "@sveltejs/adapter-static": "^2.0.3",
         "@sveltejs/kit": "^1.23.0",
@@ -24,6 +25,7 @@
         "tailwindcss": "^3.3.3",
         "tslib": "^2.6.2",
         "typescript": "^5.2.2",
+        "unplugin-icons": "^0.16.6",
         "vite": "^4.4.9"
     },
     "type": "module",

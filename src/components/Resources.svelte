@@ -1,10 +1,14 @@
 <script lang="ts">
-    import type { Resource } from '$lib/schema'
-    import { createSearchStore, updateSearchResults } from '$lib/stores/search'
     import { onDestroy } from 'svelte'
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
+
+    import IconShare from '~icons/ri/share-box-fill'
+
+    import type { Resource } from '$lib/schema'
+    import { createSearchStore, updateSearchResults } from '$lib/stores/search'
+    import SearchInput from './SearchInput.svelte'
 
     export let resources: Resource[]
 
@@ -36,17 +40,7 @@
 </p>
 
 <div class="mb-4 flex gap-2 items-center">
-    <div class="input-group input-group-divider grid-cols-[1fr_auto] w-80">
-        <input
-            type="search"
-            placeholder="Search"
-            bind:value={$searchStore.search}
-        />
-        <button
-            on:click={() => ($searchStore.search = '')}
-            style:display={$searchStore.search === '' ? 'none' : ''}>✕</button
-        >
-    </div>
+    <SearchInput {searchStore} />
 
     <span class="ml-4 text-sm"
         >Showing {$searchStore.filtered.length} / {resources.length}</span
@@ -75,21 +69,9 @@
                     class="btn variant-soft rounded-sm gap-1"
                     href={resource.link}
                     target="_blank"
-                    ><span class="flex items-stretch">Explore</span><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-5 h-5"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                        />
-                    </svg></a
-                >
+                    ><span class="flex items-stretch">Explore</span>
+                    <IconShare />
+                </a>
             </div>
         </div>
     {/each}

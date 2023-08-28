@@ -99,5 +99,21 @@
         "link": "https://www.humanetech.com/course",
         "tags": ["Course", "Wellbeing", "Technology"],
         "quality": 4
+    },
+    {
+        "title": "The Waterworks of Money: Charting the influence of big money on our society",
+        "description": "A production of  cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden",
+        "link": "https://www.waterworksofmoney.com",
+        "tags": ["Video", "Economics", "Freedom"],
+        "quality": 5,
+        "featured": true
+    },
+    {
+        "title": "Free Will is Political",
+        "description": "Video exploring the philosophy behind free will. Does Free Will really exist? And is it a wider social, cultural, and political concept?",
+        "link": "https://www.youtube.com/watch?v=N5wFFRBBG7M",
+        "tags": ["Video", "Freedom", "Culture"],
+        "quality": 5,
+        "featured": true
     }
 ]

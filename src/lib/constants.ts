@@ -30,6 +30,7 @@ export const RESOURCE_CATEGORIES = <const>[
     'Culture',
     'Technology',
     'Economics',
+    'Motivation',
 ]
 
 export type ResourceType = (typeof RESOURCE_TYPES)[number]

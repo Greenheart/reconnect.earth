@@ -115,5 +115,13 @@
         "tags": ["Video", "Freedom", "Culture"],
         "quality": 5,
         "featured": true
+    },
+    {
+        "title": "RSA ANIMATE: Drive: The surprising truth about what motivates us",
+        "description": "This lively RSA Animate, adapted from Dan Pink's talk at the RSA, illustrates the hidden truths behind what really motivates us at home and in the workplace.",
+        "link": "https://www.youtube.com/watch?v=u6XAPnuFjJc",
+        "tags": ["Video", "Motivation", "Culture"],
+        "quality": 5,
+        "featured": true
     }
 ]

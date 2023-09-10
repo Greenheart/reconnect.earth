@@ -7,7 +7,29 @@
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
-<p class="mb-4">
+<div class="grid sm:grid-cols-3 gap-4 mt-8">
+    <SectionCard
+        title="The Reconnect.earth process"
+        text="An invitation to reflect on how we all can live well while doing good in the world."
+        cta="Explore"
+        href="#"><IconTree slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    >
+    <SectionCard
+        title="Resource library"
+        text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
+        cta="Be curious"
+        href="/resources"
+        ><IconBook slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    >
+    <SectionCard
+        title="Activities"
+        text="Ways to engage with the Reconnect.earth process on your own or together with others."
+        cta="Get started"
+        href="#"><IconGroup slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    >
+</div>
+
+<p class="mb-4 mt-16">
     How can we all live meaningful and healthy lives? How can we do this <em
         >while</em
     > contributing a future with wellbeing for all, within the planetary boundaries?
@@ -38,28 +60,6 @@
     Reconnect.earth is a process and growing library of resources and activities
     to help you and your community to learn and increase your impact.
 </p>
-
-<div class="grid sm:grid-cols-3 gap-4 mt-8">
-    <SectionCard
-        title="The Reconnect.earth process"
-        text="An invitation to reflect on how we all can live well while doing good in the world."
-        cta="Explore"
-        href="#"><IconTree slot="icon" class="mx-auto w-8 h-8" /></SectionCard
-    >
-    <SectionCard
-        title="Resource library"
-        text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
-        cta="Be curious"
-        href="/resources"
-        ><IconBook slot="icon" class="mx-auto w-8 h-8" /></SectionCard
-    >
-    <SectionCard
-        title="Activities"
-        text="Ways to engage with the Reconnect.earth process on your own or together with others."
-        cta="Get started"
-        href="#"><IconGroup slot="icon" class="mx-auto w-8 h-8" /></SectionCard
-    >
-</div>
 
 <hr class="my-16" />
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { SITE_NAME } from '$lib/constants'
+    import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
     import '@fontsource-variable/quicksand'
     import '@skeletonlabs/skeleton/themes/theme-skeleton.css'
@@ -27,3 +27,13 @@
     </header>
     <slot />
 </main>
+
+<footer class="p-4 max-w-screen-md mx-auto px-4 mt-8">
+    <a href="/" class="link text-xl text-primary-500">Reconnect.earth</a>
+    <p class="pt-4">
+        This project is free and open source, co-created by a community <a
+            href={GITHUB_LINK}
+            class="link text-xl">Welcome to get involved!</a
+        >
+    </p>
+</footer>

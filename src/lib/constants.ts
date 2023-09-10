@@ -35,3 +35,5 @@ export const RESOURCE_CATEGORIES = <const>[
 
 export type ResourceType = (typeof RESOURCE_TYPES)[number]
 export type ResourceCategories = (typeof RESOURCE_CATEGORIES)[number]
+
+export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'

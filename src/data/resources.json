@@ -123,5 +123,13 @@
         "tags": ["Video", "Motivation", "Culture"],
         "quality": 5,
         "featured": true
+    },
+    {
+        "title": "The Web of Meaning: How Recognizing Our Interconnectedness Lays the Path to Full Flourishing",
+        "description": "Jeremy Lent introduces themes from his book, The Web of Meaning: Integrating Science and Traditional Wisdom to Find Our Place in the Universe.",
+        "link": "https://www.youtube.com/watch?v=1Zjr2hAIYGE",
+        "tags": ["Video", "Interconnectedness", "Culture"],
+        "quality": 5,
+        "featured": true
     }
 ]

@@ -1,20 +1,20 @@
-const plugin = require('tailwindcss/plugin')
+import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
+import { skeleton } from '@skeletonlabs/tw-plugin'
+import { join } from 'path'
 
-/** @type {import('tailwindcss').Config}*/
 const config = {
     darkMode: 'class',
     content: [
         './src/**/*.{html,js,svelte,ts}',
-        require('path').join(
+        join(
             require.resolve('@skeletonlabs/skeleton'),
             '../**/*.{html,js,svelte,ts}',
         ),
     ],
-
     theme: {
         extend: {},
     },
-
     plugins: [
         require('@tailwindcss/forms'),
         plugin(({ addUtilities }) => {
@@ -25,8 +25,13 @@ const config = {
                 },
             })
         }),
-        ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')(),
+        skeleton({
+            base: true,
+            themes: {
+                preset: ['skeleton']
+            }
+        }),
     ],
-}
+} satisfies Config
 
-module.exports = config
+export default config

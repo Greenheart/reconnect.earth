@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
 :root {
     --theme-font-family-base: 'Quicksand Variable', sans-serif;
     --theme-font-family-heading: 'Quicksand Variable', sans-serif;

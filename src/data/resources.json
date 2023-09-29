@@ -131,5 +131,12 @@
         "tags": ["Video", "Interconnectedness", "Culture"],
         "quality": 5,
         "featured": true
+    },
+    {
+        "title": "Bernie Krause: The voice of the natural world",
+        "description": "A surprising look at what we can learn by listening to wild soundscapes. Since Bernie Krause started recording 45+ years ago, he has seen many environments radically altered by humans, sometimes even by practices thought to be environmentally safe.",
+        "link": "https://www.youtube.com/watch?v=uTbA-mxo858",
+        "tags": ["Video", "Interconnectedness", "Ecology"],
+        "quality": 5
     }
 ]

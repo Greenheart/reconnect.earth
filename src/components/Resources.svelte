@@ -39,40 +39,52 @@
     where both humanity and the living planet thrive together.
 </p>
 
-<div class="mb-4 flex gap-2 items-center">
-    <SearchInput {searchStore} />
-
-    <span class="ml-4 text-sm"
-        >Showing {$searchStore.filtered.length} / {resources.length}</span
-    >
-</div>
-
 <!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
-<div class="grid grid-cols-2 gap-4">
-    {#each $searchStore.filtered as resource (resource.link)}
-        {@const key = resource.link}
-        <div
-            class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
-            animate:flip={{ duration: 400 }}
-            in:send={{ key }}
-            out:receive={{ key }}
-        >
-            <h3 class="h3 font-bold">{resource.title}</h3>
-            <p>{resource.description}</p>
-            <div class="flex gap-2 items-start text-sm">
-                {#each resource.tags as tag}
-                    <span class="text-primary-500">#{tag}</span>
-                {/each}
-            </div>
-            <div class="flex justify-end">
-                <a
-                    class="btn variant-soft rounded-sm gap-1"
-                    href={resource.link}
-                    target="_blank"
-                    ><span class="flex items-stretch">Explore</span>
-                    <IconShare />
-                </a>
-            </div>
+
+<div class="grid grid-cols-[300px_1fr] gap-4">
+    <div class="">
+        <SearchInput {searchStore} />
+
+        <div class="text-sm py-4">
+            Showing {$searchStore.filtered.length} / {resources.length}
         </div>
-    {/each}
+
+        <hr />
+
+        <!-- IDEA: Show library button to select all resources -->
+        <!-- IDEA: Show favourites (saved in localStorage) -->
+        <!-- IDEA: in the next section, show all resource types -->
+        <!-- IDEA: in the next section, show all resource categories -->
+        <!-- Allow selecting multiple categories to see more specific results -->
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+        {#each $searchStore.filtered as resource (resource.link)}
+            {@const key = resource.link}
+            <div
+                class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
+                animate:flip={{ duration: 400 }}
+                in:send={{ key }}
+                out:receive={{ key }}
+            >
+                <h3 class="h3 font-bold">{resource.title}</h3>
+                <p>{resource.description}</p>
+                <div
+                    class="flex gap-2 items-start text-sm flex-wrap content-start"
+                >
+                    {#each resource.tags as tag}
+                        <div class="text-primary-500">#{tag}</div>
+                    {/each}
+                </div>
+                <div class="flex justify-end">
+                    <a
+                        class="btn variant-soft rounded-sm gap-1"
+                        href={resource.link}
+                        target="_blank"
+                        ><span class="flex items-stretch">Explore</span>
+                        <IconShare />
+                    </a>
+                </div>
+            </div>
+        {/each}
+    </div>
 </div>

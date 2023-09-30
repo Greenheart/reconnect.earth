@@ -6,11 +6,14 @@
 
     import IconShare from '~icons/ri/share-box-fill'
     import IconLibrary from '~icons/ion/library'
+    import IconBookmark from '~icons/bi/bookmark'
+    import IconBookmarkFill from '~icons/bi/bookmark-fill'
     import IconBookmarksFill from '~icons/bi/bookmarks-fill'
 
     import type { Resource } from '$lib/schema'
     import { createSearchStore, updateSearchResults } from '$lib/stores/search'
     import SearchInput from './SearchInput.svelte'
+    import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks'
 
     export let resources: Resource[]
 
@@ -70,6 +73,7 @@
     <div class="grid sm:grid-cols-2 gap-4">
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
+            {@const isBookmarked = $bookmarks.includes(resource.link)}
             <div
                 class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
                 animate:flip={{ duration: 400 }}
@@ -85,7 +89,20 @@
                         <div class="text-primary-500">#{tag}</div>
                     {/each}
                 </div>
-                <div class="flex justify-end">
+                <div class="flex justify-between gap-2">
+                    <button
+                        class="btn variant-soft rounded-sm"
+                        on:click={() => toggleBookmark(resource)}
+                        aria-label={isBookmarked
+                            ? 'Remove bookmark'
+                            : 'Save bookmark'}
+                    >
+                        {#if isBookmarked}
+                            <IconBookmarkFill />
+                        {:else}
+                            <IconBookmark />
+                        {/if}
+                    </button>
                     <a
                         class="btn variant-soft rounded-sm gap-1"
                         href={resource.link}

@@ -5,6 +5,8 @@
     import { crossfade, fade } from 'svelte/transition'
 
     import IconShare from '~icons/ri/share-box-fill'
+    import IconLibrary from '~icons/ion/library'
+    import IconBookmarksFill from '~icons/bi/bookmarks-fill'
 
     import type { Resource } from '$lib/schema'
     import { createSearchStore, updateSearchResults } from '$lib/stores/search'
@@ -26,9 +28,7 @@
     const [send, receive] = crossfade({
         duration: 500,
         easing: quintOut,
-        fallback: (node) => {
-            return fade(node, { duration: 300 })
-        },
+        fallback: (node) => fade(node, { duration: 300 }),
     })
 </script>
 
@@ -49,7 +49,17 @@
             Showing {$searchStore.filtered.length} / {resources.length}
         </div>
 
-        <hr />
+        <div class="grid gap-2">
+            <button class="btn variant-soft-surface rounded-md justify-start">
+                <IconLibrary />
+                <span class="flex-grow text-left">Library</span>
+                <span>{resources.length}</span>
+            </button>
+            <button class="btn variant-soft-surface rounded-md justify-start">
+                <IconBookmarksFill />
+                <span>Bookmarks</span>
+            </button>
+        </div>
 
         <!-- IDEA: Show library button to select all resources -->
         <!-- IDEA: Show favourites (saved in localStorage) -->

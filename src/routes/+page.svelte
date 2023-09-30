@@ -1,24 +1,34 @@
 <script lang="ts">
-    import IconTree from '~icons/ri/tree-fill'
-    // import IconEarth from '~icons/ri/earth-line'
+    import IconEarth from '~icons/ion/earth'
     import IconLibrary from '~icons/ion/library'
     import IconPeopleFill from '~icons/bi/people-fill'
 
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
-<div class="max-w-xl grid sm:grid-cols-2 gap-8 pb-8 place-items-center">
-    <img
-        src="/undraw_connected_world_wuay.svg"
-        alt="Map of a connected world with dots and linked lines between continents"
-    />
-    <p>
-        Reconnect.earth is a collaborative <span class="text-primary-500"
-            >map</span
-        >
-        and <span class="text-primary-500">compass</span> for navigating a rapidly
-        changing world.
-    </p>
+<div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8">
+    <div class="max-w-sm mx-auto">
+        <img
+            src="/undraw_connected_world_wuay.svg"
+            alt="Map of a connected world with dots and linked lines between continents"
+        />
+    </div>
+    <div class="max-w-md">
+        <p class="pb-4">
+            Reconnect.earth is a collaborative <span class="text-primary-500"
+                >map</span
+            >
+            and <span class="text-primary-500">compass</span> for navigating a rapidly
+            changing world.
+        </p>
+        <p class="pb-4">
+            The map is an emerging library of resources and activities,
+            co-created by the community.
+        </p>
+        <p>
+            The compass is a set of principles inspired by doughnut economics.
+        </p>
+    </div>
 </div>
 
 <div class="grid sm:grid-cols-3 gap-4 mt-8">
@@ -26,7 +36,7 @@
         title="The Reconnect.earth process"
         text="An invitation to reflect on how we all can live well while doing good in the world."
         cta="Explore"
-        href="#"><IconTree slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        href="#"><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
     <SectionCard
         title="Resource library"
@@ -44,37 +54,35 @@
     >
 </div>
 
-<p class="mb-4 mt-16">
-    How can we all live meaningful and healthy lives? How can we do this <em
-        >while</em
-    > contributing a future with wellbeing for all, within the planetary boundaries?
-</p>
-<p>
-    This might feel like a daunting task, given how the metacrisis is affecting
-    the world (link to what we mean with the metacrisis).
-</p>
+<div class="max-w-prose mx-auto">
+    <p class="mb-4 mt-16 font-bold text-2xl">
+        How can we all live meaningful and healthy lives? How can we do this <em
+            >while</em
+        > contributing a future with wellbeing for all, within the planetary boundaries?
+    </p>
+    <p class="mb-4">
+        This might feel like a daunting task, given how the metacrisis is
+        affecting the world (link to what we mean with the metacrisis). Many
+        problems in today's world arise from disconnection - from ourselves,
+        each other, and from the living Earth. Up until now, efforts to tackle
+        these issues have unfortunately been focused on the symptoms of the
+        metacrisis, rather than the underlying causes.
+    </p>
 
-<p>
-    Many of the problems today stem from disconnection - from ourselves, each
-    other, and from the living Earth.
-</p>
+    <p class="mb-4">
+        We need a more systematic approach and we need to <span
+            class="text-primary-500">reconnect to what matters</span
+        >. We can redefine what it means to be an active citizen, prioritising
+        wellbeing on all levels while using more potent leverage points to more
+        effectively respond to the metacrisis.
+    </p>
 
-<p>
-    Today, a lot of efforts are unfortunately primarily focusing on the symptoms
-    of the metacrisis, rather than the underlying causes.
-</p>
-
-<p class="mb-4">
-    We need a more systematic approach and we need to reconnect. We can redefine
-    what it means to be an active citizen, prioritising wellbeing on all levels
-    while using more potent leverage points to more effectively respond to the
-    metacrisis.
-</p>
-
-<p>
-    Reconnect.earth is a process and growing library of resources and activities
-    to help you and your community to learn and increase your impact.
-</p>
+    <p>
+        Reconnect.earth is a process and growing library of resources and
+        activities to help you and your community to learn and increase your
+        impact.
+    </p>
+</div>
 
 <hr class="my-16" />
 

@@ -13,8 +13,11 @@
         alt="Map of a connected world with dots and linked lines between continents"
     />
     <p>
-        Reconnect.earth is a collaborative Map and Compass for navigating a
-        rapidly changing world.
+        Reconnect.earth is a collaborative <span class="text-primary-500"
+            >map</span
+        >
+        and <span class="text-primary-500">compass</span> for navigating a rapidly
+        changing world.
     </p>
 </div>
 

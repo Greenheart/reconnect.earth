@@ -6,14 +6,14 @@
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
-<div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8">
+<div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8 place-items-center">
     <div class="max-w-sm mx-auto">
         <img
             src="/undraw_connected_world_wuay.svg"
             alt="Map of a connected world with dots and linked lines between continents"
         />
     </div>
-    <div class="max-w-md">
+    <div class="max-w-md mx-auto sm:mx-0 place-self-start">
         <p class="pb-4">
             Reconnect.earth is a collaborative <span class="text-primary-500"
                 >map</span
@@ -22,11 +22,12 @@
             changing world.
         </p>
         <p class="pb-4">
-            The map is an emerging library of resources and activities,
-            co-created by the community.
+            The <span class="text-primary-500">map</span> is an emerging library
+            of resources and activities, co-created and improved by the community.
         </p>
         <p>
-            The compass is a set of principles inspired by doughnut economics.
+            The <span class="text-primary-500">compass</span> is a set of principles
+            inspired by Doughnut Economics, helping us create a thriving future.
         </p>
     </div>
 </div>
@@ -88,11 +89,34 @@
 
 <!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
 
-<h2 class="h2 font-bold mb-4 gradient-heading">Reclaim</h2>
-<h2 class="h2 font-bold mb-4 gradient-heading">Reflect</h2>
-<h2 class="h2 font-bold mb-4 gradient-heading">Reconnect</h2>
-<h2 class="h2 font-bold mb-4 gradient-heading">Reimagine</h2>
-<h2 class="h2 font-bold mb-4 gradient-heading">Regenerate</h2>
+<div class="max-w-prose mx-auto">
+    <h2 class="h1 font-bold gradient-heading pb-4">
+        The Reconnect.earth process
+    </h2>
+
+    <p class="pb-4">
+        <span class="text-primary-500">The helping hand</span> symbolises how this
+        is both a personal and a collective journey. By collaborating, we empower
+        ourselves and each other to make change possible.
+    </p>
+
+    <p class="pb-4">
+        There are five dimensions of learning and practice to help turn the
+        metacrisis from an abstract threat into actionable pathways towards a
+        better future.
+    </p>
+</div>
+
+<div class="grid grid-cols-[3fr_1fr] gap-8 max-w-lg mx-auto pt-4">
+    <img src="/hand.svg" alt="Hand" class="w-full place-self-center" />
+    <div class="flex flex-col justify-around font-bold gap-2">
+        <h2 class="h2 pb-1 gradient-heading">Reclaim</h2>
+        <h2 class="h2 pb-1 gradient-heading">Reflect</h2>
+        <h2 class="h2 pb-1 gradient-heading">Reconnect</h2>
+        <h2 class="h2 pb-1 gradient-heading">Reimagine</h2>
+        <h2 class="h2 pb-1 gradient-heading">Regenerate</h2>
+    </div>
+</div>
 
 <!-- IDEA: After learning about the framework, the first tree is joined by more trees, forming a forest. -->
 <!-- IDEA: Even further down, the view zooms out and you see forests and trees all over the Earth. Then finally, reconnect.earth and some CTA -->

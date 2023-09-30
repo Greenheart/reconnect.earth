@@ -64,7 +64,10 @@
             </button>
             <button class="btn variant-soft-surface rounded-md justify-start">
                 <IconBookmarksFill />
-                <span>Bookmarks</span>
+                <span class="flex-grow text-left">Bookmarks</span>
+                {#if $bookmarks.length}
+                    <span>{$bookmarks.length}</span>
+                {/if}
             </button>
         </div>
 
@@ -96,7 +99,7 @@
                 </div>
                 <div class="flex justify-between gap-2">
                     <button
-                        class="btn variant-soft rounded-sm"
+                        class="btn-icon hover:variant-soft rounded-sm"
                         on:click={() => toggleBookmark(resource)}
                         aria-label={label}
                         title={label}

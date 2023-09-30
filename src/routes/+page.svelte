@@ -1,11 +1,22 @@
 <script lang="ts">
     import IconTree from '~icons/ri/tree-fill'
     // import IconEarth from '~icons/ri/earth-line'
-    import IconBook from '~icons/ri/book-open-fill'
-    import IconGroup from '~icons/ri/group-fill'
+    import IconLibrary from '~icons/ion/library'
+    import IconPeopleFill from '~icons/bi/people-fill'
 
     import SectionCard from '$components/SectionCard.svelte'
 </script>
+
+<div class="max-w-xl grid sm:grid-cols-2 gap-8 pb-8 place-items-center">
+    <img
+        src="/undraw_connected_world_wuay.svg"
+        alt="Map of a connected world with dots and linked lines between continents"
+    />
+    <p>
+        Reconnect.earth is a collaborative Map and Compass for navigating a
+        rapidly changing world.
+    </p>
+</div>
 
 <div class="grid sm:grid-cols-3 gap-4 mt-8">
     <SectionCard
@@ -19,13 +30,14 @@
         text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
         cta="Be curious"
         href="/resources"
-        ><IconBook slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        ><IconLibrary slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
     <SectionCard
         title="Activities"
         text="Ways to engage with the Reconnect.earth process on your own or together with others."
         cta="Get started"
-        href="#"><IconGroup slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        href="#"
+        ><IconPeopleFill slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
 </div>
 
@@ -41,7 +53,7 @@
 
 <p>
     Many of the problems today stem from disconnection - from ourselves, each
-    other, and from the living planet.
+    other, and from the living Earth.
 </p>
 
 <p>
@@ -49,7 +61,7 @@
     of the metacrisis, rather than the underlying causes.
 </p>
 
-<p>
+<p class="mb-4">
     We need a more systematic approach and we need to reconnect. We can redefine
     what it means to be an active citizen, prioritising wellbeing on all levels
     while using more potent leverage points to more effectively respond to the

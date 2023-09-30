@@ -110,11 +110,11 @@
 <div class="grid grid-cols-[3fr_1fr] gap-8 max-w-lg mx-auto pt-4">
     <img src="/hand.svg" alt="Hand" class="w-full place-self-center" />
     <div class="flex flex-col justify-around font-bold gap-2">
-        <h2 class="h2 pb-1 gradient-heading">Reclaim</h2>
-        <h2 class="h2 pb-1 gradient-heading">Reflect</h2>
-        <h2 class="h2 pb-1 gradient-heading">Reconnect</h2>
-        <h2 class="h2 pb-1 gradient-heading">Reimagine</h2>
-        <h2 class="h2 pb-1 gradient-heading">Regenerate</h2>
+        <h2 class="h2 gradient-heading">Reclaim</h2>
+        <h2 class="h2 gradient-heading">Reflect</h2>
+        <h2 class="h2 gradient-heading">Reconnect</h2>
+        <h2 class="h2 gradient-heading">Reimagine</h2>
+        <h2 class="h2 gradient-heading">Regenerate</h2>
     </div>
 </div>
 

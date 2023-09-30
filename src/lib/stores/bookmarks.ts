@@ -1,11 +1,10 @@
 import type { Resource } from '$lib/schema'
-import { localStorageStore } from '@skeletonlabs/skeleton'
 import { get } from 'svelte/store'
+import persistedStore from '$lib/persistedStore'
 
-export const bookmarks = localStorageStore<Resource['link'][]>(
-    'resource_bookmarks',
-    [],
-)
+const KEY = 'resource_bookmarks'
+
+export const bookmarks = persistedStore<Resource['link'][]>(KEY, [])
 
 export function toggleBookmark(resource: Resource) {
     const current = get(bookmarks)

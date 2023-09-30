@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onDestroy } from 'svelte'
+    import { onDestroy, onMount } from 'svelte'
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
@@ -25,6 +25,10 @@
     const unsubscribe = searchStore.subscribe((model) =>
         updateSearchResults(model),
     )
+
+    onMount(() => {
+        bookmarks.useLocalStorage()
+    })
 
     onDestroy(() => unsubscribe)
 
@@ -74,6 +78,7 @@
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
             {@const isBookmarked = $bookmarks.includes(resource.link)}
+            {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
             <div
                 class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"
                 animate:flip={{ duration: 400 }}
@@ -93,9 +98,8 @@
                     <button
                         class="btn variant-soft rounded-sm"
                         on:click={() => toggleBookmark(resource)}
-                        aria-label={isBookmarked
-                            ? 'Remove bookmark'
-                            : 'Save bookmark'}
+                        aria-label={label}
+                        title={label}
                     >
                         {#if isBookmarked}
                             <IconBookmarkFill />

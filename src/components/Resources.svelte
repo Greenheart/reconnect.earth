@@ -14,8 +14,14 @@
     import { createSearchStore, updateSearchResults } from '$lib/stores/search'
     import SearchInput from './SearchInput.svelte'
     import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks'
+    import { writable } from 'svelte/store'
 
     export let resources: Resource[]
+
+    // TODO: make this work together with the filters
+    // Might be worth applying search filters in the search store
+    // This way, we could combine multiple kinds of searching and filtering
+    const filteredResources = writable()
 
     const searchStore = createSearchStore({
         data: resources,

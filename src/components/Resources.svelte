@@ -3,7 +3,6 @@
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
-    import { writable } from 'svelte/store'
 
     import IconShare from '~icons/ri/share-box-fill'
     import IconLibrary from '~icons/ion/library'
@@ -24,18 +23,13 @@
 
     export let resources: Resource[]
 
-    // TODO: make this work together with the filters
-    // Might be worth applying search filters in the search store
-    // This way, we could combine multiple kinds of searching and filtering
-    const filteredResources = writable()
-
     const searchStore = createSearchStore({
         data: resources,
         getSearchTerms: ({ title, description, tags }) =>
             `${title} ${description} ${tags.join(' ')}`,
     })
 
-    // TODO: We need to re-run the search when selected tags change.
+    // TODO: Consider moving this into the search store
     function keepMatchingResources(resource: Resource) {
         const matchesTags = $searchStore.tags.length
             ? $searchStore.tags.some((tag) =>
@@ -46,6 +40,18 @@
         return $searchStore.showBookmarks
             ? matchesTags && $bookmarks.includes(resource.link)
             : matchesTags
+    }
+
+    function countResourcesWithTag(resources: Resource[]) {
+        return (tag: ResourceTag) =>
+            resources.filter((r) => r.tags.includes(tag)).length
+    }
+
+    function getRelevantTags(tags: readonly ResourceTag[]) {
+        const count = countResourcesWithTag(resources)
+        return tags
+            .filter((tag) => count(tag) >= 1)
+            .sort((a, b) => count(b) - count(a))
     }
 
     const unsubscribe = searchStore.subscribe((model) =>
@@ -80,10 +86,10 @@
     where both humanity and the living planet thrive together.
 </p>
 
-<!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
-
+<!-- TODO: Make sure the clear button in the search input remains visible -->
+<!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->
 <div class="grid grid-cols-[250px_1fr] gap-4">
-    <div class="">
+    <div>
         <SearchInput {searchStore} />
 
         <div class="grid gap-2 pb-8 pt-4">
@@ -96,7 +102,10 @@
                 <span>{resources.length}</span>
             </button>
             <button
-                class="btn variant-soft-surface rounded-md justify-start"
+                class={cx(
+                    'btn variant-soft-surface rounded-md justify-start',
+                    $searchStore.showBookmarks ? 'bg-surface-active-token' : '',
+                )}
                 on:click={() =>
                     ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
             >
@@ -108,12 +117,14 @@
             </button>
         </div>
 
-        <div class="flex flex-col items-start gap-1 pb-8">
+        <!-- TODO: Update lists of filters to only show possible combinations -->
+        <!-- For example, hide tags that can't be combined with the current other filters -->
+        <div class="grid gap-1 pb-8">
             <h2 class="h3 font-bold">Resource types</h2>
-            {#each Array.from(RESOURCE_TYPES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as tag (tag)}
+            {#each getRelevantTags(RESOURCE_TYPES) as tag (tag)}
                 <button
                     class={cx(
-                        'text-left chip',
+                        'text-left chip w-full flex justify-start hover:variant-soft-surface',
                         $searchStore.tags.includes(tag)
                             ? 'variant-soft-surface'
                             : '',
@@ -129,12 +140,12 @@
             {/each}
         </div>
 
-        <div class="flex flex-col items-start gap-1 pb-8">
+        <div class="grid gap-1 pb-8">
             <h2 class="h3 font-bold">Categories</h2>
             {#each Array.from(RESOURCE_CATEGORIES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as tag (tag)}
                 <button
                     class={cx(
-                        'text-left chip',
+                        'text-left chip w-full flex justify-start hover:variant-soft-surface',
                         $searchStore.tags.includes(tag)
                             ? 'variant-soft-surface'
                             : '',
@@ -149,14 +160,20 @@
                 </button>
             {/each}
         </div>
-
-        <!-- IDEA: Show library button to select all resources -->
-        <!-- IDEA: Show favourites (saved in localStorage) -->
-        <!-- IDEA: in the next section, show all resource types -->
-        <!-- IDEA: in the next section, show all resource categories -->
-        <!-- Allow selecting multiple categories to see more specific results -->
     </div>
     <div class="grid sm:grid-cols-2 gap-4 place-content-start">
+        <div
+            class="col-span-full flex justify-between text-sm h-10 mb-0.5 items-center"
+        >
+            <span
+                >Showing {$searchStore.filtered.length} / {resources.length}</span
+            >
+            <button
+                class="btn variant-outline-surface btn-sm rounded-md"
+                class:hidden={$searchStore.filtered.length === resources.length}
+                on:click={() => searchStore.reset()}>Show all</button
+            >
+        </div>
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
             {@const isBookmarked = $bookmarks.includes(resource.link)}

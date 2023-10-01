@@ -6,8 +6,6 @@
     export let searchStore: Writable<SearchStoreModel<any>>
 </script>
 
-<!-- IDEA: Maybe change this into reset all filters -->
-
 <div class="input-group grid-cols-[auto_1fr_auto] max-w-[300px] rounded-md">
     <div class="!pl-3 !pr-0">
         <IconSearch />

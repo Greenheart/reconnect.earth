@@ -22,15 +22,22 @@ export const createSearchStore = <T extends Record<PropertyKey, any>>({
         item._searchTerms = getSearchTerms(item).trim().toLowerCase()
         return item
     })
-    const { subscribe, set, update } = writable<SearchStoreModel<T>>({
+
+    const defaultState = {
         data: indexedData,
         filtered: indexedData,
         search: '',
         tags: [],
         showBookmarks: false,
+    }
+
+    const { subscribe, set, update } = writable<SearchStoreModel<T>>({
+        ...defaultState,
     })
 
-    return { subscribe, set, update }
+    const reset = () => set({ ...defaultState })
+
+    return { subscribe, set, update, reset }
 }
 
 export const updateSearchResults = <T extends Record<PropertyKey, any>>(

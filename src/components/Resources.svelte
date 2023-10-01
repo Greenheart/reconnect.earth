@@ -3,6 +3,7 @@
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
+    import { writable } from 'svelte/store'
 
     import IconShare from '~icons/ri/share-box-fill'
     import IconLibrary from '~icons/ion/library'
@@ -14,8 +15,12 @@
     import { createSearchStore, updateSearchResults } from '$lib/stores/search'
     import SearchInput from './SearchInput.svelte'
     import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks'
-    import { writable } from 'svelte/store'
-    import { RESOURCE_CATEGORIES } from '$lib/constants'
+    import {
+        RESOURCE_CATEGORIES,
+        RESOURCE_TYPES,
+        type ResourceTag,
+    } from '$lib/constants'
+    import { cx } from '$lib/utils'
 
     export let resources: Resource[]
 
@@ -29,9 +34,31 @@
         getSearchTerms: ({ title, description, tags }) =>
             `${title} ${description} ${tags.join(' ')}`,
     })
+
+    // TODO: We need to re-run the search when selected tags change.
+    function keepMatchingResources(resource: Resource) {
+        const matchesTags = $searchStore.tags.length
+            ? $searchStore.tags.some((tag) =>
+                  resource.tags.includes(tag as ResourceTag),
+              )
+            : true
+
+        return $searchStore.showBookmarks
+            ? matchesTags && $bookmarks.includes(resource.link)
+            : matchesTags
+    }
+
     const unsubscribe = searchStore.subscribe((model) =>
-        updateSearchResults(model),
+        updateSearchResults(model, keepMatchingResources),
     )
+
+    function toggleTag(tag: ResourceTag) {
+        if ($searchStore.tags.includes(tag)) {
+            $searchStore.tags = $searchStore.tags.filter((t) => t !== tag)
+        } else {
+            $searchStore.tags = [...$searchStore.tags, tag]
+        }
+    }
 
     onMount(() => {
         bookmarks.useLocalStorage()
@@ -59,17 +86,20 @@
     <div class="">
         <SearchInput {searchStore} />
 
-        <div class="text-sm py-4">
-            Showing {$searchStore.filtered.length} / {resources.length}
-        </div>
-
-        <div class="grid gap-2">
-            <button class="btn variant-soft-surface rounded-md justify-start">
+        <div class="grid gap-2 pb-8 pt-4">
+            <button
+                class="btn variant-soft-surface rounded-md justify-start"
+                on:click={() => ($searchStore.showBookmarks = false)}
+            >
                 <IconLibrary />
                 <span class="flex-grow text-left">Library</span>
                 <span>{resources.length}</span>
             </button>
-            <button class="btn variant-soft-surface rounded-md justify-start">
+            <button
+                class="btn variant-soft-surface rounded-md justify-start"
+                on:click={() =>
+                    ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
+            >
                 <IconBookmarksFill />
                 <span class="flex-grow text-left">Bookmarks</span>
                 {#if $bookmarks.length}
@@ -78,13 +108,42 @@
             </button>
         </div>
 
-        <div class="flex flex-col items-start gap-1 py-8 text-base">
+        <div class="flex flex-col items-start gap-1 pb-8">
+            <h2 class="h3 font-bold">Resource types</h2>
+            {#each Array.from(RESOURCE_TYPES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as tag (tag)}
+                <button
+                    class={cx(
+                        'text-left chip',
+                        $searchStore.tags.includes(tag)
+                            ? 'variant-soft-surface'
+                            : '',
+                    )}
+                    on:click={() => toggleTag(tag)}
+                >
+                    <span class="text-primary-500">#{tag}</span>
+                    <span class="text-gray-300"
+                        >({resources.filter((r) => r.tags.includes(tag))
+                            .length})</span
+                    >
+                </button>
+            {/each}
+        </div>
+
+        <div class="flex flex-col items-start gap-1 pb-8">
             <h2 class="h3 font-bold">Categories</h2>
-            {#each Array.from(RESOURCE_CATEGORIES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as category (category)}
-                <button class="text-left">
-                    <span class="text-primary-500">#{category}</span>
-                    <span class="text-right text-gray-300"
-                        >({resources.filter((r) => r.tags.includes(category))
+            {#each Array.from(RESOURCE_CATEGORIES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as tag (tag)}
+                <button
+                    class={cx(
+                        'text-left chip',
+                        $searchStore.tags.includes(tag)
+                            ? 'variant-soft-surface'
+                            : '',
+                    )}
+                    on:click={() => toggleTag(tag)}
+                >
+                    <span class="text-primary-500">#{tag}</span>
+                    <span class="text-gray-300"
+                        >({resources.filter((r) => r.tags.includes(tag))
                             .length})</span
                     >
                 </button>
@@ -97,7 +156,7 @@
         <!-- IDEA: in the next section, show all resource categories -->
         <!-- Allow selecting multiple categories to see more specific results -->
     </div>
-    <div class="grid sm:grid-cols-2 gap-4">
+    <div class="grid sm:grid-cols-2 gap-4 place-content-start">
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
             {@const isBookmarked = $bookmarks.includes(resource.link)}

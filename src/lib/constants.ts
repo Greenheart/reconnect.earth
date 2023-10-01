@@ -1,4 +1,5 @@
 export const SITE_NAME = 'Reconnect.earth'
+export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'
 
 export const RESOURCE_TYPES = <const>[
     'Video',
@@ -35,7 +36,8 @@ export const RESOURCE_CATEGORIES = <const>[
     'Ecology',
 ]
 
-export type ResourceType = (typeof RESOURCE_TYPES)[number]
-export type ResourceCategories = (typeof RESOURCE_CATEGORIES)[number]
+export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]
 
-export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'
+export type ResourceType = (typeof RESOURCE_TYPES)[number]
+export type ResourceCategory = (typeof RESOURCE_CATEGORIES)[number]
+export type ResourceTag = (typeof RESOURCE_TAGS)[number]

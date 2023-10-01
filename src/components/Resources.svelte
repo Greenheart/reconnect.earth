@@ -42,13 +42,14 @@
             : matchesTags
     }
 
-    function countResourcesWithTag(resources: Resource[]) {
-        return (tag: ResourceTag) =>
-            resources.filter((r) => r.tags.includes(tag)).length
+    function countResourcesWithTag(tag: ResourceTag) {
+        // IDEA: By switching to the resources from $searchStore.filtered, we only show relevant tags
+        // return $searchStore.filtered.filter((r) => r.tags.includes(tag)).length
+        return resources.filter((r) => r.tags.includes(tag)).length
     }
 
     function getRelevantTags(tags: readonly ResourceTag[]) {
-        const count = countResourcesWithTag(resources)
+        const count = countResourcesWithTag
         return tags
             .filter((tag) => count(tag) >= 1)
             .sort((a, b) => count(b) - count(a))
@@ -119,6 +120,10 @@
 
         <!-- TODO: Update lists of filters to only show possible combinations -->
         <!-- For example, hide tags that can't be combined with the current other filters -->
+        <!-- IDEA: Maybe move the sidebar list of tags out into a separate component -->
+        <!-- TODO: Maybe always render all tags and show how many items that tag has -->
+        <!-- TODO: Maybe disable irrelevant tags rather than showing them -->
+        <!-- TODO: Maybe change the animation when results change -->
         <div class="grid gap-1 pb-8">
             <h2 class="h3 font-bold">Resource types</h2>
             {#each getRelevantTags(RESOURCE_TYPES) as tag (tag)}
@@ -132,9 +137,9 @@
                     on:click={() => toggleTag(tag)}
                 >
                     <span class="text-primary-500">#{tag}</span>
+                    <!-- TODO: Make the count update when filters change -->
                     <span class="text-gray-300"
-                        >({resources.filter((r) => r.tags.includes(tag))
-                            .length})</span
+                        >({countResourcesWithTag(tag)})</span
                     >
                 </button>
             {/each}
@@ -142,7 +147,7 @@
 
         <div class="grid gap-1 pb-8">
             <h2 class="h3 font-bold">Categories</h2>
-            {#each Array.from(RESOURCE_CATEGORIES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as tag (tag)}
+            {#each getRelevantTags(RESOURCE_CATEGORIES) as tag (tag)}
                 <button
                     class={cx(
                         'text-left chip w-full flex justify-start hover:variant-soft-surface',
@@ -153,9 +158,9 @@
                     on:click={() => toggleTag(tag)}
                 >
                     <span class="text-primary-500">#{tag}</span>
+                    <!-- TODO: Make the count update when filters change -->
                     <span class="text-gray-300"
-                        >({resources.filter((r) => r.tags.includes(tag))
-                            .length})</span
+                        >({countResourcesWithTag(tag)})</span
                     >
                 </button>
             {/each}

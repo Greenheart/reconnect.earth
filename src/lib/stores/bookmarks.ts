@@ -1,5 +1,5 @@
-import type { Resource } from '$lib/schema'
 import { get } from 'svelte/store'
+import type { Resource } from '$lib/schema'
 import persistedStore from '$lib/persistedStore'
 
 const KEY = 'resource_bookmarks'

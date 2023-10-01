@@ -15,6 +15,7 @@
     import SearchInput from './SearchInput.svelte'
     import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks'
     import { writable } from 'svelte/store'
+    import { RESOURCE_CATEGORIES } from '$lib/constants'
 
     export let resources: Resource[]
 
@@ -54,7 +55,7 @@
 
 <!-- IDEA: Add filters to only show specific tags. Add tags to array and then filter resources with those tags. Reset button  -->
 
-<div class="grid grid-cols-[300px_1fr] gap-4">
+<div class="grid grid-cols-[250px_1fr] gap-4">
     <div class="">
         <SearchInput {searchStore} />
 
@@ -75,6 +76,19 @@
                     <span>{$bookmarks.length}</span>
                 {/if}
             </button>
+        </div>
+
+        <div class="flex flex-col items-start gap-1 py-8 text-base">
+            <h2 class="h3 font-bold">Categories</h2>
+            {#each Array.from(RESOURCE_CATEGORIES).sort((a, b) => resources.filter( (r) => r.tags.includes(b), ).length - resources.filter( (r) => r.tags.includes(a), ).length) as category (category)}
+                <button class="text-left">
+                    <span class="text-primary-500">#{category}</span>
+                    <span class="text-right text-gray-300"
+                        >({resources.filter((r) => r.tags.includes(category))
+                            .length})</span
+                    >
+                </button>
+            {/each}
         </div>
 
         <!-- IDEA: Show library button to select all resources -->

@@ -87,10 +87,8 @@
 
 <hr class="my-16" />
 
-<!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
-
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading pb-4">
+    <h2 class="h1 font-bold gradient-heading mb-3">
         The Reconnect.earth process
     </h2>
 
@@ -118,5 +116,9 @@
     </div>
 </div>
 
+<!-- TODO: Maybe describe the map (resources and activities?) -->
+<!-- TODO: Maybe describe the compass (principles)? -->
+
+<!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
 <!-- IDEA: After learning about the framework, the first tree is joined by more trees, forming a forest. -->
 <!-- IDEA: Even further down, the view zooms out and you see forests and trees all over the Earth. Then finally, reconnect.earth and some CTA -->

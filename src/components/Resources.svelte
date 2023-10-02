@@ -173,16 +173,14 @@
         </div>
     </div>
     <div class="grid sm:grid-cols-2 gap-4 place-content-start">
-        <div
-            class="col-span-full flex justify-between text-sm h-10 mb-0.5 items-center"
-        >
+        <div class="col-span-full flex gap-4 text-sm h-10 mb-0.5 items-center">
             <span
                 >Showing {$searchStore.filtered.length} / {resources.length}</span
             >
             <button
                 class="btn variant-outline-surface btn-sm rounded-md"
                 class:hidden={$searchStore.filtered.length === resources.length}
-                on:click={() => searchStore.reset()}>Show all</button
+                on:click={() => searchStore.reset()}>Reset filters</button
             >
         </div>
         {#each $searchStore.filtered as resource (resource.link)}

@@ -109,6 +109,12 @@
                 )}
                 on:click={() =>
                     ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
+                disabled={!$bookmarks.length ||
+                    !$bookmarks.some((bookmark) =>
+                        $searchStore.filtered.some(
+                            (resource) => resource.link === bookmark,
+                        ),
+                    )}
             >
                 <IconBookmarksFill />
                 <span class="flex-grow text-left">Bookmarks</span>

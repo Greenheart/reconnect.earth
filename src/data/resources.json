@@ -138,5 +138,13 @@
         "link": "https://www.youtube.com/watch?v=uTbA-mxo858",
         "tags": ["Video", "Interconnectedness", "Ecology"],
         "quality": 5
+    },
+    {
+        "title": "Presenting Doughnut Economics: Core Concepts of Doughnut Economics",
+        "description": "Kate Raworth introduces the Doughnut and the seven ways to think like a 21st century economist.",
+        "link": "https://www.youtube.com/watch?v=Cvh7p6IehSo",
+        "tags": ["Video", "WellbeingEconomics", "Economics"],
+        "quality": 5,
+        "featured": true
     }
 ]

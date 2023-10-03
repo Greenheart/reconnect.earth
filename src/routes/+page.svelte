@@ -142,15 +142,7 @@
 <div class="max-w-prose mx-auto">
     <h2 class="h1 font-bold gradient-heading" id="activities">Activities</h2>
 
-    <!-- TODO: find a good image or visual to showcase what collaborative activities could mean -->
-    <div class="grid py-4">
-        <Img
-            class="rounded-md"
-            src={treeOfReconnection}
-            alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
-        />
-        <p class="text-center pt-2 italic">The Tree of Reconnection</p>
-    </div>
+    <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
 
     <p class="pb-4">
         To make it easier to engage with and participate in the Reconnect.earth

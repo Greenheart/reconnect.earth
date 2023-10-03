@@ -1,0 +1,10 @@
+{
+    "silent": true,
+    "redirects": [
+        {
+            "source": "/lifewheel",
+            "destination": "/lifewheel/",
+            "permanent": false
+        }
+    ]
+}

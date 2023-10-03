@@ -40,6 +40,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.8.0
     version: 20.8.0
+  '@vitejs/plugin-basic-ssl':
+    specifier: ^1.0.1
+    version: 1.0.1(vite@4.4.9)
   '@zerodevx/svelte-img':
     specifier: ^2.1.0
     version: 2.1.0(svelte@4.2.1)
@@ -524,6 +527,15 @@ packages:
 
   /@types/pug@2.0.7:
     resolution: {integrity: sha512-I469DU0UXNC1aHepwirWhu9YKg5fkxohZD95Ey/5A7lovC+Siu+MCLffva87lnfThaOrw9Vb1DUN5t55oULAAw==}
+    dev: true
+
+  /@vitejs/plugin-basic-ssl@1.0.1(vite@4.4.9):
+    resolution: {integrity: sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==}
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 4.4.9(@types/node@20.8.0)
     dev: true
 
   /@zerodevx/svelte-img@2.1.0(svelte@4.2.1):

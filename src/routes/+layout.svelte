@@ -17,11 +17,7 @@
             </h1>
         </a>
 
-        <h2 class="h2 mb-16">
-            <!-- Thrive in life while contributing to a thriving future -->
-            <!-- Live well while doing good in the world -->
-            Thrive in life while doing good in the world
-        </h2>
+        <h2 class="h2 mb-16">Thrive in life while doing good in the world</h2>
     </header>
     <slot />
 </main>
@@ -29,9 +25,7 @@
 <footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-xl">
     <p>🌍 &nbsp;{SITE_NAME}</p>
     <p class="pt-4">
-        This project is free and open source, co-created by the community. <a
-            href={GITHUB_LINK}
-            class="link">Welcome to get involved!</a
-        >
+        This project is free and open source, co-created by the community.
     </p>
+    <p><a href={GITHUB_LINK} class="link">Welcome to get involved!</a></p>
 </footer>

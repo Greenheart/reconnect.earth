@@ -25,16 +25,22 @@
             and <span class="text-primary-500">compass</span> for navigating a rapidly
             changing world.
         </p>
+        <!-- <p class="pb-4">
+            What we refer to as the <span class="text-primary-500">map</span> is
+            the result of exploring pathways towards a thriving future. Together
+            with the community, we are developing the Reconnect.earth process and
+            an emerging library of resources and activities.
+        </p> -->
         <p class="pb-4">
-            We don't have an exact map showing the way to a thriving future.
-            Instead, we are exploring the world and developing the
-            Reconnect.earth process and an emerging library of resources and
-            activities. This is the <span class="text-primary-500">map</span>,
-            co-created by the community.
+            The <span class="text-primary-500">map</span> is the result of exploring
+            pathways towards a thriving future, together with the community. The
+            map includes the Reconnect.earth process and an emerging library of resources
+            and activities.
         </p>
         <p>
             The <span class="text-primary-500">compass</span> is a set of principles
-            inspired by Doughnut Economics, helping us create a thriving future.
+            inspired by Doughnut Economics, helping us ensure the wellbeing for all
+            within the means of the planet.
         </p>
     </div>
 </div>

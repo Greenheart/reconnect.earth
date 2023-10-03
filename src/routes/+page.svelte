@@ -8,6 +8,8 @@
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
+<!-- TODO: increase main font size on larger screens to make it easier to read -->
+
 <div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8 place-items-center">
     <div class="max-w-sm mx-auto">
         <img
@@ -163,10 +165,9 @@
         The library of activities includes everything from workshops and
         learning circles to creative sessions and civic tech hackathons. Just
         like the
-        <a href="/resources" class="text-primary-500 underline"
-            >resource library</a
-        >, the activities are co-created by and for the community. Welcome to
-        share your favourite ways of engaging!
+        <a href="/resources" class="link">resource library</a>, the activities
+        are co-created by and for the community. Welcome to share your favourite
+        ways of engaging!
     </p>
 </div>
 

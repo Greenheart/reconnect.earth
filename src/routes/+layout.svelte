@@ -26,12 +26,12 @@
     <slot />
 </main>
 
-<footer class="p-4 max-w-screen-md mx-auto px-4 mt-8">
-    <a href="/" class="link text-xl text-primary-500">Reconnect.earth</a>
+<footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-xl">
+    <p>🌍 &nbsp;{SITE_NAME}</p>
     <p class="pt-4">
-        This project is free and open source, co-created by a community <a
+        This project is free and open source, co-created by the community. <a
             href={GITHUB_LINK}
-            class="link text-xl">Welcome to get involved!</a
+            class="link">Welcome to get involved!</a
         >
     </p>
 </footer>

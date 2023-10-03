@@ -23,10 +23,49 @@
             and <span class="text-primary-500">compass</span> for navigating a rapidly
             changing world.
         </p>
-        <p class="pb-4">
+        <!-- <p class="pb-4">
             The <span class="text-primary-500">map</span> is an emerging library
             of resources and activities, co-created and improved by the community.
         </p>
+        <p class="pb-4">
+            The <span class="text-primary-500">map</span> is the Reconnect.earth
+            process, combined with an emerging library of resources and activities,
+            co-created and improved by the community.
+        </p> -->
+        <!-- <p class="pb-4">
+            We don't have an exact map showing the way to a thriving future.
+            Instead, we're exploring the world and creating the <span
+                class="text-primary-500">map</span
+            > together with the community. It shows the Reconnect.earth process,
+            and the emerging library of resources and activities.
+        </p> -->
+        <p class="pb-4">
+            We don't have an exact map showing the way to a thriving future.
+            Instead, we are exploring the world and developing the
+            Reconnect.earth process and an emerging library of resources and
+            activities. This is the <span class="text-primary-500">map</span>,
+            co-created by the community.
+        </p>
+        <!-- <p class="pb-4">
+            The <span class="text-primary-500">map</span> shows you the Reconnect.earth
+            process and an emerging library of resources and activities, co-created
+            and improved by the community.
+        </p> -->
+        <!-- <p class="pb-4">
+            The <span class="text-primary-500">map</span> is the Reconnect.earth
+            process and an emerging library of resources and activities, co-created
+            and improved by the community.
+        </p>
+        <p class="pb-4">
+            The <span class="text-primary-500">map</span> consists of the Reconnect.earth
+            process and an emerging library of resources and activities, co-created
+            and improved by the community.
+        </p>
+        <p class="pb-4">
+            The <span class="text-primary-500">map</span> is a combination of the
+            Reconnect.earth process and an emerging library of resources and activities,
+            co-created and improved by the community.
+        </p> -->
         <p>
             The <span class="text-primary-500">compass</span> is a set of principles
             inspired by Doughnut Economics, helping us create a thriving future.
@@ -37,7 +76,7 @@
 <div class="grid sm:grid-cols-3 gap-4 mt-8">
     <SectionCard
         title="The Reconnect.earth process"
-        text="An invitation to reflect on how we all can live well while doing good in the world."
+        text="Pathways towards how we all can live well while doing good in the world."
         cta="Explore"
         href="#the-process"
         ><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
@@ -81,10 +120,13 @@
         effectively respond to the metacrisis.
     </p>
 
-    <p>
-        Reconnect.earth is a process and growing library of resources and
-        activities to help you and your community to learn and increase your
-        impact.
+    <p class="pb-4">
+        Reconnect.earth is a collaborative <span class="text-primary-500"
+            >map</span
+        >
+        and <span class="text-primary-500">compass</span> for navigating a rapidly
+        changing world. The goal is to explore and share pathways towards how we
+        all can thrive in life while doing good in the world.
     </p>
 </div>
 
@@ -186,9 +228,6 @@
         share your favourite ways of engaging!
     </p>
 </div>
-
-<!-- TODO: Maybe describe the map (resources and activities?) -->
-<!-- TODO: Maybe describe the compass (principles)? -->
 
 <!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
 <!-- IDEA: After learning about the framework, the first tree is joined by more trees, forming a forest. -->

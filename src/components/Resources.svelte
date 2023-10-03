@@ -3,6 +3,7 @@
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
+    // import { SlideToggle } from '@skeletonlabs/skeleton'
 
     import IconShare from '~icons/ri/share-box-fill'
     import IconLibrary from '~icons/ion/library'
@@ -78,6 +79,8 @@
         easing: quintOut,
         fallback: (node) => fade(node, { duration: 300 }),
     })
+
+    // let filterIncludeAllTags = false
 </script>
 
 <h2 class="h2 font-bold mb-2 gradient-heading">Resources</h2>
@@ -123,6 +126,21 @@
                 {/if}
             </button>
         </div>
+
+        <!-- IDEA: Maybe add a toggle for how filters are combined - Do you want to see results including all tags - or any of the tags? This could be a switch -->
+
+        <!-- <div class="pb-4">
+            <SlideToggle
+                active="bg-primary-700"
+                name="filterIncludeAllTags"
+                bind:checked={filterIncludeAllTags}
+                size="sm">Include all chosen tags</SlideToggle
+            >
+            <label class="flex items-center space-x-2">
+                <input class="checkbox" type="checkbox" checked />
+                <p>Include all chosen tags</p>
+            </label>
+        </div> -->
 
         <!-- TODO: Update lists of filters to only show possible combinations -->
         <!-- For example, hide tags that can't be combined with the current other filters -->

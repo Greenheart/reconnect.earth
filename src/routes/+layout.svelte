@@ -17,7 +17,9 @@
             </h1>
         </a>
 
-        <h2 class="h2 mb-16">Thrive in life while doing good in the world</h2>
+        <h2 class="h2 mb-8 sm:mb-16">
+            Thrive in life while doing good in the world
+        </h2>
     </header>
     <slot />
 </main>

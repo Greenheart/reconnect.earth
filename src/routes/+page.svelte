@@ -42,7 +42,7 @@
         title="The Reconnect.earth process"
         text="Pathways towards how we all can live well while doing good in the world."
         cta="Explore"
-        href="#the-process"
+        href="#process"
         ><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
     <SectionCard
@@ -97,7 +97,7 @@
 <hr class="my-16" />
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading" id="the-process">
+    <h2 class="h1 font-bold gradient-heading" id="process">
         The Reconnect.earth process
     </h2>
 

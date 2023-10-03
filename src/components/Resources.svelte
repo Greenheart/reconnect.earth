@@ -191,7 +191,7 @@
             {/each}
         </div>
     </div>
-    <div class="grid sm:grid-cols-2 gap-4 place-content-start">
+    <div class="grid lg:grid-cols-2 gap-4 place-content-start">
         <div class="col-span-full flex gap-4 text-sm h-10 mb-0.5 items-center">
             <span
                 >Showing {$searchStore.filtered.length} / {resources.length}</span

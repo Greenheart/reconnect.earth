@@ -154,11 +154,11 @@
 
     <p class="pb-4">
         To make it easier to engage with and participate in the Reconnect.earth
-        process, we need to go beyond the thinking dimension and learn in a
-        relational way together with peers. To make this happen, the community
-        has curated and experimented with multiple kinds of activities that
-        makes the process of change both social and fun. After all, this is not
-        just about surviving - but thriving!
+        process, we need to go beyond the thinking dimension and learn together
+        with peers. To make this happen, the community has curated and
+        experimented with multiple kinds of activities that makes the process of
+        change both social and fun. After all, this is not just about surviving
+        - but thriving!
     </p>
 
     <p class="pb-4">

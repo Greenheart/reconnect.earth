@@ -23,22 +23,6 @@
             and <span class="text-primary-500">compass</span> for navigating a rapidly
             changing world.
         </p>
-        <!-- <p class="pb-4">
-            The <span class="text-primary-500">map</span> is an emerging library
-            of resources and activities, co-created and improved by the community.
-        </p>
-        <p class="pb-4">
-            The <span class="text-primary-500">map</span> is the Reconnect.earth
-            process, combined with an emerging library of resources and activities,
-            co-created and improved by the community.
-        </p> -->
-        <!-- <p class="pb-4">
-            We don't have an exact map showing the way to a thriving future.
-            Instead, we're exploring the world and creating the <span
-                class="text-primary-500">map</span
-            > together with the community. It shows the Reconnect.earth process,
-            and the emerging library of resources and activities.
-        </p> -->
         <p class="pb-4">
             We don't have an exact map showing the way to a thriving future.
             Instead, we are exploring the world and developing the
@@ -46,26 +30,6 @@
             activities. This is the <span class="text-primary-500">map</span>,
             co-created by the community.
         </p>
-        <!-- <p class="pb-4">
-            The <span class="text-primary-500">map</span> shows you the Reconnect.earth
-            process and an emerging library of resources and activities, co-created
-            and improved by the community.
-        </p> -->
-        <!-- <p class="pb-4">
-            The <span class="text-primary-500">map</span> is the Reconnect.earth
-            process and an emerging library of resources and activities, co-created
-            and improved by the community.
-        </p>
-        <p class="pb-4">
-            The <span class="text-primary-500">map</span> consists of the Reconnect.earth
-            process and an emerging library of resources and activities, co-created
-            and improved by the community.
-        </p>
-        <p class="pb-4">
-            The <span class="text-primary-500">map</span> is a combination of the
-            Reconnect.earth process and an emerging library of resources and activities,
-            co-created and improved by the community.
-        </p> -->
         <p>
             The <span class="text-primary-500">compass</span> is a set of principles
             inspired by Doughnut Economics, helping us create a thriving future.
@@ -148,21 +112,6 @@
         <p class="text-center pt-2 italic">The Tree of Reconnection</p>
     </div>
 
-    <!-- <p class="pb-4">
-        <span class="text-primary-500">The helping hand</span> symbolises how this
-        is both a personal and a collective journey. By collaborating, we empower
-        ourselves and each other to make change possible.
-    </p> -->
-
-    <!-- <p class="pb-4">
-        This is an iterative process, and is both a personal and collective
-        journey. By collaborating, we empower ourselves and each other to make
-        change possible. Just like how trees in the forest work together to
-        create resilient and healthy ecosystems, we can collaborate to empower
-        ourselves and each other to help us thrive in life while doing good in
-        the world.
-    </p> -->
-
     <p class="pb-4">
         Change starts within and is both personal and collective. By
         collaborating, we empower ourselves and each other to thrive in life
@@ -209,14 +158,6 @@
         makes the process of change both social and fun. After all, this is not
         just about surviving - but thriving!
     </p>
-
-    <!-- IDEA: Maybe use a shorter version -->
-    <!-- <p class="pb-4">
-        To make it easier to engage with and participate in the Reconnect.earth
-        process, the community has curated and experimented with multiple kinds
-        of activities. Activities makes change social and fun. After all, this
-        is not just about surviving - but thriving!
-    </p> -->
 
     <p class="pb-4">
         The library of activities includes everything from workshops and

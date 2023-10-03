@@ -201,6 +201,11 @@
                 on:click={() => searchStore.reset()}>Reset filters</button
             >
         </div>
+        <!-- IDEA: when bookmarks are shown, there could be a short paragraph explaining that bookmarks are saved on your device, and can be exported to a file -->
+        <!-- <div class="col-span-full text-sm flex items-center">
+            Your bookmarked resources are saved in your browser. You can export
+            them to a file.
+        </div> -->
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
             {@const isBookmarked = $bookmarks.includes(resource.link)}

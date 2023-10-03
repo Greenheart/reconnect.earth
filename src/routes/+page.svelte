@@ -90,9 +90,18 @@
 <hr class="my-16" />
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading mb-3">
-        The Reconnect.earth process
-    </h2>
+    <h2 class="h1 font-bold gradient-heading">The Reconnect.earth process</h2>
+
+    <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
+    <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
+    <div class="grid py-4">
+        <Img
+            class="rounded-md"
+            src={treeOfReconnection}
+            alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
+        />
+        <p class="text-center pt-2 italic">The Tree of Reconnection</p>
+    </div>
 
     <!-- <p class="pb-4">
         <span class="text-primary-500">The helping hand</span> symbolises how this
@@ -123,7 +132,7 @@
     </p>
 
     <!-- IDEA: Maybe have symbols for each branch? -->
-    <div class="flex flex-col justify-around font-bold gap-2">
+    <div class="flex flex-col justify-around font-bold gap-2 pt-8">
         <h2 class="h2 gradient-heading">Reclaim</h2>
         <h2 class="h2 gradient-heading">Reflect</h2>
         <h2 class="h2 gradient-heading">Reconnect</h2>
@@ -142,15 +151,6 @@
         <h2 class="h2 gradient-heading">Regenerate</h2>
     </div>
 </div> -->
-
-<!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
-<!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
-<div class="grid pt-8">
-    <Img
-        src={treeOfReconnection}
-        alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
-    />
-</div>
 
 <!-- TODO: Maybe describe the map (resources and activities?) -->
 <!-- TODO: Maybe describe the compass (principles)? -->

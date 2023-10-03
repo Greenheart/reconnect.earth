@@ -96,7 +96,9 @@
     </p>
 </div>
 
-<hr class="my-16" />
+<div class="my-16 divider">
+    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+</div>
 
 <div class="max-w-prose mx-auto">
     <h2 class="h1 font-bold gradient-heading" id="process">
@@ -137,14 +139,16 @@
     </div>
 </div>
 
-<hr class="my-16" />
+<div class="my-16 divider">
+    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+</div>
 
 <div class="max-w-prose mx-auto">
     <h2 class="h1 font-bold gradient-heading" id="activities">Activities</h2>
 
     <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
 
-    <p class="pb-4">
+    <p class="py-4">
         To make it easier to engage with and participate in the Reconnect.earth
         process, we need to go beyond the thinking dimension and learn together
         with peers. The community has gathered and experimented with different

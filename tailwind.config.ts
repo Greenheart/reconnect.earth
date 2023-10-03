@@ -26,6 +26,10 @@ const config = {
                 '.link': {
                     '@apply text-primary-500 underline': {},
                 },
+                '.divider': {
+                    '@apply justify-center flex text-xs items-center text-gray-500 select-none':
+                        {},
+                },
             })
         }),
         skeleton({

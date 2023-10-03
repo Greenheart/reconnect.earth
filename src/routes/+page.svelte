@@ -53,7 +53,7 @@
         title="Activities"
         text="Ways to engage with the Reconnect.earth process on your own or together with others."
         cta="Get started"
-        href="#"
+        href="#activities"
         ><IconPeopleFill slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
 </div>
@@ -91,7 +91,9 @@
 <hr class="my-16" />
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading">The Reconnect.earth process</h2>
+    <h2 class="h1 font-bold gradient-heading" id="the-process">
+        The Reconnect.earth process
+    </h2>
 
     <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
     <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
@@ -145,7 +147,7 @@
 <hr class="my-16" />
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading">Activities</h2>
+    <h2 class="h1 font-bold gradient-heading" id="activities">Activities</h2>
 
     <!-- TODO: find a good image or visual to showcase what collaborative activities could mean -->
     <div class="grid py-4">
@@ -177,8 +179,10 @@
     <p class="pb-4">
         The library of activities include everything from workshops, learning
         circles to creative sessions and civic tech hackathons. Just like the
-        resource library, this is a co-created resource by and for the
-        community. Welcome to share your favourite ways of engaging!
+        <a href="/resources" class="text-primary-500 underline"
+            >resource library</a
+        >, this is a co-created by and for the community. Welcome to share your
+        favourite ways of engaging!
     </p>
 </div>
 

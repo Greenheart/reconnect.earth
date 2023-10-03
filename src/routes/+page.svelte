@@ -1,8 +1,10 @@
 <script lang="ts">
+    import Img from '@zerodevx/svelte-img'
     import IconEarth from '~icons/ion/earth'
     import IconLibrary from '~icons/ion/library'
     import IconPeopleFill from '~icons/bi/people-fill'
 
+    import treeOfReconnection from '$lib/assets/tree-of-reconnection.jpg?as=run'
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
@@ -92,20 +94,45 @@
         The Reconnect.earth process
     </h2>
 
-    <p class="pb-4">
+    <!-- <p class="pb-4">
         <span class="text-primary-500">The helping hand</span> symbolises how this
         is both a personal and a collective journey. By collaborating, we empower
         ourselves and each other to make change possible.
+    </p> -->
+
+    <!-- <p class="pb-4">
+        This is an iterative process, and is both a personal and collective
+        journey. By collaborating, we empower ourselves and each other to make
+        change possible. Just like how trees in the forest work together to
+        create resilient and healthy ecosystems, we can collaborate to empower
+        ourselves and each other to help us thrive in life while doing good in
+        the world.
+    </p> -->
+
+    <p class="pb-4">
+        Change starts within and is both personal and collective. By
+        collaborating, we empower ourselves and each other to thrive in life
+        while doing good in the world - very similar to how trees in the forest
+        work together to create resilient and healthy ecosystems.
     </p>
 
     <p class="pb-4">
-        There are five dimensions of learning and practice to help turn the
+        There are five branches of learning and practice to help turn the
         metacrisis from an abstract threat into actionable pathways towards a
         better future.
     </p>
+
+    <!-- IDEA: Maybe have symbols for each branch? -->
+    <div class="flex flex-col justify-around font-bold gap-2">
+        <h2 class="h2 gradient-heading">Reclaim</h2>
+        <h2 class="h2 gradient-heading">Reflect</h2>
+        <h2 class="h2 gradient-heading">Reconnect</h2>
+        <h2 class="h2 gradient-heading">Reimagine</h2>
+        <h2 class="h2 gradient-heading">Regenerate</h2>
+    </div>
 </div>
 
-<div class="grid grid-cols-[3fr_1fr] gap-8 max-w-lg mx-auto pt-4">
+<!-- <div class="grid grid-cols-[3fr_1fr] gap-8 max-w-lg mx-auto pt-4">
     <img src="/hand.svg" alt="Hand" class="w-full place-self-center" />
     <div class="flex flex-col justify-around font-bold gap-2">
         <h2 class="h2 gradient-heading">Reclaim</h2>
@@ -114,6 +141,15 @@
         <h2 class="h2 gradient-heading">Reimagine</h2>
         <h2 class="h2 gradient-heading">Regenerate</h2>
     </div>
+</div> -->
+
+<!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
+<!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
+<div class="grid pt-8">
+    <Img
+        src={treeOfReconnection}
+        alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
+    />
 </div>
 
 <!-- TODO: Maybe describe the map (resources and activities?) -->

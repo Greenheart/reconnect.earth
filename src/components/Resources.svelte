@@ -18,6 +18,7 @@
     import {
         RESOURCE_CATEGORIES,
         RESOURCE_TYPES,
+        SITE_NAME,
         type ResourceTag,
     } from '$lib/constants'
     import { cx } from '$lib/utils'
@@ -86,7 +87,7 @@
 <h2 class="h2 font-bold mb-2 gradient-heading">Resources</h2>
 
 <p class="mb-4">
-    Explore topics related to reconnect.earth. Learn how we can create a future
+    Explore topics related to Reconnect.earth. Learn how we can create a future
     where both humanity and the living planet thrive together.
 </p>
 

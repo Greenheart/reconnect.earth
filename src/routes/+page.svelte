@@ -177,12 +177,13 @@
     </p> -->
 
     <p class="pb-4">
-        The library of activities include everything from workshops, learning
-        circles to creative sessions and civic tech hackathons. Just like the
+        The library of activities includes everything from workshops and
+        learning circles to creative sessions and civic tech hackathons. Just
+        like the
         <a href="/resources" class="text-primary-500 underline"
             >resource library</a
-        >, this is a co-created by and for the community. Welcome to share your
-        favourite ways of engaging!
+        >, the activities are co-created by and for the community. Welcome to
+        share your favourite ways of engaging!
     </p>
 </div>
 

@@ -8,14 +8,14 @@
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
-<div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8 place-items-center">
-    <div class="max-w-sm mx-auto">
+<div class="flex flex-col sm:flex-row gap-8 pb-8 items-center">
+    <div class="max-w-sm sm:max-w-[250px]">
         <img
             src="/undraw_connected_world_wuay.svg"
             alt="Map of a connected world with dots and linked lines between continents"
         />
     </div>
-    <div class="max-w-md mx-auto sm:mx-0 place-self-start">
+    <div class="max-w-prose">
         <p class="pb-4">
             Reconnect.earth is a collaborative <span class="text-primary-500"
                 >map</span

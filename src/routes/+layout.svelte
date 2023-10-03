@@ -26,7 +26,8 @@
 
 <footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-lg sm:text-xl">
     <p class="pt-4">
-        Reconnect.earth is free and open source, co-created by the community.
+        Reconnect.earth is a free and open source project, co-created by the
+        community.
     </p>
     <p><a href={GITHUB_LINK} class="link">Welcome to get involved!</a></p>
 </footer>

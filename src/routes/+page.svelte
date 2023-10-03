@@ -39,7 +39,8 @@
         title="The Reconnect.earth process"
         text="An invitation to reflect on how we all can live well while doing good in the world."
         cta="Explore"
-        href="#"><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+        href="#the-process"
+        ><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
     >
     <SectionCard
         title="Resource library"
@@ -141,16 +142,45 @@
     </div>
 </div>
 
-<!-- <div class="grid grid-cols-[3fr_1fr] gap-8 max-w-lg mx-auto pt-4">
-    <img src="/hand.svg" alt="Hand" class="w-full place-self-center" />
-    <div class="flex flex-col justify-around font-bold gap-2">
-        <h2 class="h2 gradient-heading">Reclaim</h2>
-        <h2 class="h2 gradient-heading">Reflect</h2>
-        <h2 class="h2 gradient-heading">Reconnect</h2>
-        <h2 class="h2 gradient-heading">Reimagine</h2>
-        <h2 class="h2 gradient-heading">Regenerate</h2>
+<hr class="my-16" />
+
+<div class="max-w-prose mx-auto">
+    <h2 class="h1 font-bold gradient-heading">Activities</h2>
+
+    <!-- TODO: find a good image or visual to showcase what collaborative activities could mean -->
+    <div class="grid py-4">
+        <Img
+            class="rounded-md"
+            src={treeOfReconnection}
+            alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
+        />
+        <p class="text-center pt-2 italic">The Tree of Reconnection</p>
     </div>
-</div> -->
+
+    <p class="pb-4">
+        To make it easier to engage with and participate in the Reconnect.earth
+        process, we need to go beyond the thinking dimension and learn in a
+        relational way together with peers. To make this happen, the community
+        has curated and experimented with multiple kinds of activities that
+        makes the process of change both social and fun. After all, this is not
+        just about surviving - but thriving!
+    </p>
+
+    <!-- IDEA: Maybe use a shorter version -->
+    <!-- <p class="pb-4">
+        To make it easier to engage with and participate in the Reconnect.earth
+        process, the community has curated and experimented with multiple kinds
+        of activities. Activities makes change social and fun. After all, this
+        is not just about surviving - but thriving!
+    </p> -->
+
+    <p class="pb-4">
+        The library of activities include everything from workshops, learning
+        circles to creative sessions and civic tech hackathons. Just like the
+        resource library, this is a co-created resource by and for the
+        community. Welcome to share your favourite ways of engaging!
+    </p>
+</div>
 
 <!-- TODO: Maybe describe the map (resources and activities?) -->
 <!-- TODO: Maybe describe the compass (principles)? -->

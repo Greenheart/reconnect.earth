@@ -25,12 +25,6 @@
             and <span class="text-primary-500">compass</span> for navigating a rapidly
             changing world.
         </p>
-        <!-- <p class="pb-4">
-            What we refer to as the <span class="text-primary-500">map</span> is
-            the result of exploring pathways towards a thriving future. Together
-            with the community, we are developing the Reconnect.earth process and
-            an emerging library of resources and activities.
-        </p> -->
         <p class="pb-4">
             The <span class="text-primary-500">map</span> is the result of exploring
             pathways towards a thriving future, together with the community. The
@@ -73,7 +67,7 @@
     <p class="mb-4 mt-16 font-bold text-2xl">
         How can we all live meaningful and healthy lives? How can we do this <em
             >while</em
-        > contributing a future with wellbeing for all, within the planetary boundaries?
+        > contributing to a future with wellbeing for all, within the planetary boundaries?
     </p>
     <p class="mb-4">
         This might feel like a daunting task, given how the metacrisis is

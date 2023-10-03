@@ -9,7 +9,7 @@
     <title>{SITE_NAME}</title>
 </svelte:head>
 
-<main class="mx-auto max-w-screen-lg mt-8 px-4">
+<main class="mx-auto max-w-screen-lg mt-8 px-4 text-xl">
     <header>
         <a href="/">
             <h1 class="h1 font-bold mb-8 gradient-heading">
@@ -25,9 +25,8 @@
 </main>
 
 <footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-xl">
-    <p>🌍 &nbsp;{SITE_NAME}</p>
     <p class="pt-4">
-        This project is free and open source, co-created by the community.
+        Reconnect.earth is free and open source, co-created by the community.
     </p>
     <p><a href={GITHUB_LINK} class="link">Welcome to get involved!</a></p>
 </footer>

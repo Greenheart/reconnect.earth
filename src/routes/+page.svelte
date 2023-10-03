@@ -8,8 +8,6 @@
     import SectionCard from '$components/SectionCard.svelte'
 </script>
 
-<!-- TODO: increase main font size on larger screens to make it easier to read -->
-
 <div class="grid sm:grid-cols-[250px_1fr] gap-8 pb-8 place-items-center">
     <div class="max-w-sm mx-auto">
         <img

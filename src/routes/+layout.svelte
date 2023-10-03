@@ -9,7 +9,7 @@
     <title>{SITE_NAME}</title>
 </svelte:head>
 
-<main class="mx-auto max-w-screen-lg mt-8 px-4 text-xl">
+<main class="mx-auto max-w-screen-lg mt-8 px-4 text-lg sm:text-xl">
     <header>
         <a href="/">
             <h1 class="h1 font-bold mb-8 gradient-heading">
@@ -24,7 +24,7 @@
     <slot />
 </main>
 
-<footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-xl">
+<footer class="p-4 max-w-screen-md mx-auto px-4 mt-8 text-lg sm:text-xl">
     <p class="pt-4">
         Reconnect.earth is free and open source, co-created by the community.
     </p>

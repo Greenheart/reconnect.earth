@@ -187,32 +187,36 @@
 
     <div class="grid gap-4 justify-center">
         {#each apps as app}
-            <div class="card p-4 grid gap-4 max-w-xl xs:grid-cols-[2fr_2fr]">
-                <div class="max-h-80 xs:max-h-full xs:w-48 mx-auto">
+            <div
+                class="card p-4 grid gap-4 max-w-xl xs:grid-cols-[min-content_1fr]"
+            >
+                <div class="max-h-80 xs:max-h-full xs:w-48">
                     <Img
                         src={app.image}
                         alt={app.name + ' screenshot'}
                         class="order-3 sm:order-1 w-full h-full object-contain !bg-transparent place-self-center"
                     />
                 </div>
-                <div class="sm:px-4 order-2">
+                <div
+                    class="order-2 grid grid-rows-[min-content_1fr_min-content]"
+                >
                     <h3 class="h3 font-bold mb-4">
                         <a href={app.link} class="link">{app.name}</a>
                     </h3>
-                    <p>{app.description}</p>
-                </div>
+                    <p class="pb-2">{app.description}</p>
 
-                <div
-                    class="flex justify-end space-x-4 items-center text-base col-span-full order-last"
-                >
-                    <a href={app.git} class="link">Contribute</a>
-                    <a
-                        class="btn variant-soft rounded-sm gap-1"
-                        href={app.link}
-                        target="_blank"
-                        ><span class="flex items-stretch">Explore</span>
-                        <IconShare />
-                    </a>
+                    <div
+                        class="flex justify-between space-x-4 items-center text-base"
+                    >
+                        <a href={app.git} class="link">Contribute</a>
+                        <a
+                            class="btn variant-soft rounded-sm gap-1"
+                            href={app.link}
+                            target="_blank"
+                            ><span class="flex items-stretch">Explore</span>
+                            <IconShare />
+                        </a>
+                    </div>
                 </div>
             </div>
         {/each}

@@ -2,8 +2,7 @@ import { z } from 'zod'
 import { readFile } from 'fs/promises'
 import { resolve } from 'path'
 
-import { ResourceSchema } from './schema'
-import type { Resource } from './schema'
+import { ResourceSchema, type Resource, AppSchema, type App } from './schema'
 import { getFeaturedFirst, getSortedTags } from './utils'
 
 async function readJSON(path: string) {
@@ -11,6 +10,7 @@ async function readJSON(path: string) {
 }
 
 const rawResources = await readJSON(resolve('./src/data/resources.json'))
+const rawApps = await readJSON(resolve('./src/data/apps.json'))
 
 export const resources: Resource[] = z
     .array(ResourceSchema)
@@ -20,3 +20,5 @@ export const resources: Resource[] = z
         resource.tags = getSortedTags(resource.tags)
         return resource
     })
+
+export const apps: App[] = z.array(AppSchema).parse(rawApps)

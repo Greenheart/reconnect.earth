@@ -3,9 +3,14 @@
     import IconEarth from '~icons/ion/earth'
     import IconLibrary from '~icons/ion/library'
     import IconPeopleFill from '~icons/bi/people-fill'
+    import IconShare from '~icons/ri/share-box-fill'
 
     import treeOfReconnection from '$lib/assets/tree-of-reconnection.jpg?as=run'
     import SectionCard from '$components/SectionCard.svelte'
+    import type { PageData } from './$types'
+
+    export let data: PageData
+    $: ({ apps } = data)
 </script>
 
 <div class="flex flex-col sm:flex-row gap-8 pb-8 items-center">
@@ -162,6 +167,52 @@
         are co-created by and for the community. Welcome to share your favourite
         ways of engaging!
     </p>
+</div>
+
+<div class="my-16 divider">
+    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+</div>
+
+<div class="max-w-prose mx-auto">
+    <h2 class="h1 font-bold gradient-heading">Our free and open source apps</h2>
+
+    <p class="pb-8 pt-4">
+        To make this journey more fun, engaging and accessible, we're designing
+        and developing <a
+            href="https://fsfe.org/freesoftware/#freedoms"
+            class="link">free and open source</a
+        > apps. Like all our projects, these are co-created by and for the community.
+        Welcome to contribute with feedback, ideas, and improvements!
+    </p>
+
+    <div class="grid gap-4 justify-center">
+        {#each apps as app}
+            <div class="card p-4 grid gap-4 max-w-xl grid-cols-[2fr_2fr]">
+                <Img
+                    src={app.image}
+                    alt={app.name + ' screenshot'}
+                    class="row-span-full"
+                />
+                <div class="grid gap-4 content-start sm:px-4">
+                    <h3 class="h3 font-bold">
+                        <a href={app.link} class="link">{app.name}</a>
+                    </h3>
+                    <p>{app.description}</p>
+
+                    <div class="flex justify-between items-center text-base">
+                        <a href={app.git} class="link">Contribute</a>
+                        <a
+                            class="btn variant-soft rounded-sm gap-1"
+                            href={app.link}
+                            target="_blank"
+                            ><span class="flex items-stretch">Explore</span>
+                            <IconShare />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {/each}
+    </div>
 </div>
 
 <!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->

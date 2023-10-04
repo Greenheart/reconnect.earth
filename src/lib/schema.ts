@@ -14,3 +14,12 @@ export const ResourceSchema = z.object({
 })
 
 export type Resource = z.infer<typeof ResourceSchema>
+
+export const AppSchema = z.object({
+    name: z.string(),
+    description: z.string().max(300),
+    link: z.string(),
+    git: z.string().url(),
+})
+
+export type App = z.infer<typeof AppSchema>

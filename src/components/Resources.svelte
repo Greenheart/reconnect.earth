@@ -64,6 +64,10 @@
 </p>
 
 <!-- TODO: Make this view responsive on mobile, maybe with a drawer for the navigation -->
+<!--
+    IDEA: Maybe show small icon buttons that expand into a a modal/drawer. Search and Filter.
+    Or maybe this could be a floating toolbar on top of the content, or fixed to the top of the screen
+-->
 
 <!-- TODO: Make sure the clear button in the search input remains visible -->
 <!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->

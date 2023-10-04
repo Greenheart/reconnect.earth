@@ -1,8 +1,11 @@
 <script lang="ts">
+    import { Drawer, initializeStores } from '@skeletonlabs/skeleton'
     import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
     import '@fontsource-variable/quicksand'
     import '../app.css'
+
+    initializeStores()
 </script>
 
 <svelte:head>
@@ -31,3 +34,5 @@
     </p>
     <p><a href={GITHUB_LINK} class="link">Welcome to get involved!</a></p>
 </footer>
+
+<Drawer />

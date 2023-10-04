@@ -4,6 +4,7 @@ import persistedStore from '$lib/persistedStore'
 
 const KEY = 'resource_bookmarks'
 
+// IDEA: Add the toggleBookmark method into the store itself
 export const bookmarks = persistedStore<Resource['link'][]>(KEY, [])
 
 export function toggleBookmark(resource: Resource) {

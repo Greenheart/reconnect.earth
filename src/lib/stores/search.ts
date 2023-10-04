@@ -10,6 +10,8 @@ export interface SearchStoreModel<T extends Record<PropertyKey, any>> {
 
 export type Searchable<T> = T & { _searchTerms: string }
 
+export type SearchStore = ReturnType<typeof createSearchStore>
+
 export const createSearchStore = <T extends Record<PropertyKey, any>>({
     data,
     getSearchTerms,

@@ -1,7 +1,7 @@
 import { apps } from '$lib/content-backend'
 import type { App } from '$lib/schema'
 
-import lifeWheel from '$lib/assets/lifewheel.png?as=run'
+import lifeWheel from '$lib/assets/lifewheel.png?as=run:1'
 
 const IMAGES: Record<App['name'], any> = {
     'Life Wheel': lifeWheel,

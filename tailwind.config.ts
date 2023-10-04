@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 import plugin from 'tailwindcss/plugin'
 import { skeleton } from '@skeletonlabs/tw-plugin'
 import { join } from 'path'
@@ -13,6 +14,10 @@ const config = {
         ),
     ],
     theme: {
+        screens: {
+            xs: '475px',
+            ...defaultTheme.screens,
+        },
         extend: {},
     },
     plugins: [

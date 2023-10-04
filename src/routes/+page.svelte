@@ -104,7 +104,7 @@
 </div>
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading" id="process">
+    <h2 class="h1 gradient-heading" id="process">
         The Reconnect.earth process
     </h2>
 
@@ -229,7 +229,7 @@
 </div>
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading" id="activities">Activities</h2>
+    <h2 class="h1 gradient-heading" id="activities">Activities</h2>
 
     <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
 
@@ -256,7 +256,7 @@
 </div>
 
 <div class="max-w-prose mx-auto">
-    <h2 class="h1 font-bold gradient-heading">Our free and open source apps</h2>
+    <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
     <p class="pb-8 pt-4">
         To make this journey more fun, engaging and accessible, we're designing

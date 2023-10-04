@@ -25,7 +25,7 @@ const config = {
         plugin(({ addUtilities }) => {
             addUtilities({
                 '.gradient-heading': {
-                    '@apply bg-gradient-to-br from-primary-500 via-primary-500 to-secondary-500 text-transparent bg-clip-text box-decoration-clone pb-1':
+                    '@apply bg-gradient-to-br font-bold from-primary-500 via-primary-500 to-secondary-500 text-transparent bg-clip-text box-decoration-clone pb-1':
                         {},
                 },
                 '.divider': {

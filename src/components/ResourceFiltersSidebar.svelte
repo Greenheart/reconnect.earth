@@ -17,6 +17,8 @@
 
     export let searchStore: SearchStore
     export let resources: Resource[]
+    let className = ''
+    export { className as class }
 
     function countResourcesWithTag(tag: ResourceTag) {
         // IDEA: By switching to the resources from $searchStore.filtered, we only show relevant tags
@@ -41,7 +43,7 @@
     }
 </script>
 
-<div>
+<div class={className}>
     <SearchInput {searchStore} />
 
     <div class="grid gap-2 pb-8 pt-4">

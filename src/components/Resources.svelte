@@ -67,9 +67,9 @@
 
 <!-- TODO: Make sure the clear button in the search input remains visible -->
 <!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->
-<div class="grid sm:grid-cols-[250px_1fr] gap-4">
-    <ResourceFiltersSidebar {searchStore} {resources} class="hidden sm:block" />
-    <div class="grid lg:grid-cols-2 gap-4 place-content-start">
+<div class="grid xs:grid-cols-[230px_1fr] gap-4">
+    <ResourceFiltersSidebar {searchStore} {resources} class="hidden xs:block" />
+    <div class="grid md:grid-cols-2 gap-4 place-content-start">
         <div class="col-span-full flex gap-4 text-sm h-10 mb-0.5 items-center">
             <span
                 >Showing {$searchStore.filtered.length} / {resources.length}</span
@@ -95,8 +95,10 @@
                 in:send={{ key }}
                 out:receive={{ key }}
             >
-                <h3 class="h3 font-bold">{resource.title}</h3>
-                <p>{resource.description}</p>
+                <h3 class="h4 font-bold text-primary-500">
+                    {resource.title}
+                </h3>
+                <p class="text-base">{resource.description}</p>
                 <div
                     class="flex gap-2 items-start text-sm flex-wrap content-start"
                 >

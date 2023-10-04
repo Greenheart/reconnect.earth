@@ -16,6 +16,7 @@
         placeholder="Search"
         bind:value={$searchStore.search}
     />
+    <!-- TODO: Fix the clear button not positioned correctly (it's not visible) -->
     <button
         class="!px-3"
         on:click={() => ($searchStore.search = '')}

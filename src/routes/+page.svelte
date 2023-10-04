@@ -163,7 +163,7 @@
         The library of activities includes everything from workshops and
         learning circles to creative sessions and civic tech hackathons. Just
         like the
-        <a href="/resources" class="link">resource library</a>, the activities
+        <a href="/resources" class="anchor">resource library</a>, the activities
         are co-created by and for the community. Welcome to share your favourite
         ways of engaging!
     </p>
@@ -180,7 +180,7 @@
         To make this journey more fun, engaging and accessible, we're designing
         and developing <a
             href="https://fsfe.org/freesoftware/#freedoms"
-            class="link">free and open source</a
+            class="anchor">free and open source</a
         > apps. Like all our projects, these are co-created by and for the community.
         Welcome to contribute with feedback, ideas, and improvements!
     </p>
@@ -201,14 +201,14 @@
                     class="order-2 grid grid-rows-[min-content_1fr_min-content]"
                 >
                     <h3 class="h3 font-bold mb-4">
-                        <a href={app.link} class="link">{app.name}</a>
+                        <a href={app.link} class="anchor">{app.name}</a>
                     </h3>
                     <p class="pb-2">{app.description}</p>
 
                     <div
                         class="flex justify-between space-x-4 items-center text-base"
                     >
-                        <a href={app.git} class="link">Contribute</a>
+                        <a href={app.git} class="anchor">Contribute</a>
                         <a
                             class="btn variant-soft rounded-sm gap-1"
                             href={app.link}

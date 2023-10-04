@@ -32,7 +32,7 @@
         Reconnect.earth is a free and open source project, co-created by the
         community.
     </p>
-    <p><a href={GITHUB_LINK} class="link">Welcome to get involved!</a></p>
+    <p><a href={GITHUB_LINK} class="anchor">Welcome to get involved!</a></p>
 </footer>
 
 <Drawer />

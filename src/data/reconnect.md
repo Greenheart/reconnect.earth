@@ -6,12 +6,14 @@
 -   to reclaim our agency - we're citizens rather than mere consumers.
 -   to reclaim our time and energy
 -   this needs to happen both individually and collectively
+-   Refer to a resource: https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs
 
 ### Why it is important to Reclaim
 
 -   to create space for the deeper cultural and economic transformation we need to make in order to handle the metacrisis.
 -   so we can thrive in life while doing good in the world. We must start with self-compassion before we can widen our circles of compassion to others, our communities, bioregions and the world.
 -   so you can choose what you want - rather than what others want you to choose
+-   The more we reclaim, the more we can widen our circles of compassion from self to others to the whole living Earth.
 
 ### How you can learn more and practice this
 
@@ -153,8 +155,8 @@ Practice
 -   world is becoming worse
 -   not enough to reduce our negative footprint, but need to increase our positive handprint
 -   sustainable is not enough
--   if we can do regeneration on all levels (individual, in communities, for the living planet)- get positive feedback loops - by regenerating on all levels, by definition, we strengthen the capacity do do even more positive things in the future (as long as we maintain a healthy balance and support each other)
--   we cannot rely on på unpaid engagement to make everything happen - people need to live (har pengar för att klara sig). Social entrepreneurship: we need to organise economically to create movements that are regenerative and can increase the impact over time. But: not business - according to deep design of business so that as much as possible stays within the business. We need new ideals and ideas of what social entrepreneurship means. It's not about getting rich, but to live well and do good in the world while giving as much as possible to support further regernerative efforts.
+-   if we can do regeneration on all levels (individual, in communities, for the living planet)- get positive feedback loops - by regenerating on all levels, by definition, we strengthen the capacity to do even more positive things in the future (as long as we maintain a healthy balance and support each other)
+-   we cannot rely on unpaid engagement to make everything happen - people need to live (har pengar för att klara sig). Social entrepreneurship: we need to organise economically to create movements that are regenerative and can increase the impact over time. But: not business - according to deep design of business so that as much as possible stays within the business. We need new ideals and ideas of what social entrepreneurship means. It's not about getting rich, but to live well and do good in the world while giving as much as possible to support further regernerative efforts.
 
 ### How you can practice this
 

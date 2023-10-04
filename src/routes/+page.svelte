@@ -100,7 +100,7 @@
 </div>
 
 <div class="my-16 divider">
-    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+    ○ <IconEarth class="text-xl mx-2" /> ○
 </div>
 
 <div class="max-w-prose mx-auto">
@@ -133,17 +133,99 @@
     </p>
 
     <!-- IDEA: Maybe have symbols for each branch? -->
-    <div class="flex flex-col justify-around font-bold gap-2 pt-8">
+    <div class="flex flex-col justify-around gap-4 pt-8">
         <h2 class="h2 gradient-heading">Reclaim</h2>
+        <p>
+            To change culture and economics towards wellbeing for all within the
+            means of the planet, we first of all need to create conditions that
+            make change possible. This is something we need to do together:
+            reclaiming our time, energy, attention, agency and socioeconomic
+            conditions. Start with yourself, and then support others to do the
+            same.
+        </p>
+        <p>
+            Over time, this empowers us to thrive in life while engaging further
+            in ways that feel right for us. This part of the process is key to
+            help us shift our mindsets from mere consumers to active citizens
+            and co-creators of the future.
+        </p>
+
         <h2 class="h2 gradient-heading">Reflect</h2>
+        <p>
+            To develop as a person it is important to reflect about – among
+            others – your values, your behaviours, your relationship to
+            yourself, relationships with other people and your relationship to
+            the living ecosystems. As a help, you can find a collection of
+            questions on this website. You can do it by yourself, but we
+            encourage you do to this together with other people.
+        </p>
+        <p>
+            Part of the Reflect branch is also to learn more about how the
+            complex world is working and how things are connected. Be curious
+            and explore the different resources in the <a
+                href="/resources"
+                class="anchor">library</a
+            >, and other resources which you find interesting!
+        </p>
+
         <h2 class="h2 gradient-heading">Reconnect</h2>
+        <p>
+            Many of the world's problems today stem from a deep disconnection -
+            from ourselves, from other people and from the living planet.
+        </p>
+        <p>Therefore it is important to reconnect to what matters:</p>
+        <ul>
+            <li>
+                Reconnect with yourself: become aware of what you feel in your
+                body. Recognise your thoughts, feelings, what you need to thrive
+                in life and what you find meaningful.
+            </li>
+            <li>
+                Reconnect with other people, both locally and globally, and
+                recognise their needs, and become aware of how they are
+                interconnected with your life.
+            </li>
+            <li>
+                Reconnect with other living beings and with the living planet.
+            </li>
+        </ul>
+
         <h2 class="h2 gradient-heading">Reimagine</h2>
+        <blockquote class="blockquote">
+            "We cannot create what we can't imagine." — Lucille Clifton
+        </blockquote>
+        <p>
+            As the metacrisis unfolds and the world seems increasingly unstable,
+            it's easy to get distracted and feel stuck with doom and gloom.
+            However, one of the most important forms of constructive action is
+            to envision a better future, and to explore and experiment with
+            pathways towards it.
+        </p>
+        <p>
+            By focusing on what we want to create rather than on what we try to
+            avoid, we become much more effective changemakers. The good news is
+            that the process of reimaging the future is a skill we can practice,
+            and there are plenty of resources and activities to get inspiration.
+        </p>
+
         <h2 class="h2 gradient-heading">Regenerate</h2>
+        <p>
+            Create what you have imagined. Make the world a better place. It's
+            not enough to reduce our negative footprint – we need to increase
+            our positive handprint. It is not enough to do things sustainably –
+            we need to make a net positive impact.
+        </p>
+        <p>
+            If we can do regenerative actions at all levels (individual, in
+            communities and for the living planet) we will get positive feedback
+            loops and we strengthen the capacity to do even more positive
+            actions in the future.
+        </p>
     </div>
 </div>
 
 <div class="my-16 divider">
-    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+    ○ <IconEarth class="text-xl mx-2" /> ○
 </div>
 
 <div class="max-w-prose mx-auto">
@@ -170,7 +252,7 @@
 </div>
 
 <div class="my-16 divider">
-    🞉 <IconEarth class="text-xl mx-2" /> 🞉
+    ○ <IconEarth class="text-xl mx-2" /> ○
 </div>
 
 <div class="max-w-prose mx-auto">

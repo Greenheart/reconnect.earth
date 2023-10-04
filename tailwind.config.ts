@@ -29,7 +29,7 @@ const config = {
                         {},
                 },
                 '.divider': {
-                    '@apply justify-center flex text-xs items-center text-gray-500 select-none':
+                    '@apply justify-center flex text-sm items-center text-gray-500 select-none':
                         {},
                 },
             })

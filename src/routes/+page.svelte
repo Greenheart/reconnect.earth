@@ -231,10 +231,10 @@
                 sustainably – we need to make a net positive impact.
             </p>
             <p>
-                If we can do regenerative actions at all levels (individual, in
-                communities and for the living planet) we will get positive
-                feedback loops and we strengthen the capacity to do even more
-                positive actions in the future.
+                If we can participate in regenerative actions at all levels
+                (individual, in communities and for the living planet) we will
+                get positive feedback loops and we strengthen the capacity to do
+                even more positive actions in the future.
             </p>
         </div>
     </div>

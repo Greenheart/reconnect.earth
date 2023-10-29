@@ -71,7 +71,7 @@
     >
     <SectionCard
         title="Activities"
-        text="Ways to engage with the Reconnect.earth process on your own or together with others."
+        text="Ways to engage with the Reconnect.earth process, both personally and together with others."
         cta="Get started"
         href="#activities"
         ><IconPeopleFill slot="icon" class="mx-auto w-8 h-8" /></SectionCard

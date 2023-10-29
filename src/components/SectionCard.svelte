@@ -10,12 +10,12 @@
 >
     <slot name="icon" />
     <h3 class="h4 text-center font-bold text-primary-500">{title}</h3>
-    <p class="mb-2 text-base sm:text-lg">
+    <p class="mb-2 text-base md:text-lg">
         {text}
     </p>
     <a
         {href}
-        class="btn variant-filled-primary justify-self-center self-end w-44"
+        class="btn variant-filled-primary justify-self-center self-end w-full sm:w-40 md:w-48"
         >{cta}</a
     >
 </div>

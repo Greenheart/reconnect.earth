@@ -33,8 +33,8 @@
             means of the planet.
         </p>
         <p class="pb-4">
-            This is an invitation to deepen your connection with yourself, with
-            other people and with the living Earth.
+            This is an invitation to deepen your connection with yourself, other
+            people and the living Earth.
         </p>
         <p class="font-bold">Welcome to Reconnect.earth!</p>
     </div>

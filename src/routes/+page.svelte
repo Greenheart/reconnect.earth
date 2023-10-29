@@ -50,8 +50,9 @@
         <p class="pt-4">
             On this website, you will find the Reconnect.earth process, an
             emerging library of resources and a collection of activities. We are
-            also developing a suite of free and open source apps to help you
-            along your journey of learning, exploration and action.
+            also developing a suite of <a href="#apps" class="anchor"
+                >free and open source apps</a
+            > to help you along your journey of learning, exploration and action.
         </p>
     </div>
 
@@ -257,8 +258,8 @@
     ○ <IconEarth class="text-xl mx-2" /> ○
 </div>
 
-<div class="max-w-prose mx-auto">
-    <h2 class="h1 gradient-heading" id="activities">Activities</h2>
+<div class="max-w-prose mx-auto" id="activities">
+    <h2 class="h1 gradient-heading">Activities</h2>
 
     <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
 
@@ -284,7 +285,7 @@
     ○ <IconEarth class="text-xl mx-2" /> ○
 </div>
 
-<div class="max-w-prose mx-auto">
+<div class="max-w-prose mx-auto" id="apps">
     <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
     <p class="pb-8 pt-4">

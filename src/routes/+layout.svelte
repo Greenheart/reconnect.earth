@@ -75,8 +75,16 @@
             </button>
         </div>
         <div class="grid gap-2 text-center">
-            <a href="/resources" class="anchor p-2">Resources</a>
-            <a href="/#activities" class="anchor p-2">Activities</a>
+            <a
+                href="/resources"
+                class="anchor p-2"
+                on:click|capture={() => drawerStore.close()}>Resources</a
+            >
+            <a
+                href="/#activities"
+                class="anchor p-2"
+                on:click|capture={() => drawerStore.close()}>Activities</a
+            >
         </div>
     {/if}
 </Drawer>

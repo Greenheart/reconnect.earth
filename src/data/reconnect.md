@@ -14,6 +14,7 @@
 -   so we can thrive in life while doing good in the world. We must start with self-compassion before we can widen our circles of compassion to others, our communities, bioregions and the world.
 -   so you can choose what you want - rather than what others want you to choose
 -   The more we reclaim, the more we can widen our circles of compassion from self to others to the whole living Earth.
+-   For Reconnect.earth, I imagine people coming together to support each other in order to reclaim time, energy, attention and ultimately their socioeconomic conditions and their agency. Basically to first free each other and create conditions for their own wellbeing, and then unlock their creative potential to engage further and make change happen at a more structural level in their communities. This could be an activity to reflect on what you need, and then deciding on concrete actions you can take to improve your situation, together.
 
 ### How you can learn more and practice this
 
@@ -175,3 +176,49 @@ Practice
 -   could be anything!
 
 ---
+
+---
+
+# Reconnect.earth intro text
+
+How can we all live meaningful and healthy lives while doing good in the world? And how on earth can we do this in a rapidly changing, uncertain and disconnected world, shaped by the metacrisis (link)?
+
+Reconnect.earth is a process to explore answers to questions like these, and find pathways towards futures with wellbeing for all within the means of the living Earth.
+
+This is an invitation to deepen your connection with yourself, with other people and with the living Earth.
+
+Welcome to Reconnect.earth!
+
+---
+
+## How to engage with Reconnect.earth
+
+Reconnect.earth includes the Reconnect.earth process, an emerging library of resources and a collection of activities. On the website/ you will find/ There are also digital tools to help/enable the Reconnect.earth process. [more info - länk till dedikerad sida om "How to engage with the Reconnect.earth process"]
+
+TRE RUTOR
+
+# The Reconnect.earth process (on the detailed page)
+
+The Reconnect.earth process is both personal and collective:
+
+-   Personal - as we engage with the five branches of the Reconnect.earth process, we grow like trees. Both by creating a stable foundation for our wellbeing through our root systems, and by growing our branches as we flourish in life.
+
+-   Collective - just like the wellbeing of a forest requires a healthy ecosystem with many connected trees and mycelial networks, _local, bioregional and planetary wellbeing_ can emerge when we support each other, collaborate and connect our networks.
+
+Just like trees extend their interconnected root systems, growing into resilient forests, people reconnect to what matters, support each other to thrive in life and do good in the world. As this process unfolds, we create conditions for the emerging wellbeing economy that is regenerative and distributive by design.
+
+---
+
+### TODO: Add humane tech, doguhnut, platform co-op free software to the app and tech collection section (and dedicated page)
+
+---
+
+---
+
+### Other ideas for background info page
+
+-   Collectvively, because just like the wellbeing of a forest requires a healthy ecosystem with many collaborating trees and mycelial networks, planetary wellbeing could emerge from communities of practice, extending networks of co-operation and reciprocity.
+
+widen our circles of compassion - to create conditions for even more people to thrive in life whlie doing good in the world
+
+What if we could extend this forest to the whole earth?

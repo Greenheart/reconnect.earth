@@ -79,40 +79,6 @@
     >
 </div>
 
-<!-- TODO: move to background info text -->
-<!-- <div class="max-w-prose mx-auto">
-    <p class="mb-4 mt-16 font-bold text-2xl">
-        How can we all live meaningful and healthy lives? How can we do this <em
-            >while</em
-        > contributing to a future with wellbeing for all, within the planetary boundaries?
-    </p>
-    <p class="mb-4">
-        This might feel like a daunting task, given how the metacrisis is
-        affecting the world (link to what we mean with the metacrisis). Many
-        problems in today's world arise from disconnection - from ourselves,
-        each other, and from the living Earth. Up until now, efforts to tackle
-        these issues have unfortunately been focused on the symptoms of the
-        metacrisis, rather than the underlying causes.
-    </p>
-
-    <p class="mb-4">
-        We need a more systematic approach and we need to <span
-            class="text-primary-500">reconnect to what matters</span
-        >. We can redefine what it means to be an active citizen, prioritising
-        wellbeing on all levels while using more potent leverage points to more
-        effectively respond to the metacrisis.
-    </p>
-
-    <p class="pb-4">
-        Reconnect.earth is a collaborative <span class="text-primary-500"
-            >map</span
-        >
-        and <span class="text-primary-500">compass</span> for navigating a rapidly
-        changing world. The goal is to explore and share pathways towards how we
-        all can thrive in life while doing good in the world.
-    </p>
-</div> -->
-
 <div class="my-16 divider">
     ○ <IconEarth class="text-xl mx-2" /> ○
 </div>

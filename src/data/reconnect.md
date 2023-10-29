@@ -179,25 +179,19 @@ Practice
 
 ---
 
-# Reconnect.earth intro text
+# The Reconnect.earth process (on the detailed page)
 
-How can we all live meaningful and healthy lives while doing good in the world? And how on earth can we do this in a rapidly changing, uncertain and disconnected world, shaped by the metacrisis?
+Many problems in today's world arise from disconnection - from ourselves, each other, and from the living Earth. Up until now, efforts to tackle these issues have unfortunately been focused on the symptoms of the metacrisis, rather than the underlying causes.
 
-Reconnect.earth is a process to explore answers to questions like these, and find pathways towards futures with wellbeing for all within the means of the living Earth.
-
-This is an invitation to deepen your connection with yourself, with other people and with the living Earth.
-
-Welcome to Reconnect.earth!
+We need a more systematic approach and we need to reconnect to what matters. We can redefine what it means to be an active citizen, prioritising wellbeing on all levels while using more potent leverage points to more effectively respond to the metacrisis.
 
 ---
 
-## How to engage with Reconnect.earth
+Change starts within and is both personal and collective. By collaborating, we empower ourselves and each other to thrive in life while doing good in the world - very similar to how trees in the forest work together to create resilient and healthy ecosystems.
 
-Reconnect.earth includes the Reconnect.earth process, an emerging library of resources and a collection of activities. On the website/ you will find/ There are also digital tools to help/enable the Reconnect.earth process. [more info - länk till dedikerad sida om "How to engage with the Reconnect.earth process"]
+There are five branches of learning and practice to help turn the metacrisis from an abstract threat into actionable pathways towards a better future.
 
-TRE RUTOR
-
-# The Reconnect.earth process (on the detailed page)
+---
 
 The Reconnect.earth process is both personal and collective:
 

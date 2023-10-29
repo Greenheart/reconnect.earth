@@ -69,8 +69,8 @@
 
 <Drawer>
     {#if $drawerStore.id === 'mobile-menu'}
-        <div class="flex justify-end p-4 mt-1">
-            <button class="btn-icon" on:click={() => drawerStore.close()}>
+        <div class="flex justify-end p-2 mt-0.5">
+            <button class="p-2 pl-8" on:click={() => drawerStore.close()}>
                 <span><HeroiconsXMark class="w-8 h-8" /></span>
             </button>
         </div>

@@ -1,37 +1,56 @@
 <script lang="ts">
-    import { Drawer, initializeStores } from '@skeletonlabs/skeleton'
+    import {
+        Drawer,
+        initializeStores,
+        getDrawerStore,
+    } from '@skeletonlabs/skeleton'
+    import HeroiconsBars3BottomRight from '~icons/heroicons/bars-3-bottom-right'
+    import HeroiconsXMark from '~icons/heroicons/x-mark'
+
     import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
     import '@fontsource-variable/quicksand'
     import '../app.css'
 
     initializeStores()
+
+    const drawerStore = getDrawerStore()
+
+    function toggleDrawer() {
+        drawerStore.open({
+            id: 'mobile-menu',
+            position: 'right',
+            width: 'w-64',
+        })
+    }
 </script>
 
 <svelte:head>
     <title>{SITE_NAME}</title>
 </svelte:head>
 
-<nav class="flex justify-between p-4">
+<nav class="flex justify-between py-2 px-4 xs:p-4 items-center">
     <a href="/">
         🌍<span class="ml-2 gradient-heading">{SITE_NAME}</span>
     </a>
-    <ul class="flex gap-2">
+    <ul class="gap-2 hidden xs:flex">
         <li>
-            <a href="/resources" class="anchor p-2">Resources</a>
+            <a href="/resources" class="anchor p-1">Resources</a>
         </li>
         <li>
-            <a href="/#activities" class="anchor p-2">Activities</a>
+            <a href="/#activities" class="anchor p-1">Activities</a>
         </li>
     </ul>
+    <button class="text-lg btn xs:hidden px-0" on:click={toggleDrawer}>
+        <span><HeroiconsBars3BottomRight /></span>
+        <span>Menu</span>
+    </button>
 </nav>
 <main class="mx-auto max-w-screen-lg mt-8 px-4 text-lg sm:text-xl">
     <header>
-        <a href="/">
-            <h1 class="h1 font-bold mb-8 gradient-heading">
-                Reconnect to what matters
-            </h1>
-        </a>
+        <h1 class="h1 font-bold mb-4 gradient-heading">
+            Reconnect to what matters
+        </h1>
 
         <h2 class="h2 mb-8 sm:mb-16">
             Thrive in life while doing good in the world
@@ -48,4 +67,16 @@
     <p><a href={GITHUB_LINK} class="anchor">Welcome to get involved!</a></p>
 </footer>
 
-<Drawer />
+<Drawer>
+    {#if $drawerStore.id === 'mobile-menu'}
+        <div class="flex justify-end p-4 mt-1">
+            <button class="btn-icon" on:click={() => drawerStore.close()}>
+                <span><HeroiconsXMark class="w-8 h-8" /></span>
+            </button>
+        </div>
+        <div class="grid gap-2 text-center">
+            <a href="/resources" class="anchor p-2">Resources</a>
+            <a href="/#activities" class="anchor p-2">Activities</a>
+        </div>
+    {/if}
+</Drawer>

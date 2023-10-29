@@ -12,6 +12,19 @@
     <title>{SITE_NAME}</title>
 </svelte:head>
 
+<nav class="flex justify-between p-4">
+    <a href="/">
+        🌍<span class="ml-2 gradient-heading">{SITE_NAME}</span>
+    </a>
+    <ul class="flex gap-2">
+        <li>
+            <a href="/resources" class="anchor p-2">Resources</a>
+        </li>
+        <li>
+            <a href="/#activities" class="anchor p-2">Activities</a>
+        </li>
+    </ul>
+</nav>
 <main class="mx-auto max-w-screen-lg mt-8 px-4 text-lg sm:text-xl">
     <header>
         <a href="/">

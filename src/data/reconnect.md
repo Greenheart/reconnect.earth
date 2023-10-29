@@ -181,7 +181,7 @@ Practice
 
 # Reconnect.earth intro text
 
-How can we all live meaningful and healthy lives while doing good in the world? And how on earth can we do this in a rapidly changing, uncertain and disconnected world, shaped by the metacrisis (link)?
+How can we all live meaningful and healthy lives while doing good in the world? And how on earth can we do this in a rapidly changing, uncertain and disconnected world, shaped by the metacrisis?
 
 Reconnect.earth is a process to explore answers to questions like these, and find pathways towards futures with wellbeing for all within the means of the living Earth.
 
@@ -210,6 +210,8 @@ Just like trees extend their interconnected root systems, growing into resilient
 ---
 
 ### TODO: Add humane tech, doguhnut, platform co-op free software to the app and tech collection section (and dedicated page)
+
+Our guiding question is: What if humane technology was the norm, designed to empower connection, reflection and regenerative and distributive action?
 
 ---
 

@@ -22,27 +22,39 @@
     </div>
     <div class="max-w-prose">
         <p class="pb-4">
-            Reconnect.earth is a collaborative <span class="text-primary-500"
-                >map</span
-            >
-            and <span class="text-primary-500">compass</span> for navigating a rapidly
-            changing world.
+            How can we all live meaningful and healthy lives while doing good in
+            the world? And <span class="italic">how on earth</span> can we do this
+            in a rapidly changing, uncertain and disconnected world, shaped by the
+            metacrisis?
         </p>
         <p class="pb-4">
-            The <span class="text-primary-500">map</span> is the result of exploring
-            pathways towards a thriving future, together with the community. The
-            map includes the Reconnect.earth process and an emerging library of resources
-            and activities.
+            Reconnect.earth is a process to explore questions like these, and
+            find pathways towards futures with wellbeing for all within the
+            means of the planet.
         </p>
-        <p>
-            The <span class="text-primary-500">compass</span> is a set of principles
-            inspired by Doughnut Economics, helping us ensure the wellbeing for all
-            within the means of the planet.
+        <p class="pb-4">
+            This is an invitation to deepen your connection with yourself, with
+            other people and with the living Earth.
         </p>
+        <p class="font-bold">Welcome to Reconnect.earth!</p>
     </div>
 </div>
 
 <div class="grid sm:grid-cols-3 gap-4 mt-8">
+    <div class="col-span-full pb-4 max-w-prose">
+        <h2 class="h2 gradient-heading">How to engage with Reconnect.earth</h2>
+        <p class="pt-4">
+            This is a collaborative project, created by and for people and
+            communites working towards a wellbeing economy, in service of life.
+        </p>
+        <p class="pt-4">
+            On this website, you will find the Reconnect.earth process, an
+            emerging library of resources and a collection of activities. We are
+            also developing a suite of free and open source apps to help you
+            along your journey of learning, exploration and action.
+        </p>
+    </div>
+
     <SectionCard
         title="The Reconnect.earth process"
         text="Pathways towards how we all can live well while doing good in the world."

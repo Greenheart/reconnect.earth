@@ -78,7 +78,8 @@
     >
 </div>
 
-<div class="max-w-prose mx-auto">
+<!-- TODO: move to background info text -->
+<!-- <div class="max-w-prose mx-auto">
     <p class="mb-4 mt-16 font-bold text-2xl">
         How can we all live meaningful and healthy lives? How can we do this <em
             >while</em
@@ -109,7 +110,7 @@
         changing world. The goal is to explore and share pathways towards how we
         all can thrive in life while doing good in the world.
     </p>
-</div>
+</div> -->
 
 <div class="my-16 divider">
     ○ <IconEarth class="text-xl mx-2" /> ○

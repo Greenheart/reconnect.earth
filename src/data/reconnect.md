@@ -40,6 +40,8 @@ What can I gain from this?
 
 -   Very important: You need to start from where you are. What do you need to thrive in life?
     -   Understanding where you are in relation to your needs.
+    -   Social sustainability: Satisfying human needs (Great intro and overview of the work by Manfred Max-Neef) - https://www.youtube.com/watch?v=FyT9TMlzC6s&t=312
+        -   IDEA: This could be an activity (and the video could also be a resource) - trying to map how we satisfy our needs, and consider if there could be alternative ways to meet the fundamental needs with different satisfiers (strategies for meeting the needs). For example some satisfiers might not be useful at all, and others might be possible to replace with satisfiers that have more synergies and can add more value with less input of resources.
 
 ### Why it is important to Reclaim
 

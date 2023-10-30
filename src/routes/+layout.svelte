@@ -29,6 +29,7 @@
     <title>{SITE_NAME}</title>
 </svelte:head>
 
+<!-- IDEA: add bg color so the header is clearly separated from the page content -->
 <nav
     class="flex justify-between py-2 px-4 xs:p-4 items-center max-w-screen-lg mx-auto"
 >

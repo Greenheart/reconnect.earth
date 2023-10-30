@@ -1,3 +1,31 @@
+## Ideas for general description of the Reconnect.earth process
+
+-   This is an iterative process. Explore. Experiment. Learn.
+    -   Pick and choose what you find useful, based on your interests and needs. Be curious and explore new perspectives.
+-   Start where you are. Do something every week. Start a learning circle together with some friends.
+
+---
+
+## New section for the landing page: Why
+
+What can I gain from this?
+
+-   Agency, WELLBEING (for yourself, and for your communiy), community
+    --> are better prepared for the tough period which will come in the coming years (a kind of nuanced and constructive prepping), to be resilient and create conditions for mitigating the consequences of the metacrisis.
+
+-   Mindfulness and meditation
+
+    -   Based on the reconnection report:
+        -   Increased personal resilience, wellbeing and ability to consider more nuanced perspectives
+        -   In the face of the metacrisis, get better at responding rather than reacting.
+        -   Practice creating space in your life for reflection, and reconnection. Improve your focus.
+
+-   Wellbeing economics
+    -   Economics is part of everything we do, and we're all part of it. Also it's so much more than we have been taught. And it's something everyone can find use for in their daily life.
+    -   Learn how wellbeing economics can help us reimagine and redesign the systems from the ground up, instead of trying to limit the symptoms.
+
+---
+
 ## Reclaim
 
 ### What this means
@@ -8,6 +36,11 @@
 -   this needs to happen both individually and collectively
 -   Refer to a resource: https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs
 
+    -   TODO: replace with the theory by Manfred Max-Neef since it offers more nuanced perspectives
+
+-   Very important: You need to start from where you are. What do you need to thrive in life?
+    -   Understanding where you are in relation to your needs.
+
 ### Why it is important to Reclaim
 
 -   to create space for the deeper cultural and economic transformation we need to make in order to handle the metacrisis.
@@ -16,29 +49,31 @@
 -   The more we reclaim, the more we can widen our circles of compassion from self to others to the whole living Earth.
 -   For Reconnect.earth, I imagine people coming together to support each other in order to reclaim time, energy, attention and ultimately their socioeconomic conditions and their agency. Basically to first free each other and create conditions for their own wellbeing, and then unlock their creative potential to engage further and make change happen at a more structural level in their communities. This could be an activity to reflect on what you need, and then deciding on concrete actions you can take to improve your situation, together.
 
-### How you can learn more and practice this
+_& connect to the main question: How can we all thrive in life while doing good in the world?_
 
-Learn more about
+_& How it can help you_
 
--   surveillance capitalism
--   the attention economy & digital freedom & privacy (gör ett urval!)
--   humane technology
+### How you can practice this
 
-Practice
-
--   mindfulness
--   self-compassion
--   humane technology, take control over your devices
+-   Mindfulness - through this you can improv. Reflect on what you would like to put your time on, based on your values or dreams. Then, change to do more of waht you really want, and less of what you actually don't want.
+-   Humane technology, take control over your devicesing what to think about and what you put your (mental) attention to.
+-   Practice secome aware of, so that you then can widen your circle of compassion to other people, to all other living beings and to the living ecosystems. what you put your time on. Reflect
+-   Humane technology, take control over your devices
 
 ### Relevant resources to learn more
 
 -   Surveillance capitalism
+-   The attention economy & digital freedom & privacy (gör ett urval!)
+-   Humane technology
+-   Dan Siegel's website
 
-### Relevant activities to practice
-
--   humane technology
--   workshop with others to help each other take control of your tech
+-   Mindfulness
+-   Dan Siegel's meditation on Wheel of awareness
 -   Aware app
+-   Unpaid (care) work app on Reconnect.earth (link)### Relevant activities to practice
+
+-   See humane technology website
+-   Dan Siegel's meditation on Wheel of awareness
 
 ---
 
@@ -61,17 +96,17 @@ Practice
 
 ### How you can practice this
 
--   read things!
--   take active notes - learn more and synthesise learnings, in a structured way
--   take time and choose a topic/ questions to reflect on
+-   Read things! Explore the resources library (link) to learn more – about anything from how interconnected we are/ the world is to what wellbeing means.
+-   Take active notes while you are learning new things - then you learn more and synthesise your learnings in a structured way.
+-   Set away time for yourself and choose a topic/ questions (link) to reflect on. For example, reflect about your values, to know what is important to you. Then, act according to your values.
 
 ### Relevant resources to learn more
 
 ### Relevant activities to practice
 
--   use the Reconnect.earth question app
--   learning circle (read/watch material & take notes & discuss in a group, e.g. 29k/Aware sharing format for any topic)
--   book club
+-   Use the Reconnect.earth question app and reflect on different questions
+-   Join an existing or start a learning circle: read or watch material, take notes and discuss the content in a group.
+-   Join an existing or start a book club together with friends to explore different resources (it doesn't have to be books) together. When you meet (online or in-person), share what you learned, which new insights you got and discuss the topic.
 
 ---
 
@@ -94,20 +129,22 @@ Practice
 
 ### How you can practice this
 
--   reflect on what's meaningful
--   learn about ikigai and fill out your ikigai
+-   Reflect on what gives you meaning. Do more of those things in your everyday life.
+-   Learn about ikigai, fill out your ikigai, reflect on if you want to do something differently which is more in the centre of ikigai and take action on it.
+-   Meet with other people - online or in-person - and have a meaningful conversation. Use the questions from the (Name)[link] as a conversation starter.
+-   Reconnect with the living planet by for example simply taking a walk in nature - either by yourself, or together with other people. Look closely at the trees and flowers, become aware of the smells and sounds, and just enjoy!
 
 ### Relevant resources to learn more
 
--   ikigai info
--   web of meaning
+-   Ikigai info
+-   Web of meaning
 -   Why Meaning in Life Matters for Societal Flourishing (https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing)
 
 ### Relevant activities to practice
 
--   fill out your ikigai
--   think about what has been meaningful in your life so far, and then how you want to fill your life with meaning going forward
--   generative social fields exercise
+-   Learn about ikigai, fill out your ikigai, reflect on if you want to do something differently which is more in the centre of ikigai and take action on it.
+-   Think about what has been meaningful in your life so far, and then how you want to fill your life with meaning going forward
+-   Generative social fields exercise
 
 ---
 
@@ -127,17 +164,17 @@ Practice
 
 ### How you can practice
 
--   think about/ describe in written (list/ text/ poem/ song)/ make an artwork (2D/ 3D) of your positive vision - and share it if you want
+-   Think about and describe in written (list/ text/ poem/ song) or make an artwork (2D/ 3D) of your positive vision - and share it if you want. Add to it with with time as you get more ideas or inspiration.
 
 ### Relevant resources to learn more
 
--   Phoebe Tickell (?)
+-   Phoebe Tickell
 -   stories.life
 
 ### Relevant activities to practice
 
--   simply develop your positive vision
--   resources from Phoebe Tickell (?)
+-   Develop your own positive vision
+-   Resources from Phoebe Tickell (?)
 
 ---
 
@@ -157,23 +194,26 @@ Practice
 -   not enough to reduce our negative footprint, but need to increase our positive handprint
 -   sustainable is not enough
 -   if we can do regeneration on all levels (individual, in communities, for the living planet)- get positive feedback loops - by regenerating on all levels, by definition, we strengthen the capacity to do even more positive things in the future (as long as we maintain a healthy balance and support each other)
--   we cannot rely on unpaid engagement to make everything happen - people need to live (har pengar för att klara sig). Social entrepreneurship: we need to organise economically to create movements that are regenerative and can increase the impact over time. But: not business - according to deep design of business so that as much as possible stays within the business. We need new ideals and ideas of what social entrepreneurship means. It's not about getting rich, but to live well and do good in the world while giving as much as possible to support further regernerative efforts.
+-   we cannot rely on unpaid engagement to make everything happen - people need to live (har pengar för att klara sig). Social entrepreneurship: we need to organise economically to create movements that are regenerative and can increase the impact over time. But: not business - according to deep design of business so that as much as possible stays within the business. We need new ideals and ideas of what social entrepreneurship means. It's not about getting rich, but to live well and do good in the world while giving as much as possible to support further regenerative efforts.
 
 ### How you can practice this
 
--   embody the change & generative social fields. It matters how we show up.
--   live regenerative & distributive
+-   Do something which brings you or the world closer to your positive future vision!
+-   Embody the change & generative social fields. It matters how we show up. Be fully present and give oter people the attention they deserve. Contribute actively to discussions.
+-   Care about other people - ask them how they are doing, show that you really care about them
+-   Help other people - if you have the time, energy and capacity to do so.
+-   Share what you can - do you have more money or things than you need for your survival? Consider donating to those people who have less, or donate money for environmental purposes, for example via charity organisations.
 
 ### Relevant resources to learn more
 
--   gift economy & abundance economy
--   commoning, https://www.commonerscatalog.org/
--   info about cooperatives
--   democratic economy
+-   Gift economy & abundance economy
+-   Commoning, https://www.commonerscatalog.org/
+-   Info about co-operatives
+-   Democratic economy
 
 ### Relevant activities to practice
 
--   could be anything!
+-   Could be anything!
 
 ---
 

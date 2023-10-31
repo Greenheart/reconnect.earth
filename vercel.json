@@ -5,6 +5,11 @@
             "source": "/lifewheel",
             "destination": "/lifewheel/",
             "permanent": false
+        },
+        {
+            "source": "/lifewheel/reflection",
+            "destination": "/lifewheel/reflection/",
+            "permanent": false
         }
     ]
 }

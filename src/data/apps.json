@@ -4,5 +4,11 @@
         "description": "Reflect on your life balance. Visualise your progress over time and reconnect to what matters in your life. Make reflection a habit and gain new insights for your wellbeing. Try it together with a friend or partner for a more meaningful time together.",
         "link": "https://reconnect.earth/lifewheel/",
         "git": "https://github.com/Greenheart/lifewheel"
+    },
+    {
+        "name": "Aware",
+        "description": "Mental Health & Inner Development with a Supportive Community. Aware is a new free app from the non-profit 29k, with open or private, hosted live sessions for mental health, wellbeing and inner development. Developed by Psychologists.",
+        "link": "https://29k.org",
+        "git": "https://github.com/29ki/29k"
     }
 ]

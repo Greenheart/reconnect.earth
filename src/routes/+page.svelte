@@ -272,7 +272,7 @@
                     <Img
                         src={app.image}
                         alt={app.name + ' screenshot'}
-                        class="order-3 sm:order-1 w-full h-full object-contain !bg-transparent place-self-center"
+                        class="order-3 sm:order-1 w-full h-full object-contain !bg-transparent place-self-center rounded-xl"
                     />
                 </div>
                 <div

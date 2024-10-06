@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite'
 import { defineConfig } from 'vite'
-import Icons from 'unplugin-icons/vite'
+import icons from 'unplugin-icons/vite'
 import purgeCSS from 'vite-plugin-tailwind-purgecss'
 import { imagetools } from '@zerodevx/svelte-img/vite'
 import basicSsl from '@vitejs/plugin-basic-ssl'
@@ -13,8 +13,8 @@ export default defineConfig({
         sveltekit(),
         purgeCSS(),
         imagetools(),
-        basicSsl(),
-        Icons({
+        // basicSsl(),
+        icons({
             compiler: 'svelte',
         }),
     ],

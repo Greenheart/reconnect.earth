@@ -283,12 +283,12 @@
                     </h3>
                     <p class="pb-2">{app.description}</p>
 
-                    <div
-                        class="flex justify-between space-x-4 items-center text-base"
-                    >
-                        <a href={app.git} class="anchor">Contribute</a>
+                    <div class="flex justify-end gap-2 items-center text-base">
+                        <a href={app.git} class="btn variant-soft rounded-sm"
+                            >Contribute</a
+                        >
                         <a
-                            class="btn variant-soft rounded-sm gap-1"
+                            class="btn variant-filled-primary rounded-sm gap-1"
                             href={app.link}
                             target="_blank"
                             ><span class="flex items-stretch">Explore</span>

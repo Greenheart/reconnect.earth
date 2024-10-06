@@ -26,56 +26,77 @@ What can I gain from this?
 
 ---
 
+# The Reconnect.earth process
+
+Learn more about the Reconnect.earth process - and what you can do!
+
 ## Reclaim
 
 ### What this means
 
 -   to reclaim our attention
--   to reclaim our agency - we're citizens rather than mere consumers.
 -   to reclaim our time and energy
--   this needs to happen both individually and collectively
+-   to reclaim our agency - we're citizens rather than mere consumers
+
+This needs to happen both collectively and individually.
+
+What do you need to thrive in life? Start where you are and understand what you can do to fulfil your needs.
+For some inspiration, watch [this 5 min video](https://www.youtube.com/watch?v=FyT9TMlzC6s) on the fundamental human needs we need to satisfy.
+
+<!--
+TODO: "reclaim our attention": add ... don't get distracted by social media, or only follow what marketing wants you to focus on (typ)
 -   Refer to a resource: https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs
 
     -   TODO: replace with the theory by Manfred Max-Neef since it offers more nuanced perspectives
 
 -   Very important: You need to start from where you are. What do you need to thrive in life?
     -   Understanding where you are in relation to your needs.
-    -   Social sustainability: Satisfying human needs (Great intro and overview of the work by Manfred Max-Neef) - https://www.youtube.com/watch?v=FyT9TMlzC6s&t=312
+    -   Social sustainability: Satisfying human needs (Great intro and overview of the work by Manfred Max-Neef) - https://www.youtube.com/watch?v=FyT9TMlzC6s
         -   IDEA: This could be an activity (and the video could also be a resource) - trying to map how we satisfy our needs, and consider if there could be alternative ways to meet the fundamental needs with different satisfiers (strategies for meeting the needs). For example some satisfiers might not be useful at all, and others might be possible to replace with satisfiers that have more synergies and can add more value with less input of resources.
+
+-->
 
 ### Why it is important to Reclaim
 
--   to create space for the deeper cultural and economic transformation we need to make in order to handle the metacrisis.
--   so we can thrive in life while doing good in the world. We must start with self-compassion before we can widen our circles of compassion to others, our communities, bioregions and the world.
--   so you can choose what you want - rather than what others want you to choose
+-   To create space for the deeper cultural and economic transformation we need to make in order to handle the metacrisis.
+-   So we can thrive in life while doing good in the world. We must start with self-compassion before we can widen our circles of compassion to others, our communities, bioregions and the world.
+-   So you can choose what you want - rather than what others want you to choose.
 -   The more we reclaim, the more we can widen our circles of compassion from self to others to the whole living Earth.
--   For Reconnect.earth, I imagine people coming together to support each other in order to reclaim time, energy, attention and ultimately their socioeconomic conditions and their agency. Basically to first free each other and create conditions for their own wellbeing, and then unlock their creative potential to engage further and make change happen at a more structural level in their communities. This could be an activity to reflect on what you need, and then deciding on concrete actions you can take to improve your situation, together.
+-   For Reconnect.earth, we imagine people coming together to support each other in order to reclaim time, energy, attention and ultimately their socioeconomic conditions and their agency. Basically to first free each other and create conditions for their own wellbeing, and then unlock their creative potential to engage further and make change happen at a more structural level in their communities. This could be an activity to reflect on what you need, and then deciding on concrete actions you can take to improve your situation, together.
 
-_& connect to the main question: How can we all thrive in life while doing good in the world?_
+<!-- _& connect to the main question: How can we all thrive in life while doing good in the world?_
 
-_& How it can help you_
+_& How it can help you_ -->
 
 ### How you can practice this
 
--   Mindfulness - through this you can improv. Reflect on what you would like to put your time on, based on your values or dreams. Then, change to do more of waht you really want, and less of what you actually don't want.
--   Humane technology, take control over your devicesing what to think about and what you put your (mental) attention to.
--   Practice secome aware of, so that you then can widen your circle of compassion to other people, to all other living beings and to the living ecosystems. what you put your time on. Reflect
--   Humane technology, take control over your devices
+-   Mindfulness: through this you can be more present and in tune with yourself.
+-   Become aware of how you are influenced by the world around you
+-   Reflect on what you would like to put your time on, based on your values or dreams (and not based on what marketing tells you). Then, change to do more of what you really want, and less of what you actually don't want.
+-   [Take control](https://www.humanetech.com/take-control) of your devices to improve your digital well-being. Why not invite friends or family to do it together?
+-   Use free and open source software to help you decide how your digital life should be.
+-   Practice self-compassion, so that you then can widen your circle of compassion to other people, to all other living beings and to the living ecosystems.
+
+<!-- Förklara varför FOSS i punkt ovan & länka. -->
 
 ### Relevant resources to learn more
 
--   Surveillance capitalism
--   The attention economy & digital freedom & privacy (gör ett urval!)
--   Humane technology
--   Dan Siegel's website
+-   Watch the documentary [The social dilemma](https://www.humanetech.com/the-social-dilemma)
+-   Surveillance capitalism: [Wikipedia page](https://en.wikipedia.org/wiki/Surveillance_capitalism) and the book [The Age of Surveillance Capitalism](https://en.wikipedia.org/wiki/The_Age_of_Surveillance_Capitalism)
+-   The course [Foundations of Humane Technology](https://www.humanetech.com/course)
 
+<!-- -   The attention economy & digital freedom & privacy (gör ett urval!)
+-   Dan Siegel's website
 -   Mindfulness
 -   Dan Siegel's meditation on Wheel of awareness
--   Aware app
--   Unpaid (care) work app on Reconnect.earth (link)### Relevant activities to practice
+-   Unpaid (care) work app on Reconnect.earth (link) -->
 
--   See humane technology website
--   Dan Siegel's meditation on Wheel of awareness
+### Relevant activities to practice
+
+-   The free and open source Aware app for mental health, wellbeing and inner development, developed by [29k](https://29k.org/)
+-   Take control of your devices following [this guide](https://www.humanetech.com/take-control)
+
+<!-- -   Dan Siegel's meditation on Wheel of awareness -->
 
 ---
 
@@ -162,7 +183,7 @@ _& How it can help you_
 -   Re-imagine is critical for us in order to explore and envision new ways of being, thinking, organizing and living.
 -   vision principle - focus on what you want to create instead of what you want to avoid. + more motivating
 -   a vision/goal makes us unconsciously to work towards it (example from elite sportspeople)
--   We must re-imagine before we can regenerate. Or more accurately, we need to embrace this iterative process and constantly re-imagine as we learn more. Continue exploring the branches of the framework as we live and learn.
+-   We must re-imagine before we can regenerate. Or more accurately, we need to embrace this iterative process and constantly re-imagine as we learn more. Continue exploring the branches of the Reconnect.earth process as we live and learn.
 
 ### How you can practice
 

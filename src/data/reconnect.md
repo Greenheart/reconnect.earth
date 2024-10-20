@@ -104,32 +104,28 @@ _& How it can help you_ -->
 
 ### What this means
 
--   learn
--   reflect/ think about certain questions and topics
--   cultivate your curiosity & make research in your own way/ find the types of resources which you find mroe compelling
--   critical thinking & systems thinking
--   not only by yourself, but can be done together with others
+-   be curious and explore topics related to the Reconnect.earth process. Reflect on how they relate to your life and your thoughts about the future.
+-   develop your critical thinking and systems thinking
+-   do this not only by yourself, but preferably together with others
 
 ### Why it is important to Reflect
 
--   need to learn how the world works + how things are connected/ system thinking
 -   we are living in a metacrisis, and we need to develop the understanding, capacities and learn how to organise to meet these challenges
--   for your personal/inner development
--   the world is complex - need to make efforts to understand it
+-   learn more about how our complex world works and how things are connected to better know how to make a change
+-   to reflect on different questions supports your inner development
 
 ### How you can practice this
 
--   Read things! Explore the resources library (link) to learn more – about anything from how interconnected we are/ the world is to what wellbeing means.
+-   Explore the resource library (link) and read/watch/listen to what you're curious about.
 -   Take active notes while you are learning new things - then you learn more and synthesise your learnings in a structured way.
--   Set away time for yourself and choose a topic/ questions (link) to reflect on. For example, reflect about your values, to know what is important to you. Then, act according to your values.
+-   Set away time for yourself and choose a topic or questions (link) to reflect on. For example, reflect on your values to know what is important to you. Then, act according to your values.
 
 ### Relevant resources to learn more
 
 ### Relevant activities to practice
 
--   Use the Reconnect.earth question app and reflect on different questions
--   Join an existing or start a learning circle: read or watch material, take notes and discuss the content in a group.
--   Join an existing or start a book club together with friends to explore different resources (it doesn't have to be books) together. When you meet (online or in-person), share what you learned, which new insights you got and discuss the topic.
+-   Join an existing or start a learning circle to explore different resources together: read, watch or listen to material related to the Reconnect process. Meet online or in-person and share what you learned, which new insights you got and discuss the topic.
+-   Use the Reconnect.earth question app and reflect on different questions. Do this by yourself, or together with others to create more meaningful conversations.
 
 ---
 
@@ -213,7 +209,7 @@ _& How it can help you_ -->
 
 ### Why it is important to Regenerate
 
--   world is becoming worse
+-   world will only improve if we strive to make it better
 -   not enough to reduce our negative footprint, but need to increase our positive handprint
 -   sustainable is not enough
 -   if we can do regeneration on all levels (individual, in communities, for the living planet)- get positive feedback loops - by regenerating on all levels, by definition, we strengthen the capacity to do even more positive things in the future (as long as we maintain a healthy balance and support each other)

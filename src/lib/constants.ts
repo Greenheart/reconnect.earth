@@ -15,6 +15,7 @@ export const RESOURCE_TYPES = <const>[
     'Documentary',
     'Research',
     'Course',
+    'Talk',
 ]
 
 export const RESOURCE_CATEGORIES = <const>[
@@ -34,6 +35,9 @@ export const RESOURCE_CATEGORIES = <const>[
     'Motivation',
     'Interconnectedness',
     'Ecology',
+    'Not-for-profit-worldModel',
+    'Solarpunk',
+    'SocialSustainability'
 ]
 
 export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]

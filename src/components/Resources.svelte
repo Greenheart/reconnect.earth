@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onDestroy, onMount } from 'svelte'
+    import { onDestroy } from 'svelte'
     import { flip } from 'svelte/animate'
     import { quintOut } from 'svelte/easing'
     import { crossfade, fade } from 'svelte/transition'
@@ -33,17 +33,13 @@
             : true
 
         return $searchStore.showBookmarks
-            ? matchesTags && $bookmarks.includes(resource.link)
+            ? matchesTags && bookmarks.value.includes(resource.link)
             : matchesTags
     }
 
     const unsubscribe = searchStore.subscribe((model) =>
         updateSearchResults(model, keepMatchingResources),
     )
-
-    onMount(() => {
-        bookmarks.useLocalStorage()
-    })
 
     onDestroy(() => unsubscribe)
 
@@ -91,7 +87,7 @@
         </div> -->
         {#each $searchStore.filtered as resource (resource.link)}
             {@const key = resource.link}
-            {@const isBookmarked = $bookmarks.includes(resource.link)}
+            {@const isBookmarked = bookmarks.value.includes(resource.link)}
             {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
             <div
                 class="card p-4 grid gap-2 grid-rows-[min-content_min-content_1fr]"

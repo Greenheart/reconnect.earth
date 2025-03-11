@@ -62,8 +62,8 @@
             )}
             on:click={() =>
                 ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
-            disabled={!$bookmarks.length ||
-                !$bookmarks.some((bookmark) =>
+            disabled={!bookmarks.value.length ||
+                !bookmarks.value.some((bookmark) =>
                     $searchStore.filtered.some(
                         (resource) => resource.link === bookmark,
                     ),
@@ -71,8 +71,8 @@
         >
             <IconBookmarksFill />
             <span class="flex-grow text-left">Bookmarks</span>
-            {#if $bookmarks.length}
-                <span>{$bookmarks.length}</span>
+            {#if bookmarks.value.length}
+                <span>{bookmarks.value.length}</span>
             {/if}
         </button>
     </div>

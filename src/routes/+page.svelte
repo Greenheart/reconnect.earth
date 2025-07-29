@@ -1,16 +1,27 @@
 <script lang="ts">
-    import Img from '@zerodevx/svelte-img'
     import IconEarth from '~icons/ion/earth'
     import IconLibrary from '~icons/ion/library'
     import IconPeopleFill from '~icons/bi/people-fill'
     import IconShare from '~icons/ri/share-box-fill'
 
-    import treeOfReconnection from '$lib/assets/tree-of-reconnection.jpg?as=run'
+    import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
     import SectionCard from '$components/SectionCard.svelte'
     import type { PageData } from './$types'
 
     export let data: PageData
     $: ({ apps } = data)
+
+    const allImages = import.meta.glob(
+        '$assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+        {
+            eager: true,
+            query: { enhanced: true },
+        },
+    ) as Record<string, { default: any }>
+
+    function getImage(filename: string) {
+        return allImages[`/src/assets/${filename}`]?.default
+    }
 </script>
 
 <div class="flex flex-col sm:flex-row gap-8 pb-8 items-center">
@@ -91,10 +102,11 @@
     <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
     <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
     <div class="grid py-4">
-        <Img
+        <enhanced:img
             class="rounded-md"
             src={treeOfReconnection}
             alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
+            sizes="min(1920px, 100vw)"
         />
         <p class="text-center pt-2 italic">The Tree of Reconnection</p>
     </div>
@@ -269,10 +281,11 @@
                 class="card p-4 grid gap-4 max-w-xl xs:grid-cols-[min-content_1fr]"
             >
                 <div class="max-h-80 xs:max-h-full xs:w-48">
-                    <Img
-                        src={app.image}
+                    <enhanced:img
+                        src={getImage(app.image)}
                         alt={app.name + ' screenshot'}
                         class="order-3 sm:order-1 w-full h-full object-contain !bg-transparent place-self-center rounded-xl"
+                        sizes="min(200px, 100vw)"
                     />
                 </div>
                 <div

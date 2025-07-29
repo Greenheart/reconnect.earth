@@ -20,6 +20,7 @@ export const AppSchema = z.object({
     description: z.string().max(300),
     link: z.string(),
     git: z.url(),
+    image: z.string(),
 })
 
 export type App = z.infer<typeof AppSchema>

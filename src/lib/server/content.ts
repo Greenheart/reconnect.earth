@@ -2,8 +2,8 @@ import { z } from 'zod'
 import { readFile } from 'fs/promises'
 import { resolve } from 'path'
 
-import { ResourceSchema, type Resource, AppSchema, type App } from './schema'
-import { getFeaturedFirst, getSortedTags } from './utils'
+import { ResourceSchema, type Resource, AppSchema, type App } from '../schema'
+import { getFeaturedFirst, getSortedTags } from '../utils'
 
 async function readJSON(path: string) {
     return await readFile(path, { encoding: 'utf-8' }).then(JSON.parse)

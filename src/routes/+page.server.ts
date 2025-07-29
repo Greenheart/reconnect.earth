@@ -1,4 +1,4 @@
-import { apps } from '$lib/content-backend'
+import { apps } from '$lib/server/content'
 import type { App } from '$lib/schema'
 
 import lifeWheel from '$lib/assets/lifewheel.png?as=run:1'

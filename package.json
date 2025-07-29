@@ -10,30 +10,30 @@
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
     },
     "devDependencies": {
-        "@iconify-json/bi": "^1.2.2",
+        "@iconify-json/bi": "^1.2.4",
         "@iconify-json/heroicons": "^1.2.2",
-        "@iconify-json/ion": "^1.2.2",
+        "@iconify-json/ion": "^1.2.4",
         "@iconify-json/ri": "^1.2.5",
         "@skeletonlabs/skeleton": "^2.11.0",
         "@skeletonlabs/tw-plugin": "^0.4.1",
         "@sveltejs/adapter-static": "^3.0.8",
-        "@sveltejs/kit": "^2.20.1",
-        "@sveltejs/vite-plugin-svelte": "^5.0.3",
+        "@sveltejs/kit": "^2.26.1",
+        "@sveltejs/vite-plugin-svelte": "^6.1.0",
         "@tailwindcss/forms": "^0.5.10",
-        "@types/node": "^22.13.10",
-        "@vitejs/plugin-basic-ssl": "^2.0.0",
+        "@types/node": "^24.1.0",
+        "@vitejs/plugin-basic-ssl": "^2.1.0",
         "@zerodevx/svelte-img": "^2.1.2",
         "autoprefixer": "^10.4.21",
-        "postcss": "^8.5.3",
+        "postcss": "^8.5.6",
         "postcss-load-config": "^6.0.1",
-        "prettier": "^3.5.3",
-        "svelte": "^5.23.2",
-        "svelte-check": "^4.1.5",
+        "prettier": "^3.6.2",
+        "svelte": "^5.37.1",
+        "svelte-check": "^4.3.0",
         "tailwindcss": "^3.4.17",
         "tslib": "^2.8.1",
-        "typescript": "^5.8.2",
-        "unplugin-icons": "^22.1.0",
-        "vite": "^6.2.2",
+        "typescript": "^5.8.3",
+        "unplugin-icons": "^22.2.0",
+        "vite": "^7.0.6",
         "vite-plugin-tailwind-purgecss": "^0.3.5"
     },
     "type": "module",
@@ -44,8 +44,8 @@
         "semi": false
     },
     "dependencies": {
-        "@fontsource-variable/quicksand": "^5.2.6",
-        "zod": "^3.24.2"
+        "@fontsource-variable/quicksand": "^5.2.8",
+        "zod": "^4.0.13"
     },
     "pnpm": {
         "onlyBuiltDependencies": [

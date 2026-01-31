@@ -12,10 +12,10 @@ pnpm dev
 
 ## Editing content
 
--   Add or update resources, by making changes in `resources.json`.
--   Before new tags can be used, they need to be defined in [./src/lib/constants.ts](./src/lib/constants.ts).
-    -   Resource types always appear first in the list of tags and show the type of content (written/spoken/visual).
-    -   Resource categories can be added to connect resources to the most important keywords.
+- Add or update resources, by making changes in `resources.json`.
+- Before new tags can be used, they need to be defined in [./src/lib/constants.ts](./src/lib/constants.ts).
+    - Resource types always appear first in the list of tags and show the type of content (written/spoken/visual).
+    - Resource categories can be added to connect resources to the most important keywords.
 
 ## Building
 
@@ -26,3 +26,9 @@ pnpm build
 ```
 
 You can preview the production build with `pnpm preview`.
+
+The lifewheel app can be updated via a script:
+
+```bash
+pnpm update-lifewheel
+```

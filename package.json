@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "vite dev",
         "build": "vite build",
-        "update-lifewheel": "cd ../lifewheel && [[ $(git branch) != *main* ]] && echo \"Error: Build Lifewheel from the main branch!\" && pnpm build && rm -rf ../lifewheel/static/lifewheel && cp -R build ../reconnect.earth/static/lifewheel",
+        "update-lifewheel": "sh scripts/update-lifewheel.sh",
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"

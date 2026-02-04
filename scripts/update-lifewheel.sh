@@ -20,5 +20,8 @@ pnpm build
 rm -rf static/lifewheel
 cp -R build $( realpath "$PROJECT_DIR/static/lifewheel" )
 
-
-# NOTE: To publish the new version, also create a new build for the Reconnect.earth project too.
+echo ""
+echo "Lifewheel updated. Remember to also create a new build for Reconnect.earth to publish the new version."
+echo ""
+echo "pnpm build"
+echo ""

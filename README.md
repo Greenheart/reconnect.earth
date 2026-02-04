@@ -2,13 +2,14 @@
 
 ## Developing
 
-Once you've installed dependencies with `pnpm install`, start a development server:
+This project requires [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io/) to be installed on your computer.
+
+To run the project locally, install dependencies and start the development server by running the following commands in a terminal:
 
 ```bash
+pnpm install
 pnpm dev
 ```
-
-**NOTE:** We're using `https` for local development to enable some browser features needed for the lifewheel app.
 
 ## Editing content
 

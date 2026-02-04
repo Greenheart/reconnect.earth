@@ -25,5 +25,3 @@ cp -R build/* $TARGET_DIR
 echo ""
 echo "Lifewheel updated. Remember to also create a new build for Reconnect.earth to publish the new version."
 echo ""
-echo "pnpm build"
-echo ""

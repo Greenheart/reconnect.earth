@@ -17,8 +17,10 @@ fi
 
 pnpm build
 
-rm -rf static/lifewheel
-cp -R build $( realpath "$PROJECT_DIR/static/lifewheel" )
+TARGET_DIR=$( realpath "$PROJECT_DIR/static/lifewheel" )
+rm -rf $TARGET_DIR
+mkdir -p $TARGET_DIR
+cp -R build/* $TARGET_DIR
 
 echo ""
 echo "Lifewheel updated. Remember to also create a new build for Reconnect.earth to publish the new version."

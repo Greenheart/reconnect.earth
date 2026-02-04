@@ -2,7 +2,10 @@
 
 set -e
 
-cd ../lifewheel
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+PROJECT_DIR=$( realpath "$SCRIPT_DIR/../" )
+
+cd $( realpath "$PROJECT_DIR/../lifewheel" )
 
 echoerr() { printf "\e[31;1m%s\e[0m\n" "$*" >&2; }
 
@@ -14,5 +17,5 @@ fi
 
 pnpm build
 
-rm -rf ../lifewheel/static/lifewheel
-cp -R build ../reconnect.earth/static/lifewheel
+rm -rf static/lifewheel
+cp -R build $( realpath "$PROJECT_DIR/static/lifewheel" )

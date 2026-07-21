@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { SearchStore } from '$lib/stores/search'
   import { bookmarks } from '$lib/state/bookmarks'
   // import { SlideToggle } from '@skeletonlabs/skeleton'
 
@@ -7,46 +6,28 @@
   import IconBookmarksFill from '~icons/bi/bookmarks-fill'
 
   import SearchInput from './SearchInput.svelte'
-  import { RESOURCE_CATEGORIES, RESOURCE_TYPES, type ResourceTag } from '$lib/constants'
   import type { Resource } from '$lib/schema'
+  import type { FilteredItems } from '$lib/state/search.svelte'
   import { cx } from '$lib/utils'
 
   interface Props {
-    searchStore: SearchStore
+    searchResults: FilteredItems<Resource>
     resources: Resource[]
     class?: string
   }
 
-  let { searchStore, resources, class: className = '' }: Props = $props()
+  let { searchResults, resources, class: className = '' }: Props = $props()
 
-  function countResourcesWithTag(tag: ResourceTag) {
-    // IDEA: By switching to the resources from $searchStore.filtered, we only show relevant tags
-    // return $searchStore.filtered.filter((r) => r.tags.includes(tag)).length
-    return resources.filter((r) => r.tags.includes(tag)).length
-  }
-
-  function getRelevantTags(tags: readonly ResourceTag[]) {
-    const count = countResourcesWithTag
-    return tags.filter((tag) => count(tag) >= 1).sort((a, b) => count(b) - count(a))
-  }
-
-  // IDEA: Move toggleTag into the searchStore, to keep logic together
-  function toggleTag(tag: ResourceTag) {
-    if ($searchStore.tags.includes(tag)) {
-      $searchStore.tags = $searchStore.tags.filter((t) => t !== tag)
-    } else {
-      $searchStore.tags = [...$searchStore.tags, tag]
-    }
-  }
+  const resourceCounts = $derived(searchResults.getItemCountsPerTag())
 </script>
 
 <div class={className}>
-  <SearchInput {searchStore} />
+  <SearchInput {searchResults} />
 
   <div class="grid gap-2 pb-8 pt-4">
     <button
       class="variant-soft-surface btn justify-start rounded-md"
-      onclick={() => ($searchStore.showBookmarks = false)}
+      onclick={() => (searchResults.filters.showBookmarks = false)}
     >
       <IconLibrary />
       <span class="flex-grow text-left">Library</span>
@@ -55,12 +36,12 @@
     <button
       class={cx(
         'variant-soft-surface btn justify-start rounded-md',
-        $searchStore.showBookmarks ? 'bg-surface-active-token' : '',
+        searchResults.filters.showBookmarks ? 'bg-surface-active-token' : '',
       )}
-      onclick={() => ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
+      onclick={() => (searchResults.filters.showBookmarks = !searchResults.filters.showBookmarks)}
       disabled={!bookmarks.value.length ||
         !bookmarks.value.some((bookmark) =>
-          $searchStore.filtered.some((resource) => resource.link === bookmark),
+          searchResults.matches.some((resource) => resource.link === bookmark),
         )}
     >
       <IconBookmarksFill />
@@ -94,34 +75,36 @@
   <!-- TODO: Maybe change the animation when results change -->
   <div class="grid gap-1 pb-8">
     <h2 class="h3 font-bold">Resource types</h2>
-    {#each getRelevantTags(RESOURCE_TYPES) as tag (tag)}
+    {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
       <button
         class={cx(
           'chip flex w-full justify-start text-left hover:variant-soft-surface',
-          $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
+          searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
         )}
-        onclick={() => toggleTag(tag)}
+        disabled={!enabled}
+        onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary-500">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->
-        <span class="text-gray-300">({countResourcesWithTag(tag)})</span>
+        <span class="text-gray-300">{count}</span>
       </button>
     {/each}
   </div>
 
   <div class="grid gap-1 pb-8">
     <h2 class="h3 font-bold">Categories</h2>
-    {#each getRelevantTags(RESOURCE_CATEGORIES) as tag (tag)}
+    {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
       <button
         class={cx(
           'chip flex w-full justify-start text-left hover:variant-soft-surface',
-          $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
+          searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
         )}
-        onclick={() => toggleTag(tag)}
+        disabled={!enabled}
+        onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary-500">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->
-        <span class="text-gray-300">({countResourcesWithTag(tag)})</span>
+        <span class="text-gray-300">{count}</span>
       </button>
     {/each}
   </div>

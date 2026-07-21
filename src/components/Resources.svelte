@@ -1,50 +1,51 @@
 <script lang="ts">
-  import { onDestroy } from 'svelte'
   import { flip } from 'svelte/animate'
   import { quintOut } from 'svelte/easing'
   import { crossfade, fade } from 'svelte/transition'
-  import { getDrawerStore } from '@skeletonlabs/skeleton'
 
   import IconShare from '~icons/ri/share-box-fill'
   import IconBookmark from '~icons/bi/bookmark'
   import IconBookmarkFill from '~icons/bi/bookmark-fill'
 
   import type { Resource } from '$lib/schema'
-  import { createSearchStore, updateSearchResults } from '$lib/stores/search'
   import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
-  import type { ResourceTag } from '$lib/constants'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
+  import { FilteredItems } from '$lib/state/search.svelte'
 
   interface Props {
     resources: Resource[]
   }
 
-  let data: Props = $props()
+  let { resources }: Props = $props()
 
-  let resources = $derived(data.resources)
+  const searchResults = $derived(
+    new FilteredItems<Resource>(resources, (item, filters) => {
+      // All conditions need to be met, so abort as soon as we find something that does not match.
+      if (filters.tags?.length && !filters.tags.some((tag) => item.tags.includes(tag))) {
+        return false
+      }
 
-  const drawerStore = getDrawerStore()
-  const searchStore = createSearchStore({
-    data: resources,
-    getSearchTerms: ({ title, description, tags }) => `${title} ${description} ${tags.join(' ')}`,
-  })
+      if (filters.showBookmarks && !bookmarks.value.includes(item.link)) {
+        return false
+      }
 
-  // TODO: Consider moving this into the search store
-  function keepMatchingResources(resource: Resource) {
-    const matchesTags = $searchStore.tags.length
-      ? $searchStore.tags.some((tag) => resource.tags.includes(tag as ResourceTag))
-      : true
+      // IDEA: Maybe make all filters inclusive, so all conditions need to match
 
-    return $searchStore.showBookmarks
-      ? matchesTags && bookmarks.value.includes(resource.link)
-      : matchesTags
-  }
+      const searchString = filters.search.toLowerCase()
 
-  const unsubscribe = searchStore.subscribe((model) =>
-    updateSearchResults(model, keepMatchingResources),
+      // IDEA: Maybe create a search index to make lookups faster
+      if (
+        searchString &&
+        !item.title.toLowerCase().includes(searchString) &&
+        item.description &&
+        !item.description?.toLowerCase()?.includes(searchString)
+      ) {
+        return false
+      }
+
+      return true
+    }),
   )
-
-  onDestroy(() => unsubscribe)
 
   const [send, receive] = crossfade({
     duration: 500,
@@ -71,14 +72,14 @@
 <!-- TODO: Make sure the clear button in the search input remains visible -->
 <!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->
 <div class="grid gap-4 xs:grid-cols-[230px_1fr]">
-  <ResourceFiltersSidebar {searchStore} {resources} class="hidden xs:block" />
+  <ResourceFiltersSidebar {searchResults} {resources} class="hidden xs:block" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-10 items-center gap-4 text-sm">
-      <span>Showing {$searchStore.filtered.length} / {resources.length}</span>
+      <span>Showing {searchResults.matches.length} / {resources.length}</span>
       <button
         class="variant-outline-surface btn btn-sm rounded-md"
-        class:hidden={$searchStore.filtered.length === resources.length}
-        onclick={() => searchStore.reset()}>Reset filters</button
+        class:hidden={searchResults.matches.length === resources.length}
+        onclick={() => searchResults.resetFilters()}>Reset filters</button
       >
     </div>
     <!-- IDEA: when bookmarks are shown, there could be a short paragraph explaining that bookmarks are saved on your device, and can be exported to a file -->
@@ -86,7 +87,7 @@
             Your bookmarked resources are saved in your browser. You can export
             them to a file.
         </div> -->
-    {#each $searchStore.filtered as resource (resource.link)}
+    {#each searchResults.matches as resource (resource.link)}
       {@const key = resource.link}
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
       {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}

@@ -11,7 +11,7 @@
 
   import type { Resource } from '$lib/schema'
   import { createSearchStore, updateSearchResults } from '$lib/stores/search'
-  import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks'
+  import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
   import type { ResourceTag } from '$lib/constants'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
 
@@ -19,7 +19,9 @@
     resources: Resource[]
   }
 
-  let { resources }: Props = $props()
+  let data: Props = $props()
+
+  let resources = $derived(data.resources)
 
   const drawerStore = getDrawerStore()
   const searchStore = createSearchStore({

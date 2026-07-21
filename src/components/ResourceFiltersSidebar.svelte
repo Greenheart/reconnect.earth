@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { SearchStore } from '$lib/stores/search'
-  import { bookmarks } from '$lib/stores/bookmarks'
+  import { bookmarks } from '$lib/state/bookmarks'
   // import { SlideToggle } from '@skeletonlabs/skeleton'
 
   import IconLibrary from '~icons/ion/library'

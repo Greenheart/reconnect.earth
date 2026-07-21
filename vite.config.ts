@@ -8,12 +8,12 @@ import { setDefaultResultOrder } from 'dns'
 setDefaultResultOrder('verbatim')
 
 export default defineConfig({
-    plugins: [
-        enhancedImages(), // Must come before the SvelteKit plugin
-        sveltekit(),
-        purgeCSS(),
-        icons({
-            compiler: 'svelte',
-        }),
-    ],
+  plugins: [
+    enhancedImages(), // Must come before the SvelteKit plugin
+    sveltekit(),
+    purgeCSS(),
+    icons({
+      compiler: 'svelte',
+    }),
+  ],
 })

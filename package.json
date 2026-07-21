@@ -1,50 +1,62 @@
 {
-    "name": "reconnect.earth",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build",
-        "update-lifewheel": "sh scripts/update-lifewheel.sh",
-        "preview": "vite preview",
-        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-    },
-    "devDependencies": {
-        "@iconify-json/bi": "^1.2.7",
-        "@iconify-json/heroicons": "^1.2.3",
-        "@iconify-json/ion": "^1.2.7",
-        "@iconify-json/ri": "^1.2.10",
-        "@skeletonlabs/skeleton": "^2.11.0",
-        "@skeletonlabs/tw-plugin": "^0.4.1",
-        "@sveltejs/adapter-static": "^3.0.10",
-        "@sveltejs/enhanced-img": "^0.11.0",
-        "@sveltejs/kit": "^2.70.1",
-        "@sveltejs/vite-plugin-svelte": "^7.2.0",
-        "@tailwindcss/forms": "^0.5.11",
-        "@types/node": "^26.1.1",
-        "autoprefixer": "^10.5.4",
-        "postcss": "^8.5.21",
-        "postcss-load-config": "^6.0.1",
-        "prettier": "^3.9.6",
-        "svelte": "^5.56.7",
-        "svelte-check": "^4.7.3",
-        "tailwindcss": "^3.4.19",
-        "tslib": "^2.8.1",
-        "typescript": "^6.0.3",
-        "unplugin-icons": "^23.0.1",
-        "vite": "^8.1.5",
-        "vite-plugin-tailwind-purgecss": "^0.3.5"
-    },
-    "type": "module",
-    "prettier": {
-        "singleQuote": true,
-        "trailingComma": "all",
-        "tabWidth": 4,
-        "semi": false
-    },
-    "dependencies": {
-        "@fontsource-variable/quicksand": "^5.3.0",
-        "zod": "^4.4.3"
-    }
+  "name": "reconnect.earth",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "update-lifewheel": "sh scripts/update-lifewheel.sh",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "fix": "prettier -l --write ."
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/ion": "^1.2.7",
+    "@iconify-json/ri": "^1.2.10",
+    "@skeletonlabs/skeleton": "^2.11.0",
+    "@skeletonlabs/tw-plugin": "^0.4.1",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/enhanced-img": "^0.11.0",
+    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@tailwindcss/forms": "^0.5.11",
+    "@types/node": "^26.1.1",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.21",
+    "postcss-load-config": "^6.0.1",
+    "prettier-plugin-svelte": "^4.1.1",
+    "prettier": "^3.9.6",
+    "svelte": "^5.56.7",
+    "svelte-check": "^4.7.3",
+    "tailwindcss": "^3.4.19",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.3",
+    "unplugin-icons": "^23.0.1",
+    "vite": "^8.1.5",
+    "vite-plugin-tailwind-purgecss": "^0.3.5"
+  },
+  "type": "module",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "@fontsource-variable/quicksand": "^5.3.0",
+    "zod": "^4.4.3"
+  }
 }

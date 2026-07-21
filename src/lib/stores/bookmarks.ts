@@ -7,11 +7,9 @@ const KEY = 'resource_bookmarks'
 export const bookmarks = persisted<Resource['link'][]>(KEY, [])
 
 export function toggleBookmark(resource: Resource) {
-    if (bookmarks.value.includes(resource.link)) {
-        bookmarks.value = bookmarks.value.filter(
-            (link) => link !== resource.link,
-        )
-    } else {
-        bookmarks.value.push(resource.link)
-    }
+  if (bookmarks.value.includes(resource.link)) {
+    bookmarks.value = bookmarks.value.filter((link) => link !== resource.link)
+  } else {
+    bookmarks.value.push(resource.link)
+  }
 }

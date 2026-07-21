@@ -15,8 +15,8 @@ pnpm dev
 
 - Add or update resources, by making changes in `resources.json`.
 - Before new tags can be used, they need to be defined in [./src/lib/constants.ts](./src/lib/constants.ts).
-    - Resource types always appear first in the list of tags and show the type of content (written/spoken/visual).
-    - Resource categories can be added to connect resources to the most important keywords.
+  - Resource types always appear first in the list of tags and show the type of content (written/spoken/visual).
+  - Resource categories can be added to connect resources to the most important keywords.
 
 ## Building
 

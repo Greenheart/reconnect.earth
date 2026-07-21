@@ -4,15 +4,15 @@ import { resolve } from 'path'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    preprocess: vitePreprocess(),
+  preprocess: vitePreprocess(),
 
-    kit: {
-        adapter: adapter(),
-        alias: {
-            $components: resolve('src/components'),
-            $assets: resolve('src/assets'),
-        },
+  kit: {
+    adapter: adapter(),
+    alias: {
+      $components: resolve('src/components'),
+      $assets: resolve('src/assets'),
     },
+  },
 }
 
 export default config

@@ -2,7 +2,7 @@ import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 const config = {
-    plugins: [tailwindcss(), autoprefixer],
+  plugins: [tailwindcss(), autoprefixer],
 }
 
 export default config

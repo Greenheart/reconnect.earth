@@ -2,6 +2,7 @@ allowBuilds:
   esbuild: true
   sharp: true
   '@sveltejs/kit': true
+
 minimumReleaseAgeExclude:
   - postcss@8.5.21
   - prettier@3.9.6

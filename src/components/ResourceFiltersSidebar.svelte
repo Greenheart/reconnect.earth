@@ -11,10 +11,13 @@
   import type { Resource } from '$lib/schema'
   import { cx } from '$lib/utils'
 
-  export let searchStore: SearchStore
-  export let resources: Resource[]
-  let className = ''
-  export { className as class }
+  interface Props {
+    searchStore: SearchStore
+    resources: Resource[]
+    class?: string
+  }
+
+  let { searchStore, resources, class: className = '' }: Props = $props()
 
   function countResourcesWithTag(tag: ResourceTag) {
     // IDEA: By switching to the resources from $searchStore.filtered, we only show relevant tags
@@ -43,7 +46,7 @@
   <div class="grid gap-2 pb-8 pt-4">
     <button
       class="variant-soft-surface btn justify-start rounded-md"
-      on:click={() => ($searchStore.showBookmarks = false)}
+      onclick={() => ($searchStore.showBookmarks = false)}
     >
       <IconLibrary />
       <span class="flex-grow text-left">Library</span>
@@ -54,7 +57,7 @@
         'variant-soft-surface btn justify-start rounded-md',
         $searchStore.showBookmarks ? 'bg-surface-active-token' : '',
       )}
-      on:click={() => ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
+      onclick={() => ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
       disabled={!bookmarks.value.length ||
         !bookmarks.value.some((bookmark) =>
           $searchStore.filtered.some((resource) => resource.link === bookmark),
@@ -97,7 +100,7 @@
           'chip flex w-full justify-start text-left hover:variant-soft-surface',
           $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
         )}
-        on:click={() => toggleTag(tag)}
+        onclick={() => toggleTag(tag)}
       >
         <span class="text-primary-500">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->
@@ -114,7 +117,7 @@
           'chip flex w-full justify-start text-left hover:variant-soft-surface',
           $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
         )}
-        on:click={() => toggleTag(tag)}
+        onclick={() => toggleTag(tag)}
       >
         <span class="text-primary-500">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->

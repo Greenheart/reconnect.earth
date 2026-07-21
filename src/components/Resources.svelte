@@ -15,7 +15,11 @@
   import type { ResourceTag } from '$lib/constants'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
 
-  export let resources: Resource[]
+  interface Props {
+    resources: Resource[]
+  }
+
+  let { resources }: Props = $props()
 
   const drawerStore = getDrawerStore()
   const searchStore = createSearchStore({
@@ -72,7 +76,7 @@
       <button
         class="variant-outline-surface btn btn-sm rounded-md"
         class:hidden={$searchStore.filtered.length === resources.length}
-        on:click={() => searchStore.reset()}>Reset filters</button
+        onclick={() => searchStore.reset()}>Reset filters</button
       >
     </div>
     <!-- IDEA: when bookmarks are shown, there could be a short paragraph explaining that bookmarks are saved on your device, and can be exported to a file -->
@@ -102,7 +106,7 @@
         <div class="flex justify-between gap-2">
           <button
             class="btn-icon rounded-sm hover:variant-soft"
-            on:click={() => toggleBookmark(resource)}
+            onclick={() => toggleBookmark(resource)}
             aria-label={label}
             title={label}
           >

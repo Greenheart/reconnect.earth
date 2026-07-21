@@ -1,14 +1,19 @@
 <script lang="ts">
-  export let title: string
-  export let text: string
-  export let href: string
-  export let cta: string
+  interface Props {
+    title: string
+    text: string
+    href: string
+    cta: string
+    icon?: import('svelte').Snippet
+  }
+
+  let { title, text, href, cta, icon }: Props = $props()
 </script>
 
 <div
   class="card mx-auto grid max-w-sm grid-rows-[min-content_min-content_min-content_1fr] gap-2 p-4 sm:mx-0"
 >
-  <slot name="icon" />
+  {@render icon?.()}
   <h3 class="h4 text-center font-bold text-primary-500">{title}</h3>
   <p class="mb-2 text-base md:text-lg">
     {text}

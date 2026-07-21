@@ -3,7 +3,11 @@
   import type { Writable } from 'svelte/store'
   import IconSearch from '~icons/ri/search-eye-line'
 
-  export let searchStore: Writable<SearchStoreModel<any>>
+  interface Props {
+    searchStore: Writable<SearchStoreModel<any>>
+  }
+
+  let { searchStore }: Props = $props()
 </script>
 
 <div class="input-group max-w-[300px] grid-cols-[auto_1fr_auto] rounded-md">
@@ -14,7 +18,7 @@
   <!-- TODO: Fix the clear button not positioned correctly (it's not visible) -->
   <button
     class="!px-3"
-    on:click={() => ($searchStore.search = '')}
+    onclick={() => ($searchStore.search = '')}
     style:display={$searchStore.search === '' ? 'none' : ''}>✕</button
   >
 </div>

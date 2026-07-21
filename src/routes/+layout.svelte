@@ -8,6 +8,8 @@
   import '@fontsource-variable/quicksand'
   import '../app.css'
 
+  let { children } = $props()
+
   initializeStores()
 
   const drawerStore = getDrawerStore()
@@ -38,7 +40,7 @@
       <a href="/#activities" class="anchor p-1">Activities</a>
     </li>
   </ul>
-  <button class="btn px-0 text-lg xs:hidden" on:click={toggleDrawer}>
+  <button class="btn px-0 text-lg xs:hidden" onclick={toggleDrawer}>
     <span><HeroiconsBars3BottomRight /></span>
     <span>Menu</span>
   </button>
@@ -49,7 +51,7 @@
 
     <h2 class="h2 mb-8 sm:mb-16">Thrive in life while doing good in the world</h2>
   </header>
-  <slot />
+  {@render children?.()}
 </main>
 
 <footer class="mx-auto mt-8 max-w-screen-md p-4 px-4 text-lg sm:text-xl">
@@ -62,15 +64,15 @@
 <Drawer>
   {#if $drawerStore.id === 'mobile-menu'}
     <div class="mt-0.5 flex justify-end p-2">
-      <button class="p-2 pl-8" on:click={() => drawerStore.close()}>
+      <button class="p-2 pl-8" onclick={() => drawerStore.close()}>
         <span><HeroiconsXMark class="h-8 w-8" /></span>
       </button>
     </div>
     <div class="grid gap-2 text-center">
-      <a href="/resources" class="anchor p-2" on:click|capture={() => drawerStore.close()}
+      <a href="/resources" class="anchor p-2" onclickcapture={() => drawerStore.close()}
         >Resources</a
       >
-      <a href="/#activities" class="anchor p-2" on:click|capture={() => drawerStore.close()}
+      <a href="/#activities" class="anchor p-2" onclickcapture={() => drawerStore.close()}
         >Activities</a
       >
     </div>

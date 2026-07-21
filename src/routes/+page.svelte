@@ -6,10 +6,9 @@
 
   import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '$components/SectionCard.svelte'
-  import type { PageData } from './$types'
 
-  export let data: PageData
-  $: ({ apps } = data)
+  let { data } = $props()
+  let { apps } = $derived(data)
 
   const allImages = import.meta.glob('$assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}', {
     eager: true,
@@ -66,19 +65,28 @@
     title="The Reconnect.earth process"
     text="Pathways towards how we all can live well while doing good in the world."
     cta="Explore"
-    href="#process"><IconEarth slot="icon" class="mx-auto h-8 w-8" /></SectionCard
+    href="#process"
+    >{#snippet icon()}
+      <IconEarth class="mx-auto h-8 w-8" />
+    {/snippet}</SectionCard
   >
   <SectionCard
     title="Resource library"
     text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
     cta="Be curious"
-    href="/resources"><IconLibrary slot="icon" class="mx-auto h-8 w-8" /></SectionCard
+    href="/resources"
+    >{#snippet icon()}
+      <IconLibrary class="mx-auto h-8 w-8" />
+    {/snippet}</SectionCard
   >
   <SectionCard
     title="Activities"
     text="Ways to engage with the Reconnect.earth process, both personally and together with others."
     cta="Get started"
-    href="#activities"><IconPeopleFill slot="icon" class="mx-auto h-8 w-8" /></SectionCard
+    href="#activities"
+    >{#snippet icon()}
+      <IconPeopleFill class="mx-auto h-8 w-8" />
+    {/snippet}</SectionCard
   >
 </div>
 

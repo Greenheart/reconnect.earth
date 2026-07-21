@@ -21,7 +21,7 @@
   }
 </script>
 
-<div class="flex flex-col sm:flex-row gap-8 pb-8 items-center">
+<div class="flex flex-col items-center gap-8 pb-8 sm:flex-row">
   <div class="max-w-sm sm:max-w-[250px]">
     <img
       src="/undraw_connected_world_wuay.svg"
@@ -46,8 +46,8 @@
   </div>
 </div>
 
-<div class="grid sm:grid-cols-3 gap-4 mt-8">
-  <div class="col-span-full pb-4 max-w-prose">
+<div class="mt-8 grid gap-4 sm:grid-cols-3">
+  <div class="col-span-full max-w-prose pb-4">
     <h2 class="h2 gradient-heading">How to engage with Reconnect.earth</h2>
     <p class="pt-4">
       This is a collaborative project, created by and for people and communites working towards a
@@ -66,27 +66,27 @@
     title="The Reconnect.earth process"
     text="Pathways towards how we all can live well while doing good in the world."
     cta="Explore"
-    href="#process"><IconEarth slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    href="#process"><IconEarth slot="icon" class="mx-auto h-8 w-8" /></SectionCard
   >
   <SectionCard
     title="Resource library"
     text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
     cta="Be curious"
-    href="/resources"><IconLibrary slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    href="/resources"><IconLibrary slot="icon" class="mx-auto h-8 w-8" /></SectionCard
   >
   <SectionCard
     title="Activities"
     text="Ways to engage with the Reconnect.earth process, both personally and together with others."
     cta="Get started"
-    href="#activities"><IconPeopleFill slot="icon" class="mx-auto w-8 h-8" /></SectionCard
+    href="#activities"><IconPeopleFill slot="icon" class="mx-auto h-8 w-8" /></SectionCard
   >
 </div>
 
 <div class="my-16 divider">
-  ○ <IconEarth class="text-xl mx-2" /> ○
+  ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
-<div class="max-w-prose mx-auto">
+<div class="mx-auto max-w-prose">
   <h2 class="h1 gradient-heading" id="process">The Reconnect.earth process</h2>
 
   <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
@@ -98,7 +98,7 @@
       alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
       sizes="min(1920px, 100vw)"
     />
-    <p class="text-center pt-2 italic">The Tree of Reconnection</p>
+    <p class="pt-2 text-center italic">The Tree of Reconnection</p>
   </div>
 
   <p class="pb-4">
@@ -115,7 +115,7 @@
   <!-- IDEA: Maybe have symbols for each branch? -->
   <div class="flex flex-col justify-around gap-8 pt-8">
     <div>
-      <h2 class="h2 gradient-heading mb-3">Reclaim</h2>
+      <h2 class="h2 mb-3 gradient-heading">Reclaim</h2>
       <p class="pb-4">
         To change culture and economics towards wellbeing for all within the means of the planet, we
         first of all need to create conditions that make change possible. This is something we need
@@ -130,7 +130,7 @@
     </div>
 
     <div>
-      <h2 class="h2 gradient-heading mb-3">Reflect</h2>
+      <h2 class="h2 mb-3 gradient-heading">Reflect</h2>
       <p class="pb-4">
         To develop as a person it is important to reflect about – among others – your values, your
         behaviours, your relationship to yourself, relationships with other people and your
@@ -148,7 +148,7 @@
     </div>
 
     <div>
-      <h2 class="h2 gradient-heading mb-3">Reconnect</h2>
+      <h2 class="h2 mb-3 gradient-heading">Reconnect</h2>
       <p class="pb-4">
         Many of the world's problems today stem from a deep disconnection - from ourselves, from
         other people and from the living planet.
@@ -169,7 +169,7 @@
     </div>
 
     <div>
-      <h2 class="h2 gradient-heading mb-3">Reimagine</h2>
+      <h2 class="h2 mb-3 gradient-heading">Reimagine</h2>
       <blockquote class="blockquote mb-4">
         "We cannot create what we can't imagine." — Lucille Clifton
       </blockquote>
@@ -187,7 +187,7 @@
     </div>
 
     <div>
-      <h2 class="h2 gradient-heading mb-3">Regenerate</h2>
+      <h2 class="h2 mb-3 gradient-heading">Regenerate</h2>
       <p class="pb-4">
         Create what you have imagined. Make the world a better place. It's not enough to reduce our
         negative footprint – we need to increase our positive handprint. It is not enough to do
@@ -203,10 +203,10 @@
 </div>
 
 <div class="my-16 divider">
-  ○ <IconEarth class="text-xl mx-2" /> ○
+  ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
-<div class="max-w-prose mx-auto" id="activities">
+<div class="mx-auto max-w-prose" id="activities">
   <h2 class="h1 gradient-heading">Activities</h2>
 
   <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
@@ -227,10 +227,10 @@
 </div>
 
 <div class="my-16 divider">
-  ○ <IconEarth class="text-xl mx-2" /> ○
+  ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
-<div class="max-w-prose mx-auto" id="apps">
+<div class="mx-auto max-w-prose" id="apps">
   <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
   <p class="pb-16 pt-4">
@@ -241,26 +241,26 @@
     with feedback, ideas, and improvements!
   </p>
 
-  <div class="grid gap-4 justify-center">
+  <div class="grid justify-center gap-4">
     {#each apps as app}
-      <div class="card p-4 grid gap-4 max-w-xl xs:grid-cols-[min-content_1fr]">
+      <div class="card grid max-w-xl gap-4 p-4 xs:grid-cols-[min-content_1fr]">
         <div class="max-h-80 xs:max-h-full xs:w-48">
           <enhanced:img
             src={getImage(app.image)}
             alt={app.name + ' screenshot'}
-            class="order-3 sm:order-1 w-full h-full object-contain !bg-transparent place-self-center rounded-xl"
+            class="order-3 h-full w-full place-self-center rounded-xl !bg-transparent object-contain sm:order-1"
             sizes="min(200px, 100vw)"
           />
         </div>
         <div class="order-2 grid grid-rows-[min-content_1fr_min-content]">
-          <h3 class="h3 font-bold mb-4">
+          <h3 class="h3 mb-4 font-bold">
             <a href={app.link} class="anchor">{app.name}</a>
           </h3>
           <p class="pb-2">{app.description}</p>
 
-          <div class="flex justify-end gap-2 items-center text-base">
-            <a href={app.git} class="btn variant-soft rounded-sm">Contribute</a>
-            <a class="btn variant-filled-primary rounded-sm gap-1" href={app.link} target="_blank"
+          <div class="flex items-center justify-end gap-2 text-base">
+            <a href={app.git} class="variant-soft btn rounded-sm">Contribute</a>
+            <a class="variant-filled-primary btn gap-1 rounded-sm" href={app.link} target="_blank"
               ><span class="flex items-stretch">Explore</span>
               <IconShare />
             </a>

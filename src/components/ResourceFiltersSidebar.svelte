@@ -42,7 +42,7 @@
 
   <div class="grid gap-2 pb-8 pt-4">
     <button
-      class="btn variant-soft-surface rounded-md justify-start"
+      class="variant-soft-surface btn justify-start rounded-md"
       on:click={() => ($searchStore.showBookmarks = false)}
     >
       <IconLibrary />
@@ -51,7 +51,7 @@
     </button>
     <button
       class={cx(
-        'btn variant-soft-surface rounded-md justify-start',
+        'variant-soft-surface btn justify-start rounded-md',
         $searchStore.showBookmarks ? 'bg-surface-active-token' : '',
       )}
       on:click={() => ($searchStore.showBookmarks = !$searchStore.showBookmarks)}
@@ -94,7 +94,7 @@
     {#each getRelevantTags(RESOURCE_TYPES) as tag (tag)}
       <button
         class={cx(
-          'text-left chip w-full flex justify-start hover:variant-soft-surface',
+          'chip flex w-full justify-start text-left hover:variant-soft-surface',
           $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
         )}
         on:click={() => toggleTag(tag)}
@@ -111,7 +111,7 @@
     {#each getRelevantTags(RESOURCE_CATEGORIES) as tag (tag)}
       <button
         class={cx(
-          'text-left chip w-full flex justify-start hover:variant-soft-surface',
+          'chip flex w-full justify-start text-left hover:variant-soft-surface',
           $searchStore.tags.includes(tag) ? 'variant-soft-surface' : '',
         )}
         on:click={() => toggleTag(tag)}

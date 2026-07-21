@@ -266,7 +266,7 @@
 <div class="max-w-prose mx-auto" id="apps">
     <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
-    <p class="pb-8 pt-4">
+    <p class="pb-16 pt-4">
         To make this journey more fun, engaging and accessible, we're designing
         and developing <a
             href="https://fsfe.org/freesoftware/#freedoms"

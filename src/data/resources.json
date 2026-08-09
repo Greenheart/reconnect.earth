@@ -90,7 +90,7 @@
     "title": "About Doughnut Economics",
     "description": "The Doughnut offers a vision of what it means for humanity to thrive in the 21st century - and Doughnut Economics explores the mindset and ways of thinking needed to get us there.",
     "link": "https://doughnuteconomics.org/about-doughnut-economics",
-    "tags": ["Website", "WellbeingEconomics"],
+    "tags": ["Webpage", "WellbeingEconomics"],
     "quality": 4
   },
   {
@@ -181,5 +181,12 @@
     "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
     "quality": 5,
     "tags": ["Audio", "Talk"]
+  },
+  {
+    "title": "What is Free Software",
+    "description": "A friendly introduction to the term \"free software\", why it's important and exploring its many benefits including for sustainability and resilience.",
+    "link": "https://fsfe.org/freesoftware/",
+    "quality": 5,
+    "tags": ["Webpage", "Freedom", "Technology"]
   }
 ]

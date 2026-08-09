@@ -5,7 +5,7 @@ export const RESOURCE_TYPES = <const>[
   'Video',
   'Book',
   'Podcast',
-  'Website',
+  'Webpage',
   'Report',
   'Article',
   'Guide',

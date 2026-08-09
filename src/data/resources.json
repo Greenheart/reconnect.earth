@@ -188,5 +188,12 @@
     "link": "https://fsfe.org/freesoftware/",
     "quality": 5,
     "tags": ["Webpage", "Freedom", "Technology"]
+  },
+  {
+    "title": "Public Money? Public Code!",
+    "description": "A concrete policy proposal to help public institutions to use tax money more efficiently while improving transparency and sustainability of critical, digital infrastructure.",
+    "link": "https://publiccode.eu/",
+    "quality": 5,
+    "tags": ["Webpage", "Freedom", "Technology"]
   }
 ]

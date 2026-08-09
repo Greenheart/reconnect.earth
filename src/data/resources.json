@@ -167,5 +167,19 @@
     "tags": ["Video", "WellbeingEconomics", "Economics"],
     "quality": 5,
     "featured": true
+  },
+  {
+    "title": "The Invisible Doctrine | The secret history of Neoliberalism",
+    "description": "Neoliberalism has come to both govern and constrain our lives in its domination of the political and economic agenda of the West. In this timely and gripping documentary essay, author George Monbiot deconstructs the roots, secretive propagation and deep impact of a little-understood doctrine that has played a profound role in transforming our economics, politics and environment, driving many of the crises we face today.",
+    "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
+    "quality": 4,
+    "tags": ["Documentary", "Economics", "Politics"]
+  },
+  {
+    "title": "Rutger Bregman - Moral Revolution - BBC Reith Lectures 2025",
+    "description": "Dutch historian Rutger Bregman asks what can be done to counter the moral decay of today's un-serious elites, arguing that small, committed groups can spark moral revolutions. 4 lectures of 25-30 minutes, followed by Q&A."
+    "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
+    "quality": 5,
+    "tags": ["Audio", "Lecture"]
   }
 ]

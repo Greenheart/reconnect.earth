@@ -40,7 +40,7 @@ Learn more about the Reconnect.earth process - and what you can do!
 
 This needs to happen both collectively and individually.
 
-What do you need to thrive in life? Start where you are and understand what you can do to fulfil your needs.
+What do you need to thrive in life? Start where you are and understand what you can do to fulfill your needs.
 For some inspiration, watch [this 5 min video](https://www.youtube.com/watch?v=FyT9TMlzC6s) on the fundamental human needs we need to satisfy.
 
 <!--
@@ -74,10 +74,8 @@ _& How it can help you_ -->
 - Become aware of how you are influenced by the world around you
 - Reflect on what you would like to put your time on, based on your values or dreams (and not based on what marketing tells you). Then, change to do more of what you really want, and less of what you actually don't want.
 - [Take control](https://www.humanetech.com/take-control) of your devices to improve your digital well-being. Why not invite friends or family to do it together?
-- Use free and open source software to help you decide how your digital life should be.
+- Use [free and open source software](https://fsfe.org/freesoftware/) to help you decide how your digital life should be.
 - Practice self-compassion, so that you then can widen your circle of compassion to other people, to all other living beings and to the living ecosystems.
-
-<!-- Förklara varför FOSS i punkt ovan & länka. -->
 
 ### Relevant resources to learn more
 

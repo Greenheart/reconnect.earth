@@ -1,3 +1,55 @@
+# Reconnect.earth Taster - Exploring the connections between environment, food, personal, societal and planetary health
+
+Explore the main points of reconnect.earth through a co-created dinner and. Systems thinking and holistic perspectives are needed to respond to humanity's challenges.
+
+## Considerations
+- Initial recipe: https://www.zeta.nu/recept/grynsallad-med-paprikasalsa-rostade-gronsaker/
+  - Adaptations: Add tempeh as main protein, soy-/oatgurt instead of feta cheese.
+- Can be adapted different recipes, but if so also important to adapt the info about ingredients and nutrition.
+- Nut allergy, and other food allergies can make it trickier to organize.
+- Link to sources. Add them as resources on reconnect.earth, to encourage participants to further explore the in-depth information and other related themes.
+- Two facilitators to take turns and keep a good flow through the event.
+
+## Event plan
+
+- Welcome and serve some light snacks (focused on health and nutrition), and some good drinks. Maybe kombucha or tea.
+- Short intro and overview of the event plan
+- Intro to the recipe and ingredients
+  - Describe how the ingredients were selected, where they come from, why it's important with organic.
+  - Explain why plant based food is important, and how to create well-balanced meals that finds a good balance between nutrition, low environmental impact, low water usage and still being fun to cook and really tasty to eat.
+- Cooking together with the participants
+  - Prepare the meal according to the recipe
+  - While cooking, the facilitators can also take the opportunity to talk more about the connection between food and personal as well as planetary health.
+  - Maybe ask the participants to discuss some reflection questions?
+- Eating the meal together
+  - Try to feel the taste and texture of all the different ingredients
+  - Silence for a few minutes, mindful eating, chewing properly.
+  - Talking about the connection between food and gut health, and mental health. Good food and nutrition improves our capacity
+  - Ask reflection questions and open up for discussion with the participants.
+- Serve desert: pre-made (or prepared together): Fruktbollar (Min kokbok vegan, page 193)
+  - Talk about healthy but tasty deserts and sweets. Mention it's also an excellent snack when you need quick energy, to for example bring along for hikes or eat before/after exercise.
+    - This is also dependent on nut allergy - be careful to check with participants before.
+    - Recipe: Fruitballs (20 st)
+      - Ingredients (ideally all organic):
+        - 6 dried figs (80 g)
+        - 10 dried apricots (85 g)
+        - 1 dl pumpkin seeds
+        - 1 dl hazelnuts (or replace with another nut if you want)
+        - 0.5 dl gojiberries
+        - 1 dl raisins
+        - 100 g dark 70% chocolate - ideally fair trade
+      - Instruction: Put all ingredients in a food processor and mix to a gritty mass. Shape into 20 balls with your hands. Store in a cool food container with a tightly sealed lid. Tips: Tastes even better after storing in the fridge over the night.
+  - While eating, talk about the next steps and how conscious food choices like this - ideally together with friends and family give many benefits.
+  - Explain that under capitalism, health is a privilege rather than a human right. But it doesn't have to be this way. And there are many things we can do to help each other improve our health - this being true for personal, societal and planetary health.
+    - It's critical that organic food becomes more affordable, accessible and becomes the norm. For example by removing subsidies to unhealthy food, and shifting it to strengthen organic food production.
+  - Given people's health play can play a big role in the rise of populism and fascism (source: https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(25)00118-8/fulltext), (TODO: find resource to strengthen the link between political discontent and fascism) imagine what might happen if people get better health and 
+  - Also, given the ageing populations that will require more advanced health care, imagine what would happen if we could work more preventatively and help more people improve their health, which would greatly increase wellbeing and unlock funding that could be used for other important areas of the societal transformation towards a wellbeing economy. This unlocked funding could create a positive feedback loop that further compound the benefits and support more people to live healthy lives.
+- Summary and wrapping up
+  - Give a short summary with key points
+  - Encourage exploring resources, share a QR code to the webpage for the Reconnect.earth Taster activity with resources, and even facilitation guides for how to host something similar with friends and family.
+
+---
+
 ## Ideas for general description of the Reconnect.earth process
 
 - This is an iterative process. Explore. Experiment. Learn.

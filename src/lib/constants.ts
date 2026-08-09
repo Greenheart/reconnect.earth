@@ -36,7 +36,7 @@ export const RESOURCE_CATEGORIES = <const>[
   'Motivation',
   'Interconnectedness',
   'Ecology',
-  'Not-for-profit-worldModel',
+  'NotForProfit',
   'Solarpunk',
   'SocialSustainability',
   'Politics',

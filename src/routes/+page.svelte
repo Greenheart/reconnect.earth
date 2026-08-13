@@ -258,7 +258,7 @@
           <enhanced:img
             src={getImage(app.image)}
             alt={app.name + ' screenshot'}
-            class="order-3 h-full w-full place-self-center rounded-xl !bg-transparent object-contain sm:order-1"
+            class="order-3 h-full w-full place-self-center rounded-xl bg-transparent! object-contain sm:order-1"
             sizes="min(200px, 100vw)"
           />
         </div>

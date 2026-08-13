@@ -93,7 +93,7 @@
 </div>
 
 <div class="divider my-16">
-  ○ <IconEarth class="mx-2 text-xl" /> ○
+  ~ <IconEarth class="mx-2 text-xl" /> ~
 </div>
 
 <div class="mx-auto max-w-prose">
@@ -213,7 +213,7 @@
 </div>
 
 <div class="divider my-16">
-  ○ <IconEarth class="mx-2 text-xl" /> ○
+  ~ <IconEarth class="mx-2 text-xl" /> ~
 </div>
 
 <div class="mx-auto max-w-prose" id="activities">
@@ -237,7 +237,7 @@
 </div>
 
 <div class="divider my-16">
-  ○ <IconEarth class="mx-2 text-xl" /> ○
+  ~ <IconEarth class="mx-2 text-xl" /> ~
 </div>
 
 <div class="mx-auto max-w-prose" id="apps">

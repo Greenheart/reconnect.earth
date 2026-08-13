@@ -157,19 +157,19 @@
   }
 
   .h1 {
-    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+    @apply scroll-m-20 text-4xl font-extrabold lg:text-5xl;
   }
 
   .h2 {
-    @apply scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+    @apply scroll-m-20 text-3xl font-semibold transition-colors first:mt-0;
   }
 
   .h3 {
-    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+    @apply scroll-m-20 text-2xl font-semibold;
   }
 
   .h4 {
-    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+    @apply scroll-m-20 text-xl font-semibold;
   }
 
   .anchor {

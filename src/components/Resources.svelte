@@ -92,13 +92,13 @@
         in:send={{ key }}
         out:receive={{ key }}
       >
-        <h3 class="h4 text-primary-500 font-bold">
+        <h3 class="h4 text-primary font-bold">
           {resource.title}
         </h3>
         <p class="text-base">{resource.description}</p>
         <div class="flex flex-wrap content-start items-start gap-2 text-sm">
           {#each resource.tags as tag}
-            <div class="text-primary-500">#{tag}</div>
+            <div class="text-primary">#{tag}</div>
           {/each}
         </div>
         <div class="flex justify-between gap-2">

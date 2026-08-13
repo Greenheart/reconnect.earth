@@ -84,7 +84,7 @@
         disabled={!enabled}
         onclick={() => searchResults.toggleTag(tag)}
       >
-        <span class="text-primary-500">#{tag}</span>
+        <span class="text-primary">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->
         <span class="text-gray-300">{count}</span>
       </button>
@@ -102,7 +102,7 @@
         disabled={!enabled}
         onclick={() => searchResults.toggleTag(tag)}
       >
-        <span class="text-primary-500">#{tag}</span>
+        <span class="text-primary">#{tag}</span>
         <!-- TODO: Make the count update when filters change -->
         <span class="text-gray-300">{count}</span>
       </button>

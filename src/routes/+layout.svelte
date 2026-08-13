@@ -5,7 +5,6 @@
 
   import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
-  import '@fontsource-variable/quicksand'
   import '../app.css'
 
   let { children } = $props()
@@ -28,11 +27,11 @@
 </svelte:head>
 
 <!-- IDEA: add bg color so the header is clearly separated from the page content -->
-<nav class="mx-auto flex max-w-screen-lg items-center justify-between px-4 py-2 xs:p-4">
+<nav class="xs:p-4 mx-auto flex max-w-screen-lg items-center justify-between px-4 py-2">
   <a href="/">
-    🌍<span class="ml-2 gradient-heading">{SITE_NAME}</span>
+    🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
   </a>
-  <ul class="hidden gap-2 xs:flex">
+  <ul class="xs:flex hidden gap-2">
     <li>
       <a href="/resources" class="anchor p-1">Resources</a>
     </li>
@@ -40,14 +39,14 @@
       <a href="/#activities" class="anchor p-1">Activities</a>
     </li>
   </ul>
-  <button class="btn px-0 text-lg xs:hidden" onclick={toggleDrawer}>
+  <button class="btn xs:hidden px-0 text-lg" onclick={toggleDrawer}>
     <span><HeroiconsBars3BottomRight /></span>
     <span>Menu</span>
   </button>
 </nav>
 <main class="mx-auto mt-8 max-w-screen-lg px-4 text-lg sm:text-xl">
   <header>
-    <h1 class="h1 mb-4 font-bold gradient-heading">Reconnect to what matters</h1>
+    <h1 class="h1 gradient-heading mb-4 font-bold">Reconnect to what matters</h1>
 
     <h2 class="h2 mb-8 sm:mb-16">Thrive in life while doing good in the world</h2>
   </header>

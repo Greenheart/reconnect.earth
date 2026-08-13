@@ -1,34 +1,13 @@
-import { RESOURCE_TYPES, type ResourceType } from './constants'
-import type { Resource } from './schema'
+import { clsx, type ClassValue } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
-export const getSortedTags = (tags: string[]) => {
-  return tags.sort((a, b) => {
-    let scoreA = 0
-    let scoreB = 0
-
-    // Ensure ResourceType tags appear first
-    if (RESOURCE_TYPES.includes(a as ResourceType)) {
-      scoreA += 100
-    }
-    if (RESOURCE_TYPES.includes(b as ResourceType)) {
-      scoreB += 100
-    }
-
-    return scoreB - scoreA
-  }) as Resource['tags']
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
 }
 
-export const getFeaturedFirst = (a: Resource, b: Resource) => {
-  // 1. Sort by quality (1-5)
-  let scoreA = a.quality
-  let scoreB = b.quality
-
-  // 2. Give higher priority to featured items
-  if (a.featured) scoreA += 100
-  if (b.featured) scoreB += 100
-
-  return scoreB - scoreA
-}
-
-export const cx = (...classes: (string | undefined | false)[]) =>
-  classes.filter(Boolean).join(' ').trim()
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type WithoutChild<T> = T extends { child?: any } ? Omit<T, 'child'> : T
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type WithoutChildren<T> = T extends { children?: any } ? Omit<T, 'children'> : T
+export type WithoutChildrenOrChild<T> = WithoutChildren<WithoutChild<T>>
+export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & { ref?: U | null }

@@ -51,7 +51,7 @@
   })
 </script>
 
-<h2 class="h2 mb-2 font-bold gradient-heading">Resources</h2>
+<h2 class="h2 gradient-heading mb-2 font-bold">Resources</h2>
 
 <p class="mb-4">
   Explore topics related to Reconnect.earth. Learn how we can create a future where both humanity
@@ -66,8 +66,8 @@
 
 <!-- TODO: Make sure the clear button in the search input remains visible -->
 <!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->
-<div class="grid gap-4 xs:grid-cols-[230px_1fr]">
-  <ResourceFiltersSidebar {searchResults} {resources} class="hidden xs:block" />
+<div class="xs:grid-cols-[230px_1fr] grid gap-4">
+  <ResourceFiltersSidebar {searchResults} {resources} class="xs:block hidden" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-10 items-center gap-4 text-sm">
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
@@ -92,7 +92,7 @@
         in:send={{ key }}
         out:receive={{ key }}
       >
-        <h3 class="h4 font-bold text-primary-500">
+        <h3 class="h4 text-primary-500 font-bold">
           {resource.title}
         </h3>
         <p class="text-base">{resource.description}</p>
@@ -103,7 +103,7 @@
         </div>
         <div class="flex justify-between gap-2">
           <button
-            class="btn-icon rounded-sm hover:variant-soft"
+            class="btn-icon hover:variant-soft rounded-sm"
             onclick={() => toggleBookmark(resource)}
             aria-label={label}
             title={label}

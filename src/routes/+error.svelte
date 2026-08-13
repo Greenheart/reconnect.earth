@@ -5,10 +5,10 @@
 
 <div class="flex flex-col items-center justify-center">
   {#if page.status === 404}
-    <h2 class="h2 mb-8 font-bold gradient-heading">Sorry, this page does not exist</h2>
+    <h2 class="h2 gradient-heading mb-8 font-bold">Sorry, this page does not exist</h2>
     <a href="/" class="variant-filled-primary btn">Explore {SITE_NAME}</a>
   {:else}
-    <h2 class="h2 mb-8 font-bold gradient-heading">Oops! Something went wrong</h2>
+    <h2 class="h2 gradient-heading mb-8 font-bold">Oops! Something went wrong</h2>
     <p class="mb-8">
       <span>HTTP {page.status} - </span>
       {page.error?.message}

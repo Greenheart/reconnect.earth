@@ -3,6 +3,7 @@
 Explore the main points of reconnect.earth through a co-created dinner and. Systems thinking and holistic perspectives are needed to respond to humanity's challenges.
 
 ## Considerations
+
 - Initial recipe: https://www.zeta.nu/recept/grynsallad-med-paprikasalsa-rostade-gronsaker/
   - Adaptations: Add tempeh as main protein, soy-/oatgurt instead of feta cheese.
 - Can be adapted different recipes, but if so also important to adapt the info about ingredients and nutrition.
@@ -42,7 +43,7 @@ Explore the main points of reconnect.earth through a co-created dinner and. Syst
   - While eating, talk about the next steps and how conscious food choices like this - ideally together with friends and family give many benefits.
   - Explain that under capitalism, health is a privilege rather than a human right. But it doesn't have to be this way. And there are many things we can do to help each other improve our health - this being true for personal, societal and planetary health.
     - It's critical that organic food becomes more affordable, accessible and becomes the norm. For example by removing subsidies to unhealthy food, and shifting it to strengthen organic food production.
-  - Given people's health play can play a big role in the rise of populism and fascism (source: https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(25)00118-8/fulltext), (TODO: find resource to strengthen the link between political discontent and fascism) imagine what might happen if people get better health and 
+  - Given people's health play can play a big role in the rise of populism and fascism (source: https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(25)00118-8/fulltext), (TODO: find resource to strengthen the link between political discontent and fascism) imagine what might happen if people get better health and
   - Also, given the ageing populations that will require more advanced health care, imagine what would happen if we could work more preventatively and help more people improve their health, which would greatly increase wellbeing and unlock funding that could be used for other important areas of the societal transformation towards a wellbeing economy. This unlocked funding could create a positive feedback loop that further compound the benefits and support more people to live healthy lives.
 - Summary and wrapping up
   - Give a short summary with key points

@@ -90,7 +90,7 @@
   >
 </div>
 
-<div class="my-16 divider">
+<div class="divider my-16">
   ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
@@ -123,7 +123,7 @@
   <!-- IDEA: Maybe have symbols for each branch? -->
   <div class="flex flex-col justify-around gap-8 pt-8">
     <div>
-      <h2 class="h2 mb-3 gradient-heading">Reclaim</h2>
+      <h2 class="h2 gradient-heading mb-3">Reclaim</h2>
       <p class="pb-4">
         To change culture and economics towards wellbeing for all within the means of the planet, we
         first of all need to create conditions that make change possible. This is something we need
@@ -138,7 +138,7 @@
     </div>
 
     <div>
-      <h2 class="h2 mb-3 gradient-heading">Reflect</h2>
+      <h2 class="h2 gradient-heading mb-3">Reflect</h2>
       <p class="pb-4">
         To develop as a person it is important to reflect about – among others – your values, your
         behaviours, your relationship to yourself, relationships with other people and your
@@ -156,7 +156,7 @@
     </div>
 
     <div>
-      <h2 class="h2 mb-3 gradient-heading">Reconnect</h2>
+      <h2 class="h2 gradient-heading mb-3">Reconnect</h2>
       <p class="pb-4">
         Many of the world's problems today stem from a deep disconnection - from ourselves, from
         other people and from the living planet.
@@ -177,7 +177,7 @@
     </div>
 
     <div>
-      <h2 class="h2 mb-3 gradient-heading">Reimagine</h2>
+      <h2 class="h2 gradient-heading mb-3">Reimagine</h2>
       <blockquote class="blockquote mb-4">
         "We cannot create what we can't imagine." — Lucille Clifton
       </blockquote>
@@ -195,7 +195,7 @@
     </div>
 
     <div>
-      <h2 class="h2 mb-3 gradient-heading">Regenerate</h2>
+      <h2 class="h2 gradient-heading mb-3">Regenerate</h2>
       <p class="pb-4">
         Create what you have imagined. Make the world a better place. It's not enough to reduce our
         negative footprint – we need to increase our positive handprint. It is not enough to do
@@ -210,7 +210,7 @@
   </div>
 </div>
 
-<div class="my-16 divider">
+<div class="divider my-16">
   ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
@@ -234,14 +234,14 @@
   </p>
 </div>
 
-<div class="my-16 divider">
+<div class="divider my-16">
   ○ <IconEarth class="mx-2 text-xl" /> ○
 </div>
 
 <div class="mx-auto max-w-prose" id="apps">
   <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
-  <p class="pb-16 pt-4">
+  <p class="pt-4 pb-16">
     To make this journey more fun, engaging and accessible, we're designing and developing <a
       href="https://fsfe.org/freesoftware/#freedoms"
       class="anchor">free and open source</a
@@ -251,8 +251,8 @@
 
   <div class="grid justify-center gap-4">
     {#each apps as app}
-      <div class="card grid max-w-xl gap-4 p-4 xs:grid-cols-[min-content_1fr]">
-        <div class="max-h-80 xs:max-h-full xs:w-48">
+      <div class="card xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">
+        <div class="xs:max-h-full xs:w-48 max-h-80">
           <enhanced:img
             src={getImage(app.image)}
             alt={app.name + ' screenshot'}

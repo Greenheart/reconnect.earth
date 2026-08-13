@@ -11,12 +11,12 @@
 </script>
 
 <div class="input-group max-w-[300px] grid-cols-[auto_1fr_auto] rounded-md">
-  <div class="!pl-3 !pr-0">
+  <div class="!pr-0 !pl-3">
     <IconSearch />
   </div>
   <input
     type="search"
-    class="!pl-2 !pr-0"
+    class="!pr-0 !pl-2"
     placeholder="Search"
     bind:value={searchResults.filters.search}
   />

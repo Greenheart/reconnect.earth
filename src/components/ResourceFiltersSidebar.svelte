@@ -8,7 +8,7 @@
   import SearchInput from './SearchInput.svelte'
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
-  import { cx } from '$lib/utils'
+  import { cn, cx } from '$lib/utils'
 
   interface Props {
     searchResults: FilteredItems<Resource>
@@ -24,7 +24,7 @@
 <div class={className}>
   <SearchInput {searchResults} />
 
-  <div class="grid gap-2 pb-8 pt-4">
+  <div class="grid gap-2 pt-4 pb-8">
     <button
       class="variant-soft-surface btn justify-start rounded-md"
       onclick={() => (searchResults.filters.showBookmarks = false)}
@@ -34,7 +34,7 @@
       <span>{resources.length}</span>
     </button>
     <button
-      class={cx(
+      class={cn(
         'variant-soft-surface btn justify-start rounded-md',
         searchResults.filters.showBookmarks ? 'bg-surface-active-token' : '',
       )}
@@ -77,8 +77,8 @@
     <h2 class="h3 font-bold">Resource types</h2>
     {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
       <button
-        class={cx(
-          'chip flex w-full justify-start text-left hover:variant-soft-surface',
+        class={cn(
+          'chip hover:variant-soft-surface flex w-full justify-start text-left',
           searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
         )}
         disabled={!enabled}
@@ -95,8 +95,8 @@
     <h2 class="h3 font-bold">Categories</h2>
     {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
       <button
-        class={cx(
-          'chip flex w-full justify-start text-left hover:variant-soft-surface',
+        class={cn(
+          'chip hover:variant-soft-surface flex w-full justify-start text-left',
           searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
         )}
         disabled={!enabled}

@@ -14,7 +14,7 @@
   class="card mx-auto grid max-w-sm grid-rows-[min-content_min-content_min-content_1fr] gap-2 p-4 sm:mx-0"
 >
   {@render icon?.()}
-  <h3 class="h4 text-center font-bold text-primary-500">{title}</h3>
+  <h3 class="h4 text-primary-500 text-center font-bold">{title}</h3>
   <p class="mb-2 text-base md:text-lg">
     {text}
   </p>

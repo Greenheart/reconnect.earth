@@ -8,7 +8,7 @@
   import SearchInput from './SearchInput.svelte'
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
-  import { cn, cx } from '$lib/utils'
+  import { cn } from '$lib/utils'
 
   interface Props {
     searchResults: FilteredItems<Resource>

@@ -30,7 +30,7 @@
       onclick={() => (searchResults.filters.showBookmarks = false)}
     >
       <IconLibrary />
-      <span class="flex-grow text-left">Library</span>
+      <span class="grow text-left">Library</span>
       <span>{resources.length}</span>
     </button>
     <button
@@ -45,7 +45,7 @@
         )}
     >
       <IconBookmarksFill />
-      <span class="flex-grow text-left">Bookmarks</span>
+      <span class="grow text-left">Bookmarks</span>
       {#if bookmarks.value.length}
         <span>{bookmarks.value.length}</span>
       {/if}

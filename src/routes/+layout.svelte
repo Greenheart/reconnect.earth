@@ -27,7 +27,7 @@
 </svelte:head>
 
 <!-- IDEA: add bg color so the header is clearly separated from the page content -->
-<nav class="xs:p-4 mx-auto flex max-w-screen-lg items-center justify-between px-4 py-2">
+<nav class="xs:p-4 mx-auto flex max-w-5xl items-center justify-between px-4 py-2">
   <a href="/">
     🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
   </a>
@@ -44,7 +44,7 @@
     <span>Menu</span>
   </button>
 </nav>
-<main class="mx-auto mt-8 max-w-screen-lg px-4 text-lg sm:text-xl">
+<main class="mx-auto mt-8 max-w-5xl px-4 text-lg sm:text-xl">
   <header>
     <h1 class="h1 gradient-heading mb-4 font-bold">Reconnect to what matters</h1>
 
@@ -53,7 +53,7 @@
   {@render children?.()}
 </main>
 
-<footer class="mx-auto mt-8 max-w-screen-md p-4 px-4 text-lg sm:text-xl">
+<footer class="mx-auto mt-8 max-w-3xl p-4 px-4 text-lg sm:text-xl">
   <p class="pt-4">
     Reconnect.earth is a free and open source project, co-created by the community.
   </p>

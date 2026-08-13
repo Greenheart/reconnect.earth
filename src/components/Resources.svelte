@@ -21,7 +21,7 @@
   const searchResults = $derived(
     new FilteredItems<Resource>(resources, (item, filters) => {
       // All conditions need to be met, so abort as soon as we find something that does not match.
-      if (filters.tags?.length && !filters.tags.some((tag) => item.tags.includes(tag))) {
+      if (filters.tags?.length && !filters.tags.every((tag) => item.tags.includes(tag))) {
         return false
       }
 
@@ -29,11 +29,8 @@
         return false
       }
 
-      // IDEA: Maybe make all filters inclusive, so all conditions need to match
-
       const searchString = filters.search.toLowerCase()
 
-      // IDEA: Maybe create a search index to make lookups faster
       if (
         searchString &&
         !item.title.toLowerCase().includes(searchString) &&
@@ -52,8 +49,6 @@
     easing: quintOut,
     fallback: (node) => fade(node, { duration: 300 }),
   })
-
-  // let filterIncludeAllTags = false
 </script>
 
 <h2 class="h2 mb-2 font-bold gradient-heading">Resources</h2>

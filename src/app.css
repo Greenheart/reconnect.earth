@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn-svelte/tailwind.css';
-/*@import '@fontsource-variable/source-sans-3';
-@import '@fontsource-variable/playfair-display';*/
 @import '@fontsource-variable/el-messiri';
 @import '@fontsource-variable/mulish';
 
@@ -78,7 +76,6 @@
 }
 
 @theme inline {
-  /*--font-sans: 'Source Sans 3 Variable', sans-serif;*/
   --font-sans: 'Mulish Variable', sans-serif;
   --font-heading: 'El Messiri Variable', sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
@@ -173,5 +170,9 @@
 
   .h4 {
     @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  .anchor {
+    @apply text-primary underline;
   }
 }

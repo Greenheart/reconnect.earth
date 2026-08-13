@@ -49,8 +49,10 @@
   <div class="col-span-full max-w-prose pb-4">
     <h2 class="h2 gradient-heading">How to engage with Reconnect.earth</h2>
     <p class="pt-4">
-      This is a collaborative project, created by and for people and communites working towards a
-      wellbeing economy, in service of life.
+      This is a <a class="anchor" href="https://github.com/Greenheart/reconnect.earth"
+        >collaborative project</a
+      >, created by and for people and communites working towards a wellbeing economy, in service of
+      life.
     </p>
     <p class="pt-4">
       On this website, you will find the Reconnect.earth process, an emerging library of resources

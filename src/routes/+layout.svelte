@@ -26,7 +26,6 @@
   <title>{SITE_NAME}</title>
 </svelte:head>
 
-<!-- IDEA: add bg color so the header is clearly separated from the page content -->
 <nav class="xs:p-4 mx-auto flex max-w-5xl items-center justify-between px-4 py-2">
   <a href="/">
     🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>

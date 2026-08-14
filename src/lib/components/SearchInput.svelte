@@ -2,7 +2,6 @@
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
   import IconSearch from '~icons/ri/search-eye-line'
-  import HeroiconsXMark from '~icons/heroicons/x-mark'
   import * as InputGroup from '$lib/components/ui/input-group'
   import { Button } from '$lib/components/ui/button'
 
@@ -26,8 +25,9 @@
         searchResults.filters.search = ''
       }}
       class={[!searchResults.filters.search.length && 'hidden']}
+      aria-label="Clear search"
     >
-      <HeroiconsXMark />
+      <span class="icon-[lucide--x]"></span>
     </Button>
   </InputGroup.Addon>
 </InputGroup.Root>

@@ -3,6 +3,8 @@
   import IconLibrary from '~icons/ion/library'
   import IconPeopleFill from '~icons/bi/people-fill'
   import IconShare from '~icons/ri/share-box-fill'
+  import * as Card from '$lib/components/ui/card'
+  import { Button } from '$lib/components/ui/button'
 
   import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '$components/SectionCard.svelte'
@@ -253,7 +255,7 @@
 
   <div class="grid justify-center gap-4">
     {#each apps as app}
-      <div class="card xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">
+      <Card.Root class="xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">
         <div class="xs:max-h-full xs:w-48 max-h-80">
           <enhanced:img
             src={getImage(app.image)}
@@ -266,17 +268,17 @@
           <h3 class="h3 mb-4 font-bold">
             <a href={app.link} class="anchor">{app.name}</a>
           </h3>
-          <p class="pb-2">{app.description}</p>
+          <p class="pb-2 text-lg">{app.description}</p>
 
           <div class="flex items-center justify-end gap-2 text-base">
-            <a href={app.git} class="variant-soft btn rounded-sm">Contribute</a>
-            <a class="variant-filled-primary btn gap-1 rounded-sm" href={app.link} target="_blank"
-              ><span class="flex items-stretch">Explore</span>
+            <Button href={app.git} variant="ghost">Contribute</Button>
+            <Button href={app.link} target="_blank">
+              Explore
               <IconShare />
-            </a>
+            </Button>
           </div>
         </div>
-      </div>
+      </Card.Root>
     {/each}
   </div>
 </div>

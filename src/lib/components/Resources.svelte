@@ -60,6 +60,8 @@
   and the living planet thrive together.
 </p>
 
+<!-- IDEA: Add information about how to contribute resources. -->
+
 <!-- TODO: Make this view responsive on mobile, maybe with a sheet for the navigation -->
 <!--
     IDEA: Maybe show small icon buttons that expand into a a sheet. Search and Filter.

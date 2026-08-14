@@ -32,7 +32,7 @@
       onclick={() => searchResults.resetFilters()}
     >
       <IconLibrary />
-      <span class="grow text-left">Library</span>
+      <span class="grow text-left">All resources</span>
       <span>{resources.length}</span>
     </Button>
     <Button

@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { Drawer, initializeStores, getDrawerStore } from '@skeletonlabs/skeleton'
-  import HeroiconsBars3BottomRight from '~icons/heroicons/bars-3-bottom-right'
-  import HeroiconsXMark from '~icons/heroicons/x-mark'
+  import { initializeStores } from '@skeletonlabs/skeleton'
+  import MobileNav from '$lib/components/MobileNav.svelte'
 
   import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
@@ -11,15 +10,10 @@
 
   initializeStores()
 
-  const drawerStore = getDrawerStore()
-
-  function toggleDrawer() {
-    drawerStore.open({
-      id: 'mobile-menu',
-      position: 'right',
-      width: 'w-64',
-    })
-  }
+  const links = [
+    { title: 'Resources', href: '/resources' },
+    { title: 'Activities', href: '/#activities' },
+  ]
 </script>
 
 <svelte:head>
@@ -30,18 +24,15 @@
   <a href="/">
     🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
   </a>
-  <ul class="xs:flex hidden gap-2">
-    <li>
-      <a href="/resources" class="anchor p-1">Resources</a>
-    </li>
-    <li>
-      <a href="/#activities" class="anchor p-1">Activities</a>
-    </li>
+  <ul class="hidden gap-2 md:flex">
+    {#each links as { title, href }}
+      <li>
+        <a {href} class="anchor p-1">{title}</a>
+      </li>
+    {/each}
   </ul>
-  <button class="btn xs:hidden px-0 text-lg" onclick={toggleDrawer}>
-    <span><HeroiconsBars3BottomRight /></span>
-    <span>Menu</span>
-  </button>
+
+  <MobileNav class="md:hidden" {links} />
 </nav>
 <main class="mx-auto mt-8 max-w-5xl px-4 text-lg sm:text-xl">
   <header>
@@ -58,21 +49,3 @@
   </p>
   <p><a href={GITHUB_LINK} class="anchor">Welcome to get involved!</a></p>
 </footer>
-
-<Drawer>
-  {#if $drawerStore.id === 'mobile-menu'}
-    <div class="mt-0.5 flex justify-end p-2">
-      <button class="p-2 pl-8" onclick={() => drawerStore.close()}>
-        <span><HeroiconsXMark class="h-8 w-8" /></span>
-      </button>
-    </div>
-    <div class="grid gap-2 text-center">
-      <a href="/resources" class="anchor p-2" onclickcapture={() => drawerStore.close()}
-        >Resources</a
-      >
-      <a href="/#activities" class="anchor p-2" onclickcapture={() => drawerStore.close()}
-        >Activities</a
-      >
-    </div>
-  {/if}
-</Drawer>

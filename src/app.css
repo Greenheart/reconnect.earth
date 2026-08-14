@@ -139,7 +139,6 @@
   html {
     @apply font-sans;
   }
-
   ::selection {
     @apply bg-primary/30;
   }

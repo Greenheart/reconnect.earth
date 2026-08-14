@@ -12,7 +12,7 @@
   let { data } = $props()
   let { apps } = $derived(data)
 
-  const allImages = import.meta.glob('$assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}', {
+  const allImages = import.meta.glob('$assets/*.{avif,jpeg,jpg,png,webp,svg}', {
     eager: true,
     query: { enhanced: true },
   }) as Record<string, { default: any }>

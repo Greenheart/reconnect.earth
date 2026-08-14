@@ -122,9 +122,17 @@
     "quality": 4
   },
   {
-    "title": "The Waterworks of Money: Charting the influence of big money on our society",
-    "description": "A production of  cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden",
-    "link": "https://www.waterworksofmoney.com",
+    "title": "The Waterworks of Money Part 1: Charting the influence of big money on our society",
+    "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden. More info at the project website https://www.waterworksofmoney.com",
+    "link": "https://www.youtube.com/watch?v=IszXpzIo_ZQ",
+    "tags": ["Video", "Economics", "Freedom"],
+    "quality": 5,
+    "featured": true
+  },
+  {
+    "title": "The Waterworks of Money Part 2: Private Profits, Public Costs",
+    "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden",
+    "link": "https://www.youtube.com/watch?v=Ycit4WbJuwE",
     "tags": ["Video", "Economics", "Freedom"],
     "quality": 5,
     "featured": true

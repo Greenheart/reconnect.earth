@@ -165,8 +165,7 @@
         other people and from the living planet.
       </p>
       <p class="pb-4">Therefore it is important to reconnect to what matters:</p>
-      <!-- TODO: Maybe add list markers -->
-      <ul class="list">
+      <ul class="list list-disc space-y-4 pl-8">
         <li>
           Reconnect with yourself: become aware of what you feel in your body. Recognise your
           thoughts, feelings, what you need to thrive in life and what you find meaningful.

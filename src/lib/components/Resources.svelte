@@ -3,10 +3,6 @@
   import { quintOut } from 'svelte/easing'
   import { crossfade, fade } from 'svelte/transition'
 
-  import IconShare from '~icons/ri/share-box-fill'
-  import IconBookmark from '~icons/bi/bookmark'
-  import IconBookmarkFill from '~icons/bi/bookmark-fill'
-
   import type { Resource } from '$lib/schema'
   import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
@@ -108,11 +104,8 @@
               aria-label={label}
               title={label}
             >
-              {#if isBookmarked}
-                <IconBookmarkFill />
-              {:else}
-                <IconBookmark />
-              {/if}
+              <span class={isBookmarked ? 'icon-[bi--bookmark-fill]' : 'icon-[bi--bookmark]'}
+              ></span>
             </Button>
             <Button
               href={resource.link}
@@ -122,7 +115,7 @@
               size="lg"
             >
               <div class="span items-stretch">Explore</div>
-              <IconShare />
+              <span class="icon-[lucide--external-link]"></span>
             </Button>
           </div>
         </Card.Root>

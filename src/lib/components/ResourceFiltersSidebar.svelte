@@ -1,11 +1,8 @@
 <script lang="ts">
   import { bookmarks } from '$lib/state/bookmarks'
   import { Button } from '$lib/components/ui/button'
-
-  import IconLibrary from '~icons/ion/library'
-  import IconBookmarksFill from '~icons/bi/bookmarks-fill'
-
   import SearchInput from './SearchInput.svelte'
+
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
   import { cn } from '$lib/utils'
@@ -31,7 +28,7 @@
       class="justify-start rounded-md"
       onclick={() => searchResults.resetFilters()}
     >
-      <IconLibrary />
+      <span class="icon-[ion--library]"></span>
       <span class="grow text-left">All resources</span>
       <span>{resources.length}</span>
     </Button>
@@ -45,7 +42,7 @@
           searchResults.matches.some((resource) => resource.link === bookmark),
         )}
     >
-      <IconBookmarksFill />
+      <span class="icon-[bi--bookmarks-fill]"></span>
       <span class="grow text-left">Bookmarks</span>
       <span class={[bookmarks.value.length === 0 && 'invisible']}>{bookmarks.value.length}</span>
     </Button>

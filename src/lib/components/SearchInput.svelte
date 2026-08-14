@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
-  import IconSearch from '~icons/ri/search-eye-line'
   import * as InputGroup from '$lib/components/ui/input-group'
   import { Button } from '$lib/components/ui/button'
 
@@ -14,7 +13,7 @@
 
 <InputGroup.Root class="rounded-sm">
   <InputGroup.Addon align="inline-start">
-    <IconSearch />
+    <span class="icon-[ri--search-eye-line]"></span>
   </InputGroup.Addon>
   <InputGroup.Input placeholder="Search..." bind:value={searchResults.filters.search} />
   <InputGroup.Addon align="inline-end" class="pr-1">

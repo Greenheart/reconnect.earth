@@ -20,6 +20,6 @@
     <Card.Description class="text-card-foreground text-base md:text-lg">{text}</Card.Description>
   </Card.Content>
   <Card.Footer>
-    <Button class="w-full self-end" {href}>{cta}</Button>
+    <Button class="w-full self-end" {href} size="lg">{cta}</Button>
   </Card.Footer>
 </Card.Root>

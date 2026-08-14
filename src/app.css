@@ -4,6 +4,11 @@
 @import '@fontsource-variable/el-messiri';
 @import '@fontsource-variable/dm-sans';
 
+@plugin '@iconify/tailwind4' {
+  prefix: 'icon';
+  scale: 1.2;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

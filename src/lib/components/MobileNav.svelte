@@ -1,7 +1,4 @@
 <script lang="ts">
-  import HeroiconsBars3 from '~icons/heroicons/bars-3'
-  import HeroiconsXMark from '~icons/heroicons/x-mark'
-
   type Props = {
     class?: string
     links: { title: string; href: string }[]
@@ -50,7 +47,8 @@
     class="xs:text-xl hover:bg-muted flex aspect-square items-center gap-2 rounded-md px-2 py-1.5 text-lg"
     onclick={toggle}
   >
-    {#if open}<HeroiconsXMark />{:else}<HeroiconsBars3 />{/if}
+    <span class="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+    <span class={[open ? 'icon-[lucide--x]' : 'icon-[lucide--menu]']}></span>
   </button>
 
   <div

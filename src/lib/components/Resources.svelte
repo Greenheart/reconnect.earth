@@ -69,9 +69,13 @@
 -->
 
 <div class="xs:grid-cols-[230px_1fr] grid gap-4">
+  <!-- Show the regular ResourceFiltersSidebar for tablets and larger screens -->
   <ResourceFiltersSidebar {searchResults} {resources} class="xs:block hidden" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
+      <!-- For smaller screens -->
+      <!-- TODO: Add a Sheet opening from the left, triggered by a filter button -->
+      <!-- IDEA: The filter button could show a colored dot to indicate when some filters are active -->
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
       <Button
         variant="outline"

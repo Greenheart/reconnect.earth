@@ -85,8 +85,10 @@
         onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary">#{tag}</span>
-        <!-- TODO: Make the count update when filters change -->
-        <span class="text-gray-300">{count}</span>
+        <!-- TODO: Update the tag count based on current searchResults -->
+        <!-- TODO: Make tag gray and disabled when count === 0 among current search results -->
+        <!-- TODO: Preserve order based on tag count in all resources, not based on tag count in the search results -->
+        <span class="text-gray-300">HÄR {count}</span>
       </button>
     {/each}
   </div>
@@ -103,7 +105,6 @@
         onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary">#{tag}</span>
-        <!-- TODO: Make the count update when filters change -->
         <span class="text-gray-300">{count}</span>
       </button>
     {/each}

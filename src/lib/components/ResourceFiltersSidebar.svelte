@@ -1,6 +1,5 @@
 <script lang="ts">
   import { bookmarks } from '$lib/state/bookmarks'
-  // import { SlideToggle } from '@skeletonlabs/skeleton'
   import { Button } from '$lib/components/ui/button'
 
   import IconLibrary from '~icons/ion/library'
@@ -53,18 +52,6 @@
   </div>
 
   <!-- TODO: Make the filters sidebar work for mobile as an expandable sheet -->
-  <!-- <div class="pb-4">
-        <SlideToggle
-            active="bg-primary-700"
-            name="filterIncludeAllTags"
-            bind:checked={filterIncludeAllTags}
-            size="sm">Include all chosen tags</SlideToggle
-        >
-        <label class="flex items-center space-x-2">
-            <input class="checkbox" type="checkbox" checked />
-            <p>Include all chosen tags</p>
-        </label>
-    </div> -->
 
   <!-- TODO: Update lists of filters to only show possible combinations -->
   <!-- For example, hide tags that can't be combined with the current other filters -->

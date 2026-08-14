@@ -41,6 +41,7 @@ export const RESOURCE_CATEGORIES = <const>[
   'SocialSustainability',
   'Politics',
   'Communication',
+  'Collaboration',
 ]
 
 export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]

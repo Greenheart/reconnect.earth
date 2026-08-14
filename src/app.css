@@ -175,4 +175,8 @@
   .anchor {
     @apply text-primary underline;
   }
+
+  .blockquote {
+    @apply border-s-2 ps-6 italic;
+  }
 }

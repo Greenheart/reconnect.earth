@@ -45,14 +45,17 @@
 </main>
 
 <footer class="bg-card mt-24 p-4 text-lg sm:text-xl">
-  <div class="mx-auto max-w-3xl p-4">
+  <div class="mx-auto max-w-2xl p-4">
+    <a href="/" class="text-3xl">
+      🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
+    </a>
     <p class="pt-4">
-      <a href="/" class="anchor">{SITE_NAME}</a> is a free and open source project, co-created by the
-      community. You are welcome to contribute relevant resources, activities and more!
+      This is a free and open source project, co-created by an international community. You are
+      welcome to contribute relevant resources, activities and more!
     </p>
 
     <div class="flex justify-center">
-      <Button href={GITHUB_LINK} size="lg" class="mt-8">Get involved</Button>
+      <Button href={GITHUB_LINK} size="lg" class="mt-4">Get involved</Button>
     </div>
 
     <p class="mt-8 flex items-center justify-center gap-2">

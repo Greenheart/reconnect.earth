@@ -11,6 +11,7 @@
   import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '$lib/state/search.svelte'
+  import { Button } from '$lib/components/ui/button'
 
   interface Props {
     resources: Resource[]
@@ -58,9 +59,9 @@
   and the living planet thrive together.
 </p>
 
-<!-- TODO: Make this view responsive on mobile, maybe with a drawer for the navigation -->
+<!-- TODO: Make this view responsive on mobile, maybe with a sheet for the navigation -->
 <!--
-    IDEA: Maybe show small icon buttons that expand into a a modal/drawer. Search and Filter.
+    IDEA: Maybe show small icon buttons that expand into a a sheet. Search and Filter.
     Or maybe this could be a floating toolbar on top of the content, or fixed to the top of the screen
 -->
 
@@ -71,17 +72,14 @@
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-10 items-center gap-4 text-sm">
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
-      <button
-        class="variant-outline-surface btn btn-sm rounded-md"
-        class:hidden={searchResults.matches.length === resources.length}
-        onclick={() => searchResults.resetFilters()}>Reset filters</button
+      <Button
+        variant="outline"
+        size="sm"
+        class={['rounded-md', searchResults.matches.length === resources.length && 'hidden']}
+        onclick={() => searchResults.resetFilters()}>Reset filters</Button
       >
     </div>
-    <!-- IDEA: when bookmarks are shown, there could be a short paragraph explaining that bookmarks are saved on your device, and can be exported to a file -->
-    <!-- <div class="col-span-full text-sm flex items-center">
-            Your bookmarked resources are saved in your browser. You can export
-            them to a file.
-        </div> -->
+
     {#each searchResults.matches as resource (resource.link)}
       {@const key = resource.link}
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
@@ -102,8 +100,9 @@
           {/each}
         </div>
         <div class="flex justify-between gap-2">
-          <button
-            class="btn-icon hover:variant-soft rounded-sm"
+          <Button
+            variant="ghost"
+            size="icon"
             onclick={() => toggleBookmark(resource)}
             aria-label={label}
             title={label}
@@ -113,11 +112,11 @@
             {:else}
               <IconBookmark />
             {/if}
-          </button>
-          <a class="variant-soft btn gap-1 rounded-sm" href={resource.link} target="_blank"
-            ><span class="flex items-stretch">Explore</span>
+          </Button>
+          <Button href={resource.link} target="_blank">
+            <div class="span items-stretch">Explore</div>
             <IconShare />
-          </a>
+          </Button>
         </div>
       </div>
     {/each}

@@ -78,7 +78,7 @@
         variant="ghost"
         size="sm"
         class={cn(
-          'flex w-full justify-start rounded-sm text-left',
+          'flex w-full justify-start gap-2 rounded-sm text-left',
           searchResults.isTagSelected(tag) && 'bg-muted/50',
         )}
         disabled={!enabled}
@@ -93,20 +93,25 @@
     {/each}
   </div>
 
-  <div class="grid gap-1 pb-8">
+  <div class="grid pb-8">
     <h2 class="h3 font-bold">Categories</h2>
     {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
-      <button
+      <Button
+        variant="ghost"
+        size="sm"
         class={cn(
-          'chip hover:variant-soft-surface flex w-full justify-start text-left',
-          searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
+          'flex w-full justify-start gap-2 rounded-sm text-left',
+          searchResults.isTagSelected(tag) && 'bg-muted/50',
         )}
         disabled={!enabled}
         onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary">#{tag}</span>
+        <!-- TODO: Update the tag count based on current searchResults -->
+        <!-- TODO: Make tag gray and disabled when count === 0 among current search results -->
+        <!-- TODO: Preserve order based on tag count in all resources, not based on tag count in the search results -->
         <span class="text-gray-300">{count}</span>
-      </button>
+      </Button>
     {/each}
   </div>
 </div>

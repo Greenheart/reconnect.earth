@@ -26,19 +26,20 @@
   <SearchInput {searchResults} />
 
   <div class="grid gap-2 pt-4 pb-8">
-    <button
-      class="variant-soft-surface btn justify-start rounded-md"
-      onclick={() => (searchResults.filters.showBookmarks = false)}
+    <Button
+      variant="outline"
+      size="lg"
+      class="justify-start rounded-md"
+      onclick={() => searchResults.resetFilters()}
     >
       <IconLibrary />
       <span class="grow text-left">Library</span>
       <span>{resources.length}</span>
-    </button>
-    <button
-      class={cn(
-        'variant-soft-surface btn justify-start rounded-md',
-        searchResults.filters.showBookmarks ? 'bg-surface-active-token' : '',
-      )}
+    </Button>
+    <Button
+      variant="outline"
+      size="lg"
+      class={cn('justify-start rounded-md', searchResults.filters.showBookmarks && 'bg-muted/50')}
       onclick={() => (searchResults.filters.showBookmarks = !searchResults.filters.showBookmarks)}
       disabled={!bookmarks.value.length ||
         !bookmarks.value.some((bookmark) =>
@@ -48,7 +49,7 @@
       <IconBookmarksFill />
       <span class="grow text-left">Bookmarks</span>
       <span class={[bookmarks.value.length === 0 && 'invisible']}>{bookmarks.value.length}</span>
-    </button>
+    </Button>
   </div>
 
   <!-- TODO: Make the filters sidebar work for mobile as an expandable sheet -->

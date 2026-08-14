@@ -12,6 +12,7 @@
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '$lib/state/search.svelte'
   import { Button } from '$lib/components/ui/button'
+  import * as Card from '$lib/components/ui/card'
 
   interface Props {
     resources: Resource[]
@@ -84,40 +85,43 @@
       {@const key = resource.link}
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
       {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
-      <div
-        class="card grid grid-rows-[min-content_min-content_1fr] gap-2 p-4"
-        animate:flip={{ duration: 400 }}
-        in:send={{ key }}
-        out:receive={{ key }}
-      >
-        <h3 class="h4 text-primary font-bold">
-          {resource.title}
-        </h3>
-        <p class="text-base">{resource.description}</p>
-        <div class="flex flex-wrap content-start items-start gap-2 text-sm">
-          {#each resource.tags as tag}
-            <div class="text-primary">#{tag}</div>
-          {/each}
-        </div>
-        <div class="flex justify-between gap-2">
-          <Button
-            variant="ghost"
-            size="icon"
-            onclick={() => toggleBookmark(resource)}
-            aria-label={label}
-            title={label}
-          >
-            {#if isBookmarked}
-              <IconBookmarkFill />
-            {:else}
-              <IconBookmark />
-            {/if}
-          </Button>
-          <Button href={resource.link} target="_blank">
-            <div class="span items-stretch">Explore</div>
-            <IconShare />
-          </Button>
-        </div>
+      <div animate:flip={{ duration: 400 }} in:send={{ key }} out:receive={{ key }}>
+        <Card.Root class="grid h-full grid-rows-[min-content_min-content_1fr] gap-2 p-4">
+          <h3 class="h4 text-primary font-bold">
+            {resource.title}
+          </h3>
+          <p class="text-base">{resource.description}</p>
+          <div class="flex flex-wrap content-start items-start gap-2 text-sm">
+            {#each resource.tags as tag}
+              <div class="text-primary">#{tag}</div>
+            {/each}
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onclick={() => toggleBookmark(resource)}
+              aria-label={label}
+              title={label}
+            >
+              {#if isBookmarked}
+                <IconBookmarkFill />
+              {:else}
+                <IconBookmark />
+              {/if}
+            </Button>
+            <Button
+              href={resource.link}
+              target="_blank"
+              variant="ghost"
+              class="bg-muted/20"
+              size="lg"
+            >
+              <div class="span items-stretch">Explore</div>
+              <IconShare />
+            </Button>
+          </div>
+        </Card.Root>
       </div>
     {/each}
   </div>

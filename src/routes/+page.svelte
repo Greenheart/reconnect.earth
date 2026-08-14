@@ -1,7 +1,4 @@
 <script lang="ts">
-  import IconEarth from '~icons/ion/earth'
-  import IconLibrary from '~icons/ion/library'
-  import IconPeopleFill from '~icons/bi/people-fill'
   import IconShare from '~icons/ri/share-box-fill'
   import * as Card from '$lib/components/ui/card'
   import { Button } from '$lib/components/ui/button'
@@ -71,28 +68,22 @@
     text="Pathways towards how we all can live well while doing good in the world."
     cta="Explore"
     href="#process"
-    >{#snippet icon()}
-      <IconEarth class="mx-auto h-8 w-8" />
-    {/snippet}</SectionCard
-  >
+    iconClass="icon-[ion--earth]"
+  ></SectionCard>
   <SectionCard
     title="Resource library"
     text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
     cta="Be curious"
     href="/resources"
-    >{#snippet icon()}
-      <IconLibrary class="mx-auto h-8 w-8" />
-    {/snippet}</SectionCard
-  >
+    iconClass="icon-[ion--library]"
+  ></SectionCard>
   <SectionCard
     title="Activities"
     text="Ways to engage with the Reconnect.earth process, both personally and together with others."
     cta="Get started"
     href="#activities"
-    >{#snippet icon()}
-      <IconPeopleFill class="mx-auto h-8 w-8" />
-    {/snippet}</SectionCard
-  >
+    iconClass="icon-[bi--people-fill]"
+  ></SectionCard>
 </div>
 
 <Divider />

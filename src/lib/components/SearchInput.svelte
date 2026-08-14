@@ -2,6 +2,9 @@
   import type { Resource } from '$lib/schema'
   import type { FilteredItems } from '$lib/state/search.svelte'
   import IconSearch from '~icons/ri/search-eye-line'
+  import HeroiconsXMark from '~icons/heroicons/x-mark'
+  import * as InputGroup from '$lib/components/ui/input-group'
+  import { Button } from '$lib/components/ui/button'
 
   interface Props {
     searchResults: FilteredItems<Resource>
@@ -10,22 +13,21 @@
   let { searchResults }: Props = $props()
 </script>
 
-<div class="input-group max-w-[300px] grid-cols-[auto_1fr_auto] rounded-md">
-  <div class="!pr-0 !pl-3">
+<InputGroup.Root class="rounded-sm">
+  <InputGroup.Addon align="inline-start">
     <IconSearch />
-  </div>
-  <input
-    type="search"
-    class="!pr-0 !pl-2"
-    placeholder="Search"
-    bind:value={searchResults.filters.search}
-  />
-  <!-- TODO: Fix the clear button not positioned correctly (it's not visible) -->
-  <button
-    class="!px-3"
-    onclick={() => {
-      searchResults.filters.search = ''
-    }}
-    style:display={searchResults.filters.search === '' ? 'none' : ''}>✕</button
-  >
-</div>
+  </InputGroup.Addon>
+  <InputGroup.Input placeholder="Search..." bind:value={searchResults.filters.search} />
+  <InputGroup.Addon align="inline-end" class="pr-1">
+    <Button
+      size="icon"
+      variant="ghost"
+      onclick={() => {
+        searchResults.filters.search = ''
+      }}
+      class={[!searchResults.filters.search.length && 'hidden']}
+    >
+      <HeroiconsXMark />
+    </Button>
+  </InputGroup.Addon>
+</InputGroup.Root>

@@ -17,7 +17,7 @@
   <span class="justify-center">{@render icon()}</span>
   <Card.Content class="h-full">
     <Card.Title class="text-primary gradient-heading text-center">{title}</Card.Title>
-    <Card.Description>{text}</Card.Description>
+    <Card.Description class="text-card-foreground text-base md:text-lg">{text}</Card.Description>
   </Card.Content>
   <Card.Footer>
     <Button class="w-full self-end" {href}>{cta}</Button>

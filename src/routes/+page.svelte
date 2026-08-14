@@ -271,7 +271,7 @@
           <p class="pb-2 text-lg">{app.description}</p>
 
           <div class="flex items-center justify-end gap-2 text-base">
-            <Button href={app.git} variant="ghost">Contribute</Button>
+            <Button href={app.git} variant="secondary">Contribute</Button>
             <Button href={app.link} target="_blank">
               Explore
               <IconShare />

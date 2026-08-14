@@ -46,9 +46,7 @@
     >
       <IconBookmarksFill />
       <span class="grow text-left">Bookmarks</span>
-      {#if bookmarks.value.length}
-        <span>{bookmarks.value.length}</span>
-      {/if}
+      <span class={[bookmarks.value.length === 0 && 'invisible']}>{bookmarks.value.length}</span>
     </button>
   </div>
 

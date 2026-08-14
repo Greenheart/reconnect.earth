@@ -1,5 +1,4 @@
 <script lang="ts">
-  import IconShare from '~icons/ri/share-box-fill'
   import * as Card from '$lib/components/ui/card'
   import { Button } from '$lib/components/ui/button'
 
@@ -259,7 +258,7 @@
             <Button href={app.git} variant="secondary" size="lg">Contribute</Button>
             <Button href={app.link} target="_blank" size="lg">
               Explore
-              <IconShare />
+              <span class="icon-[lucide--external-link]"></span>
             </Button>
           </div>
         </div>

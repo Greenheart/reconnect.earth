@@ -173,7 +173,7 @@
   }
 
   .anchor {
-    @apply text-primary underline;
+    @apply text-primary underline hover:brightness-110;
   }
 
   .blockquote {

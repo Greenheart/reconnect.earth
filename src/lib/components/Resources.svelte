@@ -68,12 +68,10 @@
     Or maybe this could be a floating toolbar on top of the content, or fixed to the top of the screen
 -->
 
-<!-- TODO: Make sure the clear button in the search input remains visible -->
-<!-- TODO: Currently it's overflowing, even though the parent element is 250px, the child elements don't respect that -->
 <div class="xs:grid-cols-[230px_1fr] grid gap-4">
   <ResourceFiltersSidebar {searchResults} {resources} class="xs:block hidden" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
-    <div class="col-span-full mb-0.5 flex h-10 items-center gap-4 text-sm">
+    <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
       <Button
         variant="outline"

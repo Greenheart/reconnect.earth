@@ -8,6 +8,7 @@
 
   import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '$lib/components/SectionCard.svelte'
+  import Divider from '$lib/components/Divider.svelte'
 
   let { data } = $props()
   let { apps } = $derived(data)
@@ -94,9 +95,7 @@
   >
 </div>
 
-<div class="divider my-16">
-  ~ <IconEarth class="mx-2 text-xl" /> ~
-</div>
+<Divider />
 
 <div class="mx-auto max-w-prose">
   <h2 class="h1 gradient-heading" id="process">The Reconnect.earth process</h2>
@@ -214,9 +213,7 @@
   </div>
 </div>
 
-<div class="divider my-16">
-  ~ <IconEarth class="mx-2 text-xl" /> ~
-</div>
+<Divider />
 
 <div class="mx-auto max-w-prose" id="activities">
   <h2 class="h1 gradient-heading">Activities</h2>
@@ -238,9 +235,7 @@
   </p>
 </div>
 
-<div class="divider my-16">
-  ~ <IconEarth class="mx-2 text-xl" /> ~
-</div>
+<Divider />
 
 <div class="mx-auto max-w-prose" id="apps">
   <h2 class="h1 gradient-heading">Our free and open source apps</h2>

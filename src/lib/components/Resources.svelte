@@ -58,20 +58,10 @@
 
 <!-- IDEA: Add information about how to contribute resources. -->
 
-<!-- TODO: Make this view responsive on mobile, maybe with a sheet for the navigation -->
-<!--
-    IDEA: Maybe show small icon buttons that expand into a a sheet. Search and Filter.
-    Or maybe this could be a floating toolbar on top of the content, or fixed to the top of the screen
--->
-
 <div class="grid gap-4 md:grid-cols-[230px_1fr]">
-  <!-- Show the regular ResourceFiltersSidebar for tablets and larger screens -->
   <ResourceFiltersSidebar {searchResults} {resources} class="hidden md:block" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
-      <!-- TODO: For smaller screens, show the Sheet with the ResourceFiltersSidebar within it, opening from the left, triggered by a filter button -->
-      <!-- IDEA: The filter button could show a colored dot to indicate when some filters are active -->
-      <!-- TODO: On mobile, make sure it's possible to scroll vertically within the filters list -->
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
       <Button
         variant="outline"

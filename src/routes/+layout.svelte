@@ -1,6 +1,7 @@
 <script lang="ts">
   import { initializeStores } from '@skeletonlabs/skeleton'
   import MobileNav from '$lib/components/MobileNav.svelte'
+  import { Button } from '$lib/components/ui/button'
 
   import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
 
@@ -43,9 +44,21 @@
   {@render children?.()}
 </main>
 
-<footer class="mx-auto mt-8 max-w-3xl p-4 px-4 text-lg sm:text-xl">
-  <p class="pt-4">
-    Reconnect.earth is a free and open source project, co-created by the community.
-  </p>
-  <p><a href={GITHUB_LINK} class="anchor">Welcome to get involved!</a></p>
+<footer class="bg-card mt-24 p-4 text-lg sm:text-xl">
+  <div class="mx-auto max-w-3xl p-4">
+    <p class="pt-4">
+      <a href="/" class="anchor">{SITE_NAME}</a> is a free and open source project, co-created by the
+      community. You are welcome to contribute relevant resources, activities and more!
+    </p>
+
+    <div class="flex justify-center">
+      <Button href={GITHUB_LINK} size="lg" class="mt-8">Get involved</Button>
+    </div>
+
+    <p class="mt-8 flex items-center justify-center gap-2">
+      &copy;
+      <span class="text-nowrap">2022-{new Date().getFullYear()}</span>
+      <span class="text-nowrap">{SITE_NAME}</span>
+    </p>
+  </div>
 </footer>

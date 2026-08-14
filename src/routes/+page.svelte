@@ -7,7 +7,7 @@
   import { Button } from '$lib/components/ui/button'
 
   import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
-  import SectionCard from '$components/SectionCard.svelte'
+  import SectionCard from '$lib/components/SectionCard.svelte'
 
   let { data } = $props()
   let { apps } = $derived(data)

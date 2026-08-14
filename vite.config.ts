@@ -13,7 +13,6 @@ export default defineConfig({
     sveltekit({
       adapter: adapter(),
       alias: {
-        $components: resolve('src/components'),
         $assets: resolve('src/assets'),
       },
     }),

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { bookmarks } from '$lib/state/bookmarks'
   // import { SlideToggle } from '@skeletonlabs/skeleton'
+  import { Button } from '$lib/components/ui/button'
 
   import IconLibrary from '~icons/ion/library'
   import IconBookmarksFill from '~icons/bi/bookmarks-fill'
@@ -50,8 +51,7 @@
     </button>
   </div>
 
-  <!-- IDEA: Maybe add a toggle for how filters are combined - Do you want to see results including all tags - or any of the tags? This could be a switch -->
-
+  <!-- TODO: Make the filters sidebar work for mobile as an expandable sheet -->
   <!-- <div class="pb-4">
         <SlideToggle
             active="bg-primary-700"
@@ -71,13 +71,15 @@
   <!-- TODO: Maybe always render all tags and show how many items that tag has -->
   <!-- TODO: Maybe disable irrelevant tags rather than showing them -->
   <!-- TODO: Maybe change the animation when results change -->
-  <div class="grid gap-1 pb-8">
+  <div class="grid pb-8">
     <h2 class="h3 font-bold">Resource types</h2>
     {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
-      <button
+      <Button
+        variant="ghost"
+        size="sm"
         class={cn(
-          'chip hover:variant-soft-surface flex w-full justify-start text-left',
-          searchResults.isTagSelected(tag) ? 'variant-soft-surface' : '',
+          'flex w-full justify-start rounded-sm text-left',
+          searchResults.isTagSelected(tag) && 'bg-muted/50',
         )}
         disabled={!enabled}
         onclick={() => searchResults.toggleTag(tag)}
@@ -86,8 +88,8 @@
         <!-- TODO: Update the tag count based on current searchResults -->
         <!-- TODO: Make tag gray and disabled when count === 0 among current search results -->
         <!-- TODO: Preserve order based on tag count in all resources, not based on tag count in the search results -->
-        <span class="text-gray-300">HÄR {count}</span>
-      </button>
+        <span class="text-gray-300">{count}</span>
+      </Button>
     {/each}
   </div>
 

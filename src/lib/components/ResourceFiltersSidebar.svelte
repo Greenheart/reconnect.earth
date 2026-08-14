@@ -48,14 +48,6 @@
     </Button>
   </div>
 
-  <!-- TODO: Make the filters sidebar work for mobile as an expandable sheet -->
-
-  <!-- TODO: Update lists of filters to only show possible combinations -->
-  <!-- For example, hide tags that can't be combined with the current other filters -->
-  <!-- IDEA: Maybe move the sidebar list of tags out into a separate component -->
-  <!-- TODO: Maybe always render all tags and show how many items that tag has -->
-  <!-- TODO: Maybe disable irrelevant tags rather than showing them -->
-  <!-- TODO: Maybe change the animation when results change -->
   <div class="grid pb-8">
     <h2 class="h3 font-bold">Resource types</h2>
     {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
@@ -70,9 +62,6 @@
         onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary">#{tag}</span>
-        <!-- TODO: Update the tag count based on current searchResults -->
-        <!-- TODO: Make tag gray and disabled when count === 0 among current search results -->
-        <!-- TODO: Preserve order based on tag count in all resources, not based on tag count in the search results -->
         <span class="text-gray-300">{count}</span>
       </Button>
     {/each}
@@ -92,9 +81,6 @@
         onclick={() => searchResults.toggleTag(tag)}
       >
         <span class="text-primary">#{tag}</span>
-        <!-- TODO: Update the tag count based on current searchResults -->
-        <!-- TODO: Make tag gray and disabled when count === 0 among current search results -->
-        <!-- TODO: Preserve order based on tag count in all resources, not based on tag count in the search results -->
         <span class="text-gray-300">{count}</span>
       </Button>
     {/each}

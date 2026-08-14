@@ -20,8 +20,6 @@
     "@iconify-json/ri": "^1.2.10",
     "@internationalized/date": "^3.12.3",
     "@lucide/svelte": "^1.31.0",
-    "@skeletonlabs/skeleton": "^2.11.0",
-    "@skeletonlabs/tw-plugin": "^0.4.1",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/enhanced-img": "^0.11.0",
     "@sveltejs/kit": "^2.70.2",

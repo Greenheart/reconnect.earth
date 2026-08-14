@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { initializeStores } from '@skeletonlabs/skeleton'
   import MobileNav from '$lib/components/MobileNav.svelte'
   import { Button } from '$lib/components/ui/button'
 
@@ -8,8 +7,6 @@
   import '../app.css'
 
   let { children } = $props()
-
-  initializeStores()
 
   const links = [
     { title: 'Resources', href: '/resources' },

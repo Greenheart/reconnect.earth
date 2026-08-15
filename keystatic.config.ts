@@ -1,4 +1,4 @@
-import { ResourceSchema } from './src/lib/schema.ts'
+import { ResourceValidation } from './src/lib/schema.ts'
 import { config, singleton, fields } from '@keystatic/core'
 
 export default config({
@@ -17,7 +17,7 @@ export default config({
               label: 'Title',
               description: 'A short descriptive title',
               validation: {
-                length: { max: ResourceSchema.shape.title.maxLength! },
+                length: { max: ResourceValidation.title.max },
                 isRequired: true,
               },
             }),
@@ -27,7 +27,7 @@ export default config({
                 'Why is this relevant for Reconnect.earth? What are some key topics and insights?',
               multiline: true,
               validation: {
-                length: { max: ResourceSchema.shape.description.maxLength! },
+                length: { max: ResourceValidation.description.max },
                 isRequired: true,
               },
             }),
@@ -35,12 +35,13 @@ export default config({
               label: 'Link',
               validation: { isRequired: true },
             }),
-            // TODO: See if we can get the max number of tags from the schema, or if we should define the constants somewhere else instead.
             tags: fields.array(fields.text({ label: 'Tag' }), {
               label: 'Tags',
               description:
                 'Add relevant tags to describe this resource. Use "TitleCasing" to format tags consistently.',
-              validation: { length: { min: 1, max: 5 } },
+              validation: {
+                length: { min: ResourceValidation.tags.min, max: ResourceValidation.tags.max },
+              },
               itemLabel: (item) => item.value,
             }),
             featured: fields.checkbox({
@@ -54,8 +55,8 @@ export default config({
                 "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
               validation: {
                 isRequired: false,
-                min: ResourceSchema.shape.quality.minValue!,
-                max: ResourceSchema.shape.quality.maxValue!,
+                min: ResourceValidation.quality.min,
+                max: ResourceValidation.quality.max,
               },
             }),
           }),

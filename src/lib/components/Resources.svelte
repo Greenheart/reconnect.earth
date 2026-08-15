@@ -80,7 +80,7 @@
             <Sheet.Header class="py-5 shadow-md">
               <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
             </Sheet.Header>
-            <ResourceFiltersSidebar {searchResults} {resources} class="overflow-y-auto px-4 pt-4" />
+            <ResourceFiltersSidebar {searchResults} {resources} class="pt-4" />
           </Sheet.Content>
         </Sheet.Root>
       </div>

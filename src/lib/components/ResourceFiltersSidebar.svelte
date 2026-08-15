@@ -9,18 +9,26 @@
 
   interface Props {
     searchResults: FilteredItems<Resource>
+    onSearchSubmit?: () => void
     resources: Resource[]
     class?: string
   }
 
-  let { searchResults, resources, class: className = '' }: Props = $props()
+  let { searchResults, resources, class: className = '', onSearchSubmit }: Props = $props()
 
   const resourceCounts = $derived(searchResults.getItemCountsPerTag())
 </script>
 
 <div class={className}>
   <div class="grid gap-2 pb-2">
-    <SearchInput {searchResults} />
+    <form
+      onsubmit={(event) => {
+        event.preventDefault()
+        onSearchSubmit?.()
+      }}
+    >
+      <SearchInput {searchResults} />
+    </form>
 
     <Button
       variant="outline"

@@ -76,7 +76,11 @@
           <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
             ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
           >
-          <Sheet.Content side="left" class="w-[90%]! px-4">
+          <Sheet.Content
+            side="left"
+            class="w-[90%]! px-4"
+            onOpenAutoFocus={(event) => event.preventDefault()}
+          >
             <Sheet.Header class="px-1 py-5">
               <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
             </Sheet.Header>
@@ -104,6 +108,7 @@
       {@const key = resource.link}
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
       {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
+      <!-- IDEA: Disable animations for mobile devices since they don't see the animations when the filter sidebar is open -->
       <div animate:flip={{ duration: 400 }} in:send={{ key }} out:receive={{ key }}>
         <Card.Root class="grid h-full grid-rows-[min-content_min-content_1fr] gap-2 p-4">
           <h3 class="h4 text-primary font-bold">

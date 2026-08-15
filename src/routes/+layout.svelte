@@ -11,6 +11,7 @@
   const links = [
     { title: 'Resources', href: '/resources' },
     { title: 'Activities', href: '/#activities' },
+    { title: 'Contribute', href: GITHUB_LINK },
   ]
 </script>
 

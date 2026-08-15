@@ -82,12 +82,14 @@
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <!-- TODO: Maybe use intersectionObserver to hide the footer when all items are visible -->
 
-    <div class="bg-card fixed right-0 bottom-0 left-0 z-10 w-full p-2">
+    <div
+      class="bg-card md-left-auto fixed right-0 bottom-0 left-0 z-10 p-2 md:static md:right-auto md:bottom-auto md:z-auto md:col-span-full md:mb-1 md:w-56 md:bg-transparent md:p-0 md:*:justify-between"
+    >
       <div
         class="pointer-events-none fixed right-0 bottom-13 left-0 h-8 w-full bg-linear-to-b from-transparent to-black/15 md:hidden"
       ></div>
-      <div class="col-span-full flex items-center justify-center gap-4 text-sm">
-        <div class="md:invisible">
+      <div class="flex items-center justify-center gap-4 text-sm">
+        <div class="md:hidden">
           <Sheet.Root bind:open={isSheetOpen}>
             <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
               ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger

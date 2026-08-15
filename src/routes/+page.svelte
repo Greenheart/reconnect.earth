@@ -15,7 +15,11 @@
   }) as Record<string, { default: any }>
 
   function getImage(filename: string) {
-    return allImages[`/src/assets/${filename}`]?.default
+    const image = allImages[`/src/assets/${filename}`]?.default
+    if (!image) {
+      throw new Error(`Image not found: ${filename}`)
+    }
+    return image
   }
 </script>
 

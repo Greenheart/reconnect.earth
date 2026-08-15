@@ -48,9 +48,7 @@
     </Button>
   </div>
 
-  <div class="max-h-[calc(100vh-140px)] overflow-y-auto pb-4">
-    <!-- IDEA: Show shadow for bottom and top when scrolled -->
-    <!-- IDEA: Use a linear gradient at top and bottom of the container: https://stackoverflow.com/questions/44793453/how-do-i-add-a-top-and-bottom-shadow-while-scrolling-but-only-when-needed -->
+  <div class="scroll-y-shadow max-h-[calc(100vh-140px)] overflow-y-auto overscroll-y-contain pb-4">
     <div class="grid pb-8">
       <h2 class="h3 pb-1 font-bold">Resource types</h2>
       {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}

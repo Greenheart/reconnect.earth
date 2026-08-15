@@ -187,4 +187,10 @@
   .blockquote {
     @apply border-s-2 ps-6 italic;
   }
+
+  .scroll-y-shadow {
+    box-shadow:
+      inset 0px 16px 8px -12px oklch(0 0 0 / 0.1),
+      inset 0px -16px 8px -12px oklch(0 0 0 / 0.1);
+  }
 }

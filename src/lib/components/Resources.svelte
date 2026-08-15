@@ -57,9 +57,9 @@
   }
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-  const shouldAnimate = !isMobile
+  let isSheetOpen = $state(false)
+  const shouldAnimate = $derived(!isMobile && !isSheetOpen)
 
-  // Maybe simplify even further
   const maybe = (node: HTMLElement, options: { fn: (...args: any[]) => any; key: unknown }) => {
     if (shouldAnimate) {
       return options.fn(node, options)
@@ -82,7 +82,7 @@
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
       <!-- TODO: Fix the theme colors so the sheet close (X) button looks better -->
       <div class="md:hidden">
-        <Sheet.Root>
+        <Sheet.Root bind:open={isSheetOpen}>
           <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
             ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
           >

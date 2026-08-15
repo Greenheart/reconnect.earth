@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getBookmarks } from '$lib/state/bookmarks'
+  import { getBookmarks } from '$lib/state/bookmarks.svelte'
   import { Button } from '$lib/components/ui/button'
   import SearchInput from './SearchInput.svelte'
 

@@ -3,7 +3,9 @@ import { persisted } from '$lib/persisted.svelte'
 
 const KEY = 'resource_bookmarks'
 
-let bookmarks: ReturnType<typeof persisted<Resource['link'][]>>
+type BookmarkState = ReturnType<typeof persisted<Resource['link'][]>>
+
+let bookmarks: BookmarkState
 
 export function getBookmarks(resources: Resource[]) {
   bookmarks ??= persisted<Resource['link'][]>(KEY, [], {
@@ -25,7 +27,7 @@ export function getBookmarks(resources: Resource[]) {
 }
 
 /** Add or remove a bookmark from the persisted state */
-export function toggleBookmark(resource: Resource) {
+export function toggleBookmark(bookmarks: BookmarkState, resource: Resource) {
   if (bookmarks.value.includes(resource.link)) {
     bookmarks.value = bookmarks.value.filter((link) => link !== resource.link)
   } else {

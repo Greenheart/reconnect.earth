@@ -4,7 +4,7 @@
   import { crossfade, fade } from 'svelte/transition'
 
   import type { Resource } from '$lib/schema'
-  import { getBookmarks, toggleBookmark } from '$lib/state/bookmarks'
+  import { getBookmarks, toggleBookmark } from '$lib/state/bookmarks.svelte'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '$lib/state/search.svelte'
   import { Button, buttonVariants } from '$lib/components/ui/button'
@@ -119,7 +119,7 @@
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
       {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
       <div
-        animate:flip={shouldAnimate ? { duration: 400 } : { duration: 0, delay: 0 }}
+        animate:flip={shouldAnimate ? { duration: 400 } : { duration: 0 }}
         in:maybe={{ fn: send, key }}
         out:maybe={{ fn: receive, key }}
       >
@@ -137,7 +137,7 @@
             <Button
               variant="ghost"
               size="icon"
-              onclick={() => toggleBookmark(resource)}
+              onclick={() => toggleBookmark(bookmarks, resource)}
               aria-label={label}
               title={label}
             >

@@ -18,6 +18,7 @@
 
   const resourceCounts = $derived(searchResults.getItemCountsPerTag())
   const bookmarks = $derived(getBookmarks(resources))
+  const showBookmarks = $derived(searchResults.filters.showBookmarks)
 </script>
 
 <div class={className}>
@@ -44,7 +45,7 @@
     <Button
       variant="outline"
       size="lg"
-      class={cn('justify-start rounded-md', searchResults.filters.showBookmarks && 'bg-muted/50')}
+      class={cn('justify-start rounded-md', showBookmarks && 'bg-input/30!')}
       onclick={() => (searchResults.filters.showBookmarks = !searchResults.filters.showBookmarks)}
       disabled={!bookmarks.value.length ||
         !bookmarks.value.some((bookmark) =>

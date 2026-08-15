@@ -4,7 +4,7 @@
   import { crossfade, fade } from 'svelte/transition'
 
   import type { Resource } from '$lib/schema'
-  import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
+  import { getBookmarks, toggleBookmark } from '$lib/state/bookmarks'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '$lib/state/search.svelte'
   import { Button, buttonVariants } from '$lib/components/ui/button'
@@ -17,6 +17,7 @@
   }
 
   let { resources }: Props = $props()
+  const bookmarks = $derived(getBookmarks(resources))
 
   const searchResults = $derived(
     new FilteredItems<Resource>(resources, (item, filters) => {

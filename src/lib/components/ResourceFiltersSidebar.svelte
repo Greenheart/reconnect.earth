@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { bookmarks } from '$lib/state/bookmarks'
+  import { getBookmarks } from '$lib/state/bookmarks'
   import { Button } from '$lib/components/ui/button'
   import SearchInput from './SearchInput.svelte'
 
@@ -17,6 +17,7 @@
   let { searchResults, resources, class: className = '', onSearchSubmit }: Props = $props()
 
   const resourceCounts = $derived(searchResults.getItemCountsPerTag())
+  const bookmarks = $derived(getBookmarks(resources))
 </script>
 
 <div class={className}>

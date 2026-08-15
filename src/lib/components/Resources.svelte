@@ -7,8 +7,9 @@
   import { bookmarks, toggleBookmark } from '$lib/state/bookmarks'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '$lib/state/search.svelte'
-  import { Button } from '$lib/components/ui/button'
+  import { Button, buttonVariants } from '$lib/components/ui/button'
   import * as Card from '$lib/components/ui/card'
+  import * as Sheet from '$lib/components/ui/sheet'
 
   interface Props {
     resources: Resource[]
@@ -56,12 +57,21 @@
   and the living planet thrive together.
 </p>
 
-<!-- IDEA: Add information about how to contribute resources. -->
-
 <div class="grid gap-4 md:grid-cols-[230px_1fr]">
   <ResourceFiltersSidebar {searchResults} {resources} class="hidden md:block" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
+      <div class="md:hidden">
+        <Sheet.Root>
+          <Sheet.Trigger class={buttonVariants({ variant: 'outline' })}>Show filters</Sheet.Trigger>
+          <Sheet.Content side="left" class="w-[90%]!">
+            <Sheet.Header class="sticky top-0">
+              <Sheet.Title>Filters</Sheet.Title>
+            </Sheet.Header>
+            <ResourceFiltersSidebar {searchResults} {resources} class="overflow-y-auto px-4" />
+          </Sheet.Content>
+        </Sheet.Root>
+      </div>
       <span>Showing {searchResults.matches.length} / {resources.length}</span>
       <Button
         variant="outline"

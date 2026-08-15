@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants'
 
 export const ResourceSchema = z.object({
-  title: z.string(),
+  title: z.string().max(125),
   description: z.string().max(500).optional(),
   link: z.url(),
   tags: z

@@ -30,6 +30,7 @@ export const AppValidation = {
 export const AppSchema = z.object({
   name: z.string().max(AppValidation.name.max),
   description: z.string().max(AppValidation.description.max),
+  // We use the string field to allow internal links hosted on the same domain.
   link: z.string(),
   git: z.url(),
   image: z.string(),

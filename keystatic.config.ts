@@ -1,4 +1,4 @@
-import { ResourceValidation } from './src/lib/schema.ts'
+import { AppValidation, ResourceValidation } from './src/lib/schema.ts'
 import { config, singleton, fields } from '@keystatic/core'
 
 export default config({
@@ -7,7 +7,7 @@ export default config({
   },
   singletons: {
     resources: singleton({
-      label: 'Resources',
+      label: '📚️ Resources',
       format: 'json',
       path: 'src/data/resources',
       schema: {
@@ -69,11 +69,44 @@ export default config({
         ),
       },
     }),
-    // apps: singleton({
-    //   label: 'Apps',
-    //   format: 'json',
-    //   path: './src/data/apps.json',
-    //   schema: {},
-    // }),
+    apps: singleton({
+      label: '📱️ Apps',
+      format: 'json',
+      path: './src/data/apps',
+      schema: {
+        apps: fields.array(
+          fields.object({
+            name: fields.text({
+              label: 'Name',
+              validation: { isRequired: true, length: { max: AppValidation.name.max } },
+            }),
+            description: fields.text({
+              label: 'Description',
+              validation: { isRequired: true, length: { max: AppValidation.description.max } },
+            }),
+            link: fields.text({
+              label: 'Link',
+              description:
+                'A link to a live demo (for web projects), or where to get more information.',
+              validation: { isRequired: true },
+            }),
+            git: fields.url({
+              label: 'Git repository link',
+              description:
+                'Link to where the source core for the project is hosted. Only libre software apps may be listed.',
+              validation: { isRequired: true },
+            }),
+            // IDEA: Maybe allow editing the app images within the CMS
+            // Though this might require reading content with the reader API.
+            image: fields.text({
+              label: 'Image',
+              description: 'Screenshot or other app image',
+              validation: { isRequired: true },
+            }),
+          }),
+          { itemLabel: (item) => item.fields.name.value },
+        ),
+      },
+    }),
   },
 })

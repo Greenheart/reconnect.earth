@@ -3,7 +3,7 @@ import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants'
 
 export const ResourceSchema = z.object({
   title: z.string().max(125),
-  description: z.string().max(500).optional(),
+  description: z.string().max(500),
   link: z.url(),
   tags: z
     .array(z.enum(RESOURCE_TYPES).or(z.enum(RESOURCE_CATEGORIES)))

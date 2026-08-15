@@ -10,6 +10,7 @@
   import { Button, buttonVariants } from '$lib/components/ui/button'
   import * as Card from '$lib/components/ui/card'
   import * as Sheet from '$lib/components/ui/sheet'
+  import { SITE_NAME } from '$lib/constants'
 
   interface Props {
     resources: Resource[]
@@ -48,36 +49,46 @@
     easing: quintOut,
     fallback: (node) => fade(node, { duration: 300 }),
   })
+
+  const showResetFiltersButton = $derived(searchResults.matches.length === resources.length)
+
+  function resetFilters() {
+    searchResults.resetFilters()
+  }
 </script>
 
 <h2 class="h2 gradient-heading mb-2 font-bold">Resources</h2>
 
 <p class="mb-4">
-  Explore topics related to Reconnect.earth. Learn how we can create a future where both humanity
-  and the living planet thrive together.
+  Explore topics related to {SITE_NAME}. Learn how we can create a future where both humanity and
+  the living planet thrive together.
 </p>
 
 <div class="grid gap-4 md:grid-cols-[230px_1fr]">
   <ResourceFiltersSidebar {searchResults} {resources} class="hidden md:block" />
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
+      <!-- TODO: Fix the theme colors so the sheet close (X) button looks better -->
       <div class="md:hidden">
         <Sheet.Root>
-          <Sheet.Trigger class={buttonVariants({ variant: 'outline' })}>Show filters</Sheet.Trigger>
+          <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
+            ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
+          >
           <Sheet.Content side="left" class="w-[90%]!">
-            <Sheet.Header class="sticky top-0">
-              <Sheet.Title>Filters</Sheet.Title>
+            <Sheet.Header class="py-5 shadow-md">
+              <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
             </Sheet.Header>
-            <ResourceFiltersSidebar {searchResults} {resources} class="overflow-y-auto px-4" />
+            <ResourceFiltersSidebar {searchResults} {resources} class="overflow-y-auto px-4 pt-4" />
           </Sheet.Content>
         </Sheet.Root>
       </div>
-      <span>Showing {searchResults.matches.length} / {resources.length}</span>
+      <span
+        ><span class="hidden pr-1 md:inline">Showing</span>{searchResults.matches.length} / {resources.length}</span
+      >
       <Button
         variant="outline"
-        size="sm"
-        class={['rounded-md', searchResults.matches.length === resources.length && 'hidden']}
-        onclick={() => searchResults.resetFilters()}>Reset filters</Button
+        class={['rounded-md', showResetFiltersButton && 'hidden']}
+        onclick={resetFilters}>Show all</Button
       >
     </div>
 
@@ -121,5 +132,21 @@
         </Card.Root>
       </div>
     {/each}
+
+    <!-- IDEA: Maybe turn this into a sticky filters footer to show the count, filters button and reset button for mobile -->
+    <!-- IDEA: for desktop, make the sidebar sticky -->
+    <div class="col-span-full mt-4 flex flex-col items-center gap-4">
+      <p class="text-center text-sm">
+        Showing {searchResults.matches.length} / {resources.length}
+      </p>
+
+      <Button
+        variant="outline"
+        class={['rounded-md px-8', showResetFiltersButton && 'hidden']}
+        onclick={resetFilters}>Show all</Button
+      >
+    </div>
+
+    <!-- IDEA: At the end of the list could be a good place to ask people to suggest new resources. Add link to contributing guide for adding resources here. -->
   </div>
 </div>

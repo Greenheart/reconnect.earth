@@ -188,9 +188,17 @@
     @apply border-s-2 ps-6 italic;
   }
 
-  .scroll-y-shadow {
-    box-shadow:
-      inset 0px 16px 8px -12px oklch(0 0 0 / 0.1),
-      inset 0px -16px 8px -12px oklch(0 0 0 / 0.1);
+  .scroll-y-shadows {
+    background:
+      linear-gradient(oklch(0 0 0 / 0.1) 2%, transparent) center top,
+      linear-gradient(transparent, oklch(0 0 0 / 0.15) 98%) center bottom;
+
+    background-repeat: no-repeat;
+    background-size:
+      100% 40px,
+      100% 40px,
+      100% 14px,
+      100% 14px;
+    background-attachment: local, local, scroll, scroll;
   }
 }

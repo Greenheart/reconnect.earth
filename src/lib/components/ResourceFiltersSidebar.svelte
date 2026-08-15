@@ -62,7 +62,7 @@
   >
     <div class="grid">
       <h2 class="h3 pb-1 font-bold">Resource types</h2>
-      {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
+      {#each resourceCounts.resourceTypes as { tag, matches, enabled } (tag)}
         <Button
           variant="ghost"
           size="sm"
@@ -74,14 +74,16 @@
           onclick={() => searchResults.toggleTag(tag)}
         >
           <span class="text-primary">#{tag}</span>
-          <span class="text-gray-300">{count}</span>
+          {#if Boolean(matches)}
+            <span class="text-gray-300">{matches}</span>
+          {/if}
         </Button>
       {/each}
     </div>
 
     <div class="grid">
       <h2 class="h3 pb-1 font-bold">Categories</h2>
-      {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
+      {#each resourceCounts.resourceCategories as { tag, matches, enabled } (tag)}
         <Button
           variant="ghost"
           size="sm"
@@ -93,7 +95,9 @@
           onclick={() => searchResults.toggleTag(tag)}
         >
           <span class="text-primary">#{tag}</span>
-          <span class="text-gray-300">{count}</span>
+          {#if Boolean(matches)}
+            <span class="text-gray-300">{matches}</span>
+          {/if}
         </Button>
       {/each}
     </div>

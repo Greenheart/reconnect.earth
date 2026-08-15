@@ -45,10 +45,6 @@ export class FilteredItems<T extends Resource> {
     return this.filters.tags?.includes(tag)
   }
 
-  countItemsWithTag(tag: ResourceTag) {
-    return this.items.filter((item) => item.tags.includes(tag)).length
-  }
-
   getItemCountsPerTag() {
     return {
       resourceTypes: this.#getItemsWithTags(RESOURCE_TYPES),
@@ -56,13 +52,28 @@ export class FilteredItems<T extends Resource> {
     }
   }
 
+  #countItemsWithTag(tag: ResourceTag, collection: readonly T[]) {
+    return collection.filter((item) => item.tags.includes(tag)).length
+  }
+
   #getItemsWithTags(tags: readonly ResourceTag[]) {
-    return tags
-      .map((tag) => {
-        const count = this.countItemsWithTag(tag)
-        return { tag, count, enabled: count >= 1 }
-      })
-      .filter(({ count }) => count >= 1)
-      .sort((a, b) => b.count - a.count)
+    return (
+      tags
+        .map((tag) => {
+          const total = this.#countItemsWithTag(tag, this.items)
+          const matches = this.#countItemsWithTag(tag, this.matches)
+          return {
+            tag,
+            /** Number of items with the given tag */
+            total,
+            /** Number of items with the given tag that also match the current filters */
+            matches,
+            enabled: matches >= 1,
+          }
+        })
+        // Only show tags with at least one item
+        .filter(({ total }) => total >= 1)
+        .sort((a, b) => b.total - a.total)
+    )
   }
 }

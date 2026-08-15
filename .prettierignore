@@ -3,3 +3,6 @@ build
 node_modules
 LICENSE.md
 pnpm-lock.yaml
+
+# Ignore content since it is formatted by the CMS by default
+src/data/**/*.json

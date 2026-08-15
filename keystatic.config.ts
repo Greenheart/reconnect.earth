@@ -76,9 +76,11 @@ export default config({
       schema: {
         apps: fields.array(
           fields.object({
-            name: fields.text({
-              label: 'Name',
-              validation: { isRequired: true, length: { max: AppValidation.name.max } },
+            name: fields.slug({
+              name: {
+                label: 'Name',
+                validation: { isRequired: true, length: { max: AppValidation.name.max } },
+              },
             }),
             description: fields.text({
               label: 'Description',
@@ -96,15 +98,14 @@ export default config({
                 'Link to where the source core for the project is hosted. Only libre software apps may be listed.',
               validation: { isRequired: true },
             }),
-            // IDEA: Maybe allow editing the app images within the CMS
-            // Though this might require reading content with the reader API.
-            image: fields.text({
+            image: fields.image({
               label: 'Image',
               description: 'Screenshot or other app image',
+              directory: './src/assets',
               validation: { isRequired: true },
             }),
           }),
-          { itemLabel: (item) => item.fields.name.value },
+          { itemLabel: (item) => item.fields.name.value.name, slugField: 'name' },
         ),
       },
     }),

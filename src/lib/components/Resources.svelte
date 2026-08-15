@@ -55,6 +55,16 @@
   function resetFilters() {
     searchResults.resetFilters()
   }
+
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  const shouldAnimate = !isMobile
+
+  // Maybe simplify even further
+  const maybe = (node: HTMLElement, options: { fn: (...args: any[]) => any; key: unknown }) => {
+    if (shouldAnimate) {
+      return options.fn(node, options)
+    }
+  }
 </script>
 
 <h2 class="h2 gradient-heading mb-2 font-bold">Resources</h2>
@@ -108,8 +118,11 @@
       {@const key = resource.link}
       {@const isBookmarked = bookmarks.value.includes(resource.link)}
       {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
-      <!-- IDEA: Disable animations for mobile devices since they don't see the animations when the filter sidebar is open -->
-      <div animate:flip={{ duration: 400 }} in:send={{ key }} out:receive={{ key }}>
+      <div
+        animate:flip={shouldAnimate ? { duration: 400 } : { duration: 0, delay: 0 }}
+        in:maybe={{ fn: send, key }}
+        out:maybe={{ fn: receive, key }}
+      >
         <Card.Root class="grid h-full grid-rows-[min-content_min-content_1fr] gap-2 p-4">
           <h3 class="h4 text-primary font-bold">
             {resource.title}

@@ -51,7 +51,7 @@
     fallback: (node) => fade(node, { duration: 300 }),
   })
 
-  const showResetFiltersButton = $derived(searchResults.matches.length === resources.length)
+  const disableResetFiltersButton = $derived(searchResults.matches.length === resources.length)
 
   function resetFilters() {
     searchResults.resetFilters()
@@ -80,38 +80,46 @@
     <ResourceFiltersSidebar {searchResults} {resources} class="sticky top-4" />
   </div>
   <div class="grid place-content-start gap-4 md:grid-cols-2">
-    <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
-      <div class="md:hidden">
-        <Sheet.Root bind:open={isSheetOpen}>
-          <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
-            ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
-          >
-          <Sheet.Content
-            side="left"
-            class="w-[90%]! px-4"
-            onOpenAutoFocus={(event) => event.preventDefault()}
-          >
-            <Sheet.Header class="px-1 py-5">
-              <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
-            </Sheet.Header>
-            <ResourceFiltersSidebar
-              {searchResults}
-              {resources}
-              onSearchSubmit={() =>
-                document.querySelector<HTMLDivElement>('[data-dialog-close]')?.click?.()}
-              --filters-top-section-height="210px"
-            />
-          </Sheet.Content>
-        </Sheet.Root>
+    <!-- TODO: Maybe use intersectionObserver to hide the footer when all items are visible -->
+
+    <div class="bg-card fixed right-0 bottom-0 left-0 z-10 w-full p-2">
+      <div
+        class="pointer-events-none fixed right-0 bottom-13 left-0 h-8 w-full bg-linear-to-b from-transparent to-black/15 md:hidden"
+      ></div>
+      <div class="col-span-full flex items-center justify-center gap-4 text-sm">
+        <div class="md:invisible">
+          <Sheet.Root bind:open={isSheetOpen}>
+            <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
+              ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
+            >
+            <Sheet.Content
+              side="left"
+              class="w-[90%]! px-4"
+              onOpenAutoFocus={(event) => event.preventDefault()}
+            >
+              <Sheet.Header class="px-1 py-5">
+                <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
+              </Sheet.Header>
+              <ResourceFiltersSidebar
+                {searchResults}
+                {resources}
+                onSearchSubmit={() =>
+                  document.querySelector<HTMLDivElement>('[data-dialog-close]')?.click?.()}
+                --filters-top-section-height="210px"
+              />
+            </Sheet.Content>
+          </Sheet.Root>
+        </div>
+        <span
+          ><span class="hidden pr-1 md:inline">Showing</span>{searchResults.matches.length} / {resources.length}</span
+        >
+        <Button
+          variant="outline"
+          class="rounded-md"
+          disabled={disableResetFiltersButton}
+          onclick={resetFilters}>Show all</Button
+        >
       </div>
-      <span
-        ><span class="hidden pr-1 md:inline">Showing</span>{searchResults.matches.length} / {resources.length}</span
-      >
-      <Button
-        variant="outline"
-        class={['rounded-md', showResetFiltersButton && 'hidden']}
-        onclick={resetFilters}>Show all</Button
-      >
     </div>
 
     {#each searchResults.matches as resource (resource.link)}
@@ -159,8 +167,6 @@
       </div>
     {/each}
 
-    <!-- IDEA: Maybe turn this into a sticky filters footer to show the count, filters button and reset button for mobile -->
-    <!-- IDEA: for desktop, make the sidebar sticky -->
     <div class="col-span-full mt-4 flex flex-col items-center gap-4">
       <p class="text-center text-sm">
         Showing {searchResults.matches.length} / {resources.length}
@@ -168,7 +174,7 @@
 
       <Button
         variant="outline"
-        class={['rounded-md px-8', showResetFiltersButton && 'hidden']}
+        class={['rounded-md px-8', disableResetFiltersButton && 'hidden']}
         onclick={resetFilters}>Show all</Button
       >
     </div>

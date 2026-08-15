@@ -1,5 +1,6 @@
-import { resources } from '$lib/server/content'
+import { getResources } from '$lib/server/content'
 
-export function load() {
+export async function load() {
+  const resources = await getResources()
   return { resources }
 }

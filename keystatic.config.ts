@@ -50,7 +50,7 @@ export default config({
               defaultValue: false,
             }),
             quality: fields.integer({
-              label: 'Production quality',
+              label: `Production quality (${ResourceValidation.quality.min}-${ResourceValidation.quality.max})`,
               description:
                 "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
               validation: {

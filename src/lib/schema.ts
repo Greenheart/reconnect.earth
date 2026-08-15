@@ -10,13 +10,13 @@ export const ResourceSchema = z.object({
     .min(1)
     .max(5),
   featured: z.boolean().optional().default(false),
-  quality: z.number().min(1).max(5),
+  quality: z.int().min(1).max(5),
 })
 
 export type Resource = z.infer<typeof ResourceSchema>
 
 export const AppSchema = z.object({
-  name: z.string(),
+  name: z.string().max(100),
   description: z.string().max(300),
   link: z.string(),
   git: z.url(),

@@ -72,15 +72,19 @@
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
       <!-- TODO: Fix the theme colors so the sheet close (X) button looks better -->
       <div class="md:hidden">
-        <Sheet.Root>
+        <Sheet.Root open>
           <Sheet.Trigger class={buttonVariants({ variant: 'secondary', class: 'rounded-md' })}
             ><span class="icon-[lucide--filter]"></span>Filters</Sheet.Trigger
           >
-          <Sheet.Content side="left" class="w-[90%]!">
-            <Sheet.Header class="py-5 shadow-md">
+          <Sheet.Content side="left" class="w-[90%]! px-4">
+            <Sheet.Header class="px-1 py-5">
               <Sheet.Title class="font-sans text-lg font-bold">Filters</Sheet.Title>
             </Sheet.Header>
-            <ResourceFiltersSidebar {searchResults} {resources} class="pt-4" />
+            <ResourceFiltersSidebar
+              {searchResults}
+              {resources}
+              --filters-top-section-height="210px"
+            />
           </Sheet.Content>
         </Sheet.Root>
       </div>

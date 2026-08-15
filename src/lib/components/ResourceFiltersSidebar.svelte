@@ -49,7 +49,7 @@
   </div>
 
   <div
-    class="scroll-y-shadow grid max-h-[calc(100vh-180px)] gap-8 overflow-y-auto overscroll-y-contain pt-2 pb-4"
+    class="scroll-y-shadow grid max-h-[calc(100vh-var(--filters-top-section-height,180px))] gap-8 overflow-y-auto overscroll-y-contain pt-2 pb-8 md:pb-4"
   >
     <div class="grid">
       <h2 class="h3 pb-1 font-bold">Resource types</h2>

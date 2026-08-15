@@ -19,13 +19,13 @@
 </script>
 
 <div class={className}>
-  <SearchInput {searchResults} />
+  <div class="grid gap-2 pb-4">
+    <SearchInput {searchResults} />
 
-  <div class="grid gap-2 pt-4 pb-8">
     <Button
       variant="outline"
       size="lg"
-      class="justify-start rounded-md"
+      class="mt-2 justify-start rounded-md"
       onclick={() => searchResults.resetFilters()}
     >
       <span class="icon-[ion--library]"></span>
@@ -48,41 +48,45 @@
     </Button>
   </div>
 
-  <div class="grid pb-8">
-    <h2 class="h3 font-bold">Resource types</h2>
-    {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
-      <Button
-        variant="ghost"
-        size="sm"
-        class={cn(
-          'flex w-full justify-start gap-2 rounded-sm text-left',
-          searchResults.isTagSelected(tag) && 'bg-muted/50',
-        )}
-        disabled={!enabled}
-        onclick={() => searchResults.toggleTag(tag)}
-      >
-        <span class="text-primary">#{tag}</span>
-        <span class="text-gray-300">{count}</span>
-      </Button>
-    {/each}
-  </div>
+  <div class="max-h-[calc(100vh-140px)] overflow-y-auto pb-4">
+    <!-- IDEA: Show shadow for bottom and top when scrolled -->
+    <!-- IDEA: Use a linear gradient at top and bottom of the container: https://stackoverflow.com/questions/44793453/how-do-i-add-a-top-and-bottom-shadow-while-scrolling-but-only-when-needed -->
+    <div class="grid pb-8">
+      <h2 class="h3 pb-1 font-bold">Resource types</h2>
+      {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
+        <Button
+          variant="ghost"
+          size="sm"
+          class={cn(
+            'flex w-full justify-start gap-2 rounded-sm text-left',
+            searchResults.isTagSelected(tag) && 'bg-muted/50',
+          )}
+          disabled={!enabled}
+          onclick={() => searchResults.toggleTag(tag)}
+        >
+          <span class="text-primary">#{tag}</span>
+          <span class="text-gray-300">{count}</span>
+        </Button>
+      {/each}
+    </div>
 
-  <div class="grid pb-8">
-    <h2 class="h3 font-bold">Categories</h2>
-    {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
-      <Button
-        variant="ghost"
-        size="sm"
-        class={cn(
-          'flex w-full justify-start gap-2 rounded-sm text-left',
-          searchResults.isTagSelected(tag) && 'bg-muted/50',
-        )}
-        disabled={!enabled}
-        onclick={() => searchResults.toggleTag(tag)}
-      >
-        <span class="text-primary">#{tag}</span>
-        <span class="text-gray-300">{count}</span>
-      </Button>
-    {/each}
+    <div class="grid pb-8">
+      <h2 class="h3 pb-1 font-bold">Categories</h2>
+      {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
+        <Button
+          variant="ghost"
+          size="sm"
+          class={cn(
+            'flex w-full justify-start gap-2 rounded-sm text-left',
+            searchResults.isTagSelected(tag) && 'bg-muted/50',
+          )}
+          disabled={!enabled}
+          onclick={() => searchResults.toggleTag(tag)}
+        >
+          <span class="text-primary">#{tag}</span>
+          <span class="text-gray-300">{count}</span>
+        </Button>
+      {/each}
+    </div>
   </div>
 </div>

@@ -65,7 +65,9 @@
 </p>
 
 <div class="grid gap-4 md:grid-cols-[230px_1fr]">
-  <ResourceFiltersSidebar {searchResults} {resources} class="hidden md:block" />
+  <div class="hidden md:block">
+    <ResourceFiltersSidebar {searchResults} {resources} class="sticky top-4" />
+  </div>
   <div class="grid place-content-start gap-4 md:grid-cols-2">
     <div class="col-span-full mb-0.5 flex h-9 items-center gap-4 text-sm">
       <!-- TODO: Fix the theme colors so the sheet close (X) button looks better -->

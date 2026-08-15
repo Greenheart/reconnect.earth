@@ -19,7 +19,7 @@
 </script>
 
 <div class={className}>
-  <div class="grid gap-2 pb-4">
+  <div class="grid gap-2 pb-2">
     <SearchInput {searchResults} />
 
     <Button
@@ -48,8 +48,10 @@
     </Button>
   </div>
 
-  <div class="scroll-y-shadow max-h-[calc(100vh-140px)] overflow-y-auto overscroll-y-contain pb-4">
-    <div class="grid pb-8">
+  <div
+    class="scroll-y-shadow grid max-h-[calc(100vh-180px)] gap-8 overflow-y-auto overscroll-y-contain pt-2 pb-4"
+  >
+    <div class="grid">
       <h2 class="h3 pb-1 font-bold">Resource types</h2>
       {#each resourceCounts.resourceTypes as { tag, count, enabled } (tag)}
         <Button
@@ -68,7 +70,7 @@
       {/each}
     </div>
 
-    <div class="grid pb-8">
+    <div class="grid">
       <h2 class="h3 pb-1 font-bold">Categories</h2>
       {#each resourceCounts.resourceCategories as { tag, count, enabled } (tag)}
         <Button

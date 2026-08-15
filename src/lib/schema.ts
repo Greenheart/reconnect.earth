@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants'
+import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants.ts'
 
 export const ResourceSchema = z.object({
   title: z.string().max(125),

@@ -12,13 +12,17 @@ async function readJSON(path: string) {
 const rawResources = await readJSON(resolve('./src/data/resources.json'))
 const rawApps = await readJSON(resolve('./src/data/apps.json'))
 
+// NOTE: For now we only use simple JSON files and have no need for the Keystatic Reader API.
+// Let's switch to the Reader API only if and when we need advanced content types in the future.
 export const resources: Resource[] = z
-  .array(ResourceSchema)
+  .object({
+    resources: z.array(ResourceSchema),
+  })
   .parse(rawResources)
-  .sort(getFeaturedFirst)
+  .resources.sort(getFeaturedFirst)
   .map((resource) => {
     resource.tags = getSortedTags(resource.tags)
     return resource
   })
 
-export const apps: App[] = z.array(AppSchema).parse(rawApps)
+export const apps: App[] = z.object({ apps: z.array(AppSchema) }).parse(rawApps).apps

@@ -1,249 +1,251 @@
-[
-  {
-    "title": "A healthy economy should be designed to thrive, not to grow",
-    "description": "A must-watch TED-talk by Kate Raworth. A short and engaging introduction to how Doughnut Economics can help both humanity and the living planet to thrive together.",
-    "link": "https://www.youtube.com/watch?v=Rhcrbcg8HBw",
-    "tags": ["Video", "WellbeingEconomics"],
-    "featured": true,
-    "quality": 5
-  },
-  {
-    "title": "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist",
-    "description": "A must-read to learn how to use wellbeing economics to co-create a future where the needs of all are met within the means of the living planet.",
-    "link": "https://libro.fm/audiobooks/9781473556256",
-    "tags": ["Book", "WellbeingEconomics"],
-    "featured": true,
-    "quality": 5
-  },
-  {
-    "title": "Planet: Critical - Making Sense of the Crisis",
-    "description": "Rachel has an unrivalled capacity for delivering facts and connecting the dots whilst being eloquent, engaging, compassionate, and witty. Only by understanding the true cause of the planetary crisis will we be able to resolve it.",
-    "link": "https://www.youtube.com/watch?v=PQvZ6NCrC20",
-    "tags": ["Video", "SystemsThinking", "Metacrisis"],
-    "featured": true,
-    "quality": 5
-  },
-  {
-    "title": "The Patterning Instinct: A Cultural History of Humanity's Search for Meaning",
-    "description": "Culture shapes values. Values shape history. How will our values shape the future?",
-    "link": "https://libro.fm/audiobooks/9781538450598",
-    "tags": ["Book", "Culture", "Meaning"],
-    "quality": 5
-  },
-  {
-    "title": "The Web of Meaning: Integrating Science and Traditional Wisdom to Find our Place in the Universe",
-    "description": "A coherent and intellectually solid foundation for an alternative worldview based on deep interconnectedness, showing how modern scientific knowledge echoes the ancient wisdom of earlier cultures.",
-    "link": "https://libro.fm/audiobooks/9781897408544",
-    "tags": ["Book", "Philosophy", "SystemsThinking"],
-    "quality": 5
-  },
-  {
-    "title": "The Ecology of Law: Toward a Legal System in Tune with Nature and Community",
-    "description": "Learn how the legal system could be reformed to enable a future where both humanity and the living planet thrive, together.",
-    "link": "https://libro.fm/audiobooks/9781626567979",
-    "tags": ["Book", "Law", "SystemsThinking"],
-    "quality": 3
-  },
-  {
-    "title": "The Social Dilemma: Discover What’s Hiding on the Other Side of Your Screen",
-    "description": "Never before have a handful of tech designers had such control over the way billions of us think, act, and live our lives.",
-    "link": "https://www.thesocialdilemma.com",
-    "tags": ["Documentary", "SurveillanceCapitalism", "Attention"],
-    "quality": 5
-  },
-  {
-    "title": "Why it's time for Doughnut Economics",
-    "description": "A short TED-talk exploring how the needs of all could be met within the means of the planet.",
-    "link": "https://www.youtube.com/watch?v=1BHOflzxPjI",
-    "tags": ["Video", "WellbeingEconomics"],
-    "quality": 4
-  },
-  {
-    "title": "Jennifer Hinton: Concrete visions for a sustainable economy / Konkreta visioner för en hållbar ekonomi",
-    "description": "Jennifer Hinton explains what not-for-profit companies and a not-for-profit world model is and what we can do to work towards it. Subtitles in Swedish.",
-    "link": "https://youtu.be/LFWKldh-I7g?si=BEIQK_tVW8Y78ggd",
-    "tags": ["Video", "NotForProfit"],
-    "quality": 3
-  },
-  {
-    "title": "Imagining a Solarpunk Future",
-    "description": "Keisha Howard presents how she discovered Solarpunk and what it is. Solarpunk is similar to cyberpunk with a focus on technology, however, Solarpunk offers a version of the future where communities are powered by renewable energy and most people live in a free and egalitarian world.",
-    "link": "https://www.ted.com/talks/keisha_howard_imagining_a_solarpunk_future",
-    "tags": ["Talk", "Solarpunk"],
-    "quality": 3
-  },
-  {
-    "title": "5 Principles for Social Sustainability (facing unpredictable change together)",
-    "description": "Learn about five principles to achieve social sustainability.",
-    "link": "https://youtu.be/o6lSuwJw0pk?si=Gxub6eE8jsxusjYH",
-    "tags": ["Video", "SocialSustainability"],
-    "quality": 4
-  },
-  {
-    "title": "The Myth of Freedom Under Capitalism",
-    "description": "Upstream Documentary. Although its intellectual handmaidens love to insist otherwise — capitalism is not a system that truly embodies freedom.",
-    "link": "https://www.upstreampodcast.org/the-myth-of-freedom-under-capitalism",
-    "tags": ["Podcast", "Documentary", "Freedom"],
-    "quality": 5
-  },
-  {
-    "title": "About Doughnut Economics",
-    "description": "The Doughnut offers a vision of what it means for humanity to thrive in the 21st century - and Doughnut Economics explores the mindset and ways of thinking needed to get us there.",
-    "link": "https://doughnuteconomics.org/about-doughnut-economics",
-    "tags": ["Webpage", "WellbeingEconomics"],
-    "quality": 4
-  },
-  {
-    "title": "Four Ways of Knowing the Meta Crisis",
-    "description": "A short overview of the meta crisis by Jonathan Rowson",
-    "link": "https://www.youtube.com/watch?v=NbBH1Hs_jLo",
-    "tags": ["Video", "Metacrisis"],
-    "quality": 2
-  },
-  {
-    "title": "Five Insights for Avoiding Global Collapse: What a 50-Year-Old Model of the World Taught Me About a Way Forward for Us Today",
-    "description": "Researcher Gaya Herrington outlines what it would take to create a future where society has transformed beyond the mere avoidance of collapse and is truly thriving.",
-    "link": "https://www.mdpi.com/books/mono/6206-five-insights-for-avoiding-global-collapse",
-    "tags": ["Book", "Research", "SystemsThinking"],
-    "quality": 4
-  },
-  {
-    "title": "Why Meaning in Life Matters for Societal Flourishing",
-    "description": "Research article giving an overview how a sense of meaning is connected to thriving societies.",
-    "link": "https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing",
-    "tags": ["Research", "Meaning", "Wellbeing"],
-    "quality": 4
-  },
-  {
-    "title": "Foundations of Humane Technology",
-    "description": "A free, self-paced online course for professionals shaping tomorrow's technology.",
-    "link": "https://www.humanetech.com/course",
-    "tags": ["Course", "Wellbeing", "Technology"],
-    "quality": 4
-  },
-  {
-    "title": "The Waterworks of Money Part 1: Charting the influence of big money on our society",
-    "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden. More info at the project website https://www.waterworksofmoney.com",
-    "link": "https://www.youtube.com/watch?v=IszXpzIo_ZQ",
-    "tags": ["Video", "Economics", "Freedom"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "The Waterworks of Money Part 2: Private Profits, Public Costs",
-    "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden",
-    "link": "https://www.youtube.com/watch?v=Ycit4WbJuwE",
-    "tags": ["Video", "Economics", "Freedom"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "Free Will is Political",
-    "description": "Video exploring the philosophy behind free will. Does Free Will really exist? And is it a wider social, cultural, and political concept?",
-    "link": "https://www.youtube.com/watch?v=N5wFFRBBG7M",
-    "tags": ["Video", "Freedom", "Culture"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "RSA ANIMATE: Drive: The surprising truth about what motivates us",
-    "description": "This lively RSA Animate, adapted from Dan Pink's talk at the RSA, illustrates the hidden truths behind what really motivates us at home and in the workplace.",
-    "link": "https://www.youtube.com/watch?v=u6XAPnuFjJc",
-    "tags": ["Video", "Motivation", "Culture"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "The Web of Meaning: How Recognizing Our Interconnectedness Lays the Path to Full Flourishing",
-    "description": "Jeremy Lent introduces themes from his book, The Web of Meaning: Integrating Science and Traditional Wisdom to Find Our Place in the Universe.",
-    "link": "https://www.youtube.com/watch?v=1Zjr2hAIYGE",
-    "tags": ["Video", "Interconnectedness", "Culture"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "Bernie Krause: The voice of the natural world",
-    "description": "A surprising look at what we can learn by listening to wild soundscapes. Since Bernie Krause started recording 45+ years ago, he has seen many environments radically altered by humans, sometimes even by practices thought to be environmentally safe.",
-    "link": "https://www.youtube.com/watch?v=uTbA-mxo858",
-    "tags": ["Video", "Interconnectedness", "Ecology"],
-    "quality": 5
-  },
-  {
-    "title": "Presenting Doughnut Economics: Core Concepts of Doughnut Economics",
-    "description": "Kate Raworth introduces the Doughnut and the seven ways to think like a 21st century economist.",
-    "link": "https://www.youtube.com/watch?v=Cvh7p6IehSo",
-    "tags": ["Video", "WellbeingEconomics", "Economics"],
-    "quality": 5,
-    "featured": true
-  },
-  {
-    "title": "The Invisible Doctrine | The secret history of Neoliberalism",
-    "description": "Neoliberalism has come to both govern and constrain our lives in its domination of the political and economic agenda of the West. In this timely and gripping documentary essay, author George Monbiot deconstructs the roots, secretive propagation and deep impact of a little-understood doctrine that has played a profound role in transforming our economics, politics and environment, driving many of the crises we face today.",
-    "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
-    "quality": 4,
-    "tags": ["Documentary", "Economics", "Politics"]
-  },
-  {
-    "title": "Rutger Bregman - Moral Revolution - BBC Reith Lectures 2025",
-    "description": "Dutch historian Rutger Bregman asks what can be done to counter the moral decay of today's un-serious elites, arguing that small, committed groups can spark moral revolutions. 4 lectures of 25-30 minutes, followed by Q&A.",
-    "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
-    "quality": 5,
-    "tags": ["Audio", "Talk"]
-  },
-  {
-    "title": "What is Free Software",
-    "description": "A friendly introduction to the term \"free software\", why it's important and exploring its many benefits including for sustainability and resilience.",
-    "link": "https://fsfe.org/freesoftware/",
-    "quality": 5,
-    "tags": ["Webpage", "Freedom", "Technology"]
-  },
-  {
-    "title": "Public Money? Public Code!",
-    "description": "A concrete policy proposal to help public institutions to use tax money more efficiently while improving transparency and sustainability of critical, digital infrastructure.",
-    "link": "https://publiccode.eu/",
-    "quality": 5,
-    "tags": ["Webpage", "Freedom", "Technology"]
-  },
-  {
-    "title": "Towards the Symbiocene: Building an Eco-Civilisation with thought-leader, Jeremy Lent",
-    "description": "What is an Ecocivilization - and how might we get there? In this podcast, Jeremy Lent introduces his book Ecocivilization: Making a World That Works for All",
-    "link": "https://accidentalgods.life/towards-the-symbiocene-building-an-eco-civilisation-with-thought-leader-jeremy-lent/",
-    "quality": 5,
-    "tags": ["Podcast", "Ecology", "WellbeingEconomics"]
-  },
-  {
-    "title": "Wealth Supremacy: How the Extractive Economy and the Biased Rules of Capitalism Drive Today’s Crises",
-    "description": "This bold manifesto exposes seven myths underlying wealth supremacy-the bias that institutionalizes infinite extraction of wealth by and for the wealthy and is the hidden force behind economic injustice, the climate crisis, and so many other problems of our day.",
-    "link": "https://libro.fm/audiobooks/9781663738981",
-    "quality": 5,
-    "tags": ["Book", "Freedom", "WellbeingEconomics"]
-  },
-  {
-    "title": "Eco-Civilisation: The future we deserve and how we will get there",
-    "description": "What is an eco-civilisation? What are its values and what are the frames within which it works? Why do we need it in the first place and what will the Establishment do to maintain business as usual? Most importantly, what can each of us do to live an eco-civilisation into being?",
-    "link": "https://accidentalgods.life/eco-civilisation-the-future-we-deserve-and-how-we-will-get-there-with-jeremy-lent/",
-    "quality": 5,
-    "tags": ["Podcast", "Interconnectedness", "SystemsThinking"]
-  },
-  {
-    "title": "Introduction to ProSocial",
-    "description": "ProSocial is a positive change method informed by evolutionary science. Presentation by professor David Sloan Wilson.",
-    "link": "https://www.youtube.com/watch?v=tf-2ycHHgtI",
-    "quality": 5,
-    "tags": ["Video", "Research", "Collaboration"]
-  },
-  {
-    "title": "Bo Rothstein: Why No Economic Democracy in Sweden: A Counterfactual Approach",
-    "description": "Companies, that are owned and/or governed by their employees, either through a cooperative, stock option plan or an employee trust, has been studied empirically for almost four decades. This presentation explores the many benefits with such firms, and why economic democracy is not (yet) common in Sweden.",
-    "link": "https://www.youtube.com/watch?v=C-90Q9jJj3w",
-    "quality": 5,
-    "tags": ["Video", "Research"]
-  },
-  {
-    "title": "How to talk about a wellbeing economy",
-    "description": "This talk will equip you with the narratives and frameworks necessary to articulate why we need an economy designed to serve people and planet. Get practical tips on how to discuss these concepts in your communications.",
-    "link": "https://www.youtube.com/watch?v=MDiGNA5hf1M",
-    "quality": 5,
-    "tags": ["Video", "WellbeingEconomics", "Communication"]
-  }
-]
+{
+  "resources": [
+    {
+      "title": "A healthy economy should be designed to thrive, not to grow",
+      "description": "A must-watch TED-talk by Kate Raworth. A short and engaging introduction to how Doughnut Economics can help both humanity and the living planet to thrive together.",
+      "link": "https://www.youtube.com/watch?v=Rhcrbcg8HBw",
+      "tags": ["Video", "WellbeingEconomics"],
+      "featured": true,
+      "quality": 5
+    },
+    {
+      "title": "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist",
+      "description": "A must-read to learn how to use wellbeing economics to co-create a future where the needs of all are met within the means of the living planet.",
+      "link": "https://libro.fm/audiobooks/9781473556256",
+      "tags": ["Book", "WellbeingEconomics"],
+      "featured": true,
+      "quality": 5
+    },
+    {
+      "title": "Planet: Critical - Making Sense of the Crisis",
+      "description": "Rachel has an unrivalled capacity for delivering facts and connecting the dots whilst being eloquent, engaging, compassionate, and witty. Only by understanding the true cause of the planetary crisis will we be able to resolve it.",
+      "link": "https://www.youtube.com/watch?v=PQvZ6NCrC20",
+      "tags": ["Video", "SystemsThinking", "Metacrisis"],
+      "featured": true,
+      "quality": 5
+    },
+    {
+      "title": "The Patterning Instinct: A Cultural History of Humanity's Search for Meaning",
+      "description": "Culture shapes values. Values shape history. How will our values shape the future?",
+      "link": "https://libro.fm/audiobooks/9781538450598",
+      "tags": ["Book", "Culture", "Meaning"],
+      "quality": 5
+    },
+    {
+      "title": "The Web of Meaning: Integrating Science and Traditional Wisdom to Find our Place in the Universe",
+      "description": "A coherent and intellectually solid foundation for an alternative worldview based on deep interconnectedness, showing how modern scientific knowledge echoes the ancient wisdom of earlier cultures.",
+      "link": "https://libro.fm/audiobooks/9781897408544",
+      "tags": ["Book", "Philosophy", "SystemsThinking"],
+      "quality": 5
+    },
+    {
+      "title": "The Ecology of Law: Toward a Legal System in Tune with Nature and Community",
+      "description": "Learn how the legal system could be reformed to enable a future where both humanity and the living planet thrive, together.",
+      "link": "https://libro.fm/audiobooks/9781626567979",
+      "tags": ["Book", "Law", "SystemsThinking"],
+      "quality": 3
+    },
+    {
+      "title": "The Social Dilemma: Discover What’s Hiding on the Other Side of Your Screen",
+      "description": "Never before have a handful of tech designers had such control over the way billions of us think, act, and live our lives.",
+      "link": "https://www.thesocialdilemma.com",
+      "tags": ["Documentary", "SurveillanceCapitalism", "Attention"],
+      "quality": 5
+    },
+    {
+      "title": "Why it's time for Doughnut Economics",
+      "description": "A short TED-talk exploring how the needs of all could be met within the means of the planet.",
+      "link": "https://www.youtube.com/watch?v=1BHOflzxPjI",
+      "tags": ["Video", "WellbeingEconomics"],
+      "quality": 4
+    },
+    {
+      "title": "Jennifer Hinton: Concrete visions for a sustainable economy / Konkreta visioner för en hållbar ekonomi",
+      "description": "Jennifer Hinton explains what not-for-profit companies and a not-for-profit world model is and what we can do to work towards it. Subtitles in Swedish.",
+      "link": "https://youtu.be/LFWKldh-I7g?si=BEIQK_tVW8Y78ggd",
+      "tags": ["Video", "NotForProfit"],
+      "quality": 3
+    },
+    {
+      "title": "Imagining a Solarpunk Future",
+      "description": "Keisha Howard presents how she discovered Solarpunk and what it is. Solarpunk is similar to cyberpunk with a focus on technology, however, Solarpunk offers a version of the future where communities are powered by renewable energy and most people live in a free and egalitarian world.",
+      "link": "https://www.ted.com/talks/keisha_howard_imagining_a_solarpunk_future",
+      "tags": ["Talk", "Solarpunk"],
+      "quality": 3
+    },
+    {
+      "title": "5 Principles for Social Sustainability (facing unpredictable change together)",
+      "description": "Learn about five principles to achieve social sustainability.",
+      "link": "https://youtu.be/o6lSuwJw0pk?si=Gxub6eE8jsxusjYH",
+      "tags": ["Video", "SocialSustainability"],
+      "quality": 4
+    },
+    {
+      "title": "The Myth of Freedom Under Capitalism",
+      "description": "Upstream Documentary. Although its intellectual handmaidens love to insist otherwise — capitalism is not a system that truly embodies freedom.",
+      "link": "https://www.upstreampodcast.org/the-myth-of-freedom-under-capitalism",
+      "tags": ["Podcast", "Documentary", "Freedom"],
+      "quality": 5
+    },
+    {
+      "title": "About Doughnut Economics",
+      "description": "The Doughnut offers a vision of what it means for humanity to thrive in the 21st century - and Doughnut Economics explores the mindset and ways of thinking needed to get us there.",
+      "link": "https://doughnuteconomics.org/about-doughnut-economics",
+      "tags": ["Webpage", "WellbeingEconomics"],
+      "quality": 4
+    },
+    {
+      "title": "Four Ways of Knowing the Meta Crisis",
+      "description": "A short overview of the meta crisis by Jonathan Rowson",
+      "link": "https://www.youtube.com/watch?v=NbBH1Hs_jLo",
+      "tags": ["Video", "Metacrisis"],
+      "quality": 2
+    },
+    {
+      "title": "Five Insights for Avoiding Global Collapse: What a 50-Year-Old Model of the World Taught Me About a Way Forward for Us Today",
+      "description": "Researcher Gaya Herrington outlines what it would take to create a future where society has transformed beyond the mere avoidance of collapse and is truly thriving.",
+      "link": "https://www.mdpi.com/books/mono/6206-five-insights-for-avoiding-global-collapse",
+      "tags": ["Book", "Research", "SystemsThinking"],
+      "quality": 4
+    },
+    {
+      "title": "Why Meaning in Life Matters for Societal Flourishing",
+      "description": "Research article giving an overview how a sense of meaning is connected to thriving societies.",
+      "link": "https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing",
+      "tags": ["Research", "Meaning", "Wellbeing"],
+      "quality": 4
+    },
+    {
+      "title": "Foundations of Humane Technology",
+      "description": "A free, self-paced online course for professionals shaping tomorrow's technology.",
+      "link": "https://www.humanetech.com/course",
+      "tags": ["Course", "Wellbeing", "Technology"],
+      "quality": 4
+    },
+    {
+      "title": "The Waterworks of Money Part 1: Charting the influence of big money on our society",
+      "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden. More info at the project website https://www.waterworksofmoney.com",
+      "link": "https://www.youtube.com/watch?v=IszXpzIo_ZQ",
+      "tags": ["Video", "Economics", "Freedom"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "The Waterworks of Money Part 2: Private Profits, Public Costs",
+      "description": "A production of cartographer Carlijn Kingma in collaboration with investigative journalist Thomas Bollen and researcher Martijn Jeroen van der Linden",
+      "link": "https://www.youtube.com/watch?v=Ycit4WbJuwE",
+      "tags": ["Video", "Economics", "Freedom"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "Free Will is Political",
+      "description": "Video exploring the philosophy behind free will. Does Free Will really exist? And is it a wider social, cultural, and political concept?",
+      "link": "https://www.youtube.com/watch?v=N5wFFRBBG7M",
+      "tags": ["Video", "Freedom", "Culture"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "RSA ANIMATE: Drive: The surprising truth about what motivates us",
+      "description": "This lively RSA Animate, adapted from Dan Pink's talk at the RSA, illustrates the hidden truths behind what really motivates us at home and in the workplace.",
+      "link": "https://www.youtube.com/watch?v=u6XAPnuFjJc",
+      "tags": ["Video", "Motivation", "Culture"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "The Web of Meaning: How Recognizing Our Interconnectedness Lays the Path to Full Flourishing",
+      "description": "Jeremy Lent introduces themes from his book, The Web of Meaning: Integrating Science and Traditional Wisdom to Find Our Place in the Universe.",
+      "link": "https://www.youtube.com/watch?v=1Zjr2hAIYGE",
+      "tags": ["Video", "Interconnectedness", "Culture"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "Bernie Krause: The voice of the natural world",
+      "description": "A surprising look at what we can learn by listening to wild soundscapes. Since Bernie Krause started recording 45+ years ago, he has seen many environments radically altered by humans, sometimes even by practices thought to be environmentally safe.",
+      "link": "https://www.youtube.com/watch?v=uTbA-mxo858",
+      "tags": ["Video", "Interconnectedness", "Ecology"],
+      "quality": 5
+    },
+    {
+      "title": "Presenting Doughnut Economics: Core Concepts of Doughnut Economics",
+      "description": "Kate Raworth introduces the Doughnut and the seven ways to think like a 21st century economist.",
+      "link": "https://www.youtube.com/watch?v=Cvh7p6IehSo",
+      "tags": ["Video", "WellbeingEconomics", "Economics"],
+      "quality": 5,
+      "featured": true
+    },
+    {
+      "title": "The Invisible Doctrine | The secret history of Neoliberalism",
+      "description": "Neoliberalism has come to both govern and constrain our lives in its domination of the political and economic agenda of the West. In this timely and gripping documentary essay, author George Monbiot deconstructs the roots, secretive propagation and deep impact of a little-understood doctrine that has played a profound role in transforming our economics, politics and environment, driving many of the crises we face today.",
+      "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
+      "quality": 4,
+      "tags": ["Documentary", "Economics", "Politics"]
+    },
+    {
+      "title": "Rutger Bregman - Moral Revolution - BBC Reith Lectures 2025",
+      "description": "Dutch historian Rutger Bregman asks what can be done to counter the moral decay of today's un-serious elites, arguing that small, committed groups can spark moral revolutions. 4 lectures of 25-30 minutes, followed by Q&A.",
+      "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
+      "quality": 5,
+      "tags": ["Audio", "Talk"]
+    },
+    {
+      "title": "What is Free Software",
+      "description": "A friendly introduction to the term \"free software\", why it's important and exploring its many benefits including for sustainability and resilience.",
+      "link": "https://fsfe.org/freesoftware/",
+      "quality": 5,
+      "tags": ["Webpage", "Freedom", "Technology"]
+    },
+    {
+      "title": "Public Money? Public Code!",
+      "description": "A concrete policy proposal to help public institutions to use tax money more efficiently while improving transparency and sustainability of critical, digital infrastructure.",
+      "link": "https://publiccode.eu/",
+      "quality": 5,
+      "tags": ["Webpage", "Freedom", "Technology"]
+    },
+    {
+      "title": "Towards the Symbiocene: Building an Eco-Civilisation with thought-leader, Jeremy Lent",
+      "description": "What is an Ecocivilization - and how might we get there? In this podcast, Jeremy Lent introduces his book Ecocivilization: Making a World That Works for All",
+      "link": "https://accidentalgods.life/towards-the-symbiocene-building-an-eco-civilisation-with-thought-leader-jeremy-lent/",
+      "quality": 5,
+      "tags": ["Podcast", "Ecology", "WellbeingEconomics"]
+    },
+    {
+      "title": "Wealth Supremacy: How the Extractive Economy and the Biased Rules of Capitalism Drive Today’s Crises",
+      "description": "This bold manifesto exposes seven myths underlying wealth supremacy-the bias that institutionalizes infinite extraction of wealth by and for the wealthy and is the hidden force behind economic injustice, the climate crisis, and so many other problems of our day.",
+      "link": "https://libro.fm/audiobooks/9781663738981",
+      "quality": 5,
+      "tags": ["Book", "Freedom", "WellbeingEconomics"]
+    },
+    {
+      "title": "Eco-Civilisation: The future we deserve and how we will get there",
+      "description": "What is an eco-civilisation? What are its values and what are the frames within which it works? Why do we need it in the first place and what will the Establishment do to maintain business as usual? Most importantly, what can each of us do to live an eco-civilisation into being?",
+      "link": "https://accidentalgods.life/eco-civilisation-the-future-we-deserve-and-how-we-will-get-there-with-jeremy-lent/",
+      "quality": 5,
+      "tags": ["Podcast", "Interconnectedness", "SystemsThinking"]
+    },
+    {
+      "title": "Introduction to ProSocial",
+      "description": "ProSocial is a positive change method informed by evolutionary science. Presentation by professor David Sloan Wilson.",
+      "link": "https://www.youtube.com/watch?v=tf-2ycHHgtI",
+      "quality": 5,
+      "tags": ["Video", "Research", "Collaboration"]
+    },
+    {
+      "title": "Bo Rothstein: Why No Economic Democracy in Sweden: A Counterfactual Approach",
+      "description": "Companies, that are owned and/or governed by their employees, either through a cooperative, stock option plan or an employee trust, has been studied empirically for almost four decades. This presentation explores the many benefits with such firms, and why economic democracy is not (yet) common in Sweden.",
+      "link": "https://www.youtube.com/watch?v=C-90Q9jJj3w",
+      "quality": 5,
+      "tags": ["Video", "Research"]
+    },
+    {
+      "title": "How to talk about a wellbeing economy",
+      "description": "This talk will equip you with the narratives and frameworks necessary to articulate why we need an economy designed to serve people and planet. Get practical tips on how to discuss these concepts in your communications.",
+      "link": "https://www.youtube.com/watch?v=MDiGNA5hf1M",
+      "quality": 5,
+      "tags": ["Video", "WellbeingEconomics", "Communication"]
+    }
+  ]
+}

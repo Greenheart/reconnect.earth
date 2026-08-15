@@ -1,7 +1,7 @@
 export const SITE_NAME = 'Reconnect.earth'
 export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'
 
-export const RESOURCE_TYPES = <const>[
+export const RESOURCE_TYPES = [
   'Video',
   'Book',
   'Podcast',
@@ -17,9 +17,9 @@ export const RESOURCE_TYPES = <const>[
   'Course',
   'Talk',
   'Audio',
-]
+] as const
 
-export const RESOURCE_CATEGORIES = <const>[
+export const RESOURCE_CATEGORIES = [
   'Meaning',
   'Wellbeing',
   'Metacrisis',
@@ -42,7 +42,7 @@ export const RESOURCE_CATEGORIES = <const>[
   'Politics',
   'Communication',
   'Collaboration',
-]
+] as const
 
 export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]
 

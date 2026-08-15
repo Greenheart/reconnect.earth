@@ -1,5 +1,7 @@
-import { RESOURCE_TYPES, type ResourceType } from './constants'
-import type { Resource } from './schema'
+import slugify from '@sindresorhus/slugify'
+
+import { RESOURCE_TYPES, type ResourceType } from './constants.ts'
+import type { Resource } from './schema.ts'
 
 export const getSortedTags = (tags: string[]) => {
   return tags.sort((a, b) => {
@@ -28,4 +30,14 @@ export const getFeaturedFirst = (a: Resource, b: Resource) => {
   if (b.featured) scoreB += 100
 
   return scoreB - scoreA
+}
+
+export function generateSlug(name: string) {
+  return slugify(name, {
+    customReplacements: [
+      ['å', 'a'],
+      ['ä', 'a'],
+      ['ö', 'o'],
+    ],
+  })
 }

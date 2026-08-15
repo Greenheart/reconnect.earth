@@ -1,5 +1,7 @@
 import { z } from 'zod'
+
 import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants.ts'
+import { generateSlug } from './content-utils.ts'
 
 export const ResourceValidation = {
   title: { max: 125 },
@@ -28,12 +30,19 @@ export const AppValidation = {
 }
 
 export const AppSchema = z.object({
-  // IDEA: Refactor to use a Zod Codec to separate the storage format from the runtime data (and data entry) format
-  // https://zod.dev/codecs
-  name: z
-    // Remove the slug field information since we only care about the name in the application
-    .object({ name: z.string().max(AppValidation.name.max), slug: z.string() })
-    .transform(({ name }) => name),
+  name: z.codec(
+    z.object({ name: z.string().max(AppValidation.name.max), slug: z.string() }),
+    z.string(),
+    {
+      decode: ({ name }) => name,
+      encode: (name) => {
+        return {
+          name,
+          slug: generateSlug(name),
+        }
+      },
+    },
+  ),
   description: z.string().max(AppValidation.description.max),
   // We use the string field to allow internal links hosted on the same domain.
   link: z.string(),

@@ -18,7 +18,7 @@
   <title>{SITE_NAME}</title>
 </svelte:head>
 
-<nav class="xs:p-4 mx-auto flex max-w-5xl items-center justify-between px-4 py-2">
+<nav class="xs:p-4 mx-auto flex max-w-5xl items-center justify-between p-2">
   <a href="/">
     🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
   </a>

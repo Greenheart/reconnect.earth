@@ -11,6 +11,8 @@
   import * as Card from '$lib/components/ui/card'
   import * as Sheet from '$lib/components/ui/sheet'
   import { SITE_NAME } from '$lib/constants'
+  import { useIntersectionObserver } from '$lib/intersection-observer.svelte'
+  import { cn } from '$lib/utils'
 
   interface Props {
     resources: Resource[]
@@ -66,6 +68,13 @@
       return options.fn(node, options)
     }
   }
+
+  let scrollTarget: HTMLElement
+
+  // Enable the intersection observer on mobile to hide the toolbar after scrolling to the bottom of the list
+  const { isIntersecting } = useIntersectionObserver(
+    isMobile || window.innerWidth <= 768 ? () => scrollTarget : () => null,
+  )
 </script>
 
 <h2 class="h2 gradient-heading mb-2 font-bold">Resources</h2>
@@ -80,10 +89,16 @@
     <ResourceFiltersSidebar {searchResults} {resources} class="sticky top-4" />
   </div>
   <div class="grid place-content-start gap-4 md:grid-cols-2">
-    <!-- TODO: Maybe use intersectionObserver to hide the footer when all items are visible -->
-
     <div
-      class="bg-card md-left-auto fixed right-0 bottom-0 left-0 z-10 p-2 md:static md:right-auto md:bottom-auto md:z-auto md:col-span-full md:mb-1 md:w-56 md:bg-transparent md:p-0 md:*:justify-between"
+      class={cn(
+        'bg-card md-left-auto fixed right-0 bottom-0 left-0 z-10 p-2 md:static md:right-auto md:bottom-auto md:z-auto md:col-span-full md:mb-1 md:w-56 md:bg-transparent md:p-0 md:*:justify-between',
+        // Hide the toolbar when scrolled past the bottom of the list
+        isIntersecting() &&
+          typeof window !== 'undefined' &&
+          scrollTarget &&
+          window.scrollY > scrollTarget.scrollTop &&
+          'hidden!',
+      )}
     >
       <div
         class="pointer-events-none fixed right-0 bottom-13 left-0 h-8 w-full bg-linear-to-b from-transparent to-black/15 md:hidden"
@@ -169,7 +184,7 @@
       </div>
     {/each}
 
-    <div class="col-span-full mt-4 flex flex-col items-center gap-4">
+    <div class="col-span-full mt-4 flex flex-col items-center gap-4" bind:this={scrollTarget}>
       <p class="text-center text-sm">
         Showing {searchResults.matches.length} / {resources.length}
       </p>

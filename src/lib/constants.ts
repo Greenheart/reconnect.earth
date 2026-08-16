@@ -42,6 +42,10 @@ export const RESOURCE_CATEGORIES = [
   'Politics',
   'Communication',
   'Collaboration',
+  'Fiction',
+  'Design',
+  'History',
+  'Food',
 ] as const
 
 export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]

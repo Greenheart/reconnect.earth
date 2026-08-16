@@ -281,7 +281,7 @@
       "quality": 5
     },
     {
-      "title": "The Invisible Doctrine | The secret history of Neoliberalism",
+      "title": "The Invisible Doctrine: The secret history of Neoliberalism",
       "description": "Neoliberalism has come to both govern and constrain our lives in its domination of the political and economic agenda of the West. In this timely and gripping documentary essay, author George Monbiot deconstructs the roots, secretive propagation and deep impact of a little-understood doctrine that has played a profound role in transforming our economics, politics and environment, driving many of the crises we face today.",
       "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
       "tags": [
@@ -293,12 +293,13 @@
       "quality": 4
     },
     {
-      "title": "Rutger Bregman - Moral Revolution - BBC Reith Lectures 2025",
+      "title": "Rutger Bregman - Moral Revolution - BBC Reith Lectures",
       "description": "Dutch historian Rutger Bregman asks what can be done to counter the moral decay of today's un-serious elites, arguing that small, committed groups can spark moral revolutions. 4 lectures of 25-30 minutes, followed by Q&A.",
       "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
       "tags": [
         "Audio",
-        "Talk"
+        "Talk",
+        "Philosophy"
       ],
       "featured": false,
       "quality": 5
@@ -394,6 +395,157 @@
         "Video",
         "WellbeingEconomics",
         "Communication"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "The Ministry for the Future",
+      "description": "The Ministry for the Future's setting is not a desolate, post-apocalyptic world, but a future that is almost upon us. This extraordinary novel from visionary science fiction writer Kim Stanley Robinson will change the way you think about the climate crisis.",
+      "link": "https://libro.fm/audiobooks/9781549186431-the-ministry-for-the-future",
+      "tags": [
+        "Book",
+        "Fiction",
+        "Solarpunk"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Thinking in Systems: A primer",
+      "description": "The co-author of the international best-selling book Limits to Growth, Donella Meadows is widely regarded as a pioneer in the environmental movement and one of the world's foremost systems analysts. This essential primer brings systems thinking out of the realm of computers and equations and into the tangible world, showing readers how to develop the systems-thinking skills critical for 21st-century life.",
+      "link": "https://uk.bookshop.org/p/books/thinking-in-systems-international-bestseller-donella-meadows/66b4f5a587436fce?ean=9781603580557",
+      "tags": [
+        "Book",
+        "SystemsThinking",
+        "Interconnectedness"
+      ],
+      "featured": true,
+      "quality": 5
+    },
+    {
+      "title": "Walkaway by Cory Doctorow",
+      "description": "Fascinating, moving, and darkly humorous, Walkaway is a multi-generation science fiction thriller about the wrenching changes of the next hundred years…and the very human people who will live their consequences.",
+      "link": "https://libro.fm/audiobooks/9781538424292",
+      "tags": [
+        "Book",
+        "Fiction",
+        "Solarpunk"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "The Making of a Democratic Economy: Building Prosperity for the Many, Not Just the Few",
+      "description": "We live in a world where twenty-six billionaires own as much wealth as half the planet's population. The extractive economy we live with now enables the financial elite to squeeze out maximum gain for themselves, heedless of damage to people or planet. But Marjorie Kelly and Ted Howard show that there is a new economy emerging focused on helping everyone thrive while respecting planetary boundaries. ",
+      "link": "https://libro.fm/audiobooks/9781523099962-the-making-of-a-democratic-economy",
+      "tags": [
+        "Book",
+        "WellbeingEconomics",
+        "SocialSustainability"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Enlivenment: Toward a Poetics for the Anthropocene",
+      "description": "A new understanding of the Anthropocene that is based on mutual transformation with nature rather than control over nature. Challenging the notion of human-nature duality, and moving beyond Enlightenment-style thinking.",
+      "link": "https://mitpress.mit.edu/9780262536660/enlivenment/",
+      "tags": [
+        "Book",
+        "Philosophy",
+        "Interconnectedness"
+      ],
+      "featured": false,
+      "quality": 4
+    },
+    {
+      "title": "Dawn of Everything: A New History of Humanity",
+      "description": "A dramatically new understanding of human history, challenging our most fundamental assumptions about social evolution—from the development of agriculture and cities to the origins of the state, democracy, and inequality—and revealing new possibilities for human emancipation.",
+      "link": "https://libro.fm/audiobooks/9781250818669-the-dawn-of-everything",
+      "tags": [
+        "Book",
+        "History",
+        "Culture",
+        "Meaning"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Debt: The First 5000 Years by David Graeber",
+      "description": "Here anthropologist David Graeber presents a stunning reversal of conventional wisdom: he shows that before there was money, there was debt. For more than 5,000 years, since the beginnings of the first agrarian empires, humans have used elaborate credit systems to buy and sell goods—that is, long before the invention of coins or cash. It is in this era, Graeber argues, that we also first encounter a society divided into debtors and creditors.",
+      "link": "https://libro.fm/audiobooks/9781469063041-debt-updated-and-expanded",
+      "tags": [
+        "Book",
+        "History",
+        "Economics",
+        "SocialSustainability"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Deficit: The Hidden Value of Care",
+      "description": "The economic value of care has long been devalued. In Deficit, prominent Danish feminist Emma Holten reveals how and why this happened, and argues that the things that matter – doing homework with your child, checking in on loved ones, talking to a colleague who doesn’t seem well – might seem inconsequential, but are in fact the building blocks of the economy. Urgent and incisive, this is a call to rethink the economic value of care.",
+      "link": "https://libro.fm/audiobooks/9780753561713-deficit",
+      "tags": [
+        "Book",
+        "WellbeingEconomics",
+        "Politics",
+        "Culture"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Solidarity: The Past, Present, and Future of a World-Changing Idea",
+      "description": "From renowned organizers and activists Leah Hunt-Hendrix and Astra Taylor, comes the first in-depth examination of Solidarity—not just as a rallying cry, but as potent political movement with potential to effect lasting change. ",
+      "link": "https://libro.fm/audiobooks/9780593864159-solidarity",
+      "tags": [
+        "Book",
+        "Philosophy",
+        "History",
+        "Culture"
+      ],
+      "featured": true,
+      "quality": 5
+    },
+    {
+      "title": "Capital Order: How Economists Invented Austerity and Paved the Way to Fascism",
+      "description": "In The Capital Order, political economist Clara E. Mattei explores the intellectual origins of austerity to uncover its originating motives: the protection of capital—and indeed capitalism—in times of social upheaval from below. Drawing on newly uncovered archival material, this book offers a damning account of the rise of austerity—and of modern economics—at the levers of contemporary political power.",
+      "link": "https://libro.fm/audiobooks/9798350824582-the-capital-order",
+      "tags": [
+        "Book",
+        "Economics",
+        "History",
+        "Politics"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Blood in the Machine: The Origins of the Rebellion Against Big Tech",
+      "description": "The most urgent story in modern tech begins not in Silicon Valley but two hundred years ago in rural England, when workers known as the Luddites rose up rather than starve at the hands of factory owners who were using automated machines to erase their livelihoods. Brian Merchant intertwines a lucid examination of our current age with the story of the Luddites, showing how automation changed our world—and is shaping our future.",
+      "link": "https://libro.fm/audiobooks/9781549199899-blood-in-the-machine",
+      "tags": [
+        "Book",
+        "Technology",
+        "History",
+        "SocialSustainability"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Regenesis: Feeding the World without Devouring the Planet",
+      "description": "People talk a lot about the problems with intensive farming. But the problem isn't the adjective. It's the noun. Around the world, farming has been wiping out vast habitats, depleting freshwater, polluting oceans, and accelerating global heating, while leaving millions undernourished and unfed. Increasingly, there are signs that the system itself is beginning to flicker. But, as George Monbiot shows us in this brilliant, bracingly original new book, there is another way.",
+      "link": "https://libro.fm/audiobooks/9780141999401-regenesis",
+      "tags": [
+        "Book",
+        "Ecology",
+        "Wellbeing",
+        "Food"
       ],
       "featured": false,
       "quality": 5

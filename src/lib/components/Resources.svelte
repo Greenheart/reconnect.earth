@@ -73,7 +73,9 @@
 
   // Enable the intersection observer on mobile to hide the toolbar after scrolling to the bottom of the list
   const { isIntersecting } = useIntersectionObserver(
-    isMobile || window.innerWidth <= 768 ? () => scrollTarget : () => null,
+    isMobile || (typeof window !== 'undefined' && window.innerWidth <= 768)
+      ? () => scrollTarget
+      : () => null,
   )
 </script>
 

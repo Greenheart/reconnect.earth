@@ -42,7 +42,7 @@
   {@render children?.()}
 </main>
 
-<footer class="bg-card mt-24 p-4 text-lg sm:text-xl">
+<footer class="bg-card mt-24 p-4 text-lg">
   <div class="mx-auto max-w-2xl p-4">
     <a href="/" class="text-3xl">
       🌍<span class="gradient-heading ml-2">{SITE_NAME}</span>
@@ -56,7 +56,7 @@
       <Button href={GITHUB_LINK} size="lg" class="mt-4">Get involved</Button>
     </div>
 
-    <p class="mt-8 flex items-center justify-center gap-2">
+    <p class="mt-8 flex items-center justify-center gap-2 text-base">
       &copy;
       <span class="text-nowrap">2022-{new Date().getFullYear()}</span>
       <span class="text-nowrap">{SITE_NAME}</span>

@@ -256,7 +256,7 @@
           <h3 class="h3 mb-4 font-bold">
             <a href={app.link} class="anchor">{app.name}</a>
           </h3>
-          <p class="pb-2 text-lg">{app.description}</p>
+          <p class="xs:pb-2 pb-4 text-lg">{app.description}</p>
 
           <div class="flex items-center justify-end gap-2 text-base">
             <Button href={app.git} variant="secondary" size="lg">Contribute</Button>

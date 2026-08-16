@@ -281,7 +281,7 @@
       "quality": 5
     },
     {
-      "title": "The Invisible Doctrine: The secret history of Neoliberalism",
+      "title": "The Invisible Doctrine | The secret history of Neoliberalism",
       "description": "Neoliberalism has come to both govern and constrain our lives in its domination of the political and economic agenda of the West. In this timely and gripping documentary essay, author George Monbiot deconstructs the roots, secretive propagation and deep impact of a little-understood doctrine that has played a profound role in transforming our economics, politics and environment, driving many of the crises we face today.",
       "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
       "tags": [
@@ -546,6 +546,30 @@
         "Ecology",
         "Wellbeing",
         "Food"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "The Internet Con: How to Seize the Means of Computation",
+      "description": "When the tech platforms promised a future of \"connection,\" they were lying. They said their \"walled gardens\" would keep us safe, but those were prison walls. Interoperability is the only route to the rapid and enduring annihilation of the platforms. The Internet Con is the disassembly manual we need to take back our internet.",
+      "link": "https://libro.fm/audiobooks/5184389278340-the-internet-con",
+      "tags": [
+        "Book",
+        "Technology",
+        "Solarpunk"
+      ],
+      "featured": false,
+      "quality": 5
+    },
+    {
+      "title": "Less is More: How Degrowth Will Save the World",
+      "description": "This book explores the problems caused by endless expansion, domination and extraction. Looking forward, it explores a clear pathway to a post-capitalist economy. An economy that's more just, more caring, and more fun. An economy that enables human flourishing while reversing ecological breakdown. An economy that will not only lift us out of our current crisis, but restore our sense of connection to a world that's brimming with life. By taking less, we can become more.",
+      "link": "https://libro.fm/audiobooks/9781473589506-less-is-more",
+      "tags": [
+        "Book",
+        "Ecology",
+        "WellbeingEconomics"
       ],
       "featured": false,
       "quality": 5

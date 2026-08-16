@@ -69,7 +69,7 @@
     }
   }
 
-  let scrollTarget: HTMLElement
+  let scrollTarget = $state<HTMLElement | null>(null)
 
   // Enable the intersection observer on mobile to hide the toolbar after scrolling to the bottom of the list
   const { isIntersecting } = useIntersectionObserver(

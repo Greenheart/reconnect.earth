@@ -72,6 +72,6 @@
   "packageManager": "pnpm@11.21.0",
   "imports": {
     "#lib/*": "./src/lib/*",
-    "#assets/*": "./src/lib/assets/*"
+    "#assets/*": "./src/assets/*"
   }
 }

@@ -3,16 +3,16 @@
   import { quintOut } from 'svelte/easing'
   import { crossfade, fade } from 'svelte/transition'
 
-  import type { Resource } from '$lib/schema'
-  import { getBookmarks, toggleBookmark } from '$lib/state/bookmarks.svelte'
+  import type { Resource } from '#lib/schema'
+  import { getBookmarks, toggleBookmark } from '#lib/state/bookmarks.svelte.js'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
-  import { FilteredItems } from '$lib/state/search.svelte'
-  import { Button, buttonVariants } from '$lib/components/ui/button'
-  import * as Card from '$lib/components/ui/card'
-  import * as Sheet from '$lib/components/ui/sheet'
-  import { SITE_NAME } from '$lib/constants'
-  import { useIntersectionObserver } from '$lib/intersection-observer.svelte'
-  import { cn } from '$lib/utils'
+  import { FilteredItems } from '#lib/state/search.svelte.js'
+  import { Button, buttonVariants } from '#lib/components/ui/button/index.js'
+  import * as Card from '#lib/components/ui/card/index.js'
+  import * as Sheet from '#lib/components/ui/sheet/index.js'
+  import { SITE_NAME } from '#lib/constants.js'
+  import { useIntersectionObserver } from '#lib/intersection-observer.svelte.js'
+  import { cn } from '#lib/utils.js'
 
   interface Props {
     resources: Resource[]

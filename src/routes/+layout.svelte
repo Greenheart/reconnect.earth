@@ -1,8 +1,8 @@
 <script lang="ts">
-  import MobileNav from '$lib/components/MobileNav.svelte'
-  import { Button } from '$lib/components/ui/button'
+  import MobileNav from '#lib/components/MobileNav.svelte'
+  import { Button } from '#lib/components/ui/button/index.js'
 
-  import { GITHUB_LINK, SITE_NAME } from '$lib/constants'
+  import { GITHUB_LINK, SITE_NAME } from '#lib/constants.js'
 
   import '../app.css'
 

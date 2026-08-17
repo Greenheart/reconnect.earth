@@ -1,4 +1,4 @@
-import { apps } from '$lib/server/content/apps'
+import { apps } from '#lib/server/content/apps.js'
 
 export async function load() {
   return { apps }

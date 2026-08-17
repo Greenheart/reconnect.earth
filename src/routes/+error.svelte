@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state'
-  import { Button } from '$lib/components/ui/button'
-  import { SITE_NAME } from '$lib/constants'
+  import { Button } from '#lib/components/ui/button/index.js'
+  import { SITE_NAME } from '#lib/constants.js'
 </script>
 
 <div class="flex flex-col items-center justify-center">

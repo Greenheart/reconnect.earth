@@ -1,4 +1,4 @@
-import { browser } from '$app/environment'
+import { browser } from '$app/env'
 
 /**
  * Persist a state rune in localStorage with configurable parsing and serialization.
@@ -13,7 +13,6 @@ export function persisted<T>(
 ) {
   const { parse = JSON.parse, stringify = JSON.stringify } = options
   const existing = browser ? localStorage.getItem(key) : null
-
   let state = $state<T>(existing ? parse(existing) : initial)
 
   if (browser) {

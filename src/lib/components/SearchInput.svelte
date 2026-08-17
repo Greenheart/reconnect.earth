@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Resource } from '$lib/schema'
-  import type { FilteredItems } from '$lib/state/search.svelte'
-  import * as InputGroup from '$lib/components/ui/input-group'
-  import { Button } from '$lib/components/ui/button'
+  import type { Resource } from '#lib/schema'
+  import type { FilteredItems } from '#lib/state/search.svelte.js'
+  import * as InputGroup from '#lib/components/ui/input-group/index.js'
+  import { Button } from '#lib/components/ui/button/index.js'
 
   interface Props {
     searchResults: FilteredItems<Resource>

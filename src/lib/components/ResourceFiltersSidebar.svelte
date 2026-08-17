@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { getBookmarks } from '$lib/state/bookmarks.svelte'
-  import { Button } from '$lib/components/ui/button'
+  import { getBookmarks } from '#lib/state/bookmarks.svelte.js'
+  import { Button } from '#lib/components/ui/button/index.js'
   import SearchInput from './SearchInput.svelte'
 
-  import type { Resource } from '$lib/schema'
-  import type { FilteredItems } from '$lib/state/search.svelte'
-  import { cn } from '$lib/utils'
+  import type { Resource } from '#lib/schema'
+  import type { FilteredItems } from '#lib/state/search.svelte.js'
+  import { cn } from '#lib/utils.js'
 
   interface Props {
     searchResults: FilteredItems<Resource>

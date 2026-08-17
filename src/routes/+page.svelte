@@ -1,10 +1,10 @@
 <script lang="ts">
-  import * as Card from '$lib/components/ui/card'
-  import { Button } from '$lib/components/ui/button'
+  import * as Card from '#lib/components/ui/card/index.js'
+  import { Button } from '#lib/components/ui/button/index.js'
 
   import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
-  import SectionCard from '$lib/components/SectionCard.svelte'
-  import Divider from '$lib/components/Divider.svelte'
+  import SectionCard from '#lib/components/SectionCard.svelte'
+  import Divider from '#lib/components/Divider.svelte'
 
   let { data } = $props()
   let { apps } = $derived(data)

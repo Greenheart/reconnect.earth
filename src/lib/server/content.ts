@@ -9,7 +9,12 @@ import { getFeaturedFirst, getSortedTags } from '../content-utils'
 import rawResources from '../../data/resources.json' with { type: 'json' }
 import rawApps from '../../data/apps.json' with { type: 'json' }
 
-function loadTags(): { MEDIA_TYPES: readonly string[]; TOPICS: readonly string[] } {
+export type AllTags = {
+  MEDIA_TYPES: readonly string[]
+  TOPICS: readonly string[]
+}
+
+function loadTags(): AllTags {
   const tags = {
     MEDIA_TYPES: [] as string[],
     TOPICS: [] as string[],

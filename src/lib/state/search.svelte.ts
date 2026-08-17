@@ -1,15 +1,18 @@
-import { RESOURCE_CATEGORIES, RESOURCE_TYPES, type ResourceTag } from '$lib/constants'
-import type { Resource } from '$lib/schema'
 import { queryParameters, ssp } from 'sveltekit-search-params'
+
+import { type ResourceTag } from '$lib/constants'
+import type { Resource } from '$lib/schema'
+import type { AllTags } from '$lib/server/content'
 
 export class FilteredItems<T extends Resource> {
   items: readonly T[]
   matches: T[]
+  #allTags: AllTags
 
   filters = queryParameters(
     {
       search: ssp.string(''),
-      tags: ssp.array<ResourceTag>([])(
+      tags: ssp.array<string>([])(
         (current: string[] | null, next: string[] | null) =>
           current?.length === next?.length && JSON.stringify(current) === JSON.stringify(next),
       ),
@@ -20,9 +23,14 @@ export class FilteredItems<T extends Resource> {
     },
   )
 
-  constructor(items: readonly T[], filterFn: (item: T, filters: typeof this.filters) => boolean) {
+  constructor(
+    items: readonly T[],
+    filterFn: (item: T, filters: typeof this.filters) => boolean,
+    allTags: AllTags,
+  ) {
     this.items = items
     this.matches = $derived(items.filter((item) => filterFn(item, this.filters)))
+    this.#allTags = allTags
   }
 
   toggleTag(tag: ResourceTag) {
@@ -47,16 +55,16 @@ export class FilteredItems<T extends Resource> {
 
   getItemCountsPerTag() {
     return {
-      resourceTypes: this.#getItemsWithTags(RESOURCE_TYPES),
-      resourceCategories: this.#getItemsWithTags(RESOURCE_CATEGORIES),
+      mediaTypes: this.#getItemsWithTags(this.#allTags.MEDIA_TYPES),
+      topics: this.#getItemsWithTags(this.#allTags.TOPICS),
     }
   }
 
-  #countItemsWithTag(tag: ResourceTag, collection: readonly T[]) {
+  #countItemsWithTag(tag: string, collection: readonly T[]) {
     return collection.filter((item) => item.tags.includes(tag)).length
   }
 
-  #getItemsWithTags(tags: readonly ResourceTag[]) {
+  #getItemsWithTags(tags: readonly string[]) {
     return (
       tags
         .map((tag) => {

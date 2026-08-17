@@ -1,6 +1,9 @@
 export const SITE_NAME = 'Reconnect.earth'
 export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'
 
+// IDEA: Maybe load tags via page data
+// IDEA: Or maybe load via SK remote functions to allow easy access anywhere in the system.
+// We could use prerender() for almost all data which would be great
 export const RESOURCE_TYPES = [
   'Video',
   'Book',
@@ -48,7 +51,7 @@ export const RESOURCE_CATEGORIES = [
   'Food',
 ] as const
 
-export const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]
+const RESOURCE_TAGS = [...RESOURCE_TYPES, ...RESOURCE_CATEGORIES]
 
 export type ResourceType = (typeof RESOURCE_TYPES)[number]
 export type ResourceCategory = (typeof RESOURCE_CATEGORIES)[number]

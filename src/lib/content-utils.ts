@@ -1,6 +1,6 @@
 import slugify from '@sindresorhus/slugify'
 
-import { RESOURCE_TYPES, type ResourceType } from './constants.ts'
+import { tags as allTags } from './server/content.ts'
 import type { Resource } from './schema.ts'
 
 export const getSortedTags = (tags: string[]) => {
@@ -8,11 +8,11 @@ export const getSortedTags = (tags: string[]) => {
     let scoreA = 0
     let scoreB = 0
 
-    // Ensure ResourceType tags appear first
-    if (RESOURCE_TYPES.includes(a as ResourceType)) {
+    // Ensure media types appear first
+    if (allTags.MEDIA_TYPES.includes(a)) {
       scoreA += 100
     }
-    if (RESOURCE_TYPES.includes(b as ResourceType)) {
+    if (allTags.MEDIA_TYPES.includes(b)) {
       scoreB += 100
     }
 

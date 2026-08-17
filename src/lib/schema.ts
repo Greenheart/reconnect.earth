@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants.ts'
 import { generateSlug } from './content-utils.ts'
+import { tags } from './server/content.ts'
 
 export const TagValidation = {
   label: { max: 50 },
@@ -25,7 +25,7 @@ export const ResourceSchema = z.object({
   description: z.string().max(ResourceValidation.description.max),
   link: z.url(),
   tags: z
-    .array(z.enum(RESOURCE_TYPES).or(z.enum(RESOURCE_CATEGORIES)))
+    .array(z.enum([...tags.MEDIA_TYPES, ...tags.TOPICS]))
     .min(ResourceValidation.tags.min)
     .max(ResourceValidation.tags.max),
   featured: z.boolean().default(false),

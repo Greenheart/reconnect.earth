@@ -22,7 +22,7 @@
   const bookmarks = $derived(getBookmarks(resources))
 
   const searchResults = $derived(
-    new FilteredItems<Resource>(resources, (item, filters) => {
+    new FilteredItems<Resource>(resources, (item, filters, allTags) => {
       // All conditions need to be met, so abort as soon as we find something that does not match.
       if (filters.tags?.length && !filters.tags.every((tag) => item.tags.includes(tag))) {
         return false

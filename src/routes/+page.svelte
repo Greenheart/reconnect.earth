@@ -2,14 +2,14 @@
   import * as Card from '#lib/components/ui/card/index.js'
   import { Button } from '#lib/components/ui/button/index.js'
 
-  import treeOfReconnection from '$assets/tree-of-reconnection.jpg?enhanced'
+  import treeOfReconnection from '#assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
 
   let { data } = $props()
   let { apps } = $derived(data)
 
-  const allImages = import.meta.glob('$assets/**/*.{avif,jpeg,jpg,png,webp,svg}', {
+  const allImages = import.meta.glob('#assets/**/*.{avif,jpeg,jpg,png,webp,svg}', {
     eager: true,
     query: { enhanced: true },
   }) as Record<string, { default: any }>

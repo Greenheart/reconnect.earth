@@ -71,7 +71,7 @@
   },
   "packageManager": "pnpm@11.21.0",
   "imports": {
-    "#lib": "./src/lib/index.js",
-    "#lib/*": "./src/lib/*"
+    "#lib/*": "./src/lib/*",
+    "#assets/*": "./src/lib/assets/*"
   }
 }

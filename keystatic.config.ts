@@ -121,7 +121,13 @@ export default config({
           name: {
             label: 'Tag',
             description: 'Tag in TitleCase format used to describe resources and other content.',
-            validation: { isRequired: true },
+            validation: {
+              isRequired: true,
+              pattern: {
+                regex: /^[A-Za-z1-9]+$/,
+                message: 'Tags should be in TitleCase format and only include letters and numbers.',
+              },
+            },
           },
         }),
         kind: fields.select({

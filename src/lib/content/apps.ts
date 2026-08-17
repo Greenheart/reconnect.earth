@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
-import { generateSlug } from '../../content-utils.ts'
+import { generateSlug } from '../content-utils.ts'
 
-import rawApps from '../../../data/apps.json' with { type: 'json' }
+import rawApps from '../../data/apps.json' with { type: 'json' }
 
 export const AppValidation = {
   name: { max: 100 },

@@ -13,6 +13,14 @@ export default defineConfig({
     dev && (await import('keystatic-sveltekit')).keystatic(),
     sveltekit({
       adapter: adapter(),
+      experimental: {
+        remoteFunctions: true,
+      },
+      compilerOptions: {
+        experimental: {
+          async: true,
+        },
+      },
     }),
   ],
 })

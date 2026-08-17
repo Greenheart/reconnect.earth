@@ -1,4 +1,4 @@
-import { resources } from '#lib/server/content/resources.js'
+import { resources } from '#lib/content/resources.js'
 
 export async function load() {
   return { resources }

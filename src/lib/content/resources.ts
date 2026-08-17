@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
-import rawResources from '../../../data/resources.json' with { type: 'json' }
+import rawResources from '../../data/resources.json' with { type: 'json' }
 import { tags } from './tags.ts'
-import { getFeaturedFirst, getSortedTags } from '../../content-utils.ts'
+import { getFeaturedFirst, getSortedTags } from '../content-utils.ts'
 
 export const ResourceValidation = {
   title: { max: 125 },

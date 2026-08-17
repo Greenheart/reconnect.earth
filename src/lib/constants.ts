@@ -4,6 +4,7 @@ export const GITHUB_LINK = 'https://github.com/Greenheart/reconnect.earth'
 // IDEA: Maybe load tags via page data
 // IDEA: Or maybe load via SK remote functions to allow easy access anywhere in the system.
 // We could use prerender() for almost all data which would be great
+// More info: https://svelte.dev/blog/sveltekit-3-release-candidate
 export const RESOURCE_TYPES = [
   'Video',
   'Book',

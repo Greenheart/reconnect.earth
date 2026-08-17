@@ -1,18 +1,15 @@
+import { RESOURCE_CATEGORIES, RESOURCE_TYPES, type ResourceTag } from '$lib/constants'
+import type { Resource } from '$lib/server/content/resources'
 import { queryParameters, ssp } from 'sveltekit-search-params'
-
-import { type ResourceTag } from '$lib/constants'
-import type { Resource } from '$lib/schema'
-import type { AllTags } from '$lib/server/content'
 
 export class FilteredItems<T extends Resource> {
   items: readonly T[]
   matches: T[]
-  #allTags: AllTags
 
   filters = queryParameters(
     {
       search: ssp.string(''),
-      tags: ssp.array<string>([])(
+      tags: ssp.array<ResourceTag>([])(
         (current: string[] | null, next: string[] | null) =>
           current?.length === next?.length && JSON.stringify(current) === JSON.stringify(next),
       ),
@@ -23,14 +20,9 @@ export class FilteredItems<T extends Resource> {
     },
   )
 
-  constructor(
-    items: readonly T[],
-    filterFn: (item: T, filters: typeof this.filters) => boolean,
-    allTags: AllTags,
-  ) {
+  constructor(items: readonly T[], filterFn: (item: T, filters: typeof this.filters) => boolean) {
     this.items = items
     this.matches = $derived(items.filter((item) => filterFn(item, this.filters)))
-    this.#allTags = allTags
   }
 
   toggleTag(tag: ResourceTag) {
@@ -55,16 +47,16 @@ export class FilteredItems<T extends Resource> {
 
   getItemCountsPerTag() {
     return {
-      mediaTypes: this.#getItemsWithTags(this.#allTags.MEDIA_TYPES),
-      topics: this.#getItemsWithTags(this.#allTags.TOPICS),
+      resourceTypes: this.#getItemsWithTags(RESOURCE_TYPES),
+      resourceCategories: this.#getItemsWithTags(RESOURCE_CATEGORIES),
     }
   }
 
-  #countItemsWithTag(tag: string, collection: readonly T[]) {
+  #countItemsWithTag(tag: ResourceTag, collection: readonly T[]) {
     return collection.filter((item) => item.tags.includes(tag)).length
   }
 
-  #getItemsWithTags(tags: readonly string[]) {
+  #getItemsWithTags(tags: readonly ResourceTag[]) {
     return (
       tags
         .map((tag) => {

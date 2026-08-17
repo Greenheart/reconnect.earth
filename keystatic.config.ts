@@ -1,5 +1,8 @@
-import { AppValidation, ResourceValidation, TagValidation } from './src/lib/schema.ts'
 import { config, singleton, fields, collection } from '@keystatic/core'
+
+import { TagValidation } from './src/lib/server/content/tags.ts'
+import { ResourceValidation } from './src/lib/server/content/resources.ts'
+import { AppValidation } from './src/lib/server/content/apps.ts'
 
 export default config({
   storage: {

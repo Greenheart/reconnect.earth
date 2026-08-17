@@ -22,7 +22,7 @@ function loadTags(): AllTags {
     MEDIA_TYPES: [] as string[],
     TOPICS: [] as string[],
   }
-  const tagsDir = resolve(import.meta.dirname, '../../../data/tags')
+  const tagsDir = resolve('src/data/tags')
 
   for (const file of readdirSync(tagsDir, {
     withFileTypes: false,

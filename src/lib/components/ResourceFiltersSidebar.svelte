@@ -62,7 +62,7 @@
     class="scroll-y-shadows grid max-h-[calc(100vh-var(--filters-top-section-height,180px))] gap-8 overflow-y-auto pt-2 pb-8 md:pb-4"
   >
     <div class="grid">
-      <h2 class="h3 pb-1 font-bold">Resource types</h2>
+      <h2 class="h3 pb-1 font-bold">Media types</h2>
       {#each resourceCounts.resourceTypes as { tag, matches, enabled } (tag)}
         <Button
           variant="ghost"
@@ -83,7 +83,7 @@
     </div>
 
     <div class="grid">
-      <h2 class="h3 pb-1 font-bold">Categories</h2>
+      <h2 class="h3 pb-1 font-bold">Topics</h2>
       {#each resourceCounts.resourceCategories as { tag, matches, enabled } (tag)}
         <Button
           variant="ghost"

@@ -1,5 +1,5 @@
 import { AppValidation, ResourceValidation } from './src/lib/schema.ts'
-import { config, singleton, fields } from '@keystatic/core'
+import { config, singleton, fields, collection } from '@keystatic/core'
 
 export default config({
   storage: {
@@ -107,6 +107,39 @@ export default config({
           }),
           { itemLabel: (item) => item.fields.name.value.name, slugField: 'name' },
         ),
+      },
+    }),
+  },
+  collections: {
+    tags: collection({
+      label: '🏷️ Tags',
+      path: 'src/data/tags/*',
+      slugField: 'label',
+      format: 'json',
+      schema: {
+        label: fields.slug({
+          name: {
+            label: 'Tag',
+            description: 'Tag in TitleCase format used to describe resources and other content.',
+            validation: { isRequired: true },
+          },
+        }),
+        kind: fields.select({
+          label: 'Tag kind',
+          description:
+            'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
+          options: [
+            {
+              label: 'Topic',
+              value: 'topic',
+            },
+            {
+              label: 'Media type',
+              value: 'media-type',
+            },
+          ],
+          defaultValue: 'topic',
+        }),
       },
     }),
   },

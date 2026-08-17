@@ -3,6 +3,16 @@ import { z } from 'zod'
 import { RESOURCE_TYPES, RESOURCE_CATEGORIES } from './constants.ts'
 import { generateSlug } from './content-utils.ts'
 
+export const TagValidation = {
+  label: { max: 50 },
+  kind: { topic: 'topic', 'media-type': 'media-type' },
+} as const
+
+export const TagSchema = z.object({
+  label: z.string().trim().max(TagValidation.label.max),
+  kind: z.enum(Object.keys(TagValidation.kind)),
+})
+
 export const ResourceValidation = {
   title: { max: 125 },
   description: { max: 500 },

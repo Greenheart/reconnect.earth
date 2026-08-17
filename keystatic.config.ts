@@ -1,4 +1,4 @@
-import { AppValidation, ResourceValidation } from './src/lib/schema.ts'
+import { AppValidation, ResourceValidation, TagValidation } from './src/lib/schema.ts'
 import { config, singleton, fields, collection } from '@keystatic/core'
 
 export default config({
@@ -143,14 +143,14 @@ export default config({
           options: [
             {
               label: 'Topic',
-              value: 'topic',
+              value: TagValidation.kind.topic,
             },
             {
               label: 'Media type',
-              value: 'media-type',
+              value: TagValidation.kind['media-type'],
             },
           ],
-          defaultValue: 'topic',
+          defaultValue: TagValidation.kind.topic,
         }),
       },
     }),

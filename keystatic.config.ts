@@ -111,6 +111,12 @@ export default config({
     }),
   },
   collections: {
+    /**
+     * NOTE: Tags need to be a collection rather than a singleton in order
+     * to support the Keystatic relationship widget.
+     * A bit wasteful to create many tiny files rather than a singleton
+     * with one or more arrays, but the editing UX for tags is worth it.
+     */
     tags: collection({
       label: '🏷️ Tags',
       path: 'src/data/tags/*',

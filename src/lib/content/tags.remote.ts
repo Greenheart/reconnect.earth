@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { resolve } from 'node:path'
-import { prerender } from '$app/server'
 import { readdir, readFile } from 'node:fs/promises'
+import { prerender } from '$app/server'
 
 export const TagValidation = {
   label: { max: 50 },
@@ -23,7 +23,7 @@ export const getTags = prerender(async (): Promise<AllTags> => {
     MEDIA_TYPES: [] as string[],
     TOPICS: [] as string[],
   }
-  const tagsDir = resolve('src/data/tags')
+  const tagsDir = resolve('#data/tags')
 
   for (const file of await readdir(tagsDir, {
     withFileTypes: false,

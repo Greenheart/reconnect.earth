@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { readdirSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { prerender } from '$app/server'
 
 export const TagValidation = {
   label: { max: 50 },
@@ -17,7 +18,7 @@ export type AllTags = {
   TOPICS: readonly string[]
 }
 
-function loadTags(): AllTags {
+export const getTags = prerender((): AllTags => {
   const tags = {
     MEDIA_TYPES: [] as string[],
     TOPICS: [] as string[],
@@ -40,6 +41,4 @@ function loadTags(): AllTags {
   }
 
   return tags
-}
-
-export const tags = loadTags()
+})

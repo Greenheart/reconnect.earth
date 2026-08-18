@@ -71,7 +71,11 @@
   },
   "packageManager": "pnpm@11.21.0",
   "imports": {
+    "#lib": "./src/lib",
     "#lib/*": "./src/lib/*",
-    "#assets/*": "./src/assets/*"
+    "#assets/": "./src/assets",
+    "#assets/*": "./src/assets/*",
+    "#data": "./src/data",
+    "#data/*": "./src/data/*"
   }
 }

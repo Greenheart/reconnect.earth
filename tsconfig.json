@@ -1,9 +1,9 @@
 {
-  "extends": "$app/tsconfig",
+  "extends": "./node_modules/$app/tsconfig.json",
   "compilerOptions": {
     "rewriteRelativeImportExtensions": true,
     "sourceMap": true,
-    "strict": true
+    "strict": true,
   },
-  "include": ["src"]
+  "include": ["src"],
 }

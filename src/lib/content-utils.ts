@@ -1,7 +1,9 @@
 import slugify from '@sindresorhus/slugify'
 
-import { tags as allTags } from './content/tags.ts'
+import { getTags } from './content/tags.ts'
 import type { Resource } from './content/resources.ts'
+
+const allTags = await getTags()
 
 export const getSortedTags = (tags: string[]) => {
   return tags.sort((a, b) => {

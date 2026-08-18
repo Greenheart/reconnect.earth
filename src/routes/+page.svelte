@@ -5,9 +5,9 @@
   import treeOfReconnection from '#assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
+  import { getApps } from '#lib/content/apps.remote.ts'
 
-  let { data } = $props()
-  let { apps } = $derived(data)
+  const apps = await getApps()
 
   const allImages = import.meta.glob('#assets/**/*.{avif,jpeg,jpg,png,webp,svg}', {
     eager: true,

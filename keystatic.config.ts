@@ -2,7 +2,7 @@ import { config, singleton, fields, collection } from '@keystatic/core'
 
 import { TagValidation } from './src/lib/content/tags.ts'
 import { ResourceValidation } from './src/lib/content/resources.ts'
-import { AppValidation } from './src/lib/content/apps.ts'
+import { AppValidation } from './src/lib/content/apps.remote.ts'
 
 export default config({
   storage: {

@@ -1,5 +1,5 @@
 import { RESOURCE_CATEGORIES, RESOURCE_TYPES, type ResourceTag } from '#lib/constants.js'
-import type { Resource } from '#lib/content/resources.remote.js'
+import type { Resource } from '#lib/content/schemas.js'
 import { queryParameters, ssp } from 'sveltekit-search-params'
 
 export class FilteredItems<T extends Resource> {

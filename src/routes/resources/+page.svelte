@@ -1,8 +1,8 @@
 <script lang="ts">
   import Resources from '#lib/components/Resources.svelte'
+  import { getResources } from '#lib/content/resources.remote.js'
 
-  let { data } = $props()
-  let { resources } = $derived(data)
+  const resources = await getResources()
 </script>
 
 <Resources {resources} />

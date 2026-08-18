@@ -1,12 +1,10 @@
 import slugify from '@sindresorhus/slugify'
 
-import { getTags } from '#lib/content/tags.remote.js'
-import type { Resource } from '#lib/content/resources.remote.js'
+import { type AllTags } from '#lib/content/tags.remote.js'
+import type { Resource } from '#lib/content/schemas.js'
 
-const allTags = await getTags()
-
-export const getSortedTags = (tags: string[]) => {
-  return tags.sort((a, b) => {
+export const getSortedTags = (tagsToSort: string[], allTags: AllTags) => {
+  return tagsToSort.sort((a, b) => {
     let scoreA = 0
     let scoreB = 0
 

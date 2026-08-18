@@ -2,29 +2,13 @@ import { z } from 'zod'
 import { prerender } from '$app/server'
 import { readFile } from 'node:fs/promises'
 
-import { getTags } from '#lib/content/tags.remote.js'
 import { getFeaturedFirst, getSortedTags } from '#lib/content-utils.js'
-import { ResourceValidation } from '#lib/content/constants.js'
+import { ResourceSchema } from '#lib/content/schemas.js'
+import { getTags } from './tags.remote'
 
-const allTags = await getTags()
-
-export const ResourceSchema = z.object({
-  title: z.string().max(ResourceValidation.title.max),
-  description: z.string().max(ResourceValidation.description.max),
-  link: z.url(),
-  tags: z
-    // .array(z.string())
-    .array(z.enum([...allTags.MEDIA_TYPES, ...allTags.TOPICS]))
-    .min(ResourceValidation.tags.min)
-    .max(ResourceValidation.tags.max),
-  featured: z.boolean().default(false),
-  quality: z.int().min(ResourceValidation.quality.min).max(ResourceValidation.quality.max),
-})
-
-export type Resource = z.infer<typeof ResourceSchema>
-
-export const getResources = prerender(async () => {
+export const getResources = prerender(z.void(), async () => {
   const rawResources = JSON.parse(await readFile('#data/resources.json', 'utf-8'))
+  const allTags = await getTags()
   return (
     z
       // The actual data format used by the CMS is slightly different
@@ -33,7 +17,7 @@ export const getResources = prerender(async () => {
       .parse(rawResources)
       .resources.sort(getFeaturedFirst)
       .map((resource) => {
-        resource.tags = getSortedTags(resource.tags)
+        resource.tags = getSortedTags(resource.tags, allTags)
         return resource
       })
   )

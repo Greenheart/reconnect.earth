@@ -4,18 +4,14 @@ import { readdir, readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
 
 import { TagValidation } from '#lib/content/constants.js'
-
-export const TagSchema = z.object({
-  label: z.string().trim().max(TagValidation.label.max),
-  kind: z.enum(Object.keys(TagValidation.kind)),
-})
+import { TagSchema } from '#lib/content/schemas.js'
 
 export type AllTags = {
   MEDIA_TYPES: readonly string[]
   TOPICS: readonly string[]
 }
 
-export const getTags = prerender(async (): Promise<AllTags> => {
+export const getTags = prerender(z.void(), async (): Promise<AllTags> => {
   const tags = {
     MEDIA_TYPES: [] as string[],
     TOPICS: [] as string[],

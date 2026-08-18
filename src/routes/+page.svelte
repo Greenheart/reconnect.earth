@@ -5,7 +5,7 @@
   import treeOfReconnection from '#assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
-  import { getApps } from '#lib/content/apps.remote.ts'
+  import { getApps } from '#lib/content/apps.remote.js'
 
   const apps = await getApps()
 

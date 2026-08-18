@@ -1,7 +1,7 @@
 import slugify from '@sindresorhus/slugify'
 
-import { getTags } from './content/tags.remote.ts'
-import type { Resource } from './content/resources.remote.ts'
+import { getTags } from '#lib/content/tags.remote.js'
+import type { Resource } from '#lib/content/resources.remote.js'
 
 const allTags = await getTags()
 

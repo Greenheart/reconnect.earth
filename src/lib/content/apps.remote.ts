@@ -2,8 +2,8 @@ import { z } from 'zod'
 import { readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
 
-import { generateSlug } from '#lib/content-utils.ts'
-import { AppValidation } from '#lib/content/constants.ts'
+import { generateSlug } from '#lib/content-utils.js'
+import { AppValidation } from '#lib/content/constants.js'
 
 export const AppSchema = z.object({
   name: z.codec(

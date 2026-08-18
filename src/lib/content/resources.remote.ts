@@ -2,9 +2,9 @@ import { z } from 'zod'
 import { prerender } from '$app/server'
 import { readFile } from 'node:fs/promises'
 
-import { getTags } from '#lib/content/tags.remote.ts'
-import { getFeaturedFirst, getSortedTags } from '#lib/content-utils.ts'
-import { ResourceValidation } from '#lib/content/constants.ts'
+import { getTags } from '#lib/content/tags.remote.js'
+import { getFeaturedFirst, getSortedTags } from '#lib/content-utils.js'
+import { ResourceValidation } from '#lib/content/constants.js'
 
 const allTags = await getTags()
 

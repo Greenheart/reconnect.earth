@@ -13,6 +13,9 @@ import rawApps from '#data/apps.json' with { type: 'json' }
 // https://zod.dev/api?id=transform#transform
 //
 // Or maybe avoid using tags in resource schema
+//
+// IDEA: Either attempt to create a minimal reproduction.
+// Or just downgrade to SvelteKit 2 until the problem is fixed.
 
 export const AppValidation = {
   name: { max: 100 },

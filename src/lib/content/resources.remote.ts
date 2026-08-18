@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { prerender } from '$app/server'
 
 import rawResources from '../../data/resources.json' with { type: 'json' }
-import { getTags } from './tags.ts'
+import { getTags } from './tags.remote.ts'
 import { getFeaturedFirst, getSortedTags } from '../content-utils.ts'
 
 export const ResourceValidation = {

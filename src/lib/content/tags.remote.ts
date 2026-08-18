@@ -3,10 +3,7 @@ import { resolve } from 'node:path'
 import { readdir, readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
 
-export const TagValidation = {
-  label: { max: 50 },
-  kind: { topic: 'topic', 'media-type': 'media-type' },
-} as const
+import { TagValidation } from '#lib/content/constants.ts'
 
 export const TagSchema = z.object({
   label: z.string().trim().max(TagValidation.label.max),

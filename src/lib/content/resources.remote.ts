@@ -4,13 +4,7 @@ import { readFile } from 'node:fs/promises'
 
 import { getTags } from '#lib/content/tags.remote.ts'
 import { getFeaturedFirst, getSortedTags } from '#lib/content-utils.ts'
-
-export const ResourceValidation = {
-  title: { max: 125 },
-  description: { max: 500 },
-  tags: { min: 1, max: 5 },
-  quality: { min: 1, max: 5 },
-}
+import { ResourceValidation } from '#lib/content/constants.ts'
 
 const allTags = await getTags()
 
@@ -19,6 +13,7 @@ export const ResourceSchema = z.object({
   description: z.string().max(ResourceValidation.description.max),
   link: z.url(),
   tags: z
+    // .array(z.string())
     .array(z.enum([...allTags.MEDIA_TYPES, ...allTags.TOPICS]))
     .min(ResourceValidation.tags.min)
     .max(ResourceValidation.tags.max),

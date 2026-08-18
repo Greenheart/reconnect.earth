@@ -3,23 +3,7 @@ import { readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
 
 import { generateSlug } from '#lib/content-utils.ts'
-
-// TODO: The error indicates that the import is not working
-// However, the hidden cause is probably a circular import or similar.
-// We likely need to clearly separate data loading from other cases
-//
-// IDEA: Maybe we can use async zod transforms to load the actual tags for validating the resources
-// https://zod.dev/api?id=transform#transform
-//
-// Or maybe avoid using tags in resource schema
-//
-// IDEA: Either attempt to create a minimal reproduction.
-// Or just downgrade to SvelteKit 2 until the problem is fixed.
-
-export const AppValidation = {
-  name: { max: 100 },
-  description: { max: 300 },
-}
+import { AppValidation } from '#lib/content/constants.ts'
 
 export const AppSchema = z.object({
   name: z.codec(

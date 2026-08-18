@@ -1,8 +1,6 @@
 import { config, singleton, fields, collection } from '@keystatic/core'
 
-import { TagValidation } from './src/lib/content/tags.remote.ts'
-import { ResourceValidation } from './src/lib/content/resources.remote.ts'
-import { AppValidation } from './src/lib/content/apps.remote.ts'
+import { TagValidation, ResourceValidation, AppValidation } from './src/lib/content/constants.ts'
 
 export default config({
   storage: {

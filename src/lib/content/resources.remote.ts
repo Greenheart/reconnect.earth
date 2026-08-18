@@ -1,9 +1,9 @@
 import { z } from 'zod'
 import { prerender } from '$app/server'
 
-import rawResources from '../../data/resources.json' with { type: 'json' }
-import { getTags } from './tags.remote.ts'
-import { getFeaturedFirst, getSortedTags } from '../content-utils.ts'
+import { getTags } from '#lib/content/tags.remote.ts'
+import { getFeaturedFirst, getSortedTags } from '#lib/content-utils.ts'
+import { readFile } from 'node:fs/promises'
 
 export const ResourceValidation = {
   title: { max: 125 },
@@ -28,7 +28,8 @@ export const ResourceSchema = z.object({
 
 export type Resource = z.infer<typeof ResourceSchema>
 
-export const getResources = prerender(() => {
+export const getResources = prerender(async () => {
+  const rawResources = JSON.parse(await readFile('#data/resources.json', 'utf-8'))
   return (
     z
       // The actual data format used by the CMS is slightly different

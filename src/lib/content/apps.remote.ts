@@ -1,9 +1,8 @@
 import { z } from 'zod'
-
+import { readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
-import { generateSlug } from '#lib/content-utils.ts'
 
-import rawApps from '#data/apps.json' with { type: 'json' }
+import { generateSlug } from '#lib/content-utils.ts'
 
 // TODO: The error indicates that the import is not working
 // However, the hidden cause is probably a circular import or similar.
@@ -46,6 +45,7 @@ export const AppSchema = z.object({
 export type App = z.infer<typeof AppSchema>
 
 export const getApps = prerender(async () => {
+  const rawApps = JSON.parse(await readFile('#data/apps.json', 'utf-8'))
   // The actual data format used by the CMS is slightly different
   // to allow customizing the CMS UI.
   return z.object({ apps: z.array(AppSchema) }).parse(rawApps).apps

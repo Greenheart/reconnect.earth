@@ -1,6 +1,3 @@
-import { z } from 'zod'
-import { resolve } from 'node:path'
-import { readdir, readFile } from 'node:fs/promises'
 import { prerender } from '$app/server'
 
 import { TagValidation } from '#lib/content/constants.js'
@@ -11,27 +8,26 @@ export type AllTags = {
   TOPICS: readonly string[]
 }
 
-export const getTags = prerender(z.void(), async (): Promise<AllTags> => {
-  const tags = {
-    MEDIA_TYPES: [] as string[],
-    TOPICS: [] as string[],
-  }
-  const tagsDir = resolve('#data/tags')
+export const getTags = prerender(async (): Promise<AllTags> => {
+  const allTags = Object.values(import.meta.glob('#data/tags/*.json', { eager: true })).reduce<{
+    MEDIA_TYPES: string[]
+    TOPICS: string[]
+  }>(
+    (allTags, rawTag) => {
+      const tag = TagSchema.parse(rawTag)
 
-  for (const file of await readdir(tagsDir, {
-    withFileTypes: false,
-  })) {
-    const rawTag = JSON.parse(await readFile(resolve(tagsDir, file as string), 'utf-8'))
-    const tag = TagSchema.parse(rawTag)
+      if (tag.kind === TagValidation.kind.topic) {
+        allTags.TOPICS.push(tag.label)
+      } else if (tag.kind === TagValidation.kind['media-type']) {
+        allTags.MEDIA_TYPES.push(tag.label)
+      } else {
+        throw new Error(`Unknown tag kind: ${JSON.stringify(tag)}`)
+      }
 
-    if (tag.kind === TagValidation.kind.topic) {
-      tags.TOPICS.push(tag.label)
-    } else if (tag.kind === TagValidation.kind['media-type']) {
-      tags.MEDIA_TYPES.push(tag.label)
-    } else {
-      throw new Error(`Unknown tag kind: ${JSON.stringify(tag)}`)
-    }
-  }
+      return allTags
+    },
+    { MEDIA_TYPES: [], TOPICS: [] },
+  )
 
-  return tags
+  return allTags
 })

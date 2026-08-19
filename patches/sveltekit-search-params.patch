@@ -1,27 +1,53 @@
 diff --git a/package/sveltekit-search-params.svelte.js b/package/sveltekit-search-params.svelte.js
-index e039b465c422f009a0a83f1d8ae41fed1856fcdd..4af8dfe4fd264e06c206617d0e6f0695e6b600c7 100644
+index e039b465c422f009a0a83f1d8ae41fed1856fcdd..d879347429339c70567c5f3ed7875608777a6d7d 100644
 --- a/package/sveltekit-search-params.svelte.js
 +++ b/package/sveltekit-search-params.svelte.js
-@@ -16,14 +16,12 @@ function is_complex_equal(current, next, equality_fn = (current, next) => JSON.s
+@@ -1,4 +1,5 @@
+ import { browser, building } from '$app/environment';
++import { VERSION } from '@sveltejs/kit';
+ import { goto } from '$app/navigation';
+ import { page } from '$app/state';
+ // during building we fake the page url with no search params as it should be
+@@ -15,16 +16,28 @@ function is_complex_equal(current, next, equality_fn = (current, next) => JSON.s
+         typeof next === 'object' &&
          equality_fn(current, next));
  }
- const GOTO_OPTIONS = {
+-const GOTO_OPTIONS = {
 -    keepFocus: true,
 -    noScroll: true,
 -    replaceState: true,
-+    reset: true,
-+    replace: true,
- };
- const GOTO_OPTIONS_PUSH = {
+-};
+-const GOTO_OPTIONS_PUSH = {
 -    keepFocus: true,
 -    noScroll: true,
 -    replaceState: false,
-+    reset: true,
-+    replace: false,
- };
+-};
++/**
++ * SvelteKit 3 changes the goto options.
++ * NOTE: Simplify the GOTO_OPTIONS once this library no longer supports SvelteKit 2.
++ */
++const is_sveltekit_2 = VERSION.startsWith('2.');
++const GOTO_OPTIONS = is_sveltekit_2
++	? {
++			keepFocus: true,
++			noScroll: true,
++			replaceState: true,
++		}
++	: {
++			reset: false,
++			replace: true,
++		};
++
++const GOTO_OPTIONS_PUSH = is_sveltekit_2
++	? { keepFocus: true, noScroll: true, replaceState: false }
++	: {
++			reset: false,
++			replace: false,
++		};
  const batched_updates = new Set();
  let batch_timeout;
-@@ -99,7 +97,7 @@ function create_root_navigator(root, encodes, overrides, navigation_options) {
+ const debounced_timeouts = new Map();
+@@ -99,7 +112,7 @@ function create_root_navigator(root, encodes, overrides, navigation_options) {
              current = current[piece];
          }
          current[key] = to_set;

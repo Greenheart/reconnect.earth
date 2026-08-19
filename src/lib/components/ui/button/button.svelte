@@ -4,7 +4,7 @@
   import type { HTMLAnchorAttributes, HTMLButtonAttributes } from 'svelte/elements'
 
   export const buttonVariants = tv({
-    base: "rounded-4xl border border-transparent bg-clip-padding text-sm font-medium focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 aria-invalid:border-destructive aria-invalid:ring-3 [&_[class*='icon-']:not([class*='size-'])]:size-4 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_[class*='icon-']]:pointer-events-none [&_[class*='icon-']]:shrink-0",
+    base: "rounded-4xl border border-transparent bg-clip-padding text-sm font-medium focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 aria-invalid:border-destructive aria-invalid:ring-3 [&_[class*='icon-']:not([class*='size-'])]:size-4 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_[class*='icon-']]:pointer-events-none [&_[class*='icon-']]:shrink-0 aria-disabled:pointer-events-none aria-disabled:opacity-50",
     variants: {
       variant: {
         default: 'bg-primary text-primary-foreground hover:bg-primary/80',

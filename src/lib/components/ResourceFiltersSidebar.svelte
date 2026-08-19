@@ -3,7 +3,7 @@
   import { Button } from '#lib/components/ui/button/index.js'
   import SearchInput from './SearchInput.svelte'
 
-  import type { Resource } from '#lib/schema'
+  import type { Resource } from '#lib/content/schemas.js'
   import type { FilteredItems } from '#lib/state/search.svelte.js'
   import { cn } from '#lib/utils.js'
 

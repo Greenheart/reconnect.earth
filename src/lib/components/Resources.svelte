@@ -3,7 +3,7 @@
   import { quintOut } from 'svelte/easing'
   import { crossfade, fade } from 'svelte/transition'
 
-  import type { Resource } from '#lib/schema'
+  import type { Resource } from '#lib/content/schemas.js'
   import { getBookmarks, toggleBookmark } from '#lib/state/bookmarks.svelte.js'
   import ResourceFiltersSidebar from './ResourceFiltersSidebar.svelte'
   import { FilteredItems } from '#lib/state/search.svelte.js'
@@ -22,7 +22,7 @@
   const bookmarks = $derived(getBookmarks(resources))
 
   const searchResults = $derived(
-    new FilteredItems<Resource>(resources, (item, filters, allTags) => {
+    new FilteredItems<Resource>(resources, (item, filters) => {
       // All conditions need to be met, so abort as soon as we find something that does not match.
       if (filters.tags?.length && !filters.tags.every((tag) => item.tags.includes(tag))) {
         return false

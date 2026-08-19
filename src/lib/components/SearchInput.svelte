@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Resource } from '#lib/schema'
+  import type { Resource } from '#lib/content/schemas.js'
   import type { FilteredItems } from '#lib/state/search.svelte.js'
   import * as InputGroup from '#lib/components/ui/input-group/index.js'
   import { Button } from '#lib/components/ui/button/index.js'

@@ -1,4 +1,4 @@
-import type { Resource } from '#lib/schema'
+import type { Resource } from '#lib/content/schemas.js'
 import { persisted } from '#lib/persisted.svelte.js'
 
 const KEY = 'resource_bookmarks'

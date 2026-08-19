@@ -7,3 +7,6 @@ minimumReleaseAgeExclude:
   - postcss@8.5.21
   - prettier@3.9.6
   - svelte@5.56.7
+
+patchedDependencies:
+  sveltekit-search-params: patches/sveltekit-search-params.patch

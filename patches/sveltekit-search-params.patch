@@ -1,0 +1,32 @@
+diff --git a/package/sveltekit-search-params.svelte.js b/package/sveltekit-search-params.svelte.js
+index e039b465c422f009a0a83f1d8ae41fed1856fcdd..4af8dfe4fd264e06c206617d0e6f0695e6b600c7 100644
+--- a/package/sveltekit-search-params.svelte.js
++++ b/package/sveltekit-search-params.svelte.js
+@@ -16,14 +16,12 @@ function is_complex_equal(current, next, equality_fn = (current, next) => JSON.s
+         equality_fn(current, next));
+ }
+ const GOTO_OPTIONS = {
+-    keepFocus: true,
+-    noScroll: true,
+-    replaceState: true,
++    reset: true,
++    replace: true,
+ };
+ const GOTO_OPTIONS_PUSH = {
+-    keepFocus: true,
+-    noScroll: true,
+-    replaceState: false,
++    reset: true,
++    replace: false,
+ };
+ const batched_updates = new Set();
+ let batch_timeout;
+@@ -99,7 +97,7 @@ function create_root_navigator(root, encodes, overrides, navigation_options) {
+             current = current[piece];
+         }
+         current[key] = to_set;
+-        do_navigate(name, 
++        do_navigate(name,
+         // this allow for `push` to work
+         Array.isArray(value) && key === 'length'
+             ? structuredClone(value)

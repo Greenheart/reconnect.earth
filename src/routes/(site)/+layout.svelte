@@ -4,7 +4,7 @@
 
   import { GITHUB_LINK, SITE_NAME } from '#lib/constants.js'
 
-  import '../app.css'
+  import '../../app.css'
 
   let { children } = $props()
 

@@ -1,3 +1,4 @@
+import { AppValidation } from '#lib/content/constants.js'
 import { type CmsConfig } from '@sveltia/cms'
 
 export default {
@@ -18,7 +19,39 @@ export default {
       name: 'apps',
       label: '📱️ Apps',
       file: 'src/data/apps.json',
-      fields: [{ name: 'name', label: 'name' }],
+      fields: [
+        {
+          name: 'apps',
+          widget: 'list',
+          fields: [
+            {
+              name: 'name',
+              widget: 'string',
+              maxlength: AppValidation.name.max,
+            },
+            { name: 'description', widget: 'text', maxlength: AppValidation.description.max },
+            {
+              name: 'link',
+              widget: 'string',
+              type: 'url',
+              comment:
+                'An link to a live demo (for web projects), or where to get more information.',
+            },
+            {
+              name: 'git',
+              label: 'Git repository link',
+              comment:
+                'Link to the source code of the project. Only [libre software (FOSS)](https://fsfe.org/freesoftware/) apps may be listed.',
+            },
+            {
+              name: 'image',
+              widget: 'image',
+              media_folder: 'src/assets',
+              comment: 'Screenshot or other app image',
+            },
+          ],
+        },
+      ],
     },
   ],
 } satisfies CmsConfig

@@ -1,7 +1,6 @@
 import { z } from 'zod'
 
 import { TagValidation, ResourceValidation, AppValidation } from '#lib/content/constants.js'
-import { generateSlug } from '#lib/content-utils.js'
 
 export const TagSchema = z.object({
   label: z.string().trim().max(TagValidation.label.max),

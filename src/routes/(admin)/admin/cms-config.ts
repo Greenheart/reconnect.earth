@@ -26,12 +26,19 @@ export default {
           fields: [
             {
               name: 'name',
+              label: 'Name',
               widget: 'string',
               maxlength: AppValidation.name.max,
             },
-            { name: 'description', widget: 'text', maxlength: AppValidation.description.max },
+            {
+              name: 'description',
+              label: 'Description',
+              widget: 'text',
+              maxlength: AppValidation.description.max,
+            },
             {
               name: 'link',
+              label: 'Link',
               widget: 'string',
               type: 'url',
               comment:
@@ -45,6 +52,7 @@ export default {
             },
             {
               name: 'image',
+              label: 'Image',
               widget: 'image',
               media_folder: 'src/assets',
               comment: 'Screenshot or other app image',

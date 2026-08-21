@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  sveltekit-search-params@4.0.0: a8472d4566166528db06a319796c05d29c29a08230b1adda6f6ecea38d22a57b
+  sveltekit-search-params@4.0.0: 9b2297918dcce83b782caf0c2f53ec8757eafb56a28813fa3a655ae95193961f
 
 importers:
 
@@ -19,7 +19,7 @@ importers:
         version: 0.194.0
       sveltekit-search-params:
         specifier: ^4.0.0
-        version: 4.0.0(patch_hash=a8472d4566166528db06a319796c05d29c29a08230b1adda6f6ecea38d22a57b)(@sveltejs/kit@3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)
+        version: 4.0.0(patch_hash=9b2297918dcce83b782caf0c2f53ec8757eafb56a28813fa3a655ae95193961f)(@sveltejs/kit@3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)
       zod:
         specifier: ^4.4.3
         version: 4.4.3
@@ -4131,7 +4131,7 @@ snapshots:
     transitivePeerDependencies:
       - '@typescript-eslint/types'
 
-  sveltekit-search-params@4.0.0(patch_hash=a8472d4566166528db06a319796c05d29c29a08230b1adda6f6ecea38d22a57b)(@sveltejs/kit@3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9):
+  sveltekit-search-params@4.0.0(patch_hash=9b2297918dcce83b782caf0c2f53ec8757eafb56a28813fa3a655ae95193961f)(@sveltejs/kit@3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9):
     dependencies:
       '@sveltejs/kit': 3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.9)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.9)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0))
       svelte: 5.56.9

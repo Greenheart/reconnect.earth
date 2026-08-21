@@ -12,3 +12,6 @@
  *    caused conflicts with @sveltia/cms, preventing it from initiating.
  */
 export const ssr = false
+
+// Add a trailing slash for this route to make it easier to manually edit the URL and stay within the CMS.
+export const trailingSlash = 'always'

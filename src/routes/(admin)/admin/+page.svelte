@@ -1,8 +1,11 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { init } from '@sveltia/cms'
   import config from './cms-config'
 
-  init({ config })
+  onMount(() => {
+    init({ config })
+  })
 </script>
 
 <svelte:head>

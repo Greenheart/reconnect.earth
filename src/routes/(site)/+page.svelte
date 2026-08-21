@@ -14,8 +14,12 @@
     query: { enhanced: true },
   }) as Record<string, { default: any }>
 
+  function joinPath(parts: string[], separator = '/') {
+    return parts.join(separator).replace(new RegExp(separator + '{1,}', 'g'), separator)
+  }
+
   function getImage(filename: string) {
-    const image = allImages[`/src/assets/${filename}`]?.default
+    const image = allImages[joinPath(['/src/assets', filename])]?.default
     if (!image) {
       throw new Error(`Image not found: ${filename}`)
     }

@@ -20,19 +20,7 @@ export const ResourceSchema = z.object({
 export type Resource = z.infer<typeof ResourceSchema>
 
 export const AppSchema = z.object({
-  name: z.codec(
-    z.object({ name: z.string().max(AppValidation.name.max), slug: z.string() }),
-    z.string(),
-    {
-      decode: ({ name }) => name,
-      encode: (name) => {
-        return {
-          name,
-          slug: generateSlug(name),
-        }
-      },
-    },
-  ),
+  name: z.string().max(AppValidation.name.max),
   description: z.string().max(AppValidation.description.max),
   // We use the string field to allow internal links hosted on the same domain.
   link: z.string(),

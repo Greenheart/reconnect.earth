@@ -8,7 +8,7 @@
 <svelte:head>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex" />
-  <title>Sveltia CMS</title>
+  <title>{config.app_title}</title>
 </svelte:head>
 
 <!-- TODO: Investigate if there is a way to prevent a white flashing background when the CMS loads -->

@@ -21,7 +21,7 @@
     "@iconify/tailwind4": "^1.2.3",
     "@internationalized/date": "^3.12.3",
     "@keystatic/core": "^0.6.8",
-    "@sveltejs/adapter-static": "next",
+    "@sveltejs/adapter-static": "4.0.0-next.4",
     "@sveltejs/enhanced-img": "^0.11.0",
     "@sveltejs/kit": "3.0.0-next.25",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",

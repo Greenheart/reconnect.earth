@@ -7,6 +7,10 @@ minimumReleaseAgeExclude:
   - postcss@8.5.21
   - prettier@3.9.6
   - svelte@5.56.7
+  - '@sveltia/cms@0.194.0'
+  - '@sveltejs/kit@3.0.0-next.25'
+
+minimumReleaseAgeStrict: true
 
 patchedDependencies:
   sveltekit-search-params: patches/sveltekit-search-params.patch

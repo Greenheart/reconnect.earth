@@ -11,4 +11,7 @@
   <title>Sveltia CMS</title>
 </svelte:head>
 
-<div id="nc-root"></div>
+<!-- TODO: Investigate if there is a way to prevent a white flashing background when the CMS loads -->
+<div style="background: #1e2124">
+  <div id="nc-root"></div>
+</div>

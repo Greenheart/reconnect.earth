@@ -1,14 +1,28 @@
 diff --git a/package/sveltekit-search-params.svelte.js b/package/sveltekit-search-params.svelte.js
-index e039b465c422f009a0a83f1d8ae41fed1856fcdd..d879347429339c70567c5f3ed7875608777a6d7d 100644
+index e039b465c422f009a0a83f1d8ae41fed1856fcdd..8b41ffb6ce19adad5599da27fb36aec9c0253689 100644
 --- a/package/sveltekit-search-params.svelte.js
 +++ b/package/sveltekit-search-params.svelte.js
-@@ -1,4 +1,5 @@
- import { browser, building } from '$app/environment';
+@@ -1,6 +1,18 @@
+-import { browser, building } from '$app/environment';
 +import { VERSION } from '@sveltejs/kit';
  import { goto } from '$app/navigation';
  import { page } from '$app/state';
++
++/**
++ * SvelteKit 3 changes the goto options.
++ * NOTE: Simplify the GOTO_OPTIONS once this library no longer supports SvelteKit 2.
++ */
++const is_sveltekit_2 = VERSION.startsWith('2.');
++
++// NOTE: Simplify this once this library no longer supports SvelteKit 2.
++const { browser, building } = await (is_sveltekit_2
++	? import('$app/environment')
++	: import('$app/env'));
++
  // during building we fake the page url with no search params as it should be
-@@ -15,16 +16,28 @@ function is_complex_equal(current, next, equality_fn = (current, next) => JSON.s
+ // during prerendering. This allow the application to still build and the client
+ // side behavior is still persisted after the build
+@@ -15,16 +27,23 @@ function is_complex_equal(current, next, equality_fn = (current, next) => JSON.s
          typeof next === 'object' &&
          equality_fn(current, next));
  }
@@ -22,11 +36,6 @@ index e039b465c422f009a0a83f1d8ae41fed1856fcdd..d879347429339c70567c5f3ed7875608
 -    noScroll: true,
 -    replaceState: false,
 -};
-+/**
-+ * SvelteKit 3 changes the goto options.
-+ * NOTE: Simplify the GOTO_OPTIONS once this library no longer supports SvelteKit 2.
-+ */
-+const is_sveltekit_2 = VERSION.startsWith('2.');
 +const GOTO_OPTIONS = is_sveltekit_2
 +	? {
 +			keepFocus: true,
@@ -47,7 +56,7 @@ index e039b465c422f009a0a83f1d8ae41fed1856fcdd..d879347429339c70567c5f3ed7875608
  const batched_updates = new Set();
  let batch_timeout;
  const debounced_timeouts = new Map();
-@@ -99,7 +112,7 @@ function create_root_navigator(root, encodes, overrides, navigation_options) {
+@@ -99,7 +118,7 @@ function create_root_navigator(root, encodes, overrides, navigation_options) {
              current = current[piece];
          }
          current[key] = to_set;

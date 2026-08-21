@@ -13,4 +13,4 @@ minimumReleaseAgeExclude:
 minimumReleaseAgeStrict: true
 
 patchedDependencies:
-  sveltekit-search-params: patches/sveltekit-search-params.patch
+  sveltekit-search-params@4.0.0: patches/sveltekit-search-params@4.0.0.patch

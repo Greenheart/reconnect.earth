@@ -1,19 +1,22 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
   import { init } from '@sveltia/cms'
   import config from './cms-config'
 
-  onMount(() => {
-    init({ config })
-  })
+  init({ config })
+
+  if (import.meta.hot) {
+    import.meta.hot?.accept(() => {
+      console.log('Refreshing after config change…')
+
+      // NOTE: Force-reload the page when the config changes.
+      // This is not as nice as a proper hot module replacement,
+      // but much better than having to manually reload the config all the time.
+      window.location.reload()
+    })
+  }
 </script>
 
 <svelte:head>
   <meta name="robots" content="noindex" />
   <title>{config.app_title}</title>
 </svelte:head>
-
-<!-- TODO: Investigate if there is a way to prevent a white flashing background when the CMS loads -->
-<div style="background: #1e2124">
-  <div id="nc-root"></div>
-</div>

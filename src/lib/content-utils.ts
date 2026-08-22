@@ -20,7 +20,7 @@ export const getSortedTags = (tagsToSort: string[], allTags: AllTags) => {
   }) as Resource['tags']
 }
 
-export const getFeaturedFirst = (a: Resource, b: Resource) => {
+export const sortFeaturedFirst = (a: Resource, b: Resource) => {
   // 1. Sort by quality (1-5)
   let scoreA = a.quality
   let scoreB = b.quality

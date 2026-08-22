@@ -6,8 +6,8 @@
       "link": "https://www.youtube.com/watch?v=Rhcrbcg8HBw",
       "featured": true,
       "tags": [
-        "Video",
-        "WellbeingEconomics"
+        "video",
+        "wellbeingeconomics"
       ],
       "quality": 5
     },
@@ -17,8 +17,8 @@
       "link": "https://libro.fm/audiobooks/9781473556256",
       "featured": true,
       "tags": [
-        "Book",
-        "WellbeingEconomics"
+        "book",
+        "wellbeingeconomics"
       ],
       "quality": 5
     },
@@ -28,9 +28,9 @@
       "link": "https://www.youtube.com/watch?v=PQvZ6NCrC20",
       "featured": true,
       "tags": [
-        "Video",
-        "SystemsThinking",
-        "Metacrisis"
+        "video",
+        "systemsthinking",
+        "metacrisis"
       ],
       "quality": 5
     },
@@ -40,9 +40,9 @@
       "link": "https://libro.fm/audiobooks/9781538450598",
       "featured": false,
       "tags": [
-        "Book",
-        "Culture",
-        "Meaning"
+        "book",
+        "culture",
+        "meaning"
       ],
       "quality": 5
     },
@@ -52,9 +52,9 @@
       "link": "https://libro.fm/audiobooks/9781897408544",
       "featured": false,
       "tags": [
-        "Book",
-        "Philosophy",
-        "SystemsThinking"
+        "book",
+        "philosophy",
+        "systemsthinking"
       ],
       "quality": 5
     },
@@ -64,9 +64,9 @@
       "link": "https://libro.fm/audiobooks/9781626567979",
       "featured": false,
       "tags": [
-        "Book",
-        "Law",
-        "SystemsThinking"
+        "book",
+        "law",
+        "systemsthinking"
       ],
       "quality": 3
     },
@@ -76,9 +76,9 @@
       "link": "https://www.thesocialdilemma.com",
       "featured": false,
       "tags": [
-        "Documentary",
-        "SurveillanceCapitalism",
-        "Attention"
+        "documentary",
+        "surveillancecapitalism",
+        "attention"
       ],
       "quality": 5
     },
@@ -88,8 +88,8 @@
       "link": "https://www.youtube.com/watch?v=1BHOflzxPjI",
       "featured": false,
       "tags": [
-        "Video",
-        "WellbeingEconomics"
+        "video",
+        "wellbeingeconomics"
       ],
       "quality": 4
     },
@@ -99,8 +99,8 @@
       "link": "https://youtu.be/LFWKldh-I7g?si=BEIQK_tVW8Y78ggd",
       "featured": false,
       "tags": [
-        "Video",
-        "NotForProfit"
+        "video",
+        "notforprofit"
       ],
       "quality": 3
     },
@@ -110,8 +110,8 @@
       "link": "https://www.ted.com/talks/keisha_howard_imagining_a_solarpunk_future",
       "featured": false,
       "tags": [
-        "Talk",
-        "Solarpunk"
+        "talk",
+        "solarpunk"
       ],
       "quality": 3
     },
@@ -121,8 +121,8 @@
       "link": "https://youtu.be/o6lSuwJw0pk?si=Gxub6eE8jsxusjYH",
       "featured": false,
       "tags": [
-        "Video",
-        "SocialSustainability"
+        "video",
+        "socialsustainability"
       ],
       "quality": 4
     },
@@ -132,9 +132,9 @@
       "link": "https://www.upstreampodcast.org/the-myth-of-freedom-under-capitalism",
       "featured": false,
       "tags": [
-        "Podcast",
-        "Documentary",
-        "Freedom"
+        "podcast",
+        "documentary",
+        "freedom"
       ],
       "quality": 5
     },
@@ -144,8 +144,8 @@
       "link": "https://doughnuteconomics.org/about-doughnut-economics",
       "featured": false,
       "tags": [
-        "Webpage",
-        "WellbeingEconomics"
+        "webpage",
+        "wellbeingeconomics"
       ],
       "quality": 4
     },
@@ -155,8 +155,8 @@
       "link": "https://www.youtube.com/watch?v=NbBH1Hs_jLo",
       "featured": false,
       "tags": [
-        "Video",
-        "Metacrisis"
+        "video",
+        "metacrisis"
       ],
       "quality": 2
     },
@@ -166,9 +166,9 @@
       "link": "https://www.mdpi.com/books/mono/6206-five-insights-for-avoiding-global-collapse",
       "featured": false,
       "tags": [
-        "Book",
-        "Research",
-        "SystemsThinking"
+        "book",
+        "research",
+        "systemsthinking"
       ],
       "quality": 4
     },
@@ -178,9 +178,9 @@
       "link": "https://www.researchgate.net/publication/348306732_Why_Meaning_in_Life_Matters_for_Societal_Flourishing",
       "featured": false,
       "tags": [
-        "Research",
-        "Meaning",
-        "Wellbeing"
+        "research",
+        "meaning",
+        "wellbeing"
       ],
       "quality": 4
     },
@@ -190,9 +190,9 @@
       "link": "https://www.humanetech.com/course",
       "featured": false,
       "tags": [
-        "Course",
-        "Wellbeing",
-        "Technology"
+        "course",
+        "wellbeing",
+        "technology"
       ],
       "quality": 4
     },
@@ -202,9 +202,9 @@
       "link": "https://www.youtube.com/watch?v=IszXpzIo_ZQ",
       "featured": true,
       "tags": [
-        "Video",
-        "Economics",
-        "Freedom"
+        "video",
+        "economics",
+        "freedom"
       ],
       "quality": 5
     },
@@ -214,9 +214,9 @@
       "link": "https://www.youtube.com/watch?v=Ycit4WbJuwE",
       "featured": true,
       "tags": [
-        "Video",
-        "Economics",
-        "Freedom"
+        "video",
+        "economics",
+        "freedom"
       ],
       "quality": 5
     },
@@ -226,9 +226,9 @@
       "link": "https://www.youtube.com/watch?v=N5wFFRBBG7M",
       "featured": true,
       "tags": [
-        "Video",
-        "Freedom",
-        "Culture"
+        "video",
+        "freedom",
+        "culture"
       ],
       "quality": 5
     },
@@ -238,9 +238,9 @@
       "link": "https://www.youtube.com/watch?v=u6XAPnuFjJc",
       "featured": true,
       "tags": [
-        "Video",
-        "Motivation",
-        "Culture"
+        "video",
+        "motivation",
+        "culture"
       ],
       "quality": 5
     },
@@ -250,9 +250,9 @@
       "link": "https://www.youtube.com/watch?v=1Zjr2hAIYGE",
       "featured": true,
       "tags": [
-        "Video",
-        "Interconnectedness",
-        "Culture"
+        "video",
+        "interconnectedness",
+        "culture"
       ],
       "quality": 5
     },
@@ -262,9 +262,9 @@
       "link": "https://www.youtube.com/watch?v=uTbA-mxo858",
       "featured": false,
       "tags": [
-        "Video",
-        "Interconnectedness",
-        "Ecology"
+        "video",
+        "interconnectedness",
+        "ecology"
       ],
       "quality": 5
     },
@@ -274,9 +274,9 @@
       "link": "https://www.youtube.com/watch?v=Cvh7p6IehSo",
       "featured": true,
       "tags": [
-        "Video",
-        "WellbeingEconomics",
-        "Economics"
+        "video",
+        "wellbeingeconomics",
+        "economics"
       ],
       "quality": 5
     },
@@ -286,9 +286,9 @@
       "link": "https://www.youtube.com/watch?v=gR4eSEetKP0",
       "featured": false,
       "tags": [
-        "Documentary",
-        "Economics",
-        "Politics"
+        "documentary",
+        "economics",
+        "politics"
       ],
       "quality": 4
     },
@@ -298,9 +298,9 @@
       "link": "https://www.bbc.co.uk/programmes/m002mqm3/episodes/player",
       "featured": false,
       "tags": [
-        "Audio",
-        "Talk",
-        "Philosophy"
+        "audio",
+        "talk",
+        "philosophy"
       ],
       "quality": 5
     },
@@ -310,9 +310,9 @@
       "link": "https://fsfe.org/freesoftware/",
       "featured": false,
       "tags": [
-        "Webpage",
-        "Freedom",
-        "Technology"
+        "webpage",
+        "freedom",
+        "technology"
       ],
       "quality": 5
     },
@@ -322,9 +322,9 @@
       "link": "https://publiccode.eu/",
       "featured": false,
       "tags": [
-        "Webpage",
-        "Freedom",
-        "Technology"
+        "webpage",
+        "freedom",
+        "technology"
       ],
       "quality": 5
     },
@@ -334,9 +334,9 @@
       "link": "https://accidentalgods.life/towards-the-symbiocene-building-an-eco-civilisation-with-thought-leader-jeremy-lent/",
       "featured": false,
       "tags": [
-        "Podcast",
-        "Ecology",
-        "WellbeingEconomics"
+        "podcast",
+        "ecology",
+        "wellbeingeconomics"
       ],
       "quality": 5
     },
@@ -346,9 +346,9 @@
       "link": "https://libro.fm/audiobooks/9781663738981",
       "featured": false,
       "tags": [
-        "Book",
-        "Freedom",
-        "WellbeingEconomics"
+        "book",
+        "freedom",
+        "wellbeingeconomics"
       ],
       "quality": 5
     },
@@ -358,9 +358,9 @@
       "link": "https://accidentalgods.life/eco-civilisation-the-future-we-deserve-and-how-we-will-get-there-with-jeremy-lent/",
       "featured": false,
       "tags": [
-        "Podcast",
-        "Interconnectedness",
-        "SystemsThinking"
+        "podcast",
+        "interconnectedness",
+        "systemsthinking"
       ],
       "quality": 5
     },
@@ -370,9 +370,9 @@
       "link": "https://www.youtube.com/watch?v=tf-2ycHHgtI",
       "featured": false,
       "tags": [
-        "Video",
-        "Research",
-        "Collaboration"
+        "video",
+        "research",
+        "collaboration"
       ],
       "quality": 5
     },
@@ -382,8 +382,8 @@
       "link": "https://www.youtube.com/watch?v=C-90Q9jJj3w",
       "featured": false,
       "tags": [
-        "Video",
-        "Research"
+        "video",
+        "research"
       ],
       "quality": 5
     },
@@ -393,9 +393,9 @@
       "link": "https://www.youtube.com/watch?v=MDiGNA5hf1M",
       "featured": false,
       "tags": [
-        "Video",
-        "WellbeingEconomics",
-        "Communication"
+        "video",
+        "wellbeingeconomics",
+        "communication"
       ],
       "quality": 5
     },
@@ -405,9 +405,9 @@
       "link": "https://libro.fm/audiobooks/9781549186431-the-ministry-for-the-future",
       "featured": false,
       "tags": [
-        "Book",
-        "Fiction",
-        "Solarpunk"
+        "book",
+        "fiction",
+        "solarpunk"
       ],
       "quality": 5
     },
@@ -417,9 +417,9 @@
       "link": "https://uk.bookshop.org/p/books/thinking-in-systems-international-bestseller-donella-meadows/66b4f5a587436fce?ean=9781603580557",
       "featured": true,
       "tags": [
-        "Book",
-        "SystemsThinking",
-        "Interconnectedness"
+        "book",
+        "systemsthinking",
+        "interconnectedness"
       ],
       "quality": 5
     },
@@ -429,9 +429,9 @@
       "link": "https://libro.fm/audiobooks/9781538424292",
       "featured": false,
       "tags": [
-        "Book",
-        "Fiction",
-        "Solarpunk"
+        "book",
+        "fiction",
+        "solarpunk"
       ],
       "quality": 5
     },
@@ -441,9 +441,9 @@
       "link": "https://libro.fm/audiobooks/9781523099962-the-making-of-a-democratic-economy",
       "featured": false,
       "tags": [
-        "Book",
-        "WellbeingEconomics",
-        "SocialSustainability"
+        "book",
+        "wellbeingeconomics",
+        "socialsustainability"
       ],
       "quality": 5
     },
@@ -453,9 +453,9 @@
       "link": "https://mitpress.mit.edu/9780262536660/enlivenment/",
       "featured": false,
       "tags": [
-        "Book",
-        "Philosophy",
-        "Interconnectedness"
+        "book",
+        "philosophy",
+        "interconnectedness"
       ],
       "quality": 4
     },
@@ -465,10 +465,10 @@
       "link": "https://libro.fm/audiobooks/9781250818669-the-dawn-of-everything",
       "featured": false,
       "tags": [
-        "Book",
-        "History",
-        "Culture",
-        "Meaning"
+        "book",
+        "history",
+        "culture",
+        "meaning"
       ],
       "quality": 5
     },
@@ -478,10 +478,10 @@
       "link": "https://libro.fm/audiobooks/9781469063041-debt-updated-and-expanded",
       "featured": false,
       "tags": [
-        "Book",
-        "History",
-        "Economics",
-        "SocialSustainability"
+        "book",
+        "history",
+        "economics",
+        "socialsustainability"
       ],
       "quality": 5
     },
@@ -491,10 +491,10 @@
       "link": "https://libro.fm/audiobooks/9780753561713-deficit",
       "featured": false,
       "tags": [
-        "Book",
-        "WellbeingEconomics",
-        "Politics",
-        "Culture"
+        "book",
+        "wellbeingeconomics",
+        "politics",
+        "culture"
       ],
       "quality": 5
     },
@@ -504,10 +504,10 @@
       "link": "https://libro.fm/audiobooks/9780593864159-solidarity",
       "featured": true,
       "tags": [
-        "Book",
-        "Philosophy",
-        "History",
-        "Culture"
+        "book",
+        "philosophy",
+        "history",
+        "culture"
       ],
       "quality": 5
     },
@@ -517,10 +517,10 @@
       "link": "https://libro.fm/audiobooks/9798350824582-the-capital-order",
       "featured": false,
       "tags": [
-        "Book",
-        "Economics",
-        "History",
-        "Politics"
+        "book",
+        "economics",
+        "history",
+        "politics"
       ],
       "quality": 5
     },
@@ -530,10 +530,10 @@
       "link": "https://libro.fm/audiobooks/9781549199899-blood-in-the-machine",
       "featured": false,
       "tags": [
-        "Book",
-        "Technology",
-        "History",
-        "SocialSustainability"
+        "book",
+        "technology",
+        "history",
+        "socialsustainability"
       ],
       "quality": 5
     },
@@ -543,10 +543,10 @@
       "link": "https://libro.fm/audiobooks/9780141999401-regenesis",
       "featured": false,
       "tags": [
-        "Book",
-        "Ecology",
-        "Wellbeing",
-        "Food"
+        "book",
+        "ecology",
+        "wellbeing",
+        "food"
       ],
       "quality": 5
     },
@@ -556,9 +556,9 @@
       "link": "https://libro.fm/audiobooks/5184389278340-the-internet-con",
       "featured": false,
       "tags": [
-        "Book",
-        "Technology",
-        "Solarpunk"
+        "book",
+        "technology",
+        "solarpunk"
       ],
       "quality": 5
     },
@@ -568,9 +568,9 @@
       "link": "https://libro.fm/audiobooks/9781473589506-less-is-more",
       "featured": false,
       "tags": [
-        "Book",
-        "Ecology",
-        "WellbeingEconomics"
+        "book",
+        "ecology",
+        "wellbeingeconomics"
       ],
       "quality": 5
     }

@@ -47,12 +47,6 @@ export default {
               type: 'url',
             },
             {
-              name: 'featured',
-              comment: 'Whether or not this resource should be featured',
-              widget: 'boolean',
-              default: false,
-            },
-            {
               name: 'tags',
               widget: 'relation',
               collection: 'tags',
@@ -62,6 +56,12 @@ export default {
               display_fields: ['label'],
               min: ResourceValidation.tags.min,
               max: ResourceValidation.tags.max,
+            },
+            {
+              name: 'featured',
+              comment: 'Whether or not this resource should be featured',
+              widget: 'boolean',
+              default: false,
             },
             {
               name: 'quality',

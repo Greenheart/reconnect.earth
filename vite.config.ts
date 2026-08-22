@@ -8,7 +8,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     enhancedImages(), // Must come before the SvelteKit plugin
-    // dev && (await import('keystatic-sveltekit')).keystatic(),
     sveltekit({
       adapter: adapter(),
       experimental: {

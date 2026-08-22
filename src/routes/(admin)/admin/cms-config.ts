@@ -16,68 +16,6 @@ export default {
   public_folder: '/',
   singletons: [
     {
-      name: 'resources',
-      label: '📚️ Resources',
-      file: 'src/data/resources.json',
-      fields: [
-        {
-          name: 'resources',
-          label: 'Resources',
-          widget: 'list',
-          comment:
-            'Tip: To easily find a specific resource to edit it, search in the browser using CTRL+F or CMD+F',
-          fields: [
-            {
-              name: 'title',
-              comment: 'A short descriptive title',
-              maxlength: ResourceValidation.title.max,
-            },
-            {
-              name: 'description',
-              label: 'Description',
-              comment:
-                'Why is this relevant for Reconnect.earth? What are some key topics and insights?',
-              widget: 'text',
-              maxlength: ResourceValidation.description.max,
-            },
-            {
-              name: 'link',
-              label: 'Link',
-              widget: 'string',
-              type: 'url',
-            },
-            {
-              name: 'tags',
-              widget: 'relation',
-              collection: 'tags',
-              comment:
-                'Add relevant tags to describe this resource. Use "TitleCasing" to format tags consistently.',
-              multiple: true,
-              display_fields: ['label'],
-              min: ResourceValidation.tags.min,
-              max: ResourceValidation.tags.max,
-            },
-            {
-              name: 'featured',
-              comment: 'Whether or not this resource should be featured',
-              widget: 'boolean',
-              default: false,
-            },
-            {
-              name: 'quality',
-              label: `Production quality (${ResourceValidation.quality.min}-${ResourceValidation.quality.max})`,
-              comment:
-                "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
-              widget: 'number',
-              min: ResourceValidation.quality.min,
-              max: ResourceValidation.quality.max,
-              default: 3,
-            },
-          ],
-        },
-      ],
-    },
-    {
       name: 'apps',
       label: '📱️ Apps',
       file: 'src/data/apps.json',
@@ -144,6 +82,7 @@ export default {
         },
         {
           name: 'kind',
+          label: 'Tag kind',
           comment:
             'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
           widget: 'select',
@@ -158,6 +97,64 @@ export default {
             },
           ],
           default: TagValidation.kind.topic,
+        },
+      ],
+    },
+    {
+      name: 'resources',
+      label: '📚️ Resources',
+      label_singular: 'Resource',
+      slug: '{{uuid_shorter}}',
+      folder: 'src/data/resources',
+      extension: 'json',
+      fields: [
+        {
+          name: 'title',
+          comment: 'A short descriptive title',
+          maxlength: ResourceValidation.title.max,
+        },
+        {
+          name: 'description',
+          label: 'Description',
+          comment:
+            'Why is this relevant for Reconnect.earth? What are some key topics and insights?',
+          widget: 'text',
+          maxlength: ResourceValidation.description.max,
+        },
+        {
+          name: 'link',
+          label: 'Link',
+          widget: 'string',
+          type: 'url',
+        },
+        {
+          name: 'tags',
+          widget: 'relation',
+          collection: 'tags',
+          comment:
+            'Add relevant tags to describe this resource. Use "TitleCasing" to format tags consistently.',
+          multiple: true,
+          display_fields: ['label'],
+          min: ResourceValidation.tags.min,
+          max: ResourceValidation.tags.max,
+        },
+        {
+          name: 'featured',
+          comment: 'Whether or not this resource should be featured',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        },
+        {
+          name: 'quality',
+          label: `Production quality (${ResourceValidation.quality.min}-${ResourceValidation.quality.max})`,
+          comment:
+            "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
+          widget: 'number',
+          min: ResourceValidation.quality.min,
+          max: ResourceValidation.quality.max,
+          default: 3,
+          required: false,
         },
       ],
     },

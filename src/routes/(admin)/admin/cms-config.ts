@@ -14,54 +14,6 @@ export default {
         },
   media_folder: 'src/assets',
   public_folder: '/',
-  singletons: [
-    {
-      name: 'apps',
-      label: '📱️ Apps',
-      file: 'src/data/apps.json',
-      fields: [
-        {
-          name: 'apps',
-          widget: 'list',
-          fields: [
-            {
-              name: 'name',
-              label: 'Name',
-              widget: 'string',
-              maxlength: AppValidation.name.max,
-            },
-            {
-              name: 'description',
-              label: 'Description',
-              widget: 'text',
-              maxlength: AppValidation.description.max,
-            },
-            {
-              name: 'link',
-              label: 'Link',
-              widget: 'string',
-              type: 'url',
-              comment:
-                'An link to a live demo (for web projects), or where to get more information.',
-            },
-            {
-              name: 'git',
-              label: 'Git repository link',
-              comment:
-                'Link to the source code of the project. Only [libre software (FOSS)](https://fsfe.org/freesoftware/) apps may be listed.',
-            },
-            {
-              name: 'image',
-              label: 'Image',
-              widget: 'image',
-              media_folder: 'src/assets',
-              comment: 'Screenshot or other app image',
-            },
-          ],
-        },
-      ],
-    },
-  ],
   collections: [
     {
       name: 'tags',
@@ -155,6 +107,48 @@ export default {
           max: ResourceValidation.quality.max,
           default: 3,
           required: false,
+        },
+      ],
+    },
+    {
+      name: 'apps',
+      label: '📱️ Apps',
+      label_singular: 'App',
+      identifier_field: 'name',
+      folder: 'src/data/apps',
+      extension: 'json',
+      fields: [
+        {
+          name: 'name',
+          label: 'Name',
+          widget: 'string',
+          maxlength: AppValidation.name.max,
+        },
+        {
+          name: 'description',
+          label: 'Description',
+          widget: 'text',
+          maxlength: AppValidation.description.max,
+        },
+        {
+          name: 'link',
+          label: 'Link',
+          widget: 'string',
+          type: 'url',
+          comment: 'An link to a live demo (for web projects), or where to get more information.',
+        },
+        {
+          name: 'git',
+          label: 'Git repository link',
+          comment:
+            'Link to the source code of the project. Only [libre software (FOSS)](https://fsfe.org/freesoftware/) apps may be listed.',
+        },
+        {
+          name: 'image',
+          label: 'Image',
+          widget: 'image',
+          media_folder: 'src/assets',
+          comment: 'Screenshot or other app image',
         },
       ],
     },

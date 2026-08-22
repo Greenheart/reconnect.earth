@@ -1,4 +1,4 @@
-import { AppValidation, ResourceValidation } from '#lib/content/constants.js'
+import { AppValidation, ResourceValidation, TagValidation } from '#lib/content/constants.js'
 import { type CmsConfig } from '@sveltia/cms'
 
 export default {
@@ -22,7 +22,7 @@ export default {
       fields: [
         {
           name: 'resources',
-          label: 'All resources',
+          label: 'Resources',
           widget: 'list',
           comment:
             'Tip: To easily find a specific resource to edit it, search in the browser using CTRL+F or CMD+F',
@@ -53,13 +53,24 @@ export default {
               default: false,
             },
             {
+              name: 'tags',
+              widget: 'relation',
+              collection: 'tags',
+              comment:
+                'Add relevant tags to describe this resource. Use "TitleCasing" to format tags consistently.',
+              multiple: true,
+              display_fields: ['label'],
+              min: ResourceValidation.tags.min,
+              max: ResourceValidation.tags.max,
+            },
+            {
               name: 'quality',
               label: `Production quality (${ResourceValidation.quality.min}-${ResourceValidation.quality.max})`,
               comment:
                 "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
               widget: 'number',
-              min: 1,
-              max: 5,
+              min: ResourceValidation.quality.min,
+              max: ResourceValidation.quality.max,
               default: 3,
             },
           ],
@@ -109,6 +120,44 @@ export default {
               comment: 'Screenshot or other app image',
             },
           ],
+        },
+      ],
+    },
+  ],
+  collections: [
+    {
+      name: 'tags',
+      label: '🏷️ Tags',
+      label_singular: 'Tag',
+      slug: '{{fields.label}}',
+      folder: 'src/data/tags',
+      format: 'json',
+      fields: [
+        {
+          name: 'label',
+          label: 'Tag',
+          comment: 'Tag in TitleCase format used to describe resources and other content.',
+          pattern: [
+            /^[A-Za-z1-9]+$/,
+            'Tags should be in TitleCase format and only include letters and numbers.',
+          ],
+        },
+        {
+          name: 'kind',
+          comment:
+            'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
+          widget: 'select',
+          options: [
+            {
+              label: 'Topic',
+              value: TagValidation.kind.topic,
+            },
+            {
+              label: 'Media type',
+              value: TagValidation.kind['media-type'],
+            },
+          ],
+          default: TagValidation.kind.topic,
         },
       ],
     },

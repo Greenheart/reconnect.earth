@@ -16,43 +16,6 @@ export default {
   public_folder: '/',
   collections: [
     {
-      name: 'tags',
-      label: '🏷️ Tags',
-      label_singular: 'Tag',
-      slug: '{{fields.label}}',
-      folder: 'src/data/tags',
-      format: 'json',
-      fields: [
-        {
-          name: 'label',
-          label: 'Tag',
-          comment: 'Tag in TitleCase format used to describe resources and other content.',
-          pattern: [
-            /^[A-Za-z1-9]+$/,
-            'Tags should be in TitleCase format and only include letters and numbers.',
-          ],
-        },
-        {
-          name: 'kind',
-          label: 'Tag kind',
-          comment:
-            'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
-          widget: 'select',
-          options: [
-            {
-              label: 'Topic',
-              value: TagValidation.kind.topic,
-            },
-            {
-              label: 'Media type',
-              value: TagValidation.kind['media-type'],
-            },
-          ],
-          default: TagValidation.kind.topic,
-        },
-      ],
-    },
-    {
       name: 'resources',
       label: '📚️ Resources',
       label_singular: 'Resource',
@@ -149,6 +112,63 @@ export default {
           widget: 'image',
           media_folder: 'src/assets',
           comment: 'Screenshot or other app image',
+        },
+      ],
+    },
+    {
+      divider: true,
+    },
+    {
+      name: 'tags',
+      label: '🏷️ Tags',
+      label_singular: 'Tag',
+      slug: '{{fields.label}}',
+      summary: '**{{fields.label}}** — _{{fields.kind}}_',
+      folder: 'src/data/tags',
+      format: 'json',
+      view_filters: {
+        filters: [
+          {
+            label: 'Media types',
+            field: 'kind',
+            name: TagValidation.kind['media-type'],
+            pattern: TagValidation.kind['media-type'],
+          },
+          {
+            label: 'Topics',
+            field: 'kind',
+            name: TagValidation.kind.topic,
+            pattern: TagValidation.kind.topic,
+          },
+        ],
+      },
+      fields: [
+        {
+          name: 'label',
+          label: 'Tag',
+          comment: 'Tag in TitleCase format used to describe resources and other content.',
+          pattern: [
+            /^[A-Za-z1-9]+$/,
+            'Tags should be in TitleCase format without spaces and only include letters and numbers.',
+          ],
+        },
+        {
+          name: 'kind',
+          label: 'Tag kind',
+          comment:
+            'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
+          widget: 'select',
+          options: [
+            {
+              label: 'Topic',
+              value: TagValidation.kind.topic,
+            },
+            {
+              label: 'Media type',
+              value: TagValidation.kind['media-type'],
+            },
+          ],
+          default: TagValidation.kind.topic,
         },
       ],
     },

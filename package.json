@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@sindresorhus/slugify": "^3.0.0",
-    "@sveltia/cms": "^0.194.0",
+    "@sveltia/cms": "^0.195.0",
     "sveltekit-search-params": "^4.0.0",
     "zod": "^4.4.3"
   },

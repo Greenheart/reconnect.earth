@@ -15,8 +15,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       '@sveltia/cms':
-        specifier: ^0.194.0
-        version: 0.194.0
+        specifier: ^0.195.0
+        version: 0.195.0
       sveltekit-search-params:
         specifier: ^4.0.0
         version: 4.0.0(patch_hash=9b2297918dcce83b782caf0c2f53ec8757eafb56a28813fa3a655ae95193961f)(@sveltejs/kit@3.0.0-next.25(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.56.10)(vite@8.2.2(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.10)(typescript@6.0.3)(vite@8.2.2(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)))(svelte@5.56.10)
@@ -802,8 +802,8 @@ packages:
       svelte: ^5.46.4
       vite: ^8.0.0-beta.7 || ^8.0.0
 
-  '@sveltia/cms@0.194.0':
-    resolution: {integrity: sha512-BTQabDKhxTJoCXHugeOXA1J6n/6Z/LtCH6Wyz+GSnp02lHsiLXWHlIsTD75YG9PRjLgV4o6oIw8XdEADKcsHzg==}
+  '@sveltia/cms@0.195.0':
+    resolution: {integrity: sha512-I1qWxiu2cE9oJ6IZX9tjZBdw3KAjVKkMemLd63idtpxgbCFKs9PcMHBHVAga414bKmM9YSHYQ+Z45BCVMlWV4w==}
 
   '@swc/helpers@0.5.23':
     resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
@@ -1024,8 +1024,8 @@ packages:
   esm-env@1.2.2:
     resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
 
-  esrap@2.3.5:
-    resolution: {integrity: sha512-KciPkeZZX8srrh6xELzLR2cBaWOzgBQ4CwggO6Dh/KMlrfOcIcfyXCVy/Vvc3/OlS5gvFOd5tcxUYuaGM8o45A==}
+  esrap@2.3.6:
+    resolution: {integrity: sha512-yc0OC12UjPqLoc+fe+v5GNs4TOjAigUw3sTikfC+xeBPGUw7gDRz3DtYaqEhxyMVJojcSWJw7jT0QWR+CbuE/A==}
     peerDependencies:
       '@typescript-eslint/types': ^8.2.0
     peerDependenciesMeta:
@@ -2032,7 +2032,7 @@ snapshots:
       vite: 8.2.2(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0)
       vitefu: 1.1.3(vite@8.2.2(@types/node@26.2.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.8.0))
 
-  '@sveltia/cms@0.194.0': {}
+  '@sveltia/cms@0.195.0': {}
 
   '@swc/helpers@0.5.23':
     dependencies:
@@ -2241,7 +2241,7 @@ snapshots:
 
   esm-env@1.2.2: {}
 
-  esrap@2.3.5:
+  esrap@2.3.6:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
@@ -2598,7 +2598,7 @@ snapshots:
       clsx: 2.1.1
       devalue: 5.9.1
       esm-env: 1.2.2
-      esrap: 2.3.5
+      esrap: 2.3.6
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21

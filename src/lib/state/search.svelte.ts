@@ -1,11 +1,12 @@
-import { RESOURCE_CATEGORIES, RESOURCE_TYPES, type ResourceTag } from '#lib/constants.js'
 import type { Resource } from '#lib/content/schemas.js'
+import type { GroupedTags } from '#lib/content/tags.remote.js'
 import { queryParameters, ssp } from 'sveltekit-search-params'
+
+type ResourceTag = Resource['tags'][number]
 
 export class FilteredItems<T extends Resource> {
   items: readonly T[]
   matches: T[]
-
   filters = queryParameters(
     {
       search: ssp.string(''),
@@ -19,10 +20,16 @@ export class FilteredItems<T extends Resource> {
       showDefaults: false,
     },
   )
+  #allTags: GroupedTags
 
-  constructor(items: readonly T[], filterFn: (item: T, filters: typeof this.filters) => boolean) {
+  constructor(
+    items: readonly T[],
+    allTags: GroupedTags,
+    filterFn: (item: T, filters: typeof this.filters) => boolean,
+  ) {
     this.items = items
     this.matches = $derived(items.filter((item) => filterFn(item, this.filters)))
+    this.#allTags = allTags
   }
 
   toggleTag(tag: ResourceTag) {
@@ -47,8 +54,8 @@ export class FilteredItems<T extends Resource> {
 
   getItemCountsPerTag() {
     return {
-      resourceTypes: this.#getItemsWithTags(RESOURCE_TYPES),
-      resourceCategories: this.#getItemsWithTags(RESOURCE_CATEGORIES),
+      resourceTypes: this.#getItemsWithTags(this.#allTags.MEDIA_TYPES),
+      resourceCategories: this.#getItemsWithTags(this.#allTags.TOPICS),
     }
   }
 

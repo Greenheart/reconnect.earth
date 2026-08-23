@@ -3,12 +3,12 @@ import { prerender } from '$app/server'
 import { TagValidation } from '#lib/content/constants.js'
 import { TagSchema } from '#lib/content/schemas.js'
 
-export type AllTags = {
+export type GroupedTags = {
   MEDIA_TYPES: readonly string[]
   TOPICS: readonly string[]
 }
 
-export const getTags = prerender(async (): Promise<AllTags> => {
+export const getTags = prerender(async (): Promise<GroupedTags> => {
   const allTags = Object.values(import.meta.glob('#data/tags/*.json', { eager: true })).reduce<{
     MEDIA_TYPES: string[]
     TOPICS: string[]

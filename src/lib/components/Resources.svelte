@@ -13,6 +13,7 @@
   import { SITE_NAME } from '#lib/constants.js'
   import { useIntersectionObserver } from '#lib/intersection-observer.svelte.js'
   import { cn } from '#lib/utils.js'
+  import { getTags } from '#lib/content/tags.remote.js'
 
   interface Props {
     resources: Resource[]
@@ -20,9 +21,10 @@
 
   let { resources }: Props = $props()
   const bookmarks = $derived(getBookmarks(resources))
+  const allTags = await getTags()
 
   const searchResults = $derived(
-    new FilteredItems<Resource>(resources, (item, filters) => {
+    new FilteredItems<Resource>(resources, allTags, (item, filters) => {
       // All conditions need to be met, so abort as soon as we find something that does not match.
       if (filters.tags?.length && !filters.tags.every((tag) => item.tags.includes(tag))) {
         return false

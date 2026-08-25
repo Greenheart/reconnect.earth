@@ -35,11 +35,11 @@
     />
   </div>
   <div class="grid max-w-prose gap-y-8 text-2xl font-medium">
-    <p>We all want to live meaningful and healthy lives don't we?</p>
+    <p>We all want to live meaningful and healthy lives, don't we?</p>
 
-    <p>What if we could all do it together?</p>
+    <p>What if we all could do it together?</p>
 
-    <p>What if this world already exists?</p>
+    <p>What if this is already happening?</p>
   </div>
 </div>
 
@@ -77,13 +77,13 @@
     </p>
   </div>
 
-  <SectionCard
+  <!-- <SectionCard
     title="The Five Branches"
     text="Pathways towards how we all can live well while doing good in the world."
     cta="Explore"
     href="#process"
     iconClass="icon-[ion--earth]"
-  ></SectionCard>
+  ></SectionCard> -->
   <SectionCard
     title="Resource library"
     text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
@@ -96,6 +96,27 @@
     text="Ways to engage with the Reconnect.earth process, both personally and together with others."
     cta="Get started"
     href="#activities"
+    iconClass="icon-[bi--people-fill]"
+  ></SectionCard>
+  <!-- TODO: add actions properly -->
+  <!-- <SectionCard
+    title="Actions"
+    text="Ways to get involved with your community today."
+    cta="Get started"
+    href="#activities"
+    iconClass="icon-[bi--people-fill]"
+  ></SectionCard> -->
+
+  <!--
+  TODO: Clarify the distinction between resources and tools
+  Resources are more various forms of media and content
+  Tools are open source apps we are building with the community
+  -->
+  <SectionCard
+    title="Tools"
+    text="To make this journey more fun, engaging and accessible, we're designing and developing free and open source apps. Co-created by and for the community."
+    cta="Try them"
+    href="#apps"
     iconClass="icon-[bi--people-fill]"
   ></SectionCard>
 </div>
@@ -281,6 +302,10 @@
     {/each}
   </div>
 </div>
+
+<!-- TODO: Add section about how to contribute here. Give a high level overview of each way to contribute. Link to the /get-involved page and the exact anchor link to the relevant way of contributing so people easily find what they are looking for -->
+
+<!-- TODO: Add previous examples of contributions and show what people have added to the project. Lead by example and inspire more to get involved. -->
 
 <!-- IDEA: Visualise the process as a tree with five branches. Then as you scroll, a new section is highlighted -->
 <!-- IDEA: After learning about the framework, the first tree is joined by more trees, forming a forest. -->

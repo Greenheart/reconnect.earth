@@ -31,28 +31,35 @@
   <div class="max-w-sm sm:max-w-[250px]">
     <img
       src="/undraw_connected_world_wuay.svg"
-      alt="Map of a connected world with dots and linked lines between continents"
+      alt="Map of a connected planet Earth with dots and linked lines between continents"
     />
   </div>
-  <div class="max-w-prose">
-    <p class="pb-4">
-      How can we all live meaningful and healthy lives while doing good in the world? And <span
-        class="italic">how on earth</span
-      > can we do this in a rapidly changing, uncertain and disconnected world, shaped by the metacrisis?
-    </p>
-    <p class="pb-4">
-      Reconnect.earth is a process to explore questions like these, and find pathways towards
-      futures with wellbeing for all within the means of the planet.
-    </p>
-    <p class="pb-4">
-      This is an invitation to deepen your connection with yourself, other people and the living
-      Earth.
-    </p>
-    <p class="font-bold">Welcome to Reconnect.earth!</p>
+  <div class="grid max-w-prose gap-y-8 text-2xl font-medium">
+    <p>We all want to live meaningful and healthy lives don't we?</p>
+
+    <p>What if we could all do it together?</p>
+
+    <p>What if this world already exists?</p>
   </div>
 </div>
 
-<div class="mt-8 grid gap-4 sm:grid-cols-3">
+<div class="mt-16">
+  <p class="pb-4">
+    And <span class="italic">how on earth</span> can we do this in a rapidly changing, uncertain and disconnected
+    world, shaped by the metacrisis?
+  </p>
+  <p class="pb-4">
+    Reconnect.earth is a process to explore questions like these, and find pathways towards futures
+    with wellbeing for all within the means of the planet.
+  </p>
+  <p class="pb-4">
+    This is an invitation to deepen your connection with yourself, other people and the living
+    Earth.
+  </p>
+  <p class="font-bold">Welcome to Reconnect.earth!</p>
+</div>
+
+<div class="mt-16 grid gap-4 sm:grid-cols-3">
   <div class="col-span-full max-w-prose pb-4">
     <h2 class="h2 gradient-heading">How to engage with Reconnect.earth</h2>
     <p class="pt-4">
@@ -71,7 +78,7 @@
   </div>
 
   <SectionCard
-    title="The Reconnect.earth process"
+    title="The Five Branches"
     text="Pathways towards how we all can live well while doing good in the world."
     cta="Explore"
     href="#process"
@@ -96,7 +103,7 @@
 <Divider />
 
 <div class="mx-auto max-w-prose">
-  <h2 class="h1 gradient-heading" id="process">The Reconnect.earth process</h2>
+  <h2 class="h1 gradient-heading" id="branches">The Five Branches of Reconnect.earth</h2>
 
   <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
   <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->

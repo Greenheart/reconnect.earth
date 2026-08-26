@@ -66,7 +66,7 @@
 
 <div class="mt-16 grid gap-4 sm:grid-cols-3">
   <div class="col-span-full max-w-prose pb-4">
-    <h2 class="h2 gradient-heading">How to engage with Reconnect.earth</h2>
+    <h2 class="h2 gradient-heading">What are we creating?</h2>
     <p class="pt-4">
       This is a <a class="anchor" href="https://github.com/Greenheart/reconnect.earth"
         >collaborative project</a
@@ -74,11 +74,9 @@
       life.
     </p>
     <p class="pt-4">
-      On this website, you will find the Reconnect.earth process, an emerging library of resources
-      and a collection of activities. We are also developing a suite of <a
-        href="#apps"
-        class="anchor">free and open source apps</a
-      > to help you along your journey of learning, exploration and action.
+      On this website, you will find the Reconnect.earth process and an emerging collection of
+      resources, activities and tools to help you along your journey of learning, exploration and
+      action.
     </p>
   </div>
 
@@ -91,7 +89,7 @@
   ></SectionCard> -->
   <SectionCard
     title="Resource library"
-    text="Books, podcasts, videos (and more) about the metacrisis and how we can create a better future."
+    text="Books, podcasts, videos, scientific papers, etc. about how we can create a thriving future."
     cta="Be curious"
     href="/resources"
     iconClass="icon-[ion--library]"
@@ -104,7 +102,7 @@
     iconClass="icon-[bi--people-fill]"
   ></SectionCard>
   <!-- TODO: add actions properly -->
-  <!-- <SectionCard
+  <SectionCard
     title="Actions"
     text="Ways to get involved with your community today."
     cta="Get started"
@@ -119,7 +117,7 @@
   -->
   <SectionCard
     title="Tools"
-    text="To make this journey more fun, engaging and accessible, we're designing and developing free and open source apps. Co-created by and for the community."
+    text="To make this journey more fun, engaging and accessible, we're designing and developing free and open source apps."
     cta="Try them"
     href="#apps"
     iconClass="icon-[bi--people-fill]"

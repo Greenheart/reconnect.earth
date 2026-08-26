@@ -45,7 +45,7 @@
 
 <div class="mt-16">
   <h2 class="h2 gradient-heading">Why Reconnect.earth exists</h2>
-  <p class="pb-4">
+  <p class="py-4">
     Our purpose is to empower and encourage more people to explore pathways towards wellbeing for
     all within the means of the living planet.
   </p>
@@ -93,7 +93,7 @@
     text="Concrete things you can do by yourself or together with others to help create a thriving future."
     cta="Take action"
     href="#actions"
-    iconClass="icon-[bi--people-fill]"
+    iconClass="icon-[ri--hand-heart-fill]"
   ></SectionCard>
   <SectionCard
     title="Activities"
@@ -107,7 +107,7 @@
     text="To make this journey more fun, engaging and accessible, we're designing and developing free and open source apps."
     cta="Try them"
     href="#apps"
-    iconClass="icon-[bi--people-fill]"
+    iconClass="icon-[bi--compass]"
   ></SectionCard>
 </div>
 
@@ -282,6 +282,7 @@
     with feedback, ideas, and improvements!
   </p>
 
+  <!-- TODO: Use a two columns on larger screens -->
   <div class="grid justify-center gap-4">
     {#each apps as app}
       <Card.Root class="xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">

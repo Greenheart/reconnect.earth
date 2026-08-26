@@ -139,6 +139,11 @@
   </div>
 
   <p class="pb-4">
+    The core of Reconnect.earth is about exploring pathways towards how we can enable wellbeing for
+    all within the means of the living planet.
+  </p>
+
+  <p class="pb-4">
     Change starts within and is both personal and collective. By collaborating, we empower ourselves
     and each other to thrive in life while doing good in the world - very similar to how trees in
     the forest work together to create resilient and healthy ecosystems.

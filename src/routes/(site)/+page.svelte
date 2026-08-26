@@ -45,18 +45,23 @@
 
 <div class="mt-16">
   <p class="pb-4">
-    And <span class="italic">how on earth</span> can we do this in a rapidly changing, uncertain and disconnected
+    The core of Reconnect.earth is about exploring pathways towards how we can enable wellbeing for
+    all within the means of the living planet.
+  </p>
+
+  <p class="pb-4">
+    But <span class="italic">how on earth</span> can we do this in a rapidly changing, uncertain and disconnected
     world, shaped by the metacrisis?
   </p>
   <p class="pb-4">
-    Reconnect.earth is a process to explore questions like these, and find pathways towards futures
-    with wellbeing for all within the means of the planet.
+    Reconnect.earth offers a process to explore questions like these - on your own, and even better
+    together with other people.
   </p>
   <p class="pb-4">
     This is an invitation to deepen your connection with yourself, other people and the living
     Earth.
   </p>
-  <p class="font-bold">Welcome to Reconnect.earth!</p>
+  <p class="font-bold">Welcome to <span class="italic">reconnect to what matters!</span></p>
 </div>
 
 <div class="mt-16 grid gap-4 sm:grid-cols-3">
@@ -137,11 +142,6 @@
     />
     <p class="pt-2 text-center italic">The Tree of Reconnection</p>
   </div>
-
-  <p class="pb-4">
-    The core of Reconnect.earth is about exploring pathways towards how we can enable wellbeing for
-    all within the means of the living planet.
-  </p>
 
   <p class="pb-4">
     Change starts within and is both personal and collective. By collaborating, we empower ourselves

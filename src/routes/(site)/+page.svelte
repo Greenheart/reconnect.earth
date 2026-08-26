@@ -207,8 +207,9 @@
       </p>
       <p>
         By focusing on what we want to create rather than on what we try to avoid, we become much
-        more effective changemakers. The good news is that the process of reimaging the future is a
-        skill we can practice, and there are plenty of resources and activities to get inspiration.
+        more effective changemakers. The good news is that the process of reimagining the future is
+        a skill we can practice, and there are plenty of resources and activities to get
+        inspiration.
       </p>
     </div>
 

@@ -98,7 +98,7 @@
   <SectionCard
     title="Activities"
     text="Inspiration and supporting material to help you host workshops, learning circles and other types of events."
-    cta="Get started"
+    cta="Host an event"
     href="#activities"
     iconClass="icon-[bi--people-fill]"
   ></SectionCard>

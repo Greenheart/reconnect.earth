@@ -37,8 +37,7 @@
   <main class="mx-auto mt-8 max-w-5xl px-4 text-lg sm:text-xl">
     <header>
       <h1 class="h1 gradient-heading mb-2 text-5xl font-bold">Reconnect to what matters</h1>
-
-      <h2 class="h3 mb-8 italic sm:mb-16">Thrive in life while doing good in the world</h2>
+      <h2 class="h3 mb-8 italic sm:mb-16">Exploring pathways towards a thriving future</h2>
     </header>
     {@render children?.()}
   </main>

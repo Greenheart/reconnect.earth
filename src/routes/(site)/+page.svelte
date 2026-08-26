@@ -35,17 +35,18 @@
     />
   </div>
   <div class="grid max-w-prose gap-y-8 text-2xl font-medium">
-    <p>We all want to live meaningful and healthy lives, don't we?</p>
+    <p class="text-[#f5e1a5]">We all want to live meaningful and healthy lives, don't we?</p>
 
-    <p>What if we could collaborate to make this a reality?</p>
+    <p class="text-[#f4d677]">What if we could collaborate to make this a reality?</p>
 
-    <p>What if this is happening already?</p>
+    <p class="text-[#f0ca55]">What if this already happens, and you are invited?</p>
   </div>
 </div>
 
 <div class="mt-16">
+  <h2 class="h2 gradient-heading">Why Reconnect.earth exists</h2>
   <p class="pb-4">
-    The core of Reconnect.earth is about exploring pathways towards how we can enable wellbeing for
+    Our purpose is to empower and encourage more people to explore pathways towards wellbeing for
     all within the means of the living planet.
   </p>
 
@@ -54,7 +55,7 @@
     world, shaped by the metacrisis?
   </p>
   <p class="pb-4">
-    Reconnect.earth offers a process to explore questions like these - on your own, and even better
+    Reconnect.earth offers a process to explore topics like these - on your own, and even better
     together with other people.
   </p>
   <p class="pb-4">

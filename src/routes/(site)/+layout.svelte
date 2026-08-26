@@ -10,6 +10,7 @@
 
   const links = [
     { title: 'Resources', href: '/resources' },
+    { title: 'Actions', href: '/#actions' },
     { title: 'Activities', href: '/#activities' },
     { title: 'Contribute', href: GITHUB_LINK },
   ]

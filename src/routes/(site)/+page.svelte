@@ -114,7 +114,9 @@
 <Divider />
 
 <div class="mx-auto max-w-prose">
-  <h2 class="h1 gradient-heading" id="branches">The five branches of Reconnect.earth</h2>
+  <h2 class="h1 gradient-heading scroll-mt-4" id="branches">
+    The five branches of Reconnect.earth
+  </h2>
 
   <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
   <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
@@ -231,7 +233,7 @@
 
 <Divider />
 
-<div class="mx-auto max-w-prose" id="actions">
+<div class="mx-auto max-w-prose scroll-mt-4" id="actions">
   <h2 class="h1 gradient-heading">Actions</h2>
 
   <p class="py-4">
@@ -250,7 +252,7 @@
 
 <Divider />
 
-<div class="mx-auto max-w-prose" id="activities">
+<div class="mx-auto max-w-prose scroll-mt-4" id="activities">
   <h2 class="h1 gradient-heading">Activities</h2>
 
   <!-- IDEA: find a good image or visual to showcase what collaborative activities could mean -->
@@ -272,7 +274,7 @@
 
 <Divider />
 
-<div class="mx-auto max-w-prose" id="apps">
+<div class="mx-auto max-w-prose scroll-mt-4" id="apps">
   <h2 class="h1 gradient-heading">Our free and open source apps</h2>
 
   <p class="pt-4 pb-16">

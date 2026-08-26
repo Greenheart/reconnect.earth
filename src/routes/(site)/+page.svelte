@@ -37,9 +37,9 @@
   <div class="grid max-w-prose gap-y-8 text-2xl font-medium">
     <p>We all want to live meaningful and healthy lives, don't we?</p>
 
-    <p>What if we all could do it together?</p>
+    <p>What if we could collaborate to make this a reality?</p>
 
-    <p>What if this is already happening?</p>
+    <p>What if this is happening already?</p>
   </div>
 </div>
 

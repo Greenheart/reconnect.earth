@@ -64,7 +64,7 @@
   <p class="font-bold">Welcome to <span class="italic">reconnect to what matters!</span></p>
 </div>
 
-<div class="mt-16 grid gap-4 sm:grid-cols-3">
+<div class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
   <div class="col-span-full max-w-prose pb-4">
     <h2 class="h2 gradient-heading">What are we creating?</h2>
     <p class="pt-4">
@@ -82,23 +82,23 @@
 
   <SectionCard
     title="Resource library"
-    text="Books, podcasts, videos, scientific papers and more - relevant to Reconnect.earth."
+    text="Books, podcasts, videos, scientific papers and other kinds of media to support your learning and reflections."
     cta="Be curious"
     href="/resources"
     iconClass="icon-[ion--library]"
-  ></SectionCard>
-  <SectionCard
-    title="Activities"
-    text="Inspiration and supporting material to help you host workshops, learning circles and other types of events."
-    cta="Get started"
-    href="#activities"
-    iconClass="icon-[bi--people-fill]"
   ></SectionCard>
   <SectionCard
     title="Actions"
     text="Concrete things you can do by yourself or together with others to help create a thriving future."
     cta="Take action"
     href="#actions"
+    iconClass="icon-[bi--people-fill]"
+  ></SectionCard>
+  <SectionCard
+    title="Activities"
+    text="Inspiration and supporting material to help you host workshops, learning circles and other types of events."
+    cta="Get started"
+    href="#activities"
     iconClass="icon-[bi--people-fill]"
   ></SectionCard>
   <SectionCard
@@ -229,6 +229,25 @@
 
 <Divider />
 
+<div class="mx-auto max-w-prose" id="actions">
+  <h2 class="h1 gradient-heading">Actions</h2>
+
+  <p class="py-4">
+    Explore a collection of actions you can take to help create a thriving future - for yourself,
+    other people, and the living planet. Save the ones that spark your interest. This is not meant
+    to be a list of tasks to be completed. Do them on your own or together with other people.
+  </p>
+
+  <p class="pb-4">
+    Support each other by being respectful of people's varying backgrounds and their circumstances
+    for taking action. Instead of judging others, constructively challenge each other and encourage
+    further actions. Change is hard, but when you do it together and celebrate your progress, you
+    will have much more fun along the journey.
+  </p>
+</div>
+
+<Divider />
+
 <div class="mx-auto max-w-prose" id="activities">
   <h2 class="h1 gradient-heading">Activities</h2>
 
@@ -246,25 +265,6 @@
     sessions and civic tech hackathons. Just like the
     <a href="/resources" class="anchor">resource library</a>, the activities are co-created by and
     for the community. Welcome to share your favourite ways of engaging!
-  </p>
-</div>
-
-<Divider />
-
-<div class="mx-auto max-w-prose" id="actions">
-  <h2 class="h1 gradient-heading">Actions</h2>
-
-  <p class="py-4">
-    Explore a collection of actions you can take to help create a thriving future - for yourself,
-    other people, and the living planet. Save the ones that spark your interest. This is not meant
-    to be a list of tasks to be completed. Do them on your own or together with other people.
-  </p>
-
-  <p class="pb-4">
-    Support each other by being respectful of people's varying backgrounds and their circumstances
-    for taking action. Instead of judging others, constructively challenge each other and encourage
-    further actions. Change is hard, but when you do it together and celebrate your progress, you
-    will have much more fun along the journey.
   </p>
 </div>
 

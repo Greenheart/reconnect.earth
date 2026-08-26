@@ -80,41 +80,27 @@
     </p>
   </div>
 
-  <!-- <SectionCard
-    title="The Five Branches"
-    text="Pathways towards how we all can live well while doing good in the world."
-    cta="Explore"
-    href="#process"
-    iconClass="icon-[ion--earth]"
-  ></SectionCard> -->
   <SectionCard
     title="Resource library"
-    text="Books, podcasts, videos, scientific papers, etc. about how we can create a thriving future."
+    text="Books, podcasts, videos, scientific papers and more - relevant to Reconnect.earth."
     cta="Be curious"
     href="/resources"
     iconClass="icon-[ion--library]"
   ></SectionCard>
   <SectionCard
     title="Activities"
-    text="Ways to engage with the Reconnect.earth process, both personally and together with others."
+    text="Inspiration and supporting material to help you host workshops, learning circles and other types of events."
     cta="Get started"
     href="#activities"
     iconClass="icon-[bi--people-fill]"
   ></SectionCard>
-  <!-- TODO: add actions properly -->
   <SectionCard
     title="Actions"
-    text="Ways to get involved with your community today."
-    cta="Get started"
-    href="#activities"
+    text="Concrete things you can do by yourself or together with others to help create a thriving future."
+    cta="Take action"
+    href="#actions"
     iconClass="icon-[bi--people-fill]"
-  ></SectionCard> -->
-
-  <!--
-  TODO: Clarify the distinction between resources and tools
-  Resources are more various forms of media and content
-  Tools are open source apps we are building with the community
-  -->
+  ></SectionCard>
   <SectionCard
     title="Tools"
     text="To make this journey more fun, engaging and accessible, we're designing and developing free and open source apps."
@@ -127,7 +113,7 @@
 <Divider />
 
 <div class="mx-auto max-w-prose">
-  <h2 class="h1 gradient-heading" id="branches">The Five Branches of Reconnect.earth</h2>
+  <h2 class="h1 gradient-heading" id="branches">The five branches of Reconnect.earth</h2>
 
   <!-- IDEA: Either have the text within the image to make it consistent and easy to use on all screen sizes -->
   <!-- IDEA: Or add interactive links on top of the tree image, making the experience more engaging, and easier to style in a consistent way with the rest of the project -->
@@ -143,8 +129,8 @@
 
   <p class="pb-4">
     Change starts within and is both personal and collective. By collaborating, we empower ourselves
-    and each other to thrive in life while doing good in the world - very similar to how trees in
-    the forest work together to create resilient and healthy ecosystems.
+    and each other to live meaningful and healthy lives - very similar to how trees in the forest
+    work together to create resilient and healthy ecosystems.
   </p>
 
   <p>
@@ -260,6 +246,25 @@
     sessions and civic tech hackathons. Just like the
     <a href="/resources" class="anchor">resource library</a>, the activities are co-created by and
     for the community. Welcome to share your favourite ways of engaging!
+  </p>
+</div>
+
+<Divider />
+
+<div class="mx-auto max-w-prose" id="actions">
+  <h2 class="h1 gradient-heading">Actions</h2>
+
+  <p class="py-4">
+    Explore a collection of actions you can take to help create a thriving future - for yourself,
+    other people, and the living planet. Save the ones that spark your interest. This is not meant
+    to be a list of tasks to be completed. Do them on your own or together with other people.
+  </p>
+
+  <p class="pb-4">
+    Support each other by being respectful of people's varying backgrounds and their circumstances
+    for taking action. Instead of judging others, constructively challenge each other and encourage
+    further actions. Change is hard, but when you do it together and celebrate your progress, you
+    will have much more fun along the journey.
   </p>
 </div>
 

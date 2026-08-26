@@ -53,7 +53,7 @@
 
   <div
     class:hidden={!open}
-    class="bg-background fixed top-14 right-0 bottom-0 left-0 z-30 pt-16 sm:pt-32 md:top-16"
+    class="bg-background xs:pt-8 fixed top-14 right-0 bottom-0 left-0 z-30 sm:pt-32 md:top-16"
   >
     <nav class="flex flex-col items-center justify-center overflow-auto p-4 text-2xl">
       {#each links as { href, title }}

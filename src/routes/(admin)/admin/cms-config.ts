@@ -146,7 +146,7 @@ export default {
           label: 'Tag',
           comment: 'Tag in TitleCase format used to describe resources and other content.',
           pattern: [
-            /^[A-Za-z1-9]+$/,
+            /^[A-Za-z1-9]+$/.toString(),
             'Tags should be in TitleCase format without spaces and only include letters and numbers.',
           ],
         },

@@ -238,8 +238,8 @@
 
   <p class="py-4">
     Explore a collection of actions you can take to help create a thriving future - for yourself,
-    other people, and the living planet. Save the ones that spark your interest. This is not meant
-    to be a list of tasks to be completed. Do them on your own or together with other people.
+    other people, and the living planet. The goal is not complete all of them at once, but rather
+    get inspiration and then act on your own and togehter with other people.
   </p>
 
   <p class="pb-4">

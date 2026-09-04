@@ -58,17 +58,8 @@ function Alea(seed: string) {
   mash = null
 }
 
-function copy(f, t) {
-  t.c = f.c
-  t.s0 = f.s0
-  t.s1 = f.s1
-  t.s2 = f.s2
-  return t
-}
-
-export default function impl(seed, opts?: { state: unknown }) {
+export default function impl(seed) {
   var xg = new Alea(seed),
-    state = opts && opts.state,
     prng = xg.next
   prng.int32 = function () {
     return (xg.next() * 0x100000000) | 0
@@ -77,12 +68,6 @@ export default function impl(seed, opts?: { state: unknown }) {
     return prng() + ((prng() * 0x200000) | 0) * 1.1102230246251565e-16 // 2^-53
   }
   prng.quick = prng
-  if (state) {
-    if (typeof state == 'object') copy(state, xg)
-    prng.state = function () {
-      return copy(xg, {})
-    }
-  }
   return prng
 }
 

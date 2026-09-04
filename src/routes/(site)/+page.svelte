@@ -28,9 +28,9 @@
 </script>
 
 <div class="flex flex-col items-center gap-8 pb-8 sm:flex-row">
-  <div class="max-w-sm sm:max-w-[250px]">
-    <img
-      src="/undraw_connected_world_wuay.svg"
+  <div class="max-w-sm sm:max-w-62.5">
+    <enhanced:img
+      src="#assets/undraw_connected_world_wuay.svg"
       alt="Map of a connected planet Earth with dots and linked lines between continents"
     />
   </div>

@@ -59,17 +59,8 @@ function Alea(seed: string) {
   mash = null
 }
 
-export default function impl(seed: string) {
-  var xg = new Alea(seed),
-    prng = xg.next
-  prng.int32 = function () {
-    return (xg.next() * 0x100000000) | 0
-  }
-  prng.double = function () {
-    return prng() + ((prng() * 0x200000) | 0) * 1.1102230246251565e-16 // 2^-53
-  }
-  prng.quick = prng
-  return prng
+export default function alea(seed) {
+  return new Alea(seed).next
 }
 
 function getMash() {

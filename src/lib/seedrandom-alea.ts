@@ -28,8 +28,8 @@
 // THE SOFTWARE.
 
 function Alea(seed: string) {
-  var me = this,
-    mash = Mash()
+  let me = this
+  let mash = getMash()
 
   me.next = function () {
     var t = 2091639 * me.s0 + me.c * 2.3283064365386963e-10 // 2^-32
@@ -55,10 +55,11 @@ function Alea(seed: string) {
   if (me.s2 < 0) {
     me.s2 += 1
   }
+  // @ts-expect-error Unassign to free up memory when we no longer need it.
   mash = null
 }
 
-export default function impl(seed) {
+export default function impl(seed: string) {
   var xg = new Alea(seed),
     prng = xg.next
   prng.int32 = function () {
@@ -71,14 +72,13 @@ export default function impl(seed) {
   return prng
 }
 
-function Mash() {
-  var n = 0xefc8249d
+function getMash() {
+  let n = 0xefc8249d
 
-  var mash = function (data) {
-    data = String(data)
-    for (var i = 0; i < data.length; i++) {
+  function mash(data: string) {
+    for (let i = 0; i < data.length; i++) {
       n += data.charCodeAt(i)
-      var h = 0.02519603282416938 * n
+      let h = 0.02519603282416938 * n
       n = h >>> 0
       h -= n
       h *= n

@@ -2,29 +2,12 @@
   import * as Card from '#lib/components/ui/card/index.js'
   import { Button } from '#lib/components/ui/button/index.js'
 
-  import treeOfReconnection from '#assets/tree-of-reconnection.jpg?enhanced'
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
   import { getApps } from '#lib/content/apps.remote.js'
+  import { getImage } from '#lib/get-image.js'
 
   const apps = await getApps()
-
-  const allImages = import.meta.glob('#assets/**/*.{avif,jpeg,jpg,png,webp,svg}', {
-    eager: true,
-    query: { enhanced: true },
-  }) as Record<string, { default: any }>
-
-  function joinPath(parts: string[], separator = '/') {
-    return parts.join(separator).replace(new RegExp(separator + '{1,}', 'g'), separator)
-  }
-
-  function getImage(filename: string) {
-    const image = allImages[joinPath(['/src/assets', filename])]?.default
-    if (!image) {
-      throw new Error(`Image not found: ${filename}`)
-    }
-    return image
-  }
 </script>
 
 <div class="flex flex-col items-center gap-8 pb-8 sm:flex-row">
@@ -123,7 +106,7 @@
   <div class="grid py-4">
     <enhanced:img
       class="rounded-md"
-      src={treeOfReconnection}
+      src="#assets/tree-of-reconnection.jpg"
       alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
       sizes="min(1920px, 100vw)"
     />
@@ -288,10 +271,11 @@
   <!-- TODO: Use a two columns on larger screens -->
   <div class="grid justify-center gap-4">
     {#each apps as app}
+      {@const img = await getImage(app.image)}
       <Card.Root class="xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">
         <div class="xs:max-h-full xs:w-48 max-h-80">
           <enhanced:img
-            src={getImage(app.image)}
+            src={img}
             alt={app.name + ' screenshot'}
             class="order-3 h-full w-full place-self-center rounded-xl bg-transparent! object-contain sm:order-1"
             sizes="min(200px, 100vw)"

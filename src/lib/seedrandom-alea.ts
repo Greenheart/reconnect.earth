@@ -1,4 +1,5 @@
 // This is a TS and ESM port of the `alea` PRNG implementation from https://github.com/davidbau/seedrandom
+// Only the `quick` mode is included to keep the code as minimal as possible.
 //
 // ---
 //
@@ -27,39 +28,47 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-function Alea(seed: string) {
-  let me = this
-  let mash = getMash()
+class Alea {
+  s0: number
+  s1: number
+  s2: number
+  c: number
 
-  me.next = function () {
-    var t = 2091639 * me.s0 + me.c * 2.3283064365386963e-10 // 2^-32
-    me.s0 = me.s1
-    me.s1 = me.s2
-    return (me.s2 = t - (me.c = t | 0))
+  constructor(seed: string) {
+    let mash = getMash()
+    this.next = this.next.bind(this)
+
+    // Apply the seeding algorithm from Baagøe.
+    this.c = 1
+    this.s0 = mash(' ')
+    this.s1 = mash(' ')
+    this.s2 = mash(' ')
+    this.s0 -= mash(seed)
+    if (this.s0 < 0) {
+      this.s0 += 1
+    }
+    this.s1 -= mash(seed)
+    if (this.s1 < 0) {
+      this.s1 += 1
+    }
+    this.s2 -= mash(seed)
+    if (this.s2 < 0) {
+      this.s2 += 1
+    }
+
+    // @ts-expect-error Unassign to free up memory when we no longer need it.
+    mash = null
   }
 
-  // Apply the seeding algorithm from Baagoe.
-  me.c = 1
-  me.s0 = mash(' ')
-  me.s1 = mash(' ')
-  me.s2 = mash(' ')
-  me.s0 -= mash(seed)
-  if (me.s0 < 0) {
-    me.s0 += 1
+  next() {
+    const t = 2091639 * this.s0 + this.c * 2.3283064365386963e-10 // 2^-32
+    this.s0 = this.s1
+    this.s1 = this.s2
+    return (this.s2 = t - (this.c = t | 0))
   }
-  me.s1 -= mash(seed)
-  if (me.s1 < 0) {
-    me.s1 += 1
-  }
-  me.s2 -= mash(seed)
-  if (me.s2 < 0) {
-    me.s2 += 1
-  }
-  // @ts-expect-error Unassign to free up memory when we no longer need it.
-  mash = null
 }
 
-export default function alea(seed) {
+export default function alea(seed: string) {
   return new Alea(seed).next
 }
 

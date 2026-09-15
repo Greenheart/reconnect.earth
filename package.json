@@ -26,6 +26,7 @@
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.4.1",
+    "@types/seedrandom": "^3.0.8",
     "bits-ui": "^2.19.0",
     "clsx": "^2.1.1",
     "prettier": "^3.9.6",
@@ -64,6 +65,7 @@
   "dependencies": {
     "@sindresorhus/slugify": "^3.0.1",
     "@sveltia/cms": "^0.205.1",
+    "seedrandom": "^3.0.5",
     "sveltekit-search-params": "^4.0.0",
     "zod": "^4.5.4"
   },

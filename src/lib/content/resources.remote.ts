@@ -11,16 +11,21 @@ const resources = z
   .sort(sortFeaturedFirst)
 
 export const getResources = prerender(async () => {
-  const allTags = await getTags()
-  const combinedTags = [...allTags.MEDIA_TYPES, ...allTags.TOPICS]
+  const groupedTags = await getTags()
+  const combinedTags = [...groupedTags.MEDIA_TYPES, ...groupedTags.TOPICS]
 
   return resources.map((resource) => {
+    // TODO: Figure out why the tags do not match properly
+    // IDEA: Maybe get combined tags as an object to make it easier to find specific tags
     resource.tags = resource.tags.map((tagSlug) => {
-      const tag = combinedTags.find((tag) => tagSlug === tag.toLowerCase())
-      if (!tag) throw new Error(`Invalid tag: "${tagSlug}" in resource ${resource.title}`)
+      const tag = combinedTags.find((tag) => tagSlug.toLowerCase() === tag.toLowerCase())
+      if (!tag) {
+        console.dir({ combinedTags, tagSlug })
+        throw new Error(`Invalid tag: "${tagSlug}" in resource ${resource.title}`)
+      }
       return tag
     })
-    resource.tags = getSortedTags(resource.tags, allTags)
+    resource.tags = getSortedTags(resource.tags, groupedTags)
     return resource
   })
 })

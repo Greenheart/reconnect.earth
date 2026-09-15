@@ -14,6 +14,7 @@
   import { useIntersectionObserver } from '#lib/intersection-observer.svelte.js'
   import { cn } from '#lib/utils.js'
   import { getTags } from '#lib/content/tags.remote.js'
+  import { browser } from '$app/env'
 
   interface Props {
     resources: Resource[]
@@ -143,63 +144,69 @@
       </div>
     </div>
 
-    {#each searchResults.matches as resource (resource.link)}
-      {@const key = resource.link}
-      {@const isBookmarked = bookmarks.value.includes(resource.link)}
-      {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
-      <div
-        animate:flip={shouldAnimate ? { duration: 400 } : { duration: 0 }}
-        in:maybe={{ fn: send, key }}
-        out:maybe={{ fn: receive, key }}
-      >
-        <Card.Root class="grid h-full grid-rows-[min-content_min-content_1fr] gap-2 p-4">
-          <h3 class="h4 text-primary font-bold">
-            {resource.title}
-          </h3>
-          <p class="text-base">{resource.description}</p>
-          <div class="flex flex-wrap content-start items-start gap-2 text-sm">
-            {#each resource.tags as tag}
-              <div class="text-primary">#{tag}</div>
-            {/each}
-          </div>
-          <div class="flex items-center justify-between gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onclick={() => toggleBookmark(bookmarks, resource)}
-              aria-label={label}
-              title={label}
-            >
-              <span class={isBookmarked ? 'icon-[bi--bookmark-fill]' : 'icon-[bi--bookmark]'}
-              ></span>
-            </Button>
-            <Button
-              href={resource.link}
-              target="_blank"
-              variant="ghost"
-              class="bg-muted/20"
-              size="lg"
-            >
-              <div class="span items-stretch">Explore</div>
-              <span class="icon-[lucide--external-link]"></span>
-            </Button>
-          </div>
-        </Card.Root>
+    <!--
+        Disable SSR for resource list since the content is shuffled on the client side.
+        This ensures the content is only shown on the client side.
+    -->
+    {#if browser}
+      {#each searchResults.matches as resource (resource.link)}
+        {@const key = resource.link}
+        {@const isBookmarked = bookmarks.value.includes(resource.link)}
+        {@const label = isBookmarked ? 'Remove bookmark' : 'Save bookmark'}
+        <div
+          animate:flip={shouldAnimate ? { duration: 400 } : { duration: 0 }}
+          in:maybe={{ fn: send, key }}
+          out:maybe={{ fn: receive, key }}
+        >
+          <Card.Root class="grid h-full grid-rows-[min-content_min-content_1fr] gap-2 p-4">
+            <h3 class="h4 text-primary font-bold">
+              {resource.title}
+            </h3>
+            <p class="text-base">{resource.description}</p>
+            <div class="flex flex-wrap content-start items-start gap-2 text-sm">
+              {#each resource.tags as tag}
+                <div class="text-primary">#{tag}</div>
+              {/each}
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <Button
+                variant="ghost"
+                size="icon"
+                onclick={() => toggleBookmark(bookmarks, resource)}
+                aria-label={label}
+                title={label}
+              >
+                <span class={isBookmarked ? 'icon-[bi--bookmark-fill]' : 'icon-[bi--bookmark]'}
+                ></span>
+              </Button>
+              <Button
+                href={resource.link}
+                target="_blank"
+                variant="ghost"
+                class="bg-muted/20"
+                size="lg"
+              >
+                <div class="span items-stretch">Explore</div>
+                <span class="icon-[lucide--external-link]"></span>
+              </Button>
+            </div>
+          </Card.Root>
+        </div>
+      {/each}
+
+      <div class="col-span-full mt-4 flex flex-col items-center gap-4" bind:this={scrollTarget}>
+        <p class="text-center text-sm">
+          Showing {searchResults.matches.length} / {resources.length}
+        </p>
+
+        <Button
+          variant="outline"
+          class={['rounded-md px-8', disableResetFiltersButton && 'hidden']}
+          onclick={resetFilters}>Show all</Button
+        >
       </div>
-    {/each}
 
-    <div class="col-span-full mt-4 flex flex-col items-center gap-4" bind:this={scrollTarget}>
-      <p class="text-center text-sm">
-        Showing {searchResults.matches.length} / {resources.length}
-      </p>
-
-      <Button
-        variant="outline"
-        class={['rounded-md px-8', disableResetFiltersButton && 'hidden']}
-        onclick={resetFilters}>Show all</Button
-      >
-    </div>
-
-    <!-- IDEA: At the end of the list could be a good place to ask people to suggest new resources. Add link to contributing guide for adding resources here. -->
+      <!-- IDEA: At the end of the list could be a good place to ask people to suggest new resources. Add link to contributing guide for adding resources here. -->
+    {/if}
   </div>
 </div>

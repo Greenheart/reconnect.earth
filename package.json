@@ -69,7 +69,18 @@
     "sveltekit-search-params": "^4.0.0",
     "zod": "^4.6.5"
   },
-  "packageManager": "pnpm@12.4.2",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": ">= 26"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "warn",
+      "version": "12.4.2"
+    }
+  },
   "imports": {
     "#lib": "./src/lib",
     "#lib/*": "./src/lib/*",

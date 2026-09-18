@@ -10,6 +10,10 @@ export const ResourceValidation = {
   quality: { min: 1, max: 5 },
 }
 
+export const ActivityValidation = {
+  title: { max: 125 },
+}
+
 export const AppValidation = {
   name: { max: 100 },
   description: { max: 300 },

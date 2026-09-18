@@ -1,6 +1,11 @@
 import { z } from 'zod'
 
-import { TagValidation, ResourceValidation, AppValidation } from '#lib/content/constants.js'
+import {
+  TagValidation,
+  ResourceValidation,
+  ActivityValidation,
+  AppValidation,
+} from '#lib/content/constants.js'
 
 export const TagSchema = z.object({
   label: z.string().trim().max(TagValidation.label.max),
@@ -14,6 +19,10 @@ export const ResourceSchema = z.object({
   tags: z.array(z.string()).min(ResourceValidation.tags.min).max(ResourceValidation.tags.max),
   featured: z.boolean().default(false),
   quality: z.int().min(ResourceValidation.quality.min).max(ResourceValidation.quality.max),
+})
+
+export const ActivityFrontmatterSchema = z.object({
+  title: z.string().max(ActivityValidation.title.max),
 })
 
 export type Resource = z.infer<typeof ResourceSchema>

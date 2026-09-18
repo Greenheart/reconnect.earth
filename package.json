@@ -63,6 +63,7 @@
     ]
   },
   "dependencies": {
+    "@comark/svelte": "^0.7.0",
     "@sindresorhus/slugify": "^3.0.1",
     "@sveltia/cms": "0.212.1",
     "sveltekit-search-params": "^4.0.0",

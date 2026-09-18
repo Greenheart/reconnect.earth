@@ -1,4 +1,9 @@
-import { AppValidation, ResourceValidation, TagValidation } from '#lib/content/constants.js'
+import {
+  AppValidation,
+  ResourceValidation,
+  ActivityValidation,
+  TagValidation,
+} from '#lib/content/constants.js'
 import { type CmsConfig } from '@sveltia/cms'
 
 export default {
@@ -70,6 +75,37 @@ export default {
           required: false,
         },
       ],
+    },
+    {
+      name: 'activities',
+      label: '👥️ Activities',
+      label_singular: 'Activity',
+      fields: [
+        {
+          name: 'title',
+          comment: 'A short descriptive title',
+          maxlength: ActivityValidation.title.max,
+        },
+        {
+          name: 'body',
+          label: 'Body',
+          widget: 'richtext',
+          minimal: true,
+          buttons: [
+            'heading-one',
+            'heading-two',
+            'heading-three',
+            'heading-four',
+            'bold',
+            'italic',
+            'link',
+            'quote',
+          ],
+          editor_components: ['image'],
+        },
+      ],
+      folder: 'src/data/activities',
+      extension: 'md',
     },
     {
       name: 'apps',

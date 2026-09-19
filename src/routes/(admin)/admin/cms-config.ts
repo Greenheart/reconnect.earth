@@ -50,7 +50,7 @@ export default {
           widget: 'relation',
           collection: 'tags',
           comment:
-            'Add relevant tags to describe this resource. Use "TitleCasing" to format tags consistently.',
+            'Add relevant tags to describe this resource. First the media type, and then the main topics.',
           multiple: true,
           display_fields: ['label'],
           min: ResourceValidation.tags.min,

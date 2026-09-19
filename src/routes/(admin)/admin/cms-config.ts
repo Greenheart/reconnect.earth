@@ -15,7 +15,7 @@ export default {
     repo: 'Greenheart/reconnect.earth',
     branch: 'main',
   },
-  media_folder: 'src/assets',
+  media_folder: 'src/assets/global',
   public_folder: '/',
   collections: [
     {
@@ -144,7 +144,7 @@ export default {
           name: 'image',
           label: 'Image',
           widget: 'image',
-          media_folder: 'src/assets',
+          media_folder: '/src/assets/apps',
           comment: 'Screenshot or other app image',
         },
       ],

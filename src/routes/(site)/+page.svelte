@@ -13,7 +13,7 @@
 <div class="flex flex-col items-center gap-8 pb-8 sm:flex-row">
   <div class="max-w-sm sm:max-w-62.5">
     <enhanced:img
-      src="#assets/undraw_connected_world_wuay.svg"
+      src="#assets/global/undraw_connected_world_wuay.svg"
       alt="Map of a connected planet Earth with dots and linked lines between continents"
     />
   </div>
@@ -106,7 +106,7 @@
   <div class="grid py-4">
     <enhanced:img
       class="rounded-md"
-      src="#assets/tree-of-reconnection.jpg"
+      src="#assets/global/tree-of-reconnection.jpg"
       alt="The Tree of Reconnection, featuring a lush green scenery, deep in a forest. At the center is a large tree with many branches. On each of the major branches is a text label representing the 5 branches of the Reconnect.earth process: Reclaim, Reflect, Reconnect, Reimagine and Regenerate. Of these five branches, Reconnect is actually at the root of the tree (symbolising connection to the root system)."
       sizes="min(1920px, 100vw)"
     />

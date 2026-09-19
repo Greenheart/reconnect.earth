@@ -1,12 +1,10 @@
-const allImages = import.meta.glob('#assets/**/*.{avif,jpeg,jpg,png,webp}', {
+import { type Picture } from '@sveltejs/enhanced-img'
+
+const allImages = import.meta.glob<Picture | undefined>('#assets/**/*.{avif,jpeg,jpg,png,webp}', {
   // Only import the default export which includes the relevant metadata.
   import: 'default',
   query: { enhanced: true },
 })
-
-function joinPath(parts: string[], separator = '/') {
-  return parts.join(separator).replace(new RegExp(separator + '{1,}', 'g'), separator)
-}
 
 /**
  * Load an image from #assets based on its filename.
@@ -16,10 +14,9 @@ function joinPath(parts: string[], separator = '/') {
  * @returns Image metadata for the processed image, ready to assign to the `src` attribute.
  */
 export async function getImage(filename: string) {
-  const path = joinPath(['/src/assets', filename])
-  const loader = allImages[path]
+  const loader = allImages[filename]
   if (!loader) {
-    throw new Error(`Image not found: ${path}`)
+    throw new Error(`Image not found: ${filename}`)
   }
 
   const image = await loader()

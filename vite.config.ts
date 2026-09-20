@@ -14,7 +14,7 @@ export default defineConfig({
         remoteFunctions: true,
       },
       compilerOptions: {
-        // Force runes mode for the project, except for libraries. Can be removed in svelte 6.
+        // Force runes mode for the project, except for libraries. Can be removed in Svelte 6.
         runes: ({ filename }) =>
           filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
 

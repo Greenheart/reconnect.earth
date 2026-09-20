@@ -16,7 +16,7 @@
     "@fontsource-variable/el-messiri": "^5.3.0",
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/ion": "^1.2.7",
-    "@iconify-json/lucide": "^1.2.133",
+    "@iconify-json/lucide": "^1.2.134",
     "@iconify-json/ri": "^1.2.10",
     "@iconify/tailwind4": "^1.2.3",
     "@internationalized/date": "^3.12.4",
@@ -25,17 +25,17 @@
     "@sveltejs/kit": "3.0.0-next.27",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.1",
+    "@types/node": "^26.6.2",
     "bits-ui": "^2.19.2",
     "clsx": "^2.1.1",
     "cn": "^0.3.0",
-    "prettier": "^3.9.7",
+    "prettier": "^3.9.8",
     "prettier-plugin-svelte": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "shadcn-svelte": "^1.7.0",
-    "svelte": "^5.57.0",
+    "svelte": "^5.57.1",
     "svelte-check": "^4.7.6",
     "tailwind-merge": "^3.7.0",
     "tailwind-variants": "^3.3.1",
@@ -65,7 +65,7 @@
   "dependencies": {
     "@comark/svelte": "^0.7.0",
     "@sindresorhus/slugify": "^3.0.1",
-    "@sveltia/cms": "0.212.1",
+    "@sveltia/cms": "0.216.1",
     "sveltekit-search-params": "^4.0.0",
     "zod": "^4.6.5"
   },
@@ -78,7 +78,7 @@
     "packageManager": {
       "name": "pnpm",
       "onFail": "warn",
-      "version": "12.4.2"
+      "version": "12.5.1"
     }
   },
   "imports": {

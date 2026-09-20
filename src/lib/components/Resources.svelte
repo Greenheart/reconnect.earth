@@ -190,7 +190,11 @@
 
     <div class="col-span-full mt-4 flex flex-col items-center gap-4" bind:this={scrollTarget}>
       <p class="text-center text-sm">
-        Showing {searchResults.matches.length} / {resources.length}
+        {#if searchResults.matches.length === 0}
+          No matching resources
+        {:else}
+          Showing {searchResults.matches.length} / {resources.length}
+        {/if}
       </p>
 
       <Button

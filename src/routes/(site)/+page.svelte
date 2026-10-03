@@ -5,7 +5,7 @@
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
   import { getApps } from '#lib/content/apps.remote.js'
-  import Image from '#lib/components/comark/Image.svelte'
+  import Image from '#lib/components/Image.svelte'
 
   const apps = await getApps()
 </script>

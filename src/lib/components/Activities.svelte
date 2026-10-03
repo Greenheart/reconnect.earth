@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getActivities } from '#lib/content/activities.remote.js'
   import { MarkdownDocument } from '@comark/svelte'
-  import Image from '#lib/components/comark/Image.svelte'
+  import Image from '#lib/components/Image.svelte'
 
   const activities = await getActivities()
 </script>

@@ -1,11 +1,5 @@
 <script lang="ts">
-  import { getActivities } from '#lib/content/activities.remote.js'
-  import { MarkdownDocument } from '@comark/svelte'
-
-  const activities = await getActivities()
-  $inspect(activities)
+  import DevOnly from '#lib/components/DevOnly.svelte'
 </script>
 
-<section>
-  <MarkdownDocument value={Object.values(activities)[0]} />
-</section>
+<DevOnly loader={async () => (await import('#lib/components/Activities.svelte')).default} />

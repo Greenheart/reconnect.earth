@@ -5,7 +5,7 @@
   import SectionCard from '#lib/components/SectionCard.svelte'
   import Divider from '#lib/components/Divider.svelte'
   import { getApps } from '#lib/content/apps.remote.js'
-  import { getImage } from '#lib/content/get-image.remote.js'
+  import Image from '#lib/components/comark/Image.svelte'
 
   const apps = await getApps()
 </script>
@@ -271,11 +271,10 @@
   <!-- TODO: Use a two columns on larger screens -->
   <div class="grid justify-center gap-4">
     {#each apps as app}
-      {@const img = await getImage(app.image)}
       <Card.Root class="xs:grid-cols-[min-content_1fr] grid max-w-xl gap-4 p-4">
         <div class="xs:max-h-full xs:w-48 max-h-80">
-          <enhanced:img
-            src={img}
+          <Image
+            src={app.image}
             alt={app.name + ' screenshot'}
             class="order-3 h-full w-full place-self-center rounded-xl bg-transparent! object-contain sm:order-1"
             sizes="min(200px, 100vw)"

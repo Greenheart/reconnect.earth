@@ -78,8 +78,44 @@ const activities: Collection = {
       maxlength: ActivityValidation.title.max,
     },
     {
+      name: 'duration',
+      label: 'Duration',
+      hint: 'The (approximate) duration of the activity, in hours (h) and/or minutes (min)',
+      widget: 'datetime',
+      type: 'time',
+      // TODO: Can the "Now" button be removed? It is not needed when entering time durations.
+      // IDEA: Or maybe even add a dedicated duration widget that saves a Temporal.Duration? That would be the best option.
+      // TODO: Add validation
+    },
+    {
+      name: 'minParticipants',
+      label: 'Minimum number of participants',
+      widget: 'number',
+      min: ActivityValidation.participants.min,
+    },
+    {
+      name: 'maxParticipants',
+      label: 'Maximum number of participants',
+      widget: 'number',
+      min: ActivityValidation.participants.min,
+    },
+    {
+      name: 'targetAudience',
+      label: 'Target audience',
+      hint: 'Which type(s) of participants that the acitivity is aimed for, e.g. kids/ youth/ adults, or the general public, or e.g. people who already have basic knowledge about a specific topic.',
+      // TODO: Add validation - text/ max length?
+    },
+    {
+      name: 'summary',
+      label: 'Short summary',
+      hint: 'Summary of the activity, which is visible in the overview list of activities, as well as a lead on the page of the activity.',
+      maxlength: ActivityValidation.summary.max,
+      // TODO: Add validation
+    },
+    {
       name: 'body',
-      label: 'Body',
+      label: 'Detailed description',
+      hint: 'The detailed description of the activity, which can include a facilitation guide. It can also be good to include different needed organiser roles, such as workshop facilitator, venue host, technician, person responsible for communications, person organising snacks/ food/ drinks.',
       widget: 'richtext',
       minimal: true,
       buttons: [
@@ -93,6 +129,30 @@ const activities: Collection = {
         'quote',
       ],
       editor_components: ['image'],
+    },
+    {
+      name: 'location',
+      label: 'Type(s) of location',
+      hint: 'The type(s) of location suitable for the activity - possibly including any certain furniture, e.g. classroom, lecture hall, cinema setting, room with chairs, room with an open space, park.',
+      // TODO: Add validation - max length?
+    },
+    {
+      name: 'materials',
+      label: 'Materials needed for the activity',
+      hint: 'The materials needed for the activity - if any. It can be, for example, a big TV screen/ projector, speakers, pens, post-it notes, large sheets of paper, masking tape.',
+      // TODO: Add validation - bullet point list
+    },
+    {
+      name: 'preparationBefore',
+      label: 'Recommended preparation by the participants before the activity',
+      hint: 'Here you can add any resources from the resource library which the participants can/ should read/ watch/ listen to before the activity, to come prepared.',
+      // TODO: Add validation - selection of Resources from the library
+    },
+    {
+      name: 'preparationAfter',
+      label: 'Resources which can be shared with the participants after the activity',
+      hint: 'Here you can add resources from the resource library which the participants can/ should read/ watch/ listen to after the activity, e.g. for further inspiration, or to learn more.',
+      // TODO: Add validation - selection of Resources from the library
     },
   ],
   folder: 'src/data/activities',

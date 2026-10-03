@@ -12,6 +12,8 @@ export const ResourceValidation = {
 
 export const ActivityValidation = {
   title: { max: 125 },
+  participants: { min: 2 },
+  summary: { max: 500 },
 }
 
 export const AppValidation = {

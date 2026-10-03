@@ -3,14 +3,12 @@ allowBuilds:
   sharp: true
   '@sveltejs/kit': true
 
-minimumReleaseAgeExclude:
-  - postcss@8.5.21
-  - prettier@3.9.6
-  - svelte@5.56.7
-  - '@sveltia/cms@0.194.0'
-  - '@sveltejs/kit@3.0.0-next.25'
-
 minimumReleaseAgeStrict: true
 
 patchedDependencies:
   sveltekit-search-params@4.0.0: patches/sveltekit-search-params@4.0.0.patch
+
+overrides:
+  # Supress peer dependency warning about SvelteKit 3
+  sveltekit-search-params@4.0.0>@sveltejs/kit: '^3.0.0'
+  runed@0.35.1>@sveltejs/kit: '^3.0.0'

@@ -1,3 +1,4 @@
+import { SITE_NAME } from '#lib/constants.js'
 import {
   AppValidation,
   ResourceValidation,
@@ -16,6 +17,7 @@ const resources: Collection = {
   fields: [
     {
       name: 'title',
+      label: 'Title',
       comment: 'A short descriptive title',
       maxlength: ResourceValidation.title.max,
     },
@@ -34,6 +36,7 @@ const resources: Collection = {
     },
     {
       name: 'tags',
+      label: 'Tags',
       widget: 'relation',
       collection: 'tags',
       comment:
@@ -45,6 +48,7 @@ const resources: Collection = {
     },
     {
       name: 'featured',
+      label: 'Featured',
       comment: 'Whether or not this resource should be featured',
       widget: 'boolean',
       default: false,
@@ -71,6 +75,7 @@ const activities: Collection = {
   fields: [
     {
       name: 'title',
+      label: 'Title',
       comment: 'A short descriptive title',
       maxlength: ActivityValidation.title.max,
     },
@@ -196,7 +201,7 @@ const tags: Collection = {
 
 export default {
   load_config_file: false,
-  app_title: 'CMS',
+  app_title: `${SITE_NAME} - CMS`,
   publish_mode: 'editorial_workflow',
   backend: {
     name: 'github',

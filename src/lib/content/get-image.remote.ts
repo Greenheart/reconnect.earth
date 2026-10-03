@@ -22,15 +22,18 @@ export const getImage = prerender(z.string(), async (filename: string) => {
     })
   }
 
-  const matchingImageKey = Object.keys(allImages).find((filepath) => filepath.endsWith(filename))
+  // Ensure full asset paths (starting with `#assets`) work as expected.
+  const file = filename.replace(/^#assets/, '/src/assets')
+
+  const matchingImageKey = Object.keys(allImages).find((imagePath) => imagePath.endsWith(file))
   if (!matchingImageKey) {
-    throw new Error(`Image not found: ${filename}`)
+    throw new Error(`Image not found: ${file}`)
   }
 
   const loader = allImages[matchingImageKey]
   const image = await loader?.()
   if (!image) {
-    throw new Error(`Failed to load image: ${filename}`)
+    throw new Error(`Failed to load image: ${file}`)
   }
 
   return image

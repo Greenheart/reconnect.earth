@@ -22,6 +22,18 @@ export default defineConfig({
           async: true,
         },
       },
+      prerender: {
+        handleHttpError: ({ path, message, status }) => {
+          console.dir({ handleHTTPERROR: 1, path, message, status })
+          if (status === 403) {
+            return
+          }
+          throw new Error(message)
+        },
+        handleUnseenRoutes: ({ routes, message }) => {
+          console.dir({ routes, message })
+        },
+      },
     }),
   ],
 })

@@ -1,7 +1,8 @@
 import { prerender } from '$app/server'
+import { basename } from 'node:path'
 
 import { ActivityFrontmatterSchema } from '#lib/content/schemas.js'
-import { parseEntries } from '#lib/content/parse-entries.js'
+import { parseEntries } from '#lib/server/parse-entries.js'
 
 export const getActivities = prerender(async () => {
   const rawActivities = import.meta.glob('/src/data/activities/*.md', {
@@ -12,8 +13,7 @@ export const getActivities = prerender(async () => {
 
   const activities = await parseEntries({
     entries: rawActivities,
-    getSlugFromFilepath: (filepath) =>
-      filepath.replace('/src/data/activities/', '').replace('.md', ''),
+    getSlugFromFilepath: (filepath) => basename(filepath, '.md'),
     frontmatterSchema: ActivityFrontmatterSchema,
   })
 

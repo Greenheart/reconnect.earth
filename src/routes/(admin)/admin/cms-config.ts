@@ -18,13 +18,13 @@ const resources: Collection = {
     {
       name: 'title',
       label: 'Title',
-      comment: 'A short descriptive title',
+      hint: 'A short descriptive title',
       maxlength: ResourceValidation.title.max,
     },
     {
       name: 'description',
       label: 'Description',
-      comment: 'Why is this relevant for Reconnect.earth? What are some key topics and insights?',
+      hint: 'Why is this relevant for Reconnect.earth? What are some key topics and insights?',
       widget: 'text',
       maxlength: ResourceValidation.description.max,
     },
@@ -39,8 +39,7 @@ const resources: Collection = {
       label: 'Tags',
       widget: 'relation',
       collection: 'tags',
-      comment:
-        'Add relevant tags to describe this resource. First the media type, and then the main topics.',
+      hint: 'Add relevant tags to describe this resource. First the media type, and then the main topics.',
       multiple: true,
       display_fields: ['label'],
       min: ResourceValidation.tags.min,
@@ -49,7 +48,7 @@ const resources: Collection = {
     {
       name: 'featured',
       label: 'Featured',
-      comment: 'Whether or not this resource should be featured',
+      hint: 'Whether or not this resource should be featured',
       widget: 'boolean',
       default: false,
       required: false,
@@ -57,8 +56,7 @@ const resources: Collection = {
     {
       name: 'quality',
       label: `Production quality (${ResourceValidation.quality.min}-${ResourceValidation.quality.max})`,
-      comment:
-        "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
+      hint: "Generally, resources with a higher production quality are preferred to respect people's time. However, sometimes the topic or insights are worth adding despite a lower production quality.",
       widget: 'number',
       min: ResourceValidation.quality.min,
       max: ResourceValidation.quality.max,
@@ -76,7 +74,7 @@ const activities: Collection = {
     {
       name: 'title',
       label: 'Title',
-      comment: 'A short descriptive title',
+      hint: 'A short descriptive title',
       maxlength: ActivityValidation.title.max,
     },
     {
@@ -126,20 +124,19 @@ const apps: Collection = {
       label: 'Link',
       widget: 'string',
       type: 'url',
-      comment: 'An link to a live demo (for web projects), or where to get more information.',
+      hint: 'An link to a live demo (for web projects), or where to get more information.',
     },
     {
       name: 'git',
       label: 'Git repository link',
-      comment:
-        'Link to the source code of the project. Only [libre software (FOSS)](https://fsfe.org/freesoftware/) apps may be listed.',
+      hint: 'Link to the source code of the project. Only [libre software (FOSS)](https://fsfe.org/freesoftware/) apps may be listed.',
     },
     {
       name: 'image',
       label: 'Image',
       widget: 'image',
       media_folder: '/src/assets/apps',
-      comment: 'Screenshot or other app image',
+      hint: 'Screenshot or other app image',
     },
   ],
 }
@@ -172,7 +169,7 @@ const tags: Collection = {
     {
       name: 'label',
       label: 'Tag',
-      comment: 'Tag in TitleCase format used to describe resources and other content.',
+      hint: 'Tag in TitleCase format used to describe resources and other content.',
       pattern: [
         /^[A-Za-z1-9]+$/.toString(),
         'Tags should be in TitleCase format without spaces and only include letters and numbers.',
@@ -181,8 +178,7 @@ const tags: Collection = {
     {
       name: 'kind',
       label: 'Tag kind',
-      comment:
-        'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
+      hint: 'What kind of tag is this? Media types indicate the format, e.g. Book, Video, Podcast and similar. Topics describe specific themes and concepts.',
       widget: 'select',
       options: [
         {

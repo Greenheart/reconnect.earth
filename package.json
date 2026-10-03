@@ -78,7 +78,7 @@
     "packageManager": {
       "name": "pnpm",
       "onFail": "warn",
-      "version": "12.5.1"
+      "version": "12.8.1"
     }
   },
   "imports": {

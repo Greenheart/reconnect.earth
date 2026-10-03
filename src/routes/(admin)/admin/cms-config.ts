@@ -104,12 +104,14 @@ const activities: Collection = {
       label: 'Target audience',
       hint: 'Which type(s) of participants that the acitivity is aimed for, e.g. kids/ youth/ adults, or the general public, or e.g. people who already have basic knowledge about a specific topic.',
       // TODO: Add validation - text/ max length?
+      required: false,
     },
     {
       name: 'summary',
       label: 'Short summary',
       hint: 'Summary of the activity, which is visible in the overview list of activities, as well as a lead on the page of the activity.',
       maxlength: ActivityValidation.summary.max,
+      widget: 'text',
       // TODO: Add validation
     },
     {
@@ -132,8 +134,8 @@ const activities: Collection = {
     },
     {
       name: 'location',
-      label: 'Type(s) of location',
-      hint: 'The type(s) of location suitable for the activity - possibly including any certain furniture, e.g. classroom, lecture hall, cinema setting, room with chairs, room with an open space, park.',
+      label: 'Suggested location(s)',
+      hint: 'The type(s) of location(s) suitable for the activity - possibly including any certain furniture, e.g. classroom, lecture hall, cinema setting, room with chairs, room with an open space, park.',
       // TODO: Add validation - max length?
     },
     {
@@ -141,18 +143,21 @@ const activities: Collection = {
       label: 'Materials needed for the activity',
       hint: 'The materials needed for the activity - if any. It can be, for example, a big TV screen/ projector, speakers, pens, post-it notes, large sheets of paper, masking tape.',
       // TODO: Add validation - bullet point list
+      required: false,
     },
     {
-      name: 'preparationBefore',
-      label: 'Recommended preparation by the participants before the activity',
-      hint: 'Here you can add any resources from the resource library which the participants can/ should read/ watch/ listen to before the activity, to come prepared.',
-      // TODO: Add validation - selection of Resources from the library
+      name: 'relevantResources',
+      label: 'Relevant resources',
+      hint: 'Here you can add resources from the resource library which are relevant for the activity. Participants could read/watch/listen to them to prepare before the activity.',
+      // TODO: Add relation to select Resources from the library
+      required: false,
     },
     {
-      name: 'preparationAfter',
-      label: 'Resources which can be shared with the participants after the activity',
-      hint: 'Here you can add resources from the resource library which the participants can/ should read/ watch/ listen to after the activity, e.g. for further inspiration, or to learn more.',
-      // TODO: Add validation - selection of Resources from the library
+      name: 'inDepthResources',
+      label: 'In-depth resources',
+      hint: 'Here you can add resources from the resource library that may help participants to learn more, for example as next steps after the activity.',
+      // TODO: Add relation to select Resources from the library
+      required: false,
     },
   ],
   folder: 'src/data/activities',

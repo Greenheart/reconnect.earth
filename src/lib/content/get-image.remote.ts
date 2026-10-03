@@ -21,11 +21,15 @@ export const getImage = prerender(z.string(), async (filename: string) => {
     })
   }
 
-  const loader = allImages[filename]
-  if (!loader) {
+  const matchingImageKey = Object.keys(allImages).find((filepath) => filepath.endsWith(filename))
+
+  console.dir({ allImages: Object.keys(allImages), filename, matchingImageKey })
+
+  if (!matchingImageKey) {
     throw new Error(`Image not found: ${filename}`)
   }
 
+  const loader = allImages[matchingImageKey]!
   const image = await loader()
   if (!image) {
     throw new Error(`Failed to load image: ${filename}`)

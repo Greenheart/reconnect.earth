@@ -1,5 +1,5 @@
 <script lang="ts">
-  import DevOnly from '#lib/components/DevOnly.svelte'
+  import Activities from '#lib/components/Activities.svelte'
 </script>
 
-<DevOnly loader={async () => (await import('#lib/components/Activities.svelte')).default} />
+<Activities />

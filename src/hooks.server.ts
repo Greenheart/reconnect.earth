@@ -1,5 +1,5 @@
 import { dev } from '$app/env'
-import { error, type RequestEvent } from '@sveltejs/kit'
+import { type RequestEvent } from '@sveltejs/kit'
 import { type Handle } from '@sveltejs/kit/hooks'
 
 function excludeRoutesFromProductionBuild(routeIdsToExclude: RequestEvent['route']['id'][]) {
@@ -10,7 +10,7 @@ function excludeRoutesFromProductionBuild(routeIdsToExclude: RequestEvent['route
 
   return (({ event, resolve }) => {
     if (excludedRoutes.has(event.route.id)) {
-      error(403, 'DISABLE_PRERENDERING')
+      throw new Error('Skipping prerendering for excluded route: ' + event.route.id)
     }
     return resolve(event)
   }) satisfies Handle

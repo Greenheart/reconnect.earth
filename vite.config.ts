@@ -4,6 +4,17 @@ import { enhancedImages } from '@sveltejs/enhanced-img'
 import adapter from '@sveltejs/adapter-static'
 import tailwindcss from '@tailwindcss/vite'
 
+/**
+ * Routes that should not be prerendered and instead excluded from the production build.
+ */
+const IGNORED_ROUTES = new Set([
+  // Paths to ignore
+  '/activities',
+
+  // Route IDs to ignore
+  '/(site)/activities',
+])
+
 export default defineConfig({
   plugins: [
     tailwindcss(),
@@ -23,15 +34,19 @@ export default defineConfig({
         },
       },
       prerender: {
-        handleHttpError: ({ path, message, status }) => {
-          console.dir({ handleHTTPERROR: 1, path, message, status })
-          if (status === 403) {
+        handleHttpError: ({ path, message }) => {
+          if (IGNORED_ROUTES.has(path)) {
             return
           }
           throw new Error(message)
         },
-        handleUnseenRoutes: ({ routes, message }) => {
-          console.dir({ routes, message })
+        handleUnseenRoutes: ({ routes }) => {
+          // Only keep routes that we have not explicitly ignored
+          const unseenRoutes = routes.filter((routeId) => !IGNORED_ROUTES.has(routeId))
+
+          if (unseenRoutes.length) {
+            throw new Error('Unseen routes', { cause: unseenRoutes })
+          }
         },
       },
     }),

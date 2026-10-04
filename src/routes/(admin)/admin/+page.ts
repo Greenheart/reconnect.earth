@@ -4,7 +4,7 @@
  *
  * 1) By using SvelteKit layout groups, we can render the `(admin)/admin/+page.svelte` without any
  *    other HTML or JS, which gives us a blank slate where we can initiate the CMS.
- *    If we would have used a normal SvelteKit route, we would included the root +layout.svelte which
+ *    If we had used a normal SvelteKit route, we would have included the root +layout.svelte which
  *    likely would have interfered with the CMS, leading to unpredictable resulting CSS and JS.
  *
  * 2) By disabling SvelteKit SSR, we give the client-side @sveltia/cms SPA full control of the page.

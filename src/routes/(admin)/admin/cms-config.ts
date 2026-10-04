@@ -85,7 +85,6 @@ const activities: Collection = {
       type: 'time',
       // TODO: Can the "Now" button be removed? It is not needed when entering time durations.
       // IDEA: Or maybe even add a dedicated duration widget that saves a Temporal.Duration? That would be the best option.
-      // TODO: Add validation
     },
     {
       name: 'minParticipants',
@@ -103,7 +102,7 @@ const activities: Collection = {
       name: 'targetAudience',
       label: 'Target audience',
       hint: 'Which type(s) of participants that the acitivity is aimed for, e.g. kids/ youth/ adults, or the general public, or e.g. people who already have basic knowledge about a specific topic.',
-      // TODO: Add validation - text/ max length?
+      max: ActivityValidation.targetAudience.max,
       required: false,
     },
     {

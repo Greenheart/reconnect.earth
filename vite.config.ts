@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import { enhancedImages } from '@sveltejs/enhanced-img'
 import adapter from '@sveltejs/adapter-static'
 import tailwindcss from '@tailwindcss/vite'
+import { cn } from 'cn/vite'
 
 /**
  * Routes that should not be prerendered and instead excluded from the production build.
@@ -18,7 +19,8 @@ const IGNORED_ROUTES = new Set([
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    enhancedImages(), // Must come before the SvelteKit plugin
+    cn({ out: 'src/lib/cn-tables.ts' }),
+    enhancedImages(), // Must be initiated before the SvelteKit plugin
     sveltekit({
       adapter: adapter(),
       experimental: {

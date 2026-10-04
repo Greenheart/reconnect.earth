@@ -1,4 +1,7 @@
-export { cn } from 'cn'
+import { createCn } from 'cn/engine'
+import tables from './cn-tables.js'
+
+export const cn = createCn(tables)
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type WithoutChild<T> = T extends { child?: any } ? Omit<T, 'child'> : T

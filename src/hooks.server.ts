@@ -1,19 +1,15 @@
 import { dev } from '$app/env'
-import { type RequestEvent } from '@sveltejs/kit'
+import { error } from '@sveltejs/kit'
 import { type Handle } from '@sveltejs/kit/hooks'
 
-function excludeRoutesFromProductionBuild(routeIdsToExclude: RequestEvent['route']['id'][]) {
-  // Allow all routes during development
-  if (dev) return
+import { DEV_ONLY_ROUTES } from '#lib/server/config.js'
 
-  const excludedRoutes = new Set(routeIdsToExclude)
-
-  return (({ event, resolve }) => {
-    if (excludedRoutes.has(event.route.id)) {
-      throw new Error('Skipping prerendering for excluded route: ' + event.route.id)
+export const handle: Handle | undefined = dev
+  ? undefined
+  : ({ event, resolve }) => {
+      if (DEV_ONLY_ROUTES.has(event.route.id!)) {
+        console.info('Excluding DEV only route from prerendering:', event.route.id)
+        error(400)
+      }
+      return resolve(event)
     }
-    return resolve(event)
-  }) satisfies Handle
-}
-
-export const handle = dev ? undefined : excludeRoutesFromProductionBuild(['/(site)/activities'])

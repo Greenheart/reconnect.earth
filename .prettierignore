@@ -6,3 +6,6 @@ pnpm-lock.yaml
 
 # Ignore content since it is formatted by the CMS by default
 src/data/**/*.json
+
+# Ignore generated TS library files
+src/lib/generated

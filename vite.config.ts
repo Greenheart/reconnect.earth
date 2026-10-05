@@ -10,7 +10,7 @@ import { DEV_ONLY_ROUTES } from '#lib/server/config.js'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    cn({ out: 'src/lib/cn-tables.ts' }),
+    cn({ out: 'src/lib/generated/cn-tables.ts' }),
     enhancedImages(), // Must be initiated before the SvelteKit plugin
     sveltekit({
       adapter: adapter(),

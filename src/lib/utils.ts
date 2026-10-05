@@ -1,5 +1,5 @@
 import { createCn } from 'cn/engine'
-import tables from './cn-tables.js'
+import tables from './generated/cn-tables.js'
 
 export const cn = createCn(tables)
 

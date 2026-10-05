@@ -6,6 +6,6 @@
     "request": "launch",
     "url": "http://localhost:5173",
     "skipFiles": ["<node_internals>/**"],
-    "webRoot": "${ZED_WORKTREE_ROOT}",
-  },
+    "webRoot": "${ZED_WORKTREE_ROOT}"
+  }
 ]
